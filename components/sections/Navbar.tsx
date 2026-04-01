@@ -22,59 +22,72 @@ export const Navbar: React.FC = () => {
     setIsOpen(false);
   }, [location]);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   return (
-    <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-500 border-b ${
-        isScrolled 
-          ? 'bg-npt-black/60 backdrop-blur-xl border-white/5 py-3' 
-          : 'bg-transparent border-transparent py-6'
-      }`}
-    >
-      <div className="container mx-auto px-4 md:px-6">
-        <nav className="flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className={`p-2 rounded-lg transition-colors bg-npt-red text-white shadow-[0_0_15px_rgba(208,0,0,0.5)]`}>
-              <Dumbbell className="h-6 w-6" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-heading font-black italic leading-none text-white tracking-tighter">
-                NEW
-              </span>
-              <span className="text-[10px] font-bold tracking-[0.2em] text-white/70">
-                PERSONAL TRAINING
-              </span>
-            </div>
-          </Link>
+    <>
+      <header 
+        className={`fixed top-0 w-full z-50 transition-all duration-500 border-b ${
+          isScrolled 
+            ? 'bg-npt-black/60 backdrop-blur-xl border-white/5 py-3' 
+            : 'bg-transparent border-transparent py-6'
+        }`}
+      >
+        <div className="container mx-auto px-4 md:px-6">
+          <nav className="flex items-center justify-between">
+            {/* Logo */}
+            <Link to="/" className="flex items-center gap-2 group">
+              <div className={`p-2 rounded-lg transition-colors bg-npt-red text-white shadow-[0_0_15px_rgba(208,0,0,0.5)]`}>
+                <Dumbbell className="h-6 w-6" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-xl font-heading font-black italic leading-none text-white tracking-tighter">
+                  NEW
+                </span>
+                <span className="text-[10px] font-bold tracking-[0.2em] text-white/70">
+                  PERSONAL TRAINING
+                </span>
+              </div>
+            </Link>
 
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center gap-8">
-            {NAVIGATION.map((item) => (
-              <Link
-                key={item.href}
-                to={item.href}
-                className={`text-sm font-medium tracking-wide transition-all hover:text-npt-red hover:drop-shadow-[0_0_8px_rgba(208,0,0,0.5)] ${
-                  location.pathname === item.href ? 'text-npt-red font-bold' : 'text-gray-300'
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-            <Button href="/reservar" size="sm" variant="primary">
-              Reservar Sesión
-            </Button>
-          </div>
+            {/* Desktop Menu */}
+            <div className="hidden lg:flex items-center gap-8">
+              {NAVIGATION.map((item) => (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className={`text-sm font-medium tracking-wide transition-all hover:text-npt-red hover:drop-shadow-[0_0_8px_rgba(208,0,0,0.5)] ${
+                    location.pathname === item.href ? 'text-npt-red font-bold' : 'text-gray-300'
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+              <Button href="/reservar" size="sm" variant="primary">
+                Reservar Sesión
+              </Button>
+            </div>
 
-          {/* Mobile Toggle */}
-          <button 
-            className="lg:hidden p-2 text-white hover:text-npt-red transition-colors focus:outline-none"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Menu"
-          >
-            {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
-          </button>
-        </nav>
-      </div>
+            {/* Mobile Toggle */}
+            <button 
+              className="lg:hidden p-2 text-white hover:text-npt-red transition-colors focus:outline-none"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Menu"
+            >
+              {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+            </button>
+          </nav>
+        </div>
+      </header>
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
@@ -84,9 +97,9 @@ export const Navbar: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
             transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 bg-npt-black/95 backdrop-blur-xl z-40 lg:hidden overflow-hidden flex flex-col items-center justify-center"
+            className="fixed inset-0 bg-npt-black/95 backdrop-blur-xl z-40 lg:hidden flex flex-col items-center justify-center h-[100dvh] w-screen"
           >
-            <div className="flex flex-col gap-8 items-center text-center">
+            <div className="flex flex-col gap-8 items-center text-center w-full px-4">
               {NAVIGATION.map((item) => (
                 <Link
                   key={item.href}
@@ -109,6 +122,6 @@ export const Navbar: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 };
