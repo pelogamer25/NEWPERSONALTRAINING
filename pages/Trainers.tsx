@@ -5,40 +5,27 @@ import { Button } from '../components/ui/Button';
 
 const TRAINER_SECTIONS = [
   {
-    title: "Profesionales del Ejercicio",
-    images: [
-      "https://i.imgur.com/lNqsz5z.jpg",
-      "https://i.imgur.com/mAih3QU.jpg",
-      "https://i.imgur.com/NtDhTkx.jpg",
-      "https://i.imgur.com/04TOJES.jpg",
-      "https://i.imgur.com/a6ZrjJv.jpg",
-      "https://i.imgur.com/NQmBJFj.jpg",
-      "https://i.imgur.com/NY5CbaH.jpg"
-    ]
-  },
-  {
-    title: "Valoradores",
-    images: [
-      "https://i.imgur.com/Wc9f4ra.jpg",
-      "https://i.imgur.com/vZf7ZvS.jpg",
-      "https://i.imgur.com/S7JShUj.jpg",
-      "https://i.imgur.com/OWCVqEm.jpg",
-      "https://i.imgur.com/DYXJrFS.jpg"
-    ]
-  },
-  {
-    title: "Clases grupales",
+    title: "Profesionales del ejercicio",
     images: [
       "https://i.imgur.com/dEK4tTi.jpg",
+      "https://i.imgur.com/QMBuRDI.jpg",
+      "https://i.imgur.com/lNqsz5z.jpg",
       "https://i.imgur.com/TQJICmf.jpg",
       "https://i.imgur.com/YsHObqd.jpg",
+      "https://i.imgur.com/cZ1l15e.jpg",
       "https://i.imgur.com/u7OvQP3.jpg",
       "https://i.imgur.com/edGqHHe.jpg",
+      "https://i.imgur.com/JuFkHrR.jpg",
       "https://i.imgur.com/azQjuDR.jpg",
+      "https://i.imgur.com/mAih3QU.jpg",
+      "https://i.imgur.com/NtDhTkx.jpg",
       "https://i.imgur.com/MhSq7Gw.jpg",
       "https://i.imgur.com/jib4Zy0.jpg",
       "https://i.imgur.com/sK2XaEg.jpg",
+      "https://i.imgur.com/04TOJES.jpg",
       "https://i.imgur.com/YfsaaN8.jpg",
+      "https://i.imgur.com/a6ZrjJv.jpg",
+      "https://i.imgur.com/NQmBJFj.jpg",
       "https://i.imgur.com/mHNUO7b.jpg",
       "https://i.imgur.com/MaSAeoS.jpg",
       "https://i.imgur.com/BSSVJj7.jpg",
@@ -47,6 +34,7 @@ const TRAINER_SECTIONS = [
       "https://i.imgur.com/voABxh5.jpg",
       "https://i.imgur.com/LhxZ0ro.jpg",
       "https://i.imgur.com/GDFZUrn.jpg",
+      "https://i.imgur.com/NY5CbaH.jpg",
       "https://i.imgur.com/NH4ONIo.jpg",
       "https://i.imgur.com/kvCPjv9.jpg",
       "https://i.imgur.com/aMPgzLz.jpg",
@@ -56,9 +44,18 @@ const TRAINER_SECTIONS = [
     ]
   },
   {
+    title: "Valoradores",
+    images: [
+      "https://i.imgur.com/Wc9f4ra.jpg",
+      "https://i.imgur.com/DYXJrFS.jpg"
+    ]
+  },
+  {
     title: "Fisioterapeutas",
     images: [
-      "https://i.imgur.com/2LAzZXz.jpg"
+      "https://i.imgur.com/vZf7ZvS.jpg",
+      "https://i.imgur.com/OWCVqEm.jpg",
+      "https://i.imgur.com/S7JShUj.jpg"
     ]
   },
   {
@@ -71,9 +68,7 @@ const TRAINER_SECTIONS = [
   {
     title: "Pausas activas y masoterapeutas",
     images: [
-      "https://i.imgur.com/QMBuRDI.jpg",
-      "https://i.imgur.com/cZ1l15e.jpg",
-      "https://i.imgur.com/JuFkHrR.jpg",
+      "https://i.imgur.com/2LAzZXz.jpg",
       "https://i.imgur.com/4WLVH6R.jpg"
     ]
   },
@@ -86,8 +81,8 @@ const TRAINER_SECTIONS = [
   {
     title: "Directores",
     images: [
-      "https://i.imgur.com/K6F6Bu8.jpg",
       "https://i.imgur.com/5qXnj9z.jpg",
+      "https://i.imgur.com/K6F6Bu8.jpg",
       "https://i.imgur.com/BRkbPn6.jpg"
     ]
   }
