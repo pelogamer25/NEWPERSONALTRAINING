@@ -2,9 +2,40 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Target, Heart, Zap, Users } from 'lucide-react';
 import { Button } from '../components/ui/Button';
+import { SEOHead } from '../components/SEOHead';
+
+const ABOUT_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Sobre New Personal Training — Entrenador Personal en Medellín",
+  "description": "Conoce la historia de New Personal Training. Fundados en 2015 en el Poblado, Medellín. Más de 10 años transformando vidas con entrenamiento personalizado, ciencia aplicada y comunidad.",
+  "url": "https://newpersonaltraining.com/nosotros",
+  "mainEntity": {
+    "@type": "FitnessCenter",
+    "@id": "https://newpersonaltraining.com/#business",
+    "name": "New Personal Training",
+    "foundingDate": "2015",
+    "foundingLocation": {
+      "@type": "Place",
+      "name": "El Poblado, Medellín, Antioquia, Colombia"
+    },
+    "description": "Centro de entrenamiento personal en Medellín fundado en 2015 con la convicción de que el entrenamiento debe ser accesible, científico y profundamente humano. Combina biomecánica avanzada con coaching motivacional."
+  }
+};
 
 export const About: React.FC = () => {
   return (
+    <>
+      <SEOHead
+        title="Sobre Nosotros | New Personal Training — 10 Años en Medellín"
+        description="Conoce a New Personal Training, fundado en 2015 en el Poblado de Medellín. Más de 10 años transformando vidas con entrenamiento personalizado, ciencia aplicada y un equipo de 20+ profesionales certificados."
+        canonical="/nosotros"
+        jsonLd={ABOUT_SCHEMA}
+        breadcrumbs={[
+          { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
+          { name: 'Sobre Nosotros', url: 'https://newpersonaltraining.com/nosotros' }
+        ]}
+      />
     <div className="pt-24 min-h-screen">
       {/* Hero */}
       <section className="relative py-20 px-4">
@@ -27,9 +58,9 @@ export const About: React.FC = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center glass-panel p-8 md:p-12 rounded-3xl">
             <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 group">
-              <img 
-                src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=80&w=800" 
-                alt="Our Gym" 
+              <img
+                src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=80&w=800"
+                alt="Instalaciones de New Personal Training en Medellín — entrenamiento personalizado desde 2015"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-npt-red/20 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -109,9 +140,13 @@ export const About: React.FC = () => {
           <h2 className="text-3xl font-heading font-black italic text-white mb-6">
             ÚNETE AL MOVIMIENTO
           </h2>
+          <p className="text-gray-400 mb-8 max-w-xl mx-auto">
+            Agenda tu evaluación inicial gratuita y descubre cómo nuestro equipo puede ayudarte a alcanzar tus objetivos en Medellín.
+          </p>
           <Button href="/contacto" size="lg">Contáctanos Hoy</Button>
         </div>
       </section>
     </div>
+    </>
   );
 };

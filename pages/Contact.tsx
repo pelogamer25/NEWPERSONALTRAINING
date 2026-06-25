@@ -3,6 +3,42 @@ import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 import { COMPANY_INFO } from '../constants';
 import { Button } from '../components/ui/Button';
+import { SEOHead } from '../components/SEOHead';
+
+const CONTACT_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contacto — New Personal Training Medellín",
+  "url": "https://newpersonaltraining.com/contacto",
+  "mainEntity": {
+    "@type": "FitnessCenter",
+    "@id": "https://newpersonaltraining.com/#business",
+    "name": "New Personal Training",
+    "telephone": "+573005974290",
+    "email": "contacto@newpersonaltraining.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Medellín",
+      "addressRegion": "Antioquia",
+      "addressCountry": "CO"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+573005974290",
+        "availableLanguage": "Spanish",
+        "contactOption": "TollFree"
+      },
+      {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "contacto@newpersonaltraining.com",
+        "availableLanguage": "Spanish"
+      }
+    ]
+  }
+};
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -19,11 +55,22 @@ export const Contact: React.FC = () => {
   };
 
   return (
+    <>
+      <SEOHead
+        title="Contacto | New Personal Training — Medellín +57 300 597 4290"
+        description="Contáctanos en New Personal Training Medellín. Teléfono/WhatsApp: +57 300 597 4290. Email: contacto@newpersonaltraining.com. Presencial en el Valle de Aburrá, Antioquia, Colombia."
+        canonical="/contacto"
+        jsonLd={CONTACT_SCHEMA}
+        breadcrumbs={[
+          { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
+          { name: 'Contacto', url: 'https://newpersonaltraining.com/contacto' }
+        ]}
+      />
     <div className="pt-24 min-h-screen">
       <div className="container mx-auto px-4 py-16">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-heading font-black italic text-white mb-4">CONTÁCTANOS</h1>
-          <p className="text-gray-400">Estamos aquí para resolver todas tus dudas.</p>
+          <p className="text-gray-400">Estamos en Medellín para resolver todas tus dudas y ayudarte a empezar.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 glass-panel rounded-3xl overflow-hidden border border-white/10">
@@ -123,12 +170,13 @@ export const Contact: React.FC = () => {
                 />
               </div>
               <Button type="submit" className="w-full">
-                Enviar Mensaje <Send className="ml-2 w-4 h-4" />
+                Enviar Mensaje <Send className="ml-2 w-4 h-4" aria-hidden="true" />
               </Button>
             </form>
           </div>
         </div>
       </div>
     </div>
+    </>
   );
 };

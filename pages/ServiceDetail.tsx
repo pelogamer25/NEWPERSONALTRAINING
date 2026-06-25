@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, CreditCard, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { SERVICES } from '../constants';
 import { Button } from '../components/ui/Button';
+import { SEOHead } from '../components/SEOHead';
 
 export const ServiceDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -12,6 +13,36 @@ export const ServiceDetail: React.FC = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number>(0);
+
+  const serviceSchema = useMemo(() => {
+    if (!service) return null;
+    return {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": service.title,
+      "description": service.description,
+      "url": `https://newpersonaltraining.com/servicios/${service.slug}`,
+      "image": service.image,
+      "provider": {
+        "@type": "FitnessCenter",
+        "@id": "https://newpersonaltraining.com/#business",
+        "name": "New Personal Training",
+        "url": "https://newpersonaltraining.com",
+        "telephone": "+573005974290"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Valle de Aburrá, Medellín, Antioquia, Colombia"
+      },
+      "offers": service.pricingOptions?.map(opt => ({
+        "@type": "Offer",
+        "name": opt.label,
+        "price": opt.price.replace(/[^0-9]/g, ''),
+        "priceCurrency": "COP",
+        "availability": "https://schema.org/InStock"
+      }))
+    };
+  }, [service]);
 
   if (!service) {
     return (
@@ -34,6 +65,21 @@ export const ServiceDetail: React.FC = () => {
   };
 
   return (
+    <>
+      {service && (
+        <SEOHead
+          title={`${service.title} en Medellín | New Personal Training`}
+          description={`${service.description} Disponible en el Valle de Aburrá. Desde ${service.pricingOptions?.[0]?.price ?? service.price}. Agenda tu sesión con New Personal Training.`}
+          canonical={`/servicios/${service.slug}`}
+          ogImage={service.image}
+          jsonLd={serviceSchema ?? undefined}
+          breadcrumbs={[
+            { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
+            { name: 'Servicios', url: 'https://newpersonaltraining.com/servicios' },
+            { name: service.title, url: `https://newpersonaltraining.com/servicios/${service.slug}` }
+          ]}
+        />
+      )}
     <div className="pt-24 min-h-screen pb-20 relative">
       {/* Background Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-npt-red/10 blur-[150px] pointer-events-none -z-10" />
@@ -51,9 +97,9 @@ export const ServiceDetail: React.FC = () => {
             className="space-y-8"
           >
             <div className="relative rounded-2xl overflow-hidden border border-white/10 aspect-video">
-              <img 
-                src={service.image} 
-                alt={service.title} 
+              <img
+                src={service.image}
+                alt={`${service.title} en Medellín — New Personal Training`}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-npt-black via-npt-black/20 to-transparent" />
@@ -213,5 +259,6 @@ export const ServiceDetail: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };

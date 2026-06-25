@@ -1,9 +1,34 @@
 import React from 'react';
 import { Calendar, Clock, User } from 'lucide-react';
 import { Button } from '../components/ui/Button';
+import { SEOHead } from '../components/SEOHead';
+
+const BOOKING_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "ReservationPackage",
+  "name": "Agenda tu Sesión — New Personal Training Medellín",
+  "description": "Reserva tu sesión de entrenamiento personal, evaluación inicial gratuita o consulta corporativa con New Personal Training en Medellín.",
+  "provider": {
+    "@type": "FitnessCenter",
+    "@id": "https://newpersonaltraining.com/#business",
+    "name": "New Personal Training",
+    "telephone": "+573005974290"
+  }
+};
 
 export const Booking: React.FC = () => {
   return (
+    <>
+      <SEOHead
+        title="Agenda tu Sesión | New Personal Training — Medellín"
+        description="Reserva tu evaluación inicial gratuita de 30 minutos, sesión de entrenamiento personal o consulta corporativa con New Personal Training en Medellín. ¡También por WhatsApp: +57 300 597 4290!"
+        canonical="/reservar"
+        jsonLd={BOOKING_SCHEMA}
+        breadcrumbs={[
+          { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
+          { name: 'Reservar Sesión', url: 'https://newpersonaltraining.com/reservar' }
+        ]}
+      />
     <div className="pt-32 min-h-screen pb-20">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
@@ -61,18 +86,22 @@ export const Booking: React.FC = () => {
         </div>
 
         <div className="mt-12 p-8 glass-panel rounded-xl text-center">
-          <h3 className="font-bold text-xl italic text-white mb-2">¿Necesitas ayuda?</h3>
-          <p className="text-gray-400 mb-6">Escríbenos directamente por WhatsApp y te ayudaremos.</p>
-          <a 
-            href="https://wa.me/573005974290" 
-            target="_blank" 
+          <h2 className="font-bold text-xl italic text-white mb-2">¿Necesitas ayuda para elegir?</h2>
+          <p className="text-gray-400 mb-6">
+            Escríbenos directamente por WhatsApp al <strong className="text-white">+57 300 597 4290</strong> y uno de nuestros entrenadores en Medellín te asesorará.
+          </p>
+          <a
+            href="https://wa.me/573005974290"
+            target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded text-white bg-green-600 hover:bg-green-500 transition-all shadow-[0_0_20px_rgba(22,163,74,0.3)] hover:shadow-[0_0_30px_rgba(22,163,74,0.5)] uppercase tracking-wide"
+            aria-label="Contactar New Personal Training por WhatsApp"
           >
             Chat en WhatsApp
           </a>
         </div>
       </div>
     </div>
+    </>
   );
 };

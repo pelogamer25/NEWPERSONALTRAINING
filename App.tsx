@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { Services } from './pages/Services';
@@ -8,6 +8,7 @@ import { Trainers } from './pages/Trainers';
 import { Contact } from './pages/Contact';
 import { Booking } from './pages/Booking';
 import { About } from './pages/About';
+import { NotFound } from './pages/NotFound';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/nosotros" element={<About />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/reservar" element={<Booking />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </Router>

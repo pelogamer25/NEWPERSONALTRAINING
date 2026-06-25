@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award } from 'lucide-react';
 import { Button } from '../components/ui/Button';
+import { SEOHead } from '../components/SEOHead';
 
 const TRAINER_SECTIONS = [
   {
@@ -90,6 +91,16 @@ const TRAINER_SECTIONS = [
 
 export const Trainers: React.FC = () => {
   return (
+    <>
+      <SEOHead
+        title="Entrenadores Personales en Medellín | New Personal Training"
+        description="Conoce nuestro equipo de 20+ entrenadores personales certificados en Medellín: profesionales del ejercicio, fisioterapeutas, nutricionistas, valoradores y masoterapetutas en el Valle de Aburrá."
+        canonical="/entrenadores"
+        breadcrumbs={[
+          { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
+          { name: 'Entrenadores', url: 'https://newpersonaltraining.com/entrenadores' }
+        ]}
+      />
     <div className="pt-24 min-h-screen">
       <div className="py-20 px-4 relative overflow-hidden">
          <div className="absolute top-0 right-0 w-1/2 h-[500px] bg-blue-900/10 blur-[150px] pointer-events-none -z-10" />
@@ -149,14 +160,15 @@ export const Trainers: React.FC = () => {
       {/* CTA */}
       <div className="border-t border-white/5 bg-black/40 backdrop-blur-md py-20">
         <div className="container mx-auto px-4 text-center">
-            <Award className="w-12 h-12 text-npt-red mx-auto mb-4" />
-            <h3 className="text-3xl font-heading font-bold italic text-white mb-4">¿Buscas algo específico?</h3>
+            <Award className="w-12 h-12 text-npt-red mx-auto mb-4" aria-hidden="true" />
+            <h2 className="text-3xl font-heading font-bold italic text-white mb-4">¿Buscas algo específico?</h2>
             <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-              Contáctanos y te asignaremos el entrenador ideal según tus objetivos y preferencias.
+              Contáctanos y te asignaremos el entrenador personal ideal en Medellín según tus objetivos, preferencias y disponibilidad.
             </p>
           <Button href="/contacto" variant="outline">Contactar Asesor</Button>
         </div>
       </div>
     </div>
+    </>
   );
 };

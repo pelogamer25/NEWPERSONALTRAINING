@@ -2,16 +2,54 @@
 <html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <!-- Branded favicon -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
     <title>New Personal Training | Entrenador Personal en Medellín</title>
-    <meta name="description" content="Transforma tu vida con New Personal Training. Entrenadores certificados, planes personalizados y resultados garantizados en Medellín." />
-    
-    <!-- Google Fonts: Montserrat & Inter -->
+    <meta name="description" content="Transforma tu vida con New Personal Training. Entrenadores certificados, planes personalizados de entrenamiento, nutrición, pilates, yoga, boxeo y más en Medellín, Colombia." />
+    <meta name="author" content="New Personal Training" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="language" content="es" />
+    <meta name="geo.region" content="CO-ANT" />
+    <meta name="geo.placename" content="Medellín" />
+    <meta name="geo.position" content="6.2442;-75.5812" />
+    <meta name="ICBM" content="6.2442, -75.5812" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://newpersonaltraining.com/" />
+    <meta property="og:title" content="New Personal Training | Entrenador Personal en Medellín" />
+    <meta property="og:description" content="Transforma tu vida con New Personal Training. Entrenadores certificados, planes personalizados de entrenamiento, nutrición, pilates, yoga, boxeo y más en Medellín, Colombia." />
+    <meta property="og:image" content="https://newpersonaltraining.com/logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="New Personal Training" />
+    <meta property="og:locale" content="es_CO" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@newpersonaltraining" />
+    <meta name="twitter:title" content="New Personal Training | Entrenador Personal en Medellín" />
+    <meta name="twitter:description" content="Transforma tu vida con New Personal Training. Entrenadores certificados, planes personalizados de entrenamiento, nutrición, pilates, yoga, boxeo y más en Medellín, Colombia." />
+    <meta name="twitter:image" content="https://newpersonaltraining.com/logo.png" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://newpersonaltraining.com/" />
+
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&q=80&w=1920" fetchpriority="high">
+
+    <!-- Google Fonts: Montserrat & Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -53,12 +91,12 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #D00000;
       }
-      
+
       html {
         scroll-behavior: smooth;
         background-color: #050505;
       }
-      
+
       body {
         background-color: transparent;
         color: #fff;
@@ -68,7 +106,7 @@
         -webkit-text-stroke: 1px rgba(255,255,255,0.3);
         color: transparent;
       }
-      
+
       .text-outline-red {
         -webkit-text-stroke: 1px rgba(208, 0, 0, 0.5);
         color: transparent;
@@ -81,6 +119,79 @@
         border: 1px solid rgba(255, 255, 255, 0.05);
       }
     </style>
+
+    <!-- Base JSON-LD: LocalBusiness (always present) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FitnessCenter",
+      "@id": "https://newpersonaltraining.com/#business",
+      "name": "New Personal Training",
+      "description": "Centro de entrenamiento personal en Medellín con más de 10 años de experiencia. Ofrecemos entrenamiento personalizado, clases grupales, nutrición, pilates, yoga, boxeo, natación, squash, fisioterapia y masajes en el Valle de Aburrá.",
+      "url": "https://newpersonaltraining.com",
+      "logo": "https://newpersonaltraining.com/logo.png",
+      "image": "https://newpersonaltraining.com/logo.png",
+      "telephone": "+573005974290",
+      "email": "contacto@newpersonaltraining.com",
+      "foundingDate": "2015",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Medellín",
+        "addressRegion": "Antioquia",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "6.2442",
+        "longitude": "-75.5812"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Valle de Aburrá, Antioquia, Colombia"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "COP",
+      "paymentAccepted": "Cash, Credit Card",
+      "numberOfEmployees": {
+        "@type": "QuantitativeValue",
+        "value": "20"
+      },
+      "sameAs": [
+        "https://www.instagram.com/newpersonaltraining",
+        "https://www.facebook.com/newpersonaltraining"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+573005974290",
+        "contactType": "customer service",
+        "availableLanguage": "Spanish",
+        "contactOption": "TollFree"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "500",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+
+    <!-- WebSite JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://newpersonaltraining.com/#website",
+      "name": "New Personal Training",
+      "url": "https://newpersonaltraining.com",
+      "inLanguage": "es-CO",
+      "publisher": {
+        "@id": "https://newpersonaltraining.com/#business"
+      }
+    }
+    </script>
+
   <script type="importmap">
 {
   "imports": {
@@ -97,6 +208,9 @@
 </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <p>New Personal Training — Entrenador personal en Medellín. Llámanos: +57 300 597 4290 o escríbenos a contacto@newpersonaltraining.com</p>
+    </noscript>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
