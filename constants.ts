@@ -30,158 +30,267 @@ export const NAVIGATION: NavigationItem[] = [
 export const SERVICES: Service[] = [
   {
     id: "1",
-    title: "Entrenamiento Personalizado",
-    description: "Sesiones mensuales (compra hasta 20 sesiones por mes).",
-    icon: Dumbbell,
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
-    slug: "entrenamiento-personalizado",
-    price: "$156.128 – $1.122.000",
-    imageInfo: "Sesiones mensuales (compra hasta 20 sesiones por mes).",
-    actionText: "Seleccionar opciones"
-  },
-  {
-    id: "2",
-    title: "Cita y Valoración con Nutricionista",
-    description: "Diseño de Plan de Alimentación a Domicilio y Virtual.",
+    title: "Cita, Plan y Valoración con Nutricionista",
+    description: "Evaluación completa y plan nutricional. Modalidad: Presencial (Valle de Aburrá).",
     icon: Apple,
     image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=800",
     slug: "nutricionista",
-    price: "$170.170 – $255.136",
+    price: "$250.000",
+    imageInfo: "Valor Sesión: $250.000 (Sin planes mensuales).",
     badges: ["Nutricionista"],
-    actionText: "Seleccionar opciones"
+    actionText: "Agendar Valoración",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$250.000" }
+    ]
   },
   {
-    id: "3",
-    title: "Entrenamiento Semi Personalizado",
-    description: "Sesiones mensuales (compra hasta 20 sesiones por mes).",
-    icon: Users,
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800",
-    slug: "entrenamiento-semi-personalizado",
-    price: "$199.520 – $1.442.400",
-    imageInfo: "Sesiones mensuales (compra hasta 20 sesiones por mes).",
-    actionText: "Seleccionar opciones"
-  },
-  {
-    id: "4",
-    title: "Yoga",
-    description: "1 o 2 sesiones semanales para conectar mente y cuerpo.",
-    icon: Activity,
-    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800",
-    slug: "yoga",
-    price: "$263.942 – $2.490.432",
-    imageInfo: "1 o 2 sesiones semanales.",
-    actionText: "Seleccionar opciones"
-  },
-  {
-    id: "5",
+    id: "2",
     title: "Clase Grupal Entrenamiento Funcional",
-    description: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
+    description: "Entrenamiento dinámico en grupo. Modalidad: Presencial (Valle de Aburrá).",
     icon: Users,
     image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800",
     slug: "clase-grupal-funcional",
-    price: "$277.508 – $2.638.944",
-    imageInfo: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
-    actionText: "Seleccionar opciones"
+    price: "$95.700 – $1.914.000",
+    imageInfo: "Valor Sesión: $95.700 | Planes Mensuales: $382.800 – $1.914.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$95.700" },
+      { label: "1x semana (4 ses)", price: "$382.800" },
+      { label: "2x semana (8 ses)", price: "$765.600" },
+      { label: "3x semana (12 ses)", price: "$1.148.400" },
+      { label: "4x semana (16 ses)", price: "$1.531.200" },
+      { label: "5x semana (20 ses)", price: "$1.914.000" }
+    ]
   },
   {
-    id: "6",
+    id: "3",
     title: "Clase Grupal Rítmica",
-    description: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
+    description: "Clases grupales llenas de energía y ritmo. Modalidad: Presencial (Valle de Aburrá).",
     icon: Activity,
     image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&q=80&w=800",
     slug: "clase-grupal-ritmica",
-    price: "$293.216 – $2.990.232",
-    imageInfo: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
-    actionText: "Seleccionar opciones"
+    price: "$106.300 – $2.126.000",
+    imageInfo: "Valor Sesión: $106.300 | Planes Mensuales: $425.200 – $2.126.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$106.300" },
+      { label: "1x semana (4 ses)", price: "$425.200" },
+      { label: "2x semana (8 ses)", price: "$850.400" },
+      { label: "3x semana (12 ses)", price: "$1.275.600" },
+      { label: "4x semana (16 ses)", price: "$1.700.800" },
+      { label: "5x semana (20 ses)", price: "$2.126.000" }
+    ]
   },
   {
-    id: "7",
-    title: "Pilates",
-    description: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
-    icon: Activity,
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800",
-    slug: "pilates",
-    price: "$293.432 – $3.470.040",
-    imageInfo: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
-    actionText: "Seleccionar opciones"
+    id: "4",
+    title: "Entrenamiento Personalizado",
+    description: "Sesiones 1:1 diseñadas para tus objetivos. Modalidad: Presencial (Valle de Aburrá).",
+    icon: Dumbbell,
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
+    slug: "entrenamiento-personalizado",
+    price: "$53.800 – $1.076.000",
+    imageInfo: "Valor Sesión: $53.800 | Planes Mensuales: $215.200 – $1.076.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$53.800" },
+      { label: "1x semana (4 ses)", price: "$215.200" },
+      { label: "2x semana (8 ses)", price: "$430.400" },
+      { label: "3x semana (12 ses)", price: "$645.600" },
+      { label: "4x semana (16 ses)", price: "$860.800" },
+      { label: "5x semana (20 ses)", price: "$1.076.000" }
+    ]
   },
   {
-    id: "8",
-    title: "Plan de Entrenamiento Online Full",
-    description: "Diseño de plan online a tu medida.",
-    icon: Monitor,
-    image: "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&q=80&w=800",
-    slug: "entrenamiento-online-full",
-    price: "$340.162",
-    imageInfo: "Diseño de plan online",
-    badges: ["A tu medida", "Sé tu mejor versión"],
-    actionText: "Añadir al carrito"
+    id: "5",
+    title: "Entrenamiento Semipersonalizado",
+    description: "Entrena en pareja o grupo pequeño. Modalidad: Presencial (Valle de Aburrá).",
+    icon: Users,
+    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800",
+    slug: "entrenamiento-semi-personalizado",
+    price: "$69.200 – $1.384.000",
+    imageInfo: "Valor Sesión: $69.200 | Planes Mensuales: $276.800 – $1.384.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$69.200" },
+      { label: "1x semana (4 ses)", price: "$276.800" },
+      { label: "2x semana (8 ses)", price: "$553.600" },
+      { label: "3x semana (12 ses)", price: "$830.400" },
+      { label: "4x semana (16 ses)", price: "$1.107.200" },
+      { label: "5x semana (20 ses)", price: "$1.384.000" }
+    ]
   },
   {
-    id: "9",
-    title: "Natación Personalizada",
-    description: "Entrenamiento personalizado en el agua.",
-    icon: Activity,
-    image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&q=80&w=800",
-    slug: "natacion-personalizada",
-    price: "$360.808 – $2.537.556",
-    badges: ["Natación"],
-    actionText: "Seleccionar opciones"
-  },
-  {
-    id: "10",
-    title: "Boxeo",
-    description: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
+    id: "6",
+    title: "Sesión de Entrenamiento de Boxeo",
+    description: "Mejora tu resistencia y técnica con boxeo. Modalidad: Presencial (Valle de Aburrá).",
     icon: Dumbbell,
     image: "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&q=80&w=800",
     slug: "boxeo",
-    price: "$439.824 – $2.990.232",
-    imageInfo: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
-    actionText: "Seleccionar opciones"
+    price: "$106.300 – $2.126.000",
+    imageInfo: "Valor Sesión: $106.300 | Planes Mensuales: $425.200 – $2.126.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$106.300" },
+      { label: "1x semana (4 ses)", price: "$425.200" },
+      { label: "2x semana (8 ses)", price: "$850.400" },
+      { label: "3x semana (12 ses)", price: "$1.275.600" },
+      { label: "4x semana (16 ses)", price: "$1.700.800" },
+      { label: "5x semana (20 ses)", price: "$2.126.000" }
+    ]
   },
   {
-    id: "11",
-    title: "Natación Semi Personalizada",
-    description: "Entrenamiento semi personalizado en el agua.",
+    id: "7",
+    title: "Sesión de Natación Personalizado",
+    description: "Clases de natación 1:1. Modalidad: Presencial (Valle de Aburrá).",
+    icon: Activity,
+    image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&q=80&w=800",
+    slug: "natacion-personalizada",
+    price: "$87.200 – $1.744.000",
+    imageInfo: "Valor Sesión: $87.200 | Planes Mensuales: $348.800 – $1.744.000 (1 a 5 veces/sem).",
+    badges: ["Natación"],
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$87.200" },
+      { label: "1x semana (4 ses)", price: "$348.800" },
+      { label: "2x semana (8 ses)", price: "$697.600" },
+      { label: "3x semana (12 ses)", price: "$1.046.400" },
+      { label: "4x semana (16 ses)", price: "$1.395.200" },
+      { label: "5x semana (20 ses)", price: "$1.744.000" }
+    ]
+  },
+  {
+    id: "8",
+    title: "Sesión de Natación Semipersonalizado",
+    description: "Clases de natación en grupo reducido. Modalidad: Presencial (Valle de Aburrá).",
     icon: Users,
     image: "https://images.unsplash.com/photo-1519315901367-f34f8272b62c?auto=format&fit=crop&q=80&w=800",
     slug: "natacion-semi-personalizada",
-    price: "$445.536 – $3.027.360",
+    price: "$107.700 – $2.154.000",
+    imageInfo: "Valor Sesión: $107.700 | Planes Mensuales: $430.800 – $2.154.000 (1 a 5 veces/sem).",
     badges: ["Natación"],
-    actionText: "Seleccionar opciones"
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$107.700" },
+      { label: "1x semana (4 ses)", price: "$430.800" },
+      { label: "2x semana (8 ses)", price: "$861.600" },
+      { label: "3x semana (12 ses)", price: "$1.292.400" },
+      { label: "4x semana (16 ses)", price: "$1.723.200" },
+      { label: "5x semana (20 ses)", price: "$2.154.000" }
+    ]
   },
   {
-    id: "12",
-    title: "Squash Personalizado",
-    description: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
+    id: "9",
+    title: "Sesión de Pilates Mat",
+    description: "Fortalece tu centro y mejora tu postura. Modalidad: Presencial (Valle de Aburrá).",
+    icon: Activity,
+    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800",
+    slug: "pilates",
+    price: "$127.600 – $2.552.000",
+    imageInfo: "Valor Sesión: $127.600 | Planes Mensuales: $510.400 – $2.552.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$127.600" },
+      { label: "1x semana (4 ses)", price: "$510.400" },
+      { label: "2x semana (8 ses)", price: "$1.020.800" },
+      { label: "3x semana (12 ses)", price: "$1.531.200" },
+      { label: "4x semana (16 ses)", price: "$2.041.600" },
+      { label: "5x semana (20 ses)", price: "$2.552.000" }
+    ]
+  },
+  {
+    id: "10",
+    title: "Sesión de Squash Personalizado",
+    description: "Entrenamiento 1:1 de Squash. Modalidad: Presencial (Valle de Aburrá).",
     icon: Activity,
     image: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&q=80&w=800",
     slug: "squash-personalizado",
-    price: "$476.000 – $2.380.000",
-    imageInfo: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales.",
-    actionText: "Seleccionar opciones"
+    price: "$115.000 – $2.300.000",
+    imageInfo: "Valor Sesión: $115.000 | Planes Mensuales: $460.000 – $2.300.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$115.000" },
+      { label: "1x semana (4 ses)", price: "$460.000" },
+      { label: "2x semana (8 ses)", price: "$920.000" },
+      { label: "3x semana (12 ses)", price: "$1.380.000" },
+      { label: "4x semana (16 ses)", price: "$1.840.000" },
+      { label: "5x semana (20 ses)", price: "$2.300.000" }
+    ]
   },
   {
-    id: "13",
-    title: "Squash Semi Personalizado",
-    description: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales. ¡Entrena con nosotros!",
+    id: "11",
+    title: "Sesión de Squash Semipersonalizado",
+    description: "Entrenamiento de Squash en pareja. Modalidad: Presencial (Valle de Aburrá).",
     icon: Users,
     image: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&q=80&w=800",
     slug: "squash-semi-personalizado",
-    price: "$524.076 – $3.144.456",
-    imageInfo: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales. ¡Entrena con nosotros!",
-    actionText: "Seleccionar opciones"
+    price: "$126.700 – $2.534.000",
+    imageInfo: "Valor Sesión: $126.700 | Planes Mensuales: $506.800 – $2.534.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$126.700" },
+      { label: "1x semana (4 ses)", price: "$506.800" },
+      { label: "2x semana (8 ses)", price: "$1.013.600" },
+      { label: "3x semana (12 ses)", price: "$1.520.400" },
+      { label: "4x semana (16 ses)", price: "$2.027.200" },
+      { label: "5x semana (20 ses)", price: "$2.534.000" }
+    ]
+  },
+  {
+    id: "12",
+    title: "Sesión de Yoga",
+    description: "Conecta mente y cuerpo con nuestras clases de Yoga. Modalidad: Presencial (Valle de Aburrá).",
+    icon: Activity,
+    image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800",
+    slug: "yoga",
+    price: "$91.400 – $1.828.000",
+    imageInfo: "Valor Sesión: $91.400 | Planes Mensuales: $365.600 – $1.828.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$91.400" },
+      { label: "1x semana (4 ses)", price: "$365.600" },
+      { label: "2x semana (8 ses)", price: "$731.200" },
+      { label: "3x semana (12 ses)", price: "$1.096.800" },
+      { label: "4x semana (16 ses)", price: "$1.462.400" },
+      { label: "5x semana (20 ses)", price: "$1.828.000" }
+    ]
+  },
+  {
+    id: "13",
+    title: "Sesión Fisioterapia",
+    description: "Recuperación, prevención y rehabilitación física. Modalidad: Presencial (Valle de Aburrá).",
+    icon: Activity,
+    image: "https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&q=80&w=800",
+    slug: "fisioterapia",
+    price: "$150.000 – $3.000.000",
+    imageInfo: "Valor Sesión: $150.000 | Planes Mensuales: $600.000 – $3.000.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$150.000" },
+      { label: "1x semana (4 ses)", price: "$600.000" },
+      { label: "2x semana (8 ses)", price: "$1.200.000" },
+      { label: "3x semana (12 ses)", price: "$1.800.000" },
+      { label: "4x semana (16 ses)", price: "$2.400.000" },
+      { label: "5x semana (20 ses)", price: "$3.000.000" }
+    ]
   },
   {
     id: "14",
-    title: "Masaje",
-    description: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales. ¡Disfruta con nosotros!",
+    title: "Sesión Masaje",
+    description: "Relajación y recuperación muscular. Modalidad: Presencial (Valle de Aburrá).",
     icon: Activity,
     image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=800",
     slug: "masaje",
-    price: "$544.544 – $5.102.244",
-    imageInfo: "Opciones de 4, 8, 12, 16, 20 y 24 sesiones mensuales. ¡Disfruta con nosotros!",
-    actionText: "Seleccionar opciones"
+    price: "$150.000 – $3.000.000",
+    imageInfo: "Valor Sesión: $150.000 | Planes Mensuales: $600.000 – $3.000.000 (1 a 5 veces/sem).",
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$150.000" },
+      { label: "1x semana (4 ses)", price: "$600.000" },
+      { label: "2x semana (8 ses)", price: "$1.200.000" },
+      { label: "3x semana (12 ses)", price: "$1.800.000" },
+      { label: "4x semana (16 ses)", price: "$2.400.000" },
+      { label: "5x semana (20 ses)", price: "$3.000.000" }
+    ]
   }
 ];
 

@@ -1,5 +1,10 @@
 import { LucideIcon } from 'lucide-react';
 
+export interface ServicePricing {
+  label: string;
+  price: string;
+}
+
 export interface Service {
   id: string;
   title: string;
@@ -11,6 +16,7 @@ export interface Service {
   imageInfo?: string;
   actionText?: string;
   badges?: string[];
+  pricingOptions?: ServicePricing[];
 }
 
 export interface Trainer {

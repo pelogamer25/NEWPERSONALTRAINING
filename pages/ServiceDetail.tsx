@@ -11,6 +11,7 @@ export const ServiceDetail: React.FC = () => {
   
   const [isProcessing, setIsProcessing] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<number>(0);
 
   if (!service) {
     return (
@@ -86,12 +87,30 @@ export const ServiceDetail: React.FC = () => {
                 </div>
               )}
 
-              <div className="border-t border-white/10 pt-6 mt-6 flex justify-between items-end">
-                <div>
-                  <p className="text-gray-400 text-sm uppercase tracking-wider mb-1">Inversión</p>
-                  <p className="text-3xl font-heading font-black text-npt-red">
-                    {service.price || "Consultar precio"}
-                  </p>
+              <div className="border-t border-white/10 pt-6 mt-6">
+                {service.pricingOptions && service.pricingOptions.length > 0 && (
+                  <div className="mb-6">
+                    <label className="block text-sm font-medium text-gray-300 mb-2 uppercase tracking-wider">Selecciona tu plan</label>
+                    <select
+                      value={selectedOption}
+                      onChange={(e) => setSelectedOption(Number(e.target.value))}
+                      className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-npt-red focus:ring-1 focus:ring-npt-red transition-colors appearance-none"
+                    >
+                      {service.pricingOptions.map((opt, idx) => (
+                        <option key={idx} value={idx} className="bg-npt-black">{opt.label} - {opt.price}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+                <div className="flex justify-between items-end">
+                  <div>
+                    <p className="text-gray-400 text-sm uppercase tracking-wider mb-1">Inversión</p>
+                    <p className="text-3xl font-heading font-black text-npt-red">
+                      {service.pricingOptions && service.pricingOptions.length > 0 
+                        ? service.pricingOptions[selectedOption].price 
+                        : service.price || "Consultar precio"}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -180,7 +199,7 @@ export const ServiceDetail: React.FC = () => {
                       {isProcessing ? (
                         <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
                       ) : (
-                        `Pagar ${service.price || ''}`
+                        `Pagar ${service.pricingOptions && service.pricingOptions.length > 0 ? service.pricingOptions[selectedOption].price : service.price || ''}`
                       )}
                     </button>
                     <p className="text-center text-xs text-gray-500 mt-4">

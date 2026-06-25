@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Mail, MapPin, Phone, Dumbbell } from 'lucide-react';
+import { Instagram, Facebook, Mail, MapPin, Phone } from 'lucide-react';
 import { COMPANY_INFO, SERVICES } from '../../constants';
 
 export const Footer: React.FC = () => {
@@ -11,13 +11,9 @@ export const Footer: React.FC = () => {
           
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="bg-npt-red p-2 rounded-lg text-white shadow-[0_0_15px_rgba(208,0,0,0.5)]">
-                <Dumbbell className="h-6 w-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-heading font-black italic leading-none text-white">NEW</span>
-                <span className="text-[10px] font-bold tracking-widest text-gray-400">PERSONAL TRAINING</span>
+            <Link to="/" className="inline-block group">
+              <div className="h-16 w-16 bg-white rounded-full flex items-center justify-center p-1 shadow-[0_0_15px_rgba(208,0,0,0.5)] transition-transform duration-300 group-hover:scale-105">
+                <img src="/logo.png" alt="New Personal Training" className="w-full h-full object-contain" />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Dumbbell } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAVIGATION } from '../../constants';
 import { Button } from '../ui/Button';
@@ -46,16 +46,8 @@ export const Navbar: React.FC = () => {
           <nav className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
-              <div className={`p-2 rounded-lg transition-colors bg-npt-red text-white shadow-[0_0_15px_rgba(208,0,0,0.5)]`}>
-                <Dumbbell className="h-6 w-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-heading font-black italic leading-none text-white tracking-tighter">
-                  NEW
-                </span>
-                <span className="text-[10px] font-bold tracking-[0.2em] text-white/70">
-                  PERSONAL TRAINING
-                </span>
+              <div className="h-12 w-12 md:h-14 md:w-14 bg-white rounded-full flex items-center justify-center p-1 shadow-[0_0_15px_rgba(208,0,0,0.5)] transition-transform duration-300 group-hover:scale-105">
+                <img src="/logo.png" alt="New Personal Training" className="w-full h-full object-contain" />
               </div>
             </Link>
 
