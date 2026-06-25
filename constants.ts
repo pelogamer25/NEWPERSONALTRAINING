@@ -10,13 +10,23 @@ import { Service, Trainer, Testimonial, NavigationItem } from './types';
 
 export const COMPANY_INFO = {
   name: "New Personal Training",
+  legalName: "New Personal Training S.A.S",
   phone: "+57 300 597 4290",
+  whatsapp: "https://wa.me/573005974290",
   email: "contacto@newpersonaltraining.com",
   address: "Medellín, Antioquia, Colombia",
+  serviceArea: "Valle de Aburrá (Medellín, Envigado, Itagüí, Sabaneta, Bello, La Estrella)",
+  foundingYear: 2014,
+  yearsInMarket: "11+",
+  professionals: "50+",
+  clients: "500+",
   social: {
-    instagram: "@newpersonaltraining",
-    facebook: "/newpersonaltraining"
-  }
+    instagram: "https://www.instagram.com/newpersonaltraining",
+    facebook: "https://www.facebook.com/newpersonaltraining"
+  },
+  mission: "NEW PERSONAL TRAINING es una organización con sentido humano, que contribuye a mejorar la calidad de vida de las personas y empresas, a través de servicios integrales personalizados, semipersonalizados y grupales en ejercicio físico, recreación y deporte. Guiados por profesionales certificados, teniendo como pilares fundamentales la calidad, la responsabilidad, el respeto y la innovación en la prestación del servicio, garantizando la optimización del tiempo de nuestros usuarios.",
+  vision: "En el 2030 NEW PERSONAL TRAINING será una organización líder e influyente en mejorar la calidad de vida de las personas y empresas, a través de servicios deportivos y recreativos integrales personalizados, semipersonalizados y grupales; además de, ser reconocidos en el sector por su respaldo, innovación, profesionalismo y responsabilidad social empresarial.",
+  values: ["Calidad", "Responsabilidad", "Respeto", "Innovación"],
 };
 
 export const NAVIGATION: NavigationItem[] = [

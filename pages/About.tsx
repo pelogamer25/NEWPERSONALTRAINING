@@ -1,34 +1,53 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, Heart, Zap, Users } from 'lucide-react';
+import { Target, Heart, Zap, Users, Shield, Star, Award, CheckCircle } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { SEOHead } from '../components/SEOHead';
+import { COMPANY_INFO } from '../constants';
 
 const ABOUT_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "AboutPage",
-  "name": "Sobre New Personal Training — Entrenador Personal en Medellín",
-  "description": "Conoce la historia de New Personal Training. Fundados en 2015 en el Poblado, Medellín. Más de 10 años transformando vidas con entrenamiento personalizado, ciencia aplicada y comunidad.",
+  "name": "Sobre New Personal Training S.A.S — Entrenador Personal en Medellín desde 2014",
+  "description": "New Personal Training S.A.S, fundada en 2014 por profesionales del deporte del Politécnico Colombiano Jaime Isaza Cadavid. 11+ años transformando vidas en Medellín y el Valle de Aburrá con entrenamiento personalizado, semipersonalizado y grupal.",
   "url": "https://newpersonaltraining.com/nosotros",
   "mainEntity": {
     "@type": "FitnessCenter",
     "@id": "https://newpersonaltraining.com/#business",
-    "name": "New Personal Training",
-    "foundingDate": "2015",
+    "name": "New Personal Training S.A.S",
+    "foundingDate": "2014",
     "foundingLocation": {
       "@type": "Place",
-      "name": "El Poblado, Medellín, Antioquia, Colombia"
+      "name": "Medellín, Antioquia, Colombia"
     },
-    "description": "Centro de entrenamiento personal en Medellín fundado en 2015 con la convicción de que el entrenamiento debe ser accesible, científico y profundamente humano. Combina biomecánica avanzada con coaching motivacional."
+    "description": "Centro de entrenamiento personal en Medellín y Valle de Aburrá. Fundado en 2014 por profesionales del Politécnico Colombiano Jaime Isaza Cadavid. Servicios personalizados, semipersonalizados y grupales de ejercicio físico, recreación y deporte.",
+    "numberOfEmployees": { "@type": "QuantitativeValue", "value": "50" },
+    "slogan": "Mejoramos la calidad de vida con sentido humano"
   }
 };
+
+const VALUES = [
+  { icon: Star,   title: "Calidad",          desc: "Metodologías y equipos de entrenamiento actualizados que garantizan resultados medibles y seguros." },
+  { icon: Shield, title: "Responsabilidad",  desc: "Cumplimos cada compromiso con nuestros usuarios, empresas y la sociedad." },
+  { icon: Heart,  title: "Respeto",          desc: "Cada cliente es único. Adaptamos cada programa a su biotipo, ritmo y objetivos." },
+  { icon: Zap,    title: "Innovación",       desc: "Métodos y metodologías de entrenamiento deportivo en constante actualización." },
+];
+
+const GUARANTEES = [
+  "Más de 11 años ininterrumpidos en el mercado del entrenamiento deportivo",
+  "50+ profesionales altamente cualificados en deporte, fisioterapia y nutrición",
+  "Métodos y metodologías de entrenamiento deportivo actualizados",
+  "Servicio con sentido humano y calidad certificada",
+  "Todas las líneas de equipos para gimnasio (profesional, institucional y hogar)",
+  "Servicio técnico completo: mecánico, electrónico y rediseño de equipos",
+];
 
 export const About: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Sobre Nosotros | New Personal Training — 10 Años en Medellín"
-        description="Conoce a New Personal Training, fundado en 2015 en el Poblado de Medellín. Más de 10 años transformando vidas con entrenamiento personalizado, ciencia aplicada y un equipo de 20+ profesionales certificados."
+        title="Sobre Nosotros | New Personal Training S.A.S — Entrenadores Personales en Medellín desde 2014"
+        description="Conoce New Personal Training S.A.S, fundada en 2014 por profesionales del Politécnico Colombiano. 11+ años, 50+ entrenadores personales certificados en Medellín y el Valle de Aburrá. Misión, visión e historia."
         canonical="/nosotros"
         jsonLd={ABOUT_SCHEMA}
         breadcrumbs={[
@@ -36,117 +55,214 @@ export const About: React.FC = () => {
           { name: 'Sobre Nosotros', url: 'https://newpersonaltraining.com/nosotros' }
         ]}
       />
-    <div className="pt-24 min-h-screen">
-      {/* Hero */}
-      <section className="relative py-20 px-4">
-        <div className="container mx-auto text-center">
-          <motion.h1 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-7xl font-heading font-black italic text-white mb-6"
-          >
-            SOBRE <span className="text-npt-red">NOSOTROS</span>
-          </motion.h1>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed">
-            En <span className="text-white font-bold">New Personal Training</span>, no solo transformamos cuerpos; forjamos mentalidades. Somos una comunidad dedicada a la excelencia física y el bienestar integral en Medellín.
-          </p>
-        </div>
-      </section>
 
-      {/* Story / Mission */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center glass-panel p-8 md:p-12 rounded-3xl">
-            <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 group">
-              <img
-                src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=80&w=800"
-                alt="Instalaciones de New Personal Training en Medellín — entrenamiento personalizado desde 2015"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-npt-red/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+      <div className="pt-24 min-h-screen">
+
+        {/* Hero */}
+        <section className="relative py-20 px-4" aria-label="Sobre New Personal Training">
+          <div className="container mx-auto text-center max-w-4xl">
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="text-npt-red font-bold tracking-[0.3em] text-sm uppercase mb-4"
+            >
+              Entrenadores personales en Medellín desde 2014
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-4xl md:text-7xl font-heading font-black italic text-white mb-6"
+            >
+              SOBRE <span className="text-npt-red">NOSOTROS</span>
+            </motion.h1>
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed">
+              En <span className="text-white font-bold">New Personal Training S.A.S</span>, no solo transformamos cuerpos; mejoramos la calidad de vida de personas y empresas en <strong className="text-white">Medellín y todo el Valle de Aburrá</strong>, con sentido humano y profesionales certificados.
+            </p>
+          </div>
+        </section>
+
+        {/* Stats rápidos */}
+        <section className="py-10 border-y border-white/5" aria-label="Cifras de New Personal Training">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {[
+                { number: "2014", label: "Año de fundación" },
+                { number: "11+",  label: "Años en el mercado" },
+                { number: "50+",  label: "Profesionales certificados" },
+                { number: "500+", label: "Clientes atendidos" },
+              ].map((s, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.1 }}
+                >
+                  <div className="text-4xl md:text-5xl font-heading font-black text-npt-red mb-1">{s.number}</div>
+                  <div className="text-xs text-gray-400 uppercase tracking-wider">{s.label}</div>
+                </motion.div>
+              ))}
             </div>
-            
-            <div>
-              <h2 className="text-npt-red font-bold tracking-widest uppercase mb-2">Nuestra Historia</h2>
-              <h3 className="text-3xl md:text-4xl font-heading font-black italic text-white mb-6">
-                MÁS QUE UN GIMNASIO
-              </h3>
-              <p className="text-gray-400 mb-6 leading-relaxed">
-                Fundado en 2015, nacimos con la convicción de que el entrenamiento personal debía ser accesible, científico y profundamente humano. Lo que comenzó como un pequeño estudio en el Poblado, hoy es un referente en acondicionamiento físico personalizado.
-              </p>
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                Nuestra metodología combina la biomecánica avanzada con el coaching motivacional, asegurando que cada cliente no solo alcance sus metas, sino que disfrute el proceso.
-              </p>
-              
-              <div className="flex gap-4">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white">10+</div>
-                  <div className="text-xs text-gray-500 uppercase">Años</div>
+          </div>
+        </section>
+
+        {/* Historia */}
+        <section className="py-20" aria-label="Historia de New Personal Training">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-12 items-center glass-panel p-8 md:p-12 rounded-3xl">
+              <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden border border-white/10 group">
+                <img
+                  src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=80&w=800"
+                  alt="Entrenadores personales de New Personal Training S.A.S en Medellín"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-npt-red/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </div>
+
+              <div>
+                <p className="text-npt-red font-bold tracking-widest uppercase mb-2 text-sm">Nuestra Historia</p>
+                <h2 className="text-3xl md:text-4xl font-heading font-black italic text-white mb-6">
+                  MÁS QUE UN GYM <br />EN MEDELLÍN
+                </h2>
+                <div className="space-y-4 text-gray-400 leading-relaxed">
+                  <p>
+                    <strong className="text-white">New Personal Training S.A.S</strong> nace en <strong className="text-white">mayo de 2014</strong> de la mano de dos fundadores, ambos Profesionales en Deporte del <strong className="text-white">Politécnico Colombiano Jaime Isaza Cadavid</strong>, institución reconocida en el medio por la formación de profesionales íntegros en el área deportiva, de actividad física y recreación.
+                  </p>
+                  <p>
+                    En <strong className="text-white">2018</strong> la empresa vivió una transformación clave: ingresaron dos nuevos accionistas —también Profesionales en Deporte— que impulsaron la formalización total de la empresa y una reingeniería integral de sus procesos, logrando un <strong className="text-white">crecimiento exponencial</strong>.
+                  </p>
+                  <p>
+                    Concebida para dar solución profesional a la alta demanda de <strong className="text-white">entrenamiento personalizado a domicilio en Medellín</strong> —tanto a nivel individual, residencial como empresarial—, NPT opera en los horarios de preferencia del cliente y en toda el área metropolitana del <strong className="text-white">Valle de Aburrá</strong>.
+                  </p>
                 </div>
-                <div className="w-px bg-white/10" />
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white">500+</div>
-                  <div className="text-xs text-gray-500 uppercase">Clientes</div>
-                </div>
-                <div className="w-px bg-white/10" />
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-white">100%</div>
-                  <div className="text-xs text-gray-500 uppercase">Compromiso</div>
+
+                <div className="flex gap-6 mt-8 flex-wrap">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-white">2014</div>
+                    <div className="text-xs text-gray-500 uppercase">Fundación</div>
+                  </div>
+                  <div className="w-px bg-white/10" />
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-white">50+</div>
+                    <div className="text-xs text-gray-500 uppercase">Profesionales</div>
+                  </div>
+                  <div className="w-px bg-white/10" />
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-white">11+</div>
+                    <div className="text-xs text-gray-500 uppercase">Años</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Values */}
-      <section className="py-20 relative">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-900/10 rounded-full blur-[100px] -z-10" />
-        
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-heading font-bold italic text-white">NUESTROS VALORES</h2>
-          </div>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            {[
-              { icon: Target, title: "Resultados", desc: "Enfoque basado en datos y progreso medible." },
-              { icon: Heart, title: "Pasión", desc: "Amamos lo que hacemos y se nota en cada sesión." },
-              { icon: Zap, title: "Energía", desc: "Ambiente positivo que te impulsa a dar más." },
-              { icon: Users, title: "Comunidad", desc: "Crecemos juntos, celebrando cada victoria." }
-            ].map((val, idx) => (
-              <motion.div 
-                key={idx}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.1 }}
+        {/* Misión & Visión */}
+        <section className="py-20 relative" aria-label="Misión y Visión">
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-npt-red/5 rounded-full blur-[100px] -z-10" aria-hidden="true" />
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-8">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="glass-panel p-6 rounded-2xl text-center hover:bg-white/5 transition-colors group"
+                className="glass-panel p-8 rounded-2xl border-l-4 border-npt-red"
               >
-                <div className="w-12 h-12 mx-auto bg-white/5 rounded-full flex items-center justify-center text-npt-red mb-4 group-hover:scale-110 transition-transform">
-                  <val.icon className="w-6 h-6" />
-                </div>
-                <h3 className="text-lg font-bold text-white mb-2">{val.title}</h3>
-                <p className="text-sm text-gray-400">{val.desc}</p>
+                <p className="text-npt-red font-bold tracking-widest uppercase mb-3 text-xs">Quiénes Somos</p>
+                <h2 className="text-2xl font-heading font-black italic text-white mb-4">MISIÓN</h2>
+                <p className="text-gray-400 leading-relaxed">{COMPANY_INFO.mission}</p>
               </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* CTA */}
-      <section className="py-20 border-t border-white/5">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-heading font-black italic text-white mb-6">
-            ÚNETE AL MOVIMIENTO
-          </h2>
-          <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-            Agenda tu evaluación inicial gratuita y descubre cómo nuestro equipo puede ayudarte a alcanzar tus objetivos en Medellín.
-          </p>
-          <Button href="/contacto" size="lg">Contáctanos Hoy</Button>
-        </div>
-      </section>
-    </div>
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="glass-panel p-8 rounded-2xl border-l-4 border-white/20"
+              >
+                <p className="text-gray-400 font-bold tracking-widest uppercase mb-3 text-xs">Hacia Dónde Vamos</p>
+                <h2 className="text-2xl font-heading font-black italic text-white mb-4">VISIÓN 2030</h2>
+                <p className="text-gray-400 leading-relaxed">{COMPANY_INFO.vision}</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Valores */}
+        <section className="py-20" aria-label="Valores de New Personal Training">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <p className="text-npt-red font-bold tracking-widest uppercase mb-2 text-sm">Lo que nos define</p>
+              <h2 className="text-3xl font-heading font-bold italic text-white">NUESTROS VALORES</h2>
+            </div>
+            <div className="grid md:grid-cols-4 gap-6">
+              {VALUES.map((val, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="glass-panel p-6 rounded-2xl text-center hover:bg-white/5 transition-colors group"
+                >
+                  <div className="w-12 h-12 mx-auto bg-npt-red/10 rounded-full flex items-center justify-center text-npt-red mb-4 group-hover:scale-110 transition-transform">
+                    <val.icon className="w-6 h-6" aria-hidden="true" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">{val.title}</h3>
+                  <p className="text-sm text-gray-400">{val.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Garantías y Respaldos */}
+        <section className="py-20 bg-black/20" aria-label="Garantías y respaldos de New Personal Training">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <div className="text-center mb-12">
+              <p className="text-npt-red font-bold tracking-widest uppercase mb-2 text-sm">Por qué elegirnos</p>
+              <h2 className="text-3xl font-heading font-bold italic text-white">GARANTÍAS Y RESPALDOS</h2>
+              <p className="text-gray-400 mt-4 max-w-xl mx-auto">
+                New Personal Training S.A.S es la opción más respaldada para entrenamiento personal en Medellín y el Valle de Aburrá.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              {GUARANTEES.map((g, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.08 }}
+                  className="flex items-start gap-3 glass-panel p-4 rounded-xl"
+                >
+                  <CheckCircle className="w-5 h-5 text-npt-red flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <p className="text-gray-300 text-sm leading-relaxed">{g}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Área de cobertura */}
+        <section className="py-20 border-t border-white/5" aria-label="Área de cobertura">
+          <div className="container mx-auto px-4 text-center max-w-3xl">
+            <Award className="w-12 h-12 text-npt-red mx-auto mb-4" aria-hidden="true" />
+            <h2 className="text-3xl font-heading font-black italic text-white mb-4">
+              COBERTURA EN <span className="text-npt-red">MEDELLÍN</span>
+            </h2>
+            <p className="text-gray-400 leading-relaxed mb-6">
+              Nuestros entrenadores personales llegan a domicilio en todo el <strong className="text-white">área metropolitana del Valle de Aburrá</strong>: Medellín, Envigado, Itagüí, Sabaneta, Bello, La Estrella y municipios cercanos — en el horario que mejor se adapte a tu vida.
+            </p>
+            <div className="flex flex-wrap gap-2 justify-center mb-10">
+              {["Medellín", "El Poblado", "Laureles", "Envigado", "Itagüí", "Sabaneta", "Bello", "La Estrella", "Robledo", "Belén"].map(city => (
+                <span key={city} className="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-gray-300">{city}</span>
+              ))}
+            </div>
+            <Button href="/contacto" size="lg">Contáctanos Hoy</Button>
+          </div>
+        </section>
+
+      </div>
     </>
   );
 };

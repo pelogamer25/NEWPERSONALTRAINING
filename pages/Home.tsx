@@ -110,27 +110,27 @@ const FAQ_SCHEMA = {
 const FAQS = [
   {
     q: "¿Cuánto cuesta un entrenador personal en Medellín?",
-    a: "El entrenamiento personalizado 1:1 comienza desde $53.800 por sesión. Los planes mensuales van desde $215.200 (1×/semana) hasta $1.076.000 (5×/semana). También ofrecemos entrenamiento semipersonalizado desde $69.200/sesión para entrenar en pareja y reducir costos."
+    a: "En New Personal Training el entrenamiento personalizado 1:1 comienza desde $53.800 por sesión. Los planes mensuales van desde $215.200 (1×/semana, 4 sesiones) hasta $1.076.000 (5×/semana, 20 sesiones). El entrenamiento semipersonalizado arranca desde $69.200/sesión. Somos una de las opciones más competitivas entre los gimnasios y entrenadores personales de Medellín."
   },
   {
-    q: "¿Qué incluye el entrenamiento personalizado?",
-    a: "Incluye evaluación inicial gratuita, diseño de plan adaptado a tus objetivos y biotipo, seguimiento continuo de progreso, y sesiones 1:1 con entrenador certificado. Puedes complementarlo con nutrición, fisioterapia o cualquiera de nuestros 14 servicios especializados."
+    q: "¿Son el mejor gym o entrenador personal de Medellín?",
+    a: "New Personal Training S.A.S lleva más de 11 años —desde 2014— siendo referente en entrenamiento personalizado, semipersonalizado y grupal en Medellín y el Valle de Aburrá. Contamos con 50+ profesionales certificados por el Politécnico Colombiano Jaime Isaza Cadavid y más de 500 clientes satisfechos. No somos un gimnasio tradicional: somos un equipo que va donde tú estás."
   },
   {
-    q: "¿Dónde están ubicados?",
-    a: "Operamos en toda el área metropolitana del Valle de Aburrá, Medellín, Antioquia. Puedes contactarnos al +57 300 597 4290 o a contacto@newpersonaltraining.com para coordinar la ubicación de tus sesiones."
+    q: "¿Ofrecen entrenamiento a domicilio en Medellín?",
+    a: "Sí. Nuestro servicio estrella es el entrenamiento personalizado a domicilio en Medellín: llegamos a tu casa, conjunto residencial u oficina en El Poblado, Laureles, Belén, Robledo, Envigado, Itagüí, Sabaneta, Bello y cualquier zona del Valle de Aburrá, en el horario que tú elijas."
   },
   {
-    q: "¿Ofrecen clases de boxeo, pilates y yoga?",
-    a: "Sí. Ofrecemos boxeo (desde $106.300/sesión), Pilates Mat (desde $127.600/sesión), Yoga (desde $91.400/sesión), natación, squash, entrenamiento funcional, rítmico y más. Todos en modalidad presencial en el Valle de Aburrá."
+    q: "¿Ofrecen clases de boxeo, pilates y yoga en Medellín?",
+    a: "Sí. Ofrecemos clases de boxeo en Medellín (desde $106.300/sesión), Pilates Mat (desde $127.600/sesión), Yoga (desde $91.400/sesión), natación personalizada y semipersonalizada, squash, entrenamiento funcional grupal, clases rítmicas y más. Todos los servicios son presenciales en el Valle de Aburrá."
   },
   {
-    q: "¿Tienen servicio de nutricionista y fisioterapia?",
-    a: "Sí. Contamos con nutricionistas que ofrecen valoración y plan nutricional por $250.000, fisioterapia para recuperación y rehabilitación desde $150.000/sesión, y masajes terapéuticos desde $150.000/sesión."
+    q: "¿Tienen nutricionista y fisioterapia en Medellín?",
+    a: "Sí. Contamos con nutricionistas certificados —valoración y plan nutricional personalizado por $250.000— y fisioterapeutas para recuperación, prevención y rehabilitación física desde $150.000/sesión. También ofrecemos masajes deportivos y terapéuticos desde $150.000/sesión."
   },
   {
-    q: "¿Cuántos años de experiencia tienen?",
-    a: "Fundados en 2015, llevamos más de 10 años transformando vidas en Medellín. Hemos atendido a más de 500 clientes y contamos con un equipo de 20+ profesionales certificados con trayectoria internacional."
+    q: "¿Cuántos años llevan y por qué confiar en New Personal Training?",
+    a: "Fundada en mayo de 2014 por profesionales en Deporte del Politécnico Colombiano Jaime Isaza Cadavid, New Personal Training S.A.S lleva 11+ años de procesos de entrenamiento ininterrumpidos. Somos una empresa formalmente constituida (S.A.S), con 50+ profesionales altamente cualificados, metodologías actualizadas, y también proveemos y damos servicio técnico a equipos de gimnasio (línea profesional, institucional y hogar)."
   }
 ];
 
@@ -149,8 +149,8 @@ export const Home: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="New Personal Training | Entrenador Personal en Medellín"
-        description="Transforma tu vida con New Personal Training en Medellín. Entrenadores certificados, planes personalizados, nutrición, pilates, yoga, boxeo, natación y más. ¡Agenda tu evaluación gratuita!"
+        title="New Personal Training | Entrenadores Personales en Medellín — Desde 2014"
+        description="Los mejores entrenadores personales de Medellín y el Valle de Aburrá. Entrenamiento personalizado a domicilio, boxeo, pilates, yoga, natación, nutrición y fisioterapia. 11+ años · 50+ profesionales. ¡Evaluación gratis!"
         canonical="/"
         jsonLd={[LOCAL_BUSINESS_SCHEMA, FAQ_SCHEMA]}
       />
@@ -179,7 +179,7 @@ export const Home: React.FC = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
               >
                 <p className="text-npt-red font-bold tracking-[0.3em] text-sm md:text-base mb-4 uppercase">
-                  Entrenamiento personal en Medellín
+                  Los mejores entrenadores personales de Medellín · desde 2014
                 </p>
                 <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-black italic text-white mb-6 leading-[0.9] tracking-tighter">
                   <span className="block text-outline opacity-50 absolute top-1 left-1 md:left-2 -z-10 blur-[1px]">SHAPE YOUR</span>
@@ -194,8 +194,8 @@ export const Home: React.FC = () => {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed"
               >
-                Entrenamiento de alto rendimiento adaptado a tu estilo de vida en el Valle de Aburrá.{' '}
-                <span className="text-white font-medium">Resultados reales. Ciencia aplicada.</span>
+                Entrenamiento personalizado a domicilio en Medellín, Envigado, El Poblado, Laureles y todo el Valle de Aburrá.{' '}
+                <span className="text-white font-medium">11+ años · 50+ profesionales · Resultados reales.</span>
               </motion.p>
 
               <motion.div
@@ -231,18 +231,18 @@ export const Home: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "Expertos Certificados",
-                  desc: "20+ entrenadores con certificaciones internacionales y trayectoria comprobada en Medellín.",
+                  title: "50+ Profesionales Certificados",
+                  desc: "El mejor equipo de entrenadores personales en Medellín: profesionales del Politécnico Colombiano con trayectoria internacional.",
                   bg: "from-red-900/20 to-transparent"
                 },
                 {
-                  title: "Plan 100% Personalizado",
-                  desc: "Cada programa se diseña exclusivamente para tu biotipo, objetivos y estilo de vida.",
+                  title: "A Domicilio en Medellín",
+                  desc: "Entrenamiento personalizado a tu casa, oficina o conjunto residencial en todo el Valle de Aburrá.",
                   bg: "from-blue-900/20 to-transparent"
                 },
                 {
-                  title: "Resultados Medibles",
-                  desc: "Seguimiento con métricas reales. Más de 500 clientes han transformado su vida desde 2015.",
+                  title: "11+ Años de Resultados",
+                  desc: "Desde 2014, más de 500 clientes han transformado su calidad de vida con New Personal Training S.A.S.",
                   bg: "from-purple-900/20 to-transparent"
                 }
               ].map((item, index) => (
@@ -338,10 +338,10 @@ export const Home: React.FC = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
               {[
-                { number: "10+", label: "Años Exp." },
+                { number: "2014", label: "Fundación" },
                 { number: "500+", label: "Clientes" },
-                { number: "20+", label: "Profesionales" },
-                { number: "14", label: "Servicios" }
+                { number: "50+",  label: "Profesionales" },
+                { number: "14",   label: "Servicios" }
               ].map((stat, idx) => (
                 <motion.div
                   key={idx}
