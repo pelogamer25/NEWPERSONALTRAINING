@@ -21,9 +21,9 @@ export const Button: React.FC<ButtonProps> = ({
   const baseStyles = "relative overflow-hidden inline-flex items-center justify-center font-bold tracking-wide uppercase transition-all duration-300 rounded focus:outline-none";
   
   const variants = {
-    primary: "bg-npt-red text-white hover:bg-red-600 shadow-[0_0_20px_rgba(208,0,0,0.4)] hover:shadow-[0_0_30px_rgba(208,0,0,0.6)] border border-transparent",
-    secondary: "bg-white text-npt-black hover:bg-gray-200 border border-white hover:border-gray-200 shadow-[0_0_20px_rgba(255,255,255,0.2)]",
-    outline: "border border-white/30 text-white bg-white/5 backdrop-blur-sm hover:bg-white hover:text-npt-black hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+    primary: "bg-npt-red text-white hover:bg-red-700 shadow-[0_0_25px_rgba(208,0,0,0.5)] hover:shadow-[0_0_40px_rgba(208,0,0,0.7)] border border-red-800/50 shimmer-hover",
+    secondary: "bg-white text-npt-black hover:bg-gray-100 border border-white/90 hover:border-white shadow-[0_0_20px_rgba(255,255,255,0.15)] shimmer-hover",
+    outline: "border border-white/30 text-white bg-white/5 backdrop-blur-sm hover:bg-white hover:text-npt-black hover:border-white hover:shadow-[0_4px_20px_rgba(255,255,255,0.25)] shimmer-hover"
   };
 
   const sizes = {

@@ -124,16 +124,39 @@ export const About: React.FC = () => {
                 <h2 className="text-3xl md:text-4xl font-heading font-black italic text-white mb-6">
                   MÁS QUE UN GYM <br />EN MEDELLÍN
                 </h2>
-                <div className="space-y-4 text-gray-400 leading-relaxed">
-                  <p>
-                    <strong className="text-white">New Personal Training S.A.S</strong> nace en <strong className="text-white">mayo de 2014</strong> de la mano de dos fundadores, ambos Profesionales en Deporte del <strong className="text-white">Politécnico Colombiano Jaime Isaza Cadavid</strong>, institución reconocida en el medio por la formación de profesionales íntegros en el área deportiva, de actividad física y recreación.
-                  </p>
-                  <p>
-                    En <strong className="text-white">2018</strong> la empresa vivió una transformación clave: ingresaron dos nuevos accionistas —también Profesionales en Deporte— que impulsaron la formalización total de la empresa y una reingeniería integral de sus procesos, logrando un <strong className="text-white">crecimiento exponencial</strong>.
-                  </p>
-                  <p>
-                    Concebida para dar solución profesional a la alta demanda de <strong className="text-white">entrenamiento personalizado a domicilio en Medellín</strong> —tanto a nivel individual, residencial como empresarial—, NPT opera en los horarios de preferencia del cliente y en toda el área metropolitana del <strong className="text-white">Valle de Aburrá</strong>.
-                  </p>
+                {/* Timeline */}
+                <div className="space-y-0 relative mt-2">
+                  <div className="absolute left-[19px] top-6 bottom-6 w-px bg-gradient-to-b from-npt-red via-white/20 to-transparent" aria-hidden="true" />
+                  {[
+                    {
+                      year: "2014",
+                      title: "Fundación",
+                      text: "Nace de la mano de dos Profesionales en Deporte del Politécnico Colombiano Jaime Isaza Cadavid. Pioneros en entrenamiento personalizado a domicilio en Medellín."
+                    },
+                    {
+                      year: "2018",
+                      title: "Reingeniería",
+                      text: "Ingresan dos nuevos accionistas que impulsan la formalización total y una reingeniería integral de procesos, logrando crecimiento exponencial."
+                    },
+                    {
+                      year: "2026",
+                      title: "Hoy",
+                      text: "50+ profesionales certificados, 500+ clientes transformados y cobertura en todo el Valle de Aburrá. Líderes en entrenamiento personalizado en Medellín."
+                    }
+                  ].map((item, idx) => (
+                    <div key={idx} className="flex gap-5 pb-7 relative">
+                      <div className="flex-shrink-0 w-10 h-10 rounded-full border-2 border-npt-red bg-npt-black flex items-center justify-center z-10">
+                        <div className="w-3 h-3 rounded-full bg-npt-red" aria-hidden="true" />
+                      </div>
+                      <div className="pt-1">
+                        <div className="flex items-baseline gap-3 mb-1">
+                          <span className="text-npt-red font-black text-xl font-heading italic">{item.year}</span>
+                          <span className="text-white font-bold text-xs uppercase tracking-widest">{item.title}</span>
+                        </div>
+                        <p className="text-gray-400 leading-relaxed text-sm">{item.text}</p>
+                      </div>
+                    </div>
+                  ))}
                 </div>
 
                 <div className="flex gap-6 mt-8 flex-wrap">
@@ -194,21 +217,22 @@ export const About: React.FC = () => {
               <p className="text-npt-red font-bold tracking-widest uppercase mb-2 text-sm">Lo que nos define</p>
               <h2 className="text-3xl font-heading font-bold italic text-white">NUESTROS VALORES</h2>
             </div>
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-4 gap-5">
               {VALUES.map((val, idx) => (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: idx * 0.1 }}
+                  transition={{ delay: idx * 0.1, duration: 0.45 }}
                   viewport={{ once: true }}
-                  className="glass-panel p-6 rounded-2xl text-center hover:bg-white/5 transition-colors group"
+                  className="glass-panel p-7 rounded-2xl text-center card-top-line hover-glow-border transition-all duration-400 group overflow-hidden relative"
                 >
-                  <div className="w-12 h-12 mx-auto bg-npt-red/10 rounded-full flex items-center justify-center text-npt-red mb-4 group-hover:scale-110 transition-transform">
+                  <span className="card-number text-7xl">{String(idx + 1).padStart(2,'0')}</span>
+                  <div className="w-14 h-14 mx-auto bg-npt-red/10 border border-npt-red/20 rounded-2xl flex items-center justify-center text-npt-red mb-5 group-hover:bg-npt-red group-hover:border-npt-red group-hover:text-white group-hover:npt-glow transition-all duration-300">
                     <val.icon className="w-6 h-6" aria-hidden="true" />
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-2">{val.title}</h3>
-                  <p className="text-sm text-gray-400">{val.desc}</p>
+                  <h3 className="text-base font-black text-white mb-2 uppercase tracking-wider">{val.title}</h3>
+                  <p className="text-sm text-gray-400 leading-relaxed">{val.desc}</p>
                 </motion.div>
               ))}
             </div>

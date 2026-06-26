@@ -53,17 +53,21 @@ export const Navbar: React.FC = () => {
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center gap-8">
-              {NAVIGATION.map((item) => (
-                <Link
-                  key={item.href}
-                  to={item.href}
-                  className={`text-sm font-medium tracking-wide transition-all hover:text-npt-red hover:drop-shadow-[0_0_8px_rgba(208,0,0,0.5)] ${
-                    location.pathname === item.href ? 'text-npt-red font-bold' : 'text-gray-300'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {NAVIGATION.map((item) => {
+                const isActive = location.pathname === item.href || (item.href !== '/' && location.pathname.startsWith(item.href));
+                return (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className={`relative text-sm font-medium tracking-wide transition-all duration-200 pb-1 hover:text-npt-red group ${
+                      isActive ? 'text-npt-red' : 'text-gray-300'
+                    }`}
+                  >
+                    {item.label}
+                    <span className={`absolute bottom-0 left-0 right-0 h-px bg-npt-red transition-transform duration-300 origin-left ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} aria-hidden="true" />
+                  </Link>
+                );
+              })}
               <Button href="/reservar" size="sm" variant="primary">
                 Reservar Sesión
               </Button>

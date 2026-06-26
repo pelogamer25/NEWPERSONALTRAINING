@@ -5,7 +5,10 @@ import { COMPANY_INFO, SERVICES } from '../../constants';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="relative border-t border-white/5 bg-black/40 backdrop-blur-lg pt-20 pb-10 z-20">
+    <footer className="relative bg-black/60 backdrop-blur-lg pt-20 pb-10 z-20">
+      {/* Red top glow line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-npt-red/50 to-transparent" aria-hidden="true" />
+      <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/5 to-transparent mt-px" aria-hidden="true" />
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
@@ -33,13 +36,21 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-heading font-bold mb-6 text-white">Enlaces</h3>
             <ul className="space-y-4">
-              {['Inicio', 'Servicios', 'Entrenadores', 'Nosotros', 'Contacto'].map((link) => (
-                <li key={link}>
-                  <Link 
-                    to={link === 'Inicio' ? '/' : `/${link.toLowerCase()}`} 
-                    className="text-gray-400 hover:text-npt-red transition-colors text-sm font-medium"
+              {[
+                { label: 'Inicio', href: '/' },
+                { label: 'Servicios', href: '/servicios' },
+                { label: 'Entrenadores', href: '/entrenadores' },
+                { label: 'Nosotros', href: '/nosotros' },
+                { label: 'Blog', href: '/blog' },
+                { label: 'Contacto', href: '/contacto' },
+              ].map(({ label, href }) => (
+                <li key={href}>
+                  <Link
+                    to={href}
+                    className="group flex items-center gap-2 text-gray-400 hover:text-npt-red transition-colors duration-200 text-sm font-medium"
                   >
-                    {link}
+                    <span className="w-1.5 h-1.5 rounded-full bg-npt-red/30 group-hover:bg-npt-red transition-colors flex-shrink-0" aria-hidden="true" />
+                    {label}
                   </Link>
                 </li>
               ))}

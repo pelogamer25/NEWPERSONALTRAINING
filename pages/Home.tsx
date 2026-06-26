@@ -175,18 +175,25 @@ export const Home: React.FC = () => {
 
           <div className="relative z-10 container mx-auto px-4 pt-20">
             <div className="max-w-5xl mx-auto text-center">
+              {/* Animated badge pill */}
+              <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="inline-flex items-center gap-2 bg-white/5 border border-white/10 backdrop-blur-md rounded-full px-5 py-2 mb-8"
+              >
+                <span className="badge-dot w-2 h-2 rounded-full bg-npt-red inline-block" aria-hidden="true" />
+                <span className="text-xs font-bold tracking-[0.25em] text-white/80 uppercase">Medellín · Desde 2014 · 50+ Profesionales</span>
+              </motion.div>
+
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
+                transition={{ duration: 0.9, ease: "easeOut", delay: 0.1 }}
               >
-                <p className="text-npt-red font-bold tracking-[0.3em] text-sm md:text-base mb-4 uppercase">
-                  Los mejores entrenadores personales de Medellín · desde 2014
-                </p>
-                <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-black italic text-white mb-6 leading-[0.9] tracking-tighter">
-                  <span className="block text-outline opacity-50 absolute top-1 left-1 md:left-2 -z-10 blur-[1px]">SHAPE YOUR</span>
+                <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-black italic text-white mb-6 leading-[0.9] tracking-tighter relative">
                   SHAPE YOUR <br />
-                  <span className="text-npt-red">BODY TODAY</span>
+                  <span className="text-gradient-red">BODY TODAY</span>
                 </h1>
               </motion.div>
 
@@ -197,14 +204,14 @@ export const Home: React.FC = () => {
                 className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-relaxed"
               >
                 Entrenamiento personalizado a domicilio en Medellín, Envigado, El Poblado, Laureles y todo el Valle de Aburrá.{' '}
-                <span className="text-white font-medium">11+ años · 50+ profesionales · Resultados reales.</span>
+                <span className="text-white font-semibold">11+ años · 50+ profesionales · Resultados reales.</span>
               </motion.p>
 
               <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="flex flex-col sm:flex-row gap-6 justify-center"
+                className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
               >
                 <Button href="/reservar" size="lg" className="min-w-[200px]">
                   Empezar Ahora
@@ -212,6 +219,26 @@ export const Home: React.FC = () => {
                 <Button href="/servicios" variant="outline" size="lg" className="min-w-[200px]">
                   Ver Programas
                 </Button>
+              </motion.div>
+
+              {/* Inline hero stats strip */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1.1, duration: 0.8 }}
+                className="flex flex-wrap justify-center gap-0 divide-x divide-white/10"
+              >
+                {[
+                  { n: "2014", l: "Fundados" },
+                  { n: "500+", l: "Clientes" },
+                  { n: "50+",  l: "Profesionales" },
+                  { n: "14",   l: "Disciplinas" },
+                ].map((s, i) => (
+                  <div key={i} className="px-6 py-2 text-center">
+                    <div className="text-xl font-heading font-black text-white">{s.n}</div>
+                    <div className="text-[10px] text-gray-500 uppercase tracking-widest">{s.l}</div>
+                  </div>
+                ))}
               </motion.div>
             </div>
           </div>
@@ -233,19 +260,22 @@ export const Home: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 {
+                  num: "01",
                   title: "50+ Profesionales Certificados",
                   desc: "El mejor equipo de entrenadores personales en Medellín: profesionales del Politécnico Colombiano con trayectoria internacional.",
-                  bg: "from-red-900/20 to-transparent"
+                  accent: "from-npt-red/15 to-transparent"
                 },
                 {
+                  num: "02",
                   title: "A Domicilio en Medellín",
                   desc: "Entrenamiento personalizado a tu casa, oficina o conjunto residencial en todo el Valle de Aburrá.",
-                  bg: "from-blue-900/20 to-transparent"
+                  accent: "from-white/5 to-transparent"
                 },
                 {
+                  num: "03",
                   title: "11+ Años de Resultados",
                   desc: "Desde 2014, más de 500 clientes han transformado su calidad de vida con New Personal Training S.A.S.",
-                  bg: "from-purple-900/20 to-transparent"
+                  accent: "from-white/5 to-transparent"
                 }
               ].map((item, index) => (
                 <motion.div
@@ -253,14 +283,18 @@ export const Home: React.FC = () => {
                   initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: index * 0.2 }}
-                  className={`p-8 rounded-2xl glass-panel bg-gradient-to-b ${item.bg} hover:bg-white/5 transition-colors duration-500 group`}
+                  transition={{ delay: index * 0.15, duration: 0.5 }}
+                  className={`relative p-8 rounded-2xl glass-panel bg-gradient-to-b ${item.accent} card-top-line hover-glow-border transition-all duration-400 group overflow-hidden`}
                 >
-                  <div className="mb-4 inline-flex items-center justify-center w-12 h-12 rounded bg-npt-red text-white shadow-[0_0_15px_rgba(208,0,0,0.4)] group-hover:scale-110 transition-transform">
-                    <Check className="w-6 h-6" aria-hidden="true" />
+                  <span className="card-number">{item.num}</span>
+                  <div className="mb-5 inline-flex items-center gap-3">
+                    <span className="w-10 h-10 flex items-center justify-center rounded-lg bg-npt-red/10 border border-npt-red/20 group-hover:bg-npt-red group-hover:border-npt-red transition-all duration-300 npt-glow-sm group-hover:npt-glow">
+                      <Check className="w-5 h-5 text-npt-red group-hover:text-white transition-colors duration-300" aria-hidden="true" />
+                    </span>
+                    <span className="text-xs font-black text-white/30 tracking-[0.3em] uppercase group-hover:text-npt-red/70 transition-colors">{item.num}</span>
                   </div>
-                  <h2 className="text-xl font-heading font-bold italic uppercase mb-2 text-white">{item.title}</h2>
-                  <p className="text-gray-400">{item.desc}</p>
+                  <h2 className="text-xl font-heading font-black italic uppercase mb-3 text-white leading-tight">{item.title}</h2>
+                  <p className="text-gray-400 leading-relaxed text-sm">{item.desc}</p>
                 </motion.div>
               ))}
             </div>
@@ -287,8 +321,8 @@ export const Home: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {SERVICES.slice(0, 3).map((service) => (
-                <ServiceCard key={service.id} service={service} />
+              {SERVICES.slice(0, 3).map((service, idx) => (
+                <ServiceCard key={service.id} service={service} index={idx} />
               ))}
             </div>
           </div>
@@ -338,25 +372,30 @@ export const Home: React.FC = () => {
           </div>
 
           <div className="container mx-auto px-4 relative z-10">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { number: "2014", label: "Fundación" },
-                { number: "500+", label: "Clientes" },
-                { number: "50+",  label: "Profesionales" },
-                { number: "14",   label: "Servicios" }
+                { number: "2014", label: "Fundación", sub: "año" },
+                { number: "500+", label: "Clientes",  sub: "transformados" },
+                { number: "50+",  label: "Profesionales", sub: "certificados" },
+                { number: "14",   label: "Disciplinas", sub: "disponibles" }
               ].map((stat, idx) => (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.1, type: "spring" }}
-                  className="relative group"
+                  transition={{ delay: idx * 0.12, duration: 0.5 }}
+                  className="relative group text-center px-4 py-6"
                 >
-                  <div className="text-5xl md:text-7xl font-heading font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/10 mb-2 group-hover:text-npt-red transition-colors duration-500">
+                  {idx > 0 && (
+                    <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 w-px h-16 bg-gradient-to-b from-transparent via-white/10 to-transparent" aria-hidden="true" />
+                  )}
+                  <div className="text-5xl md:text-7xl font-heading font-black mb-1 text-white group-hover:text-npt-red transition-colors duration-500">
                     {stat.number}
                   </div>
-                  <div className="text-sm font-bold tracking-[0.2em] text-npt-red uppercase">{stat.label}</div>
+                  <div className="divider-glow mx-auto w-12 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" aria-hidden="true" />
+                  <div className="text-sm font-black tracking-[0.2em] text-npt-red uppercase">{stat.label}</div>
+                  <div className="text-[10px] text-gray-600 uppercase tracking-widest mt-0.5">{stat.sub}</div>
                 </motion.div>
               ))}
             </div>
@@ -375,28 +414,43 @@ export const Home: React.FC = () => {
               LO QUE DICEN <span className="text-npt-red">NUESTROS CLIENTES</span>
             </motion.h2>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               {TESTIMONIALS.map((t, idx) => (
                 <motion.article
                   key={t.id}
-                  initial={{ opacity: 0, y: 50 }}
+                  initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.2 }}
-                  className="glass-panel p-8 rounded-2xl relative group hover:bg-white/5 transition-colors"
+                  transition={{ delay: idx * 0.15, duration: 0.5 }}
+                  className="glass-panel p-7 rounded-2xl relative group card-top-line hover-glow-border transition-all duration-400 overflow-hidden"
                   itemScope
                   itemType="https://schema.org/Review"
                 >
-                  <div className="absolute -top-6 left-8 bg-npt-black border border-white/10 p-1 rounded-full">
-                    <img src={t.image} alt={`${t.name} — cliente de New Personal Training`} className="w-12 h-12 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all" />
+                  {/* Decorative quote mark */}
+                  <div className="quote-mark absolute -top-2 right-4 select-none pointer-events-none" aria-hidden="true">"</div>
+
+                  {/* Stars */}
+                  <div className="flex gap-0.5 mb-5 text-npt-red" aria-label={`${t.rating} de 5 estrellas`}>
+                    {[...Array(t.rating)].map((_, i) => (
+                      <Star key={i} className="w-3.5 h-3.5 fill-current" aria-hidden="true" />
+                    ))}
                   </div>
-                  <div className="mt-6">
-                    <div className="flex gap-1 mb-4 text-npt-red" aria-label={`${t.rating} de 5 estrellas`}>
-                      {[...Array(t.rating)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" aria-hidden="true" />)}
+
+                  <p className="text-gray-300 leading-relaxed mb-6 text-sm relative z-10" itemProp="reviewBody">
+                    "{t.content}"
+                  </p>
+
+                  {/* Author row */}
+                  <div className="flex items-center gap-3 pt-4 border-t border-white/5">
+                    <div className="relative">
+                      <img
+                        src={t.image}
+                        alt={`${t.name} — cliente de New Personal Training`}
+                        className="w-10 h-10 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ring-2 ring-white/10 group-hover:ring-npt-red/40"
+                      />
                     </div>
-                    <p className="text-gray-300 italic mb-6 leading-relaxed" itemProp="reviewBody">"{t.content}"</p>
                     <div>
-                      <div className="font-bold text-white uppercase tracking-wider" itemProp="author">{t.name}</div>
+                      <div className="text-sm font-bold text-white uppercase tracking-wider" itemProp="author">{t.name}</div>
                       <div className="text-xs text-gray-500">{t.role}</div>
                     </div>
                   </div>
@@ -421,25 +475,28 @@ export const Home: React.FC = () => {
               </h2>
             </motion.div>
 
-            <dl className="space-y-4">
+            <dl className="space-y-3">
               {FAQS.map((faq, idx) => (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
-                  transition={{ delay: idx * 0.07 }}
-                  className="glass-panel rounded-xl overflow-hidden"
+                  transition={{ delay: idx * 0.06, duration: 0.4 }}
+                  className={`glass-panel rounded-xl overflow-hidden border transition-colors duration-300 ${openFaq === idx ? 'border-npt-red/30 bg-white/5' : 'border-white/5'}`}
                 >
                   <dt>
                     <button
                       onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
-                      className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors group"
+                      className="w-full flex items-center gap-4 p-5 text-left hover:bg-white/3 transition-colors group cursor-pointer"
                       aria-expanded={openFaq === idx}
                     >
-                      <span className="font-bold text-white group-hover:text-npt-red transition-colors pr-4">{faq.q}</span>
+                      <span className={`text-xs font-black font-heading italic flex-shrink-0 transition-colors duration-300 ${openFaq === idx ? 'text-npt-red' : 'text-white/20'}`}>
+                        {String(idx + 1).padStart(2, '0')}
+                      </span>
+                      <span className={`font-semibold flex-1 transition-colors duration-300 text-sm ${openFaq === idx ? 'text-npt-red' : 'text-white group-hover:text-npt-red'}`}>{faq.q}</span>
                       <ChevronDown
-                        className={`w-5 h-5 text-npt-red flex-shrink-0 transition-transform duration-300 ${openFaq === idx ? 'rotate-180' : ''}`}
+                        className={`w-4 h-4 text-npt-red flex-shrink-0 transition-transform duration-300 ${openFaq === idx ? 'rotate-180' : ''}`}
                         aria-hidden="true"
                       />
                     </button>
@@ -453,7 +510,7 @@ export const Home: React.FC = () => {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <p className="px-6 pb-6 text-gray-400 leading-relaxed">{faq.a}</p>
+                        <p className="px-5 pb-5 pl-14 text-gray-400 leading-relaxed text-sm">{faq.a}</p>
                       </motion.dd>
                     )}
                   </AnimatePresence>
@@ -521,22 +578,42 @@ export const Home: React.FC = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-32 relative" aria-label="Comienza tu cambio">
-          <div className="absolute inset-0 bg-gradient-to-r from-npt-red/20 to-purple-900/20 blur-[100px] opacity-50" aria-hidden="true" />
+        <section className="py-32 relative overflow-hidden" aria-label="Comienza tu cambio">
+          {/* Background dramatic effect */}
+          <div className="absolute inset-0" aria-hidden="true">
+            <div className="absolute inset-0 bg-gradient-to-br from-npt-red/20 via-transparent to-transparent" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-npt-red/10 rounded-full blur-[120px]" />
+            {/* Decorative lines */}
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-npt-red/30 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+          </div>
           <div className="container mx-auto px-4 text-center relative z-10">
-            <motion.h2
-              initial={{ scale: 0.9, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              className="text-5xl md:text-8xl font-heading font-black italic text-white mb-4"
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
             >
-              ¿ESTÁS <span className="text-outline-red">LISTO?</span>
-            </motion.h2>
-            <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-              Agenda tu evaluación inicial gratuita y comienza tu transformación con el mejor equipo de entrenadores personales en Medellín.
-            </p>
-            <Button href="/reservar" size="lg" className="text-lg px-12 py-6">
-              COMIENZA TU CAMBIO <ArrowRight className="ml-2 w-6 h-6" aria-hidden="true" />
-            </Button>
+              <p className="text-npt-red font-bold tracking-[0.3em] text-xs uppercase mb-6 flex items-center justify-center gap-3">
+                <span className="h-px w-12 bg-npt-red/50" aria-hidden="true" />
+                Evaluación inicial gratuita
+                <span className="h-px w-12 bg-npt-red/50" aria-hidden="true" />
+              </p>
+              <h2 className="text-6xl md:text-9xl font-heading font-black italic text-white mb-4 leading-none">
+                ¿ESTÁS <span className="text-gradient-red">LISTO?</span>
+              </h2>
+              <p className="text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed">
+                Agenda tu evaluación inicial gratuita y comienza tu transformación con el mejor equipo de entrenadores personales en Medellín.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button href="/reservar" size="lg" className="text-base px-12 py-5">
+                  COMIENZA TU CAMBIO <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
+                </Button>
+                <Button href="https://wa.me/573005974290" variant="outline" size="lg" className="text-base px-10 py-5">
+                  WhatsApp Directo
+                </Button>
+              </div>
+            </motion.div>
           </div>
         </section>
       </div>

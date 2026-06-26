@@ -120,6 +120,123 @@
         border: 1px solid rgba(255, 255, 255, 0.05);
       }
 
+      /* ── Design System Additions ── */
+
+      /* Red glow utility */
+      .npt-glow {
+        box-shadow: 0 0 30px rgba(208,0,0,0.35), 0 0 60px rgba(208,0,0,0.15);
+      }
+      .npt-glow-sm {
+        box-shadow: 0 0 15px rgba(208,0,0,0.4);
+      }
+
+      /* Shimmer sweep for buttons & cards */
+      @keyframes shimmer {
+        0%   { transform: translateX(-150%) skewX(-15deg); }
+        100% { transform: translateX(250%) skewX(-15deg); }
+      }
+      .shimmer-hover::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.12) 50%, transparent 100%);
+        transform: translateX(-150%) skewX(-15deg);
+        pointer-events: none;
+      }
+      .shimmer-hover:hover::after {
+        animation: shimmer 0.65s ease forwards;
+      }
+
+      /* Pulse dot for badges */
+      @keyframes badge-pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%       { opacity: 0.5; transform: scale(1.4); }
+      }
+      .badge-dot {
+        animation: badge-pulse 1.8s ease-in-out infinite;
+      }
+
+      /* Gradient border on hover */
+      @keyframes border-glow {
+        0%   { box-shadow: 0 0 0px rgba(208,0,0,0); }
+        100% { box-shadow: 0 0 20px rgba(208,0,0,0.5), inset 0 0 20px rgba(208,0,0,0.05); }
+      }
+      .hover-glow-border:hover {
+        animation: border-glow 0.3s ease forwards;
+        border-color: rgba(208,0,0,0.5) !important;
+      }
+
+      /* Red top line reveal */
+      .card-top-line::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #D00000, transparent);
+        transform: scaleX(0);
+        transition: transform 0.4s ease;
+      }
+      .card-top-line:hover::before { transform: scaleX(1); }
+
+      /* Diagonal accent cut */
+      .diagonal-hero::after {
+        content: '';
+        position: absolute;
+        bottom: -1px; left: 0; right: 0;
+        height: 80px;
+        background: #050505;
+        clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
+      }
+
+      /* Floating lift on cards */
+      .hover-lift {
+        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+      }
+      .hover-lift:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(208,0,0,0.15);
+      }
+
+      /* Gradient text utility */
+      .text-gradient-red {
+        background: linear-gradient(135deg, #fff 0%, #D00000 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* Number overlay for cards */
+      .card-number {
+        position: absolute;
+        top: -0.5rem;
+        right: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5rem;
+        font-weight: 900;
+        font-style: italic;
+        line-height: 1;
+        color: rgba(255,255,255,0.04);
+        user-select: none;
+        pointer-events: none;
+        transition: color 0.4s ease;
+      }
+      .group:hover .card-number { color: rgba(208,0,0,0.08); }
+
+      /* Glowing divider */
+      .divider-glow {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(208,0,0,0.6), transparent);
+      }
+
+      /* Quote decoration */
+      .quote-mark {
+        font-family: Georgia, serif;
+        font-size: 8rem;
+        line-height: 0.7;
+        color: rgba(208,0,0,0.15);
+        user-select: none;
+      }
+
       /* Blog article prose styles */
       .prose-blog h2 {
         font-family: 'Montserrat', sans-serif;

@@ -111,7 +111,7 @@ export const Services: React.FC = () => {
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <ServiceCard service={service} />
+                    <ServiceCard service={service} index={SERVICES.indexOf(service)} />
                   </motion.div>
                 ))}
               </AnimatePresence>
