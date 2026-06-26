@@ -1,11 +1,13 @@
 import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Check, Star, ArrowRight, ChevronDown } from 'lucide-react';
+import { Check, Star, ArrowRight, ChevronDown, BookOpen, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { ServiceCard } from '../components/ui/Card';
 import { TrainerSlider } from '../components/sections/TrainerSlider';
 import { SEOHead } from '../components/SEOHead';
 import { SERVICES, TESTIMONIALS } from '../constants';
+import { BLOG_POSTS } from '../blogs';
 
 const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
@@ -458,6 +460,63 @@ export const Home: React.FC = () => {
                 </motion.div>
               ))}
             </dl>
+          </div>
+        </section>
+
+        {/* Blog Preview Section */}
+        <section className="py-24 border-t border-white/5" aria-label="Últimas del Blog">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <BookOpen className="w-8 h-8 text-npt-red mx-auto mb-3" aria-hidden="true" />
+              <p className="text-npt-red font-bold tracking-[0.3em] text-xs uppercase mb-2">Consejos de Profesionales</p>
+              <h2 className="text-3xl md:text-5xl font-heading font-black italic text-white">
+                ÚLTIMAS DEL <span className="text-npt-red">BLOG</span>
+              </h2>
+            </motion.div>
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              {BLOG_POSTS.slice(0, 3).map((post, idx) => (
+                <motion.article
+                  key={post.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: idx * 0.1 }}
+                >
+                  <Link to={`/blog/${post.slug}`} className="group block h-full">
+                    <div className="glass-panel rounded-2xl overflow-hidden border border-white/10 hover:border-npt-red/30 transition-all h-full flex flex-col">
+                      <div className="relative h-44 overflow-hidden flex-shrink-0">
+                        <img
+                          src={post.image}
+                          alt={post.title}
+                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                        <span className="absolute top-3 left-3 px-2 py-0.5 bg-black/50 backdrop-blur-sm border border-white/10 text-xs text-gray-300 rounded-full">
+                          {post.category}
+                        </span>
+                      </div>
+                      <div className="p-5 flex flex-col flex-1">
+                        <p className="text-xs text-gray-500 flex items-center gap-1 mb-2">
+                          <Clock className="w-3 h-3" /> {post.readTime} min lectura
+                        </p>
+                        <h3 className="text-sm font-bold text-white group-hover:text-npt-red transition-colors line-clamp-2 leading-snug flex-1">
+                          {post.title}
+                        </h3>
+                      </div>
+                    </div>
+                  </Link>
+                </motion.article>
+              ))}
+            </div>
+            <div className="text-center">
+              <Button href="/blog" variant="outline" size="lg">Ver todos los artículos</Button>
+            </div>
           </div>
         </section>
 

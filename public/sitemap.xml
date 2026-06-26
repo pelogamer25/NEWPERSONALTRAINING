@@ -146,4 +146,68 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Blog — contenido SEO para keywords de long tail -->
+  <url>
+    <loc>https://newpersonaltraining.com/blog</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://newpersonaltraining.com/blog/guia-entrenador-personal-medellin-2026</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://newpersonaltraining.com/blog/clases-boxeo-medellin</loc>
+    <lastmod>2026-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://newpersonaltraining.com/blog/entrenamiento-domicilio-medellin</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://newpersonaltraining.com/blog/pilates-medellin-beneficios-clases</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://newpersonaltraining.com/blog/mejores-gimnasios-medellin-2026</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://newpersonaltraining.com/blog/entrenamiento-funcional-medellin</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://newpersonaltraining.com/blog/nutricionista-medellin-valoracion-plan</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://newpersonaltraining.com/blog/yoga-medellin-guia-completa</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

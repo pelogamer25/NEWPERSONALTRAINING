@@ -9,6 +9,8 @@ import { Contact } from './pages/Contact';
 import { Booking } from './pages/Booking';
 import { About } from './pages/About';
 import { NotFound } from './pages/NotFound';
+import { Blog } from './pages/Blog';
+import { BlogPost } from './pages/BlogPost';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/nosotros" element={<About />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/reservar" element={<Booking />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>

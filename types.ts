@@ -42,3 +42,18 @@ export interface NavigationItem {
   label: string;
   href: string;
 }
+
+export interface BlogPost {
+  id: string;
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  category: string;
+  tags: string[];
+  readTime: number;
+  publishedAt: string;
+  image: string;
+  author: string;
+  authorRole: string;
+}

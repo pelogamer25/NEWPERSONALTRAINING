@@ -35,6 +35,7 @@ export const NAVIGATION: NavigationItem[] = [
   { label: "Entrenadores", href: "/entrenadores" },
   { label: "Nosotros", href: "/nosotros" },
   { label: "Contacto", href: "/contacto" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export const SERVICES: Service[] = [
