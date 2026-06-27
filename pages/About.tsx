@@ -27,19 +27,20 @@ const ABOUT_SCHEMA = {
 };
 
 const VALUES = [
-  { icon: Star,   title: "Calidad",          desc: "Metodologías y equipos de entrenamiento actualizados que garantizan resultados medibles y seguros." },
-  { icon: Shield, title: "Responsabilidad",  desc: "Cumplimos cada compromiso con nuestros usuarios, empresas y la sociedad." },
-  { icon: Heart,  title: "Respeto",          desc: "Cada cliente es único. Adaptamos cada programa a su biotipo, ritmo y objetivos." },
-  { icon: Zap,    title: "Innovación",       desc: "Métodos y metodologías de entrenamiento deportivo en constante actualización." },
+  { icon: Star,   title: "Calidad",          desc: "Entrenadores personales certificados con metodologías actualizadas en Medellín que garantizan resultados medibles, seguros y adaptados a cada objetivo." },
+  { icon: Shield, title: "Responsabilidad",  desc: "Cumplimos cada compromiso con nuestros clientes y empresas del Valle de Aburrá, con puntualidad, profesionalismo y seriedad." },
+  { icon: Heart,  title: "Respeto",          desc: "Cada programa de entrenamiento personalizado se adapta al biotipo, ritmo y metas únicas de cada usuario, sin excepciones." },
+  { icon: Zap,    title: "Innovación",       desc: "Actualizamos constantemente nuestros métodos y metodologías de entrenamiento deportivo para ofrecer lo mejor de la ciencia del deporte." },
 ];
 
 const GUARANTEES = [
-  "Más de 11 años ininterrumpidos en el mercado del entrenamiento deportivo",
-  "50+ profesionales altamente cualificados en deporte, fisioterapia y nutrición",
-  "Métodos y metodologías de entrenamiento deportivo actualizados",
-  "Servicio con sentido humano y calidad certificada",
-  "Todas las líneas de equipos para gimnasio (profesional, institucional y hogar)",
-  "Servicio técnico completo: mecánico, electrónico y rediseño de equipos",
+  "Más de 11 años ininterrumpidos en el mercado del entrenamiento personal en Medellín y el Valle de Aburrá",
+  "Procesos de entrenamiento deportivo ininterrumpido desde nuestra fundación en 2014",
+  "Más de 50 profesionales altamente cualificados en deporte, actividad física y recreación",
+  "Métodos y metodologías de entrenamiento deportivo actualizados y basados en evidencia científica",
+  "Servicio con sentido humano, calidad certificada y atención completamente personalizada",
+  "Manejamos todas las líneas de equipos para gimnasio: profesional, institucional y hogar",
+  "Servicio técnico completo y especializado: mecánico, electrónico y rediseño de equipos",
 ];
 
 export const About: React.FC = () => {
@@ -131,17 +132,17 @@ export const About: React.FC = () => {
                     {
                       year: "2014",
                       title: "Fundación",
-                      text: "Nace de la mano de dos Profesionales en Deporte del Politécnico Colombiano Jaime Isaza Cadavid. Pioneros en entrenamiento personalizado a domicilio en Medellín."
+                      text: "New Personal Training S.A.S nace en mayo de 2014 de la mano de dos fundadores, ambos Profesionales en Deporte del Politécnico Colombiano Jaime Isaza Cadavid — institución reconocida por la formación de profesionales íntegros en deporte, actividad física y recreación. Concebidos para dar solución profesional a la alta demanda de entrenamiento personalizado a domicilio en Medellín."
                     },
                     {
                       year: "2018",
-                      title: "Reingeniería",
-                      text: "Ingresan dos nuevos accionistas que impulsan la formalización total y una reingeniería integral de procesos, logrando crecimiento exponencial."
+                      title: "Reingeniería y Crecimiento",
+                      text: "En 2018 ingresan dos nuevos accionistas, también Profesionales en Deporte, dándole una nueva perspectiva a la marca. Se pasa de la informalidad a la formalidad completa con una reingeniería integral de todos los procesos, logrando un crecimiento exponencial y consolidando el liderazgo en entrenamiento personalizado en el Valle de Aburrá."
                     },
                     {
                       year: "2026",
                       title: "Hoy",
-                      text: "50+ profesionales certificados, 500+ clientes transformados y cobertura en todo el Valle de Aburrá. Líderes en entrenamiento personalizado en Medellín."
+                      text: "Con más de 11 años en el mercado, 50+ profesionales altamente cualificados y cobertura en todo el Valle de Aburrá — Medellín, Envigado, Itagüí, Sabaneta, Bello y más — somos el referente en entrenamiento personal, semipersonalizado y grupal a domicilio en Medellín."
                     }
                   ].map((item, idx) => (
                     <div key={idx} className="flex gap-5 pb-7 relative">

@@ -24,8 +24,8 @@ export const COMPANY_INFO = {
     instagram: "https://www.instagram.com/newpersonaltraining",
     facebook: "https://www.facebook.com/newpersonaltraining"
   },
-  mission: "NEW PERSONAL TRAINING es una organización con sentido humano, que contribuye a mejorar la calidad de vida de las personas y empresas, a través de servicios integrales personalizados, semipersonalizados y grupales en ejercicio físico, recreación y deporte. Guiados por profesionales certificados, teniendo como pilares fundamentales la calidad, la responsabilidad, el respeto y la innovación en la prestación del servicio, garantizando la optimización del tiempo de nuestros usuarios.",
-  vision: "En el 2030 NEW PERSONAL TRAINING será una organización líder e influyente en mejorar la calidad de vida de las personas y empresas, a través de servicios deportivos y recreativos integrales personalizados, semipersonalizados y grupales; además de, ser reconocidos en el sector por su respaldo, innovación, profesionalismo y responsabilidad social empresarial.",
+  mission: "New Personal Training S.A.S es una organización con sentido humano que contribuye a mejorar la calidad de vida de personas y empresas en Medellín y el Valle de Aburrá, a través de servicios integrales de entrenamiento personalizado, semipersonalizado y grupal en ejercicio físico, recreación y deporte. Guiados por profesionales certificados en deporte y actividad física, nuestros pilares fundamentales son la calidad, la responsabilidad, el respeto y la innovación en cada servicio — garantizando la optimización del tiempo de nuestros usuarios.",
+  vision: "En el 2030, New Personal Training S.A.S será la organización líder e influyente en mejorar la calidad de vida de personas y empresas en Medellín y Colombia, a través de servicios deportivos y recreativos integrales personalizados, semipersonalizados y grupales; reconocidos en el sector por nuestro respaldo, innovación, profesionalismo y responsabilidad social empresarial — posicionándonos como referente nacional en entrenamiento personalizado y bienestar corporativo.",
   values: ["Calidad", "Responsabilidad", "Respeto", "Innovación"],
 };
 
