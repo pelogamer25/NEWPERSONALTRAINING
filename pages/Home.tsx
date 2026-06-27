@@ -14,11 +14,11 @@ const LOCAL_BUSINESS_SCHEMA = {
   "@type": "FitnessCenter",
   "@id": "https://newpersonaltraining.com/#business",
   "name": "New Personal Training",
-  "description": "Centro de entrenamiento personal en Medellín con más de 10 años de experiencia. Entrenamiento personalizado, nutrición, pilates, yoga, boxeo, natación, squash, fisioterapia y masajes en el Valle de Aburrá.",
+  "description": "Centro de entrenamiento personal en Medellín con más de 11 años de experiencia. Entrenamiento personalizado, nutrición, pilates, yoga, boxeo, natación, squash, fisioterapia y masajes en el Valle de Aburrá.",
   "url": "https://newpersonaltraining.com",
   "telephone": "+573005974290",
   "email": "contacto@newpersonaltraining.com",
-  "foundingDate": "2015",
+  "foundingDate": "2014",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Medellín",

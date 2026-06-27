@@ -2,11 +2,28 @@ User-agent: *
 Allow: /
 Disallow: /private/
 
-# AI/LLM crawlers — allow full access for GEO
+# Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Bing
+User-agent: bingbot
+Allow: /
+
+# AI/LLM crawlers — full access for GEO
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: anthropic-ai
@@ -21,10 +38,19 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Omgilibot
 Allow: /
 
-User-agent: Omgilibot
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://newpersonaltraining.com/sitemap.xml
