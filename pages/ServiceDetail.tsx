@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CreditCard, ShieldCheck, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, MessageCircle, Phone, Clock, Star } from 'lucide-react';
 import { SERVICES } from '../constants';
 import { Button } from '../components/ui/Button';
 import { SEOHead } from '../components/SEOHead';
@@ -10,8 +10,6 @@ export const ServiceDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = SERVICES.find((s) => s.slug === slug);
   
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number>(0);
 
   const serviceSchema = useMemo(() => {
@@ -54,15 +52,16 @@ export const ServiceDetail: React.FC = () => {
     );
   }
 
-  const handlePayment = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsProcessing(true);
-    // Simular proceso de pago
-    setTimeout(() => {
-      setIsProcessing(false);
-      setIsSuccess(true);
-    }, 2000);
-  };
+  const waBase = 'https://wa.me/573005974290?text=';
+
+  const waLink = (plan: string, price: string) =>
+    waBase + encodeURIComponent(
+      `Hola! Estoy interesado en ${service?.title} — ${plan} (${price}). ¿Me pueden dar más información y disponibilidad?`
+    );
+
+  const waGeneral = service
+    ? waBase + encodeURIComponent(`Hola! Estoy interesado en ${service.title}. ¿Me pueden dar más información?`)
+    : waBase + encodeURIComponent('Hola! Quiero información sobre sus servicios.');
 
   return (
     <>
@@ -162,99 +161,98 @@ export const ServiceDetail: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Checkout Form */}
-          <motion.div 
+          {/* WhatsApp CTA Panel */}
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             className="glass-panel p-8 rounded-2xl relative overflow-hidden"
           >
-            {isSuccess ? (
-              <div className="flex flex-col items-center justify-center text-center py-12">
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  transition={{ type: "spring", bounce: 0.5 }}
-                >
-                  <CheckCircle2 className="w-24 h-24 text-green-500 mb-6" />
-                </motion.div>
-                <h2 className="text-3xl font-heading font-black italic text-white mb-4">¡Pago Exitoso!</h2>
-                <p className="text-gray-400 mb-8 max-w-sm">
-                  Tu suscripción a <span className="text-white font-medium">{service.title}</span> ha sido confirmada. Te hemos enviado un correo con los siguientes pasos.
-                </p>
-                <Button href="/servicios" variant="outline">Volver al inicio</Button>
+            {/* Header */}
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-11 h-11 bg-green-500/10 border border-green-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                <MessageCircle className="w-5 h-5 text-green-400" aria-hidden="true" />
+              </div>
+              <div>
+                <h2 className="text-xl font-heading font-black italic text-white leading-tight">Agenda por WhatsApp</h2>
+                <p className="text-xs text-gray-400">Respuesta inmediata · Sin turnos · Evaluación inicial gratis</p>
+              </div>
+            </div>
+
+            {/* Trust signals */}
+            <div className="flex flex-wrap gap-3 mb-6">
+              {[
+                { icon: Star, label: "5.0 · 500+ clientes" },
+                { icon: Clock, label: "11+ años experiencia" },
+              ].map(({ icon: Icon, label }) => (
+                <span key={label} className="inline-flex items-center gap-1.5 text-xs text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">
+                  <Icon className="w-3 h-3 text-npt-red" aria-hidden="true" />
+                  {label}
+                </span>
+              ))}
+            </div>
+
+            {/* Per-plan WhatsApp buttons */}
+            {service.pricingOptions && service.pricingOptions.length > 0 ? (
+              <div className="space-y-3 mb-6">
+                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-3">Selecciona tu plan y agenda ahora</p>
+                {service.pricingOptions.map((opt, idx) => (
+                  <a
+                    key={idx}
+                    href={waLink(opt.label, opt.price)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between w-full glass-panel p-4 rounded-xl border border-white/5 hover:border-green-500/40 hover:bg-green-500/5 transition-all duration-300 group cursor-pointer"
+                  >
+                    <div className="min-w-0">
+                      <p className="text-white font-semibold text-sm group-hover:text-green-400 transition-colors truncate">{opt.label}</p>
+                      <p className="text-npt-red font-black text-xl font-heading leading-tight">{opt.price}</p>
+                    </div>
+                    <div className="flex items-center gap-2 ml-3 flex-shrink-0 text-green-400 bg-green-500/10 border border-green-500/20 px-3 py-2 rounded-lg group-hover:bg-green-500 group-hover:text-white group-hover:border-green-500 transition-all duration-300">
+                      <MessageCircle className="w-4 h-4" aria-hidden="true" />
+                      <span className="text-xs font-bold uppercase tracking-wider">Agendar</span>
+                    </div>
+                  </a>
+                ))}
               </div>
             ) : (
-              <>
-                <div className="flex items-center justify-between mb-8">
-                  <h2 className="text-2xl font-heading font-black italic text-white">Pasarela de Pago</h2>
-                  <div className="flex items-center text-gray-400 text-sm">
-                    <ShieldCheck className="w-4 h-4 mr-1 text-green-500" /> Seguro
-                  </div>
-                </div>
-
-                <form onSubmit={handlePayment} className="space-y-6">
-                  {/* Personal Info */}
-                  <div className="space-y-4">
-                    <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider border-b border-white/10 pb-2">Información Personal</h3>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="col-span-2 md:col-span-1">
-                        <label className="block text-sm font-medium text-gray-300 mb-1">Nombre</label>
-                        <input required type="text" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-npt-red focus:ring-1 focus:ring-npt-red transition-colors" placeholder="Juan" />
-                      </div>
-                      <div className="col-span-2 md:col-span-1">
-                        <label className="block text-sm font-medium text-gray-300 mb-1">Apellido</label>
-                        <input required type="text" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-npt-red focus:ring-1 focus:ring-npt-red transition-colors" placeholder="Pérez" />
-                      </div>
-                      <div className="col-span-2">
-                        <label className="block text-sm font-medium text-gray-300 mb-1">Correo Electrónico</label>
-                        <input required type="email" className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-npt-red focus:ring-1 focus:ring-npt-red transition-colors" placeholder="juan@ejemplo.com" />
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Payment Info */}
-                  <div className="space-y-4 pt-4">
-                    <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider border-b border-white/10 pb-2">Información de Pago</h3>
-                    <div className="space-y-4">
-                      <div>
-                        <label className="block text-sm font-medium text-gray-300 mb-1">Número de Tarjeta</label>
-                        <div className="relative">
-                          <input required type="text" maxLength={19} className="w-full bg-black/50 border border-white/10 rounded-lg pl-12 pr-4 py-3 text-white focus:outline-none focus:border-npt-red focus:ring-1 focus:ring-npt-red transition-colors font-mono" placeholder="0000 0000 0000 0000" />
-                          <CreditCard className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
-                        </div>
-                      </div>
-                      <div className="grid grid-cols-2 gap-4">
-                        <div>
-                          <label className="block text-sm font-medium text-gray-300 mb-1">Vencimiento</label>
-                          <input required type="text" maxLength={5} className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-npt-red focus:ring-1 focus:ring-npt-red transition-colors font-mono" placeholder="MM/AA" />
-                        </div>
-                        <div>
-                          <label className="block text-sm font-medium text-gray-300 mb-1">CVC</label>
-                          <input required type="text" maxLength={4} className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-npt-red focus:ring-1 focus:ring-npt-red transition-colors font-mono" placeholder="123" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="pt-6">
-                    <button
-                      type="submit"
-                      disabled={isProcessing}
-                      className="w-full bg-npt-red hover:bg-npt-red-dark text-white font-bold py-4 px-8 rounded-lg uppercase tracking-widest transition-colors flex justify-center items-center disabled:opacity-70 disabled:cursor-not-allowed"
-                    >
-                      {isProcessing ? (
-                        <div className="w-6 h-6 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                      ) : (
-                        `Pagar ${service.pricingOptions && service.pricingOptions.length > 0 ? service.pricingOptions[selectedOption].price : service.price || ''}`
-                      )}
-                    </button>
-                    <p className="text-center text-xs text-gray-500 mt-4">
-                      Al hacer clic en "Pagar", aceptas nuestros términos y condiciones.
-                    </p>
-                  </div>
-                </form>
-              </>
+              <div className="mb-6">
+                <a
+                  href={waGeneral}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-3 w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-xl uppercase tracking-widest transition-colors duration-300"
+                >
+                  <MessageCircle className="w-5 h-5" aria-hidden="true" />
+                  Agendar por WhatsApp
+                </a>
+              </div>
             )}
+
+            {/* General info button */}
+            <a
+              href={waGeneral}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full border border-white/10 hover:border-green-500/30 text-gray-400 hover:text-green-400 text-sm py-3 px-4 rounded-xl transition-all duration-300 mb-6"
+            >
+              <Phone className="w-4 h-4" aria-hidden="true" />
+              Tengo preguntas antes de elegir un plan
+            </a>
+
+            {/* Guarantees */}
+            <div className="border-t border-white/10 pt-5 space-y-2.5">
+              {[
+                "Evaluación inicial gratuita incluida",
+                "Cobertura en todo el Valle de Aburrá",
+                "Profesionales certificados del Politécnico Colombiano",
+                "Más de 11 años de experiencia en Medellín",
+              ].map((g) => (
+                <div key={g} className="flex items-start gap-2">
+                  <CheckCircle2 className="w-4 h-4 text-green-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <span className="text-xs text-gray-400 leading-relaxed">{g}</span>
+                </div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>

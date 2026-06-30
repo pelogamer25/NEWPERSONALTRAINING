@@ -47,6 +47,14 @@ export const Button: React.FC<ButtonProps> = ({
   );
 
   if (href) {
+    const isExternal = href.startsWith('http://') || href.startsWith('https://') || href.startsWith('tel:') || href.startsWith('mailto:');
+    if (isExternal) {
+      return (
+        <a href={href} className={classes} target="_blank" rel="noopener noreferrer">
+          {content}
+        </a>
+      );
+    }
     return (
       <Link to={href} className={classes}>
         {content}
