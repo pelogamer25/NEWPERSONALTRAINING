@@ -4,7 +4,42 @@ import { ServiceCard } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { SEOHead } from '../components/SEOHead';
 import { SERVICES } from '../constants';
-import { Search } from 'lucide-react';
+import { Search, Dumbbell, Building2, Home, Wrench, MessageCircle, ChevronRight } from 'lucide-react';
+
+const EQUIPMENT_LINES = [
+  {
+    icon: Building2,
+    title: "Línea Profesional",
+    subtitle: "Para gimnasios comerciales",
+    desc: "Equipos de alta durabilidad diseñados para soportar uso intensivo con múltiples usuarios diarios. Caminadoras, poleas, racks, cardiovasculares y más.",
+    badge: "Gyms & Centros Deportivos",
+    waMsg: "Hola! Estoy interesado en equipos de gimnasio Línea Profesional para mi gimnasio. ¿Me pueden dar información y cotización?",
+  },
+  {
+    icon: Building2,
+    title: "Línea Institucional",
+    subtitle: "Para empresas, conjuntos y hoteles",
+    desc: "Calidad profesional con estética premium para gimnasios corporativos, conjuntos residenciales y hoteles. Relación óptima calidad-precio para uso moderado.",
+    badge: "Empresas & Conjuntos",
+    waMsg: "Hola! Estoy interesado en equipos de gimnasio Línea Institucional para mi empresa o conjunto. ¿Me pueden dar información y cotización?",
+  },
+  {
+    icon: Home,
+    title: "Línea Hogar",
+    subtitle: "Para tu gym en casa",
+    desc: "Equipos compactos y silenciosos ideales para espacios residenciales. Desde caminadoras plegables hasta equipos multifuncionales completos.",
+    badge: "Uso Residencial",
+    waMsg: "Hola! Estoy interesado en equipos de gimnasio Línea Hogar para mi casa. ¿Me pueden dar información y cotización?",
+  },
+  {
+    icon: Wrench,
+    title: "Servicio Técnico",
+    subtitle: "Mecánico · Electrónico · Rediseño",
+    desc: "Reparación y mantenimiento preventivo de cualquier marca: bandas, motores, tableros electrónicos, tapizado, pintura y actualización de piezas obsoletas.",
+    badge: "Todas las Marcas",
+    waMsg: "Hola! Necesito servicio técnico para equipos de gimnasio. ¿Me pueden dar información sobre mantenimiento y reparación?",
+  },
+];
 
 const SERVICES_CATALOG_SCHEMA = {
   "@context": "https://schema.org",
@@ -135,6 +170,91 @@ export const Services: React.FC = () => {
           )}
         </div>
       </div>
+
+      {/* Equipment Sales Section */}
+      <section className="py-24 border-t border-white/5 relative" aria-label="Venta y servicio técnico de equipos de gimnasio en Medellín">
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-npt-red/5 rounded-full blur-[100px] pointer-events-none" aria-hidden="true" />
+        <div className="container mx-auto px-4">
+
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-14"
+          >
+            <span className="inline-flex items-center gap-2 text-npt-red font-bold tracking-[0.3em] text-xs uppercase mb-4">
+              <Dumbbell className="w-4 h-4" aria-hidden="true" />
+              Equipamiento Deportivo
+            </span>
+            <h2 className="text-3xl md:text-5xl font-heading font-black italic text-white mb-4">
+              EQUIPOS DE GYM <span className="text-npt-red">EN MEDELLÍN</span>
+            </h2>
+            <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              New Personal Training S.A.S también provee y da mantenimiento a <strong className="text-white">equipos de gimnasio</strong> para gyms comerciales, empresas, conjuntos residenciales y hogares en el Valle de Aburrá. Con más de 11 años en el sector deportivo, sabemos exactamente qué equipos funcionan.
+            </p>
+          </motion.div>
+
+          {/* Equipment lines grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+            {EQUIPMENT_LINES.map((line, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+                className="glass-panel p-6 rounded-2xl border border-white/5 hover:border-npt-red/30 card-top-line hover-glow-border transition-all duration-300 group flex flex-col"
+              >
+                <div className="w-12 h-12 bg-npt-red/10 border border-npt-red/20 rounded-xl flex items-center justify-center mb-4 group-hover:bg-npt-red group-hover:border-npt-red transition-all duration-300">
+                  <line.icon className="w-5 h-5 text-npt-red group-hover:text-white transition-colors" aria-hidden="true" />
+                </div>
+                <span className="text-[10px] font-bold text-npt-red uppercase tracking-widest mb-1">{line.badge}</span>
+                <h3 className="text-base font-black text-white uppercase tracking-wide mb-0.5">{line.title}</h3>
+                <p className="text-xs text-gray-500 mb-3">{line.subtitle}</p>
+                <p className="text-sm text-gray-400 leading-relaxed flex-1 mb-5">{line.desc}</p>
+                <a
+                  href={`https://wa.me/573005974290?text=${encodeURIComponent(line.waMsg)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between w-full bg-green-500/10 border border-green-500/20 hover:bg-green-500 hover:border-green-500 text-green-400 hover:text-white px-4 py-2.5 rounded-xl transition-all duration-300 group/btn"
+                >
+                  <span className="text-xs font-bold uppercase tracking-wider">Cotizar por WhatsApp</span>
+                  <MessageCircle className="w-4 h-4" aria-hidden="true" />
+                </a>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Bottom banner */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="glass-panel p-6 md:p-8 rounded-2xl border border-white/5 flex flex-col md:flex-row items-center justify-between gap-6"
+          >
+            <div>
+              <p className="text-npt-red font-bold text-xs uppercase tracking-widest mb-1">¿Abriendo un gym en Medellín?</p>
+              <h3 className="text-xl font-heading font-black italic text-white">
+                Te asesoramos, proveemos e instalamos todo
+              </h3>
+              <p className="text-gray-400 text-sm mt-1 max-w-xl">
+                Consultoría de equipamiento → proveeduría → instalación → mantenimiento preventivo → entrenadores certificados. Un solo aliado para todo tu centro deportivo.
+              </p>
+            </div>
+            <a
+              href={`https://wa.me/573005974290?text=${encodeURIComponent('Hola! Estoy montando un gimnasio en Medellín y quiero información sobre equipos, instalación y personal certificado.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-shrink-0 flex items-center gap-2 bg-npt-red hover:bg-npt-red-dark text-white font-bold px-6 py-3 rounded-xl uppercase tracking-wider text-sm transition-colors duration-300 whitespace-nowrap"
+            >
+              <MessageCircle className="w-4 h-4" aria-hidden="true" />
+              Hablar con un asesor
+              <ChevronRight className="w-4 h-4" aria-hidden="true" />
+            </a>
+          </motion.div>
+        </div>
+      </section>
 
       <div className="py-20 border-t border-white/5 bg-white/5 backdrop-blur-sm">
         <div className="container mx-auto px-4 text-center">

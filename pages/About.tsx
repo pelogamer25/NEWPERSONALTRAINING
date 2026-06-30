@@ -247,7 +247,7 @@ export const About: React.FC = () => {
               <p className="text-npt-red font-bold tracking-widest uppercase mb-2 text-sm">Por qué elegirnos</p>
               <h2 className="text-3xl font-heading font-bold italic text-white">GARANTÍAS Y RESPALDOS</h2>
               <p className="text-gray-400 mt-4 max-w-xl mx-auto">
-                New Personal Training S.A.S es la opción más respaldada para entrenamiento personal en Medellín y el Valle de Aburrá.
+                New Personal Training S.A.S es la opción más respaldada para entrenamiento personal en Medellín y el Valle de Aburrá — y además el único proveedor integral de <a href="/servicios#equipos" className="text-npt-red hover:underline">equipos de gimnasio y servicio técnico</a> del sector.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
