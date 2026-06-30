@@ -473,6 +473,325 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>New Personal Training también ofrece sesiones de yoga para equipos de trabajo en oficinas de Medellín. Las pausas activas con yoga reducen el ausentismo, mejoran la concentración y aumentan el bienestar general del equipo. Contáctanos para conocer nuestros paquetes corporativos.</p>
     `
   }
+  ,
+  {
+    id: "9",
+    slug: "fisioterapia-medellin-recuperacion-domicilio",
+    title: "Fisioterapia en Medellín 2026: recuperación, prevención y rehabilitación a domicilio",
+    excerpt: "¿Buscas fisioterapia en Medellín? Conoce cuándo necesitas un fisioterapeuta, qué condiciones trata, precios y cómo el servicio a domicilio de New Personal Training llega a cualquier zona del Valle de Aburrá.",
+    category: "Salud",
+    tags: ["fisioterapia Medellín", "fisioterapeuta Medellín", "fisioterapia a domicilio Medellín", "rehabilitación física Medellín"],
+    readTime: 6,
+    publishedAt: "2026-06-22",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte y Salud",
+    content: `
+<h2>¿Qué es la fisioterapia y por qué es clave para tu bienestar en Medellín?</h2>
+<p>La <strong>fisioterapia en Medellín</strong> es una disciplina de la salud que evalúa, diagnostica y trata condiciones físicas mediante técnicas manuales, ejercicio terapéutico y modalidades físicas. Va mucho más allá de "curar dolores": es una ciencia del movimiento que previene lesiones, acelera la recuperación y mejora la calidad de vida.</p>
+<p>En <strong>New Personal Training S.A.S</strong> contamos con fisioterapeutas profesionales que prestan el servicio <strong>directamente en tu hogar, oficina o conjunto residencial</strong> en toda el área metropolitana del Valle de Aburrá.</p>
+
+<h2>¿Cuándo necesitas un fisioterapeuta en Medellín?</h2>
+<ul>
+  <li><strong>Dolor muscular o articular persistente:</strong> Cuello, espalda, rodilla, hombro — si el dolor lleva más de una semana, un fisioterapeuta es la primera consulta que debes hacer.</li>
+  <li><strong>Recuperación post-operatoria:</strong> Cirugías de ligamentos, prótesis de rodilla o cadera, reparación de manguito rotador — la fisioterapia reduce el tiempo de recuperación a la mitad.</li>
+  <li><strong>Lesiones deportivas:</strong> Esguinces, tendinitis, distensiones musculares — el retorno seguro al deporte requiere rehabilitación guiada.</li>
+  <li><strong>Dolor crónico:</strong> Lumbalgia, cervicalgia, fibromialgia — el tratamiento conservador con fisioterapia es más efectivo y seguro que la medicación prolongada.</li>
+  <li><strong>Prevención:</strong> Atletas y personas activas se benefician de sesiones preventivas que identifican desequilibrios musculares antes de que se conviertan en lesiones.</li>
+  <li><strong>Adultos mayores:</strong> Mejora del equilibrio, fuerza y movilidad para reducir el riesgo de caídas.</li>
+</ul>
+
+<h2>Técnicas de fisioterapia disponibles con New Personal Training</h2>
+<h3>Terapia manual</h3>
+<p>Movilizaciones articulares, masaje terapéutico profundo y técnicas miofasciales para restaurar el rango de movimiento y reducir el dolor de forma inmediata.</p>
+<h3>Ejercicio terapéutico</h3>
+<p>Programas individualizados de fortalecimiento y estiramiento diseñados para corregir desequilibrios musculares y acelerar la recuperación funcional.</p>
+<h3>Electroterapia</h3>
+<p>Técnicas como TENS (estimulación nerviosa eléctrica transcutánea) y ultrasonido terapéutico para reducir la inflamación y el dolor en lesiones agudas y crónicas.</p>
+<h3>Fisioterapia deportiva</h3>
+<p>Especializada en atletas: evaluación biomecánica del gesto deportivo, prevención de lesiones por sobreuso y protocolo de retorno seguro al entrenamiento de alta intensidad.</p>
+
+<h2>Ventajas de la fisioterapia a domicilio en Medellín</h2>
+<p>El servicio de <strong>fisioterapia a domicilio en Medellín</strong> de New Personal Training tiene ventajas claras frente a clínicas y centros tradicionales:</p>
+<ul>
+  <li><strong>Sin desplazamiento:</strong> Especialmente valioso cuando el dolor o la movilidad reducida dificultan salir de casa.</li>
+  <li><strong>Atención 100% individual:</strong> Tu fisioterapeuta se dedica exclusivamente a ti durante toda la sesión, sin sala de espera ni interrupciones.</li>
+  <li><strong>Evaluación del entorno real:</strong> El profesional puede identificar factores en tu hogar u oficina que contribuyen a tu condición (postura en el escritorio, colchón, calzado).</li>
+  <li><strong>Continuidad con tu programa de entrenamiento:</strong> Al pertenecer al mismo equipo de New Personal Training, el fisioterapeuta y tu entrenador personal coordinan para un plan de salud integrado.</li>
+</ul>
+
+<h2>Precios de fisioterapia en Medellín con New Personal Training</h2>
+<ul>
+  <li><strong>Sesión individual de fisioterapia:</strong> desde $150.000 COP</li>
+  <li><strong>Plan mensual 2x/semana (8 sesiones):</strong> consultar con nuestro equipo</li>
+  <li><strong>Masaje terapéutico complementario:</strong> desde $150.000 COP/sesión</li>
+</ul>
+<p>Todas las sesiones incluyen evaluación inicial, plan de tratamiento personalizado y seguimiento continuo del progreso. La primera consulta puede combinarse con la evaluación física gratuita que ofrece New Personal Training.</p>
+
+<h2>Fisioterapia en Medellín: ¿cuántas sesiones necesito?</h2>
+<p>Depende de la condición. Una lesión deportiva aguda puede requerir 6-10 sesiones. Una lumbalgia crónica puede necesitar 12-20 sesiones para lograr resultados sostenibles. Tu fisioterapeuta de New Personal Training te entregará un plan claro desde la primera consulta.</p>
+
+<h2>Zonas de cobertura para fisioterapia a domicilio</h2>
+<p>Nuestros fisioterapeutas llegan a <strong>El Poblado, Laureles, Belén, Envigado, Sabaneta, Itagüí, Bello</strong> y todas las zonas del Valle de Aburrá. Contáctanos al <strong>+57 300 597 4290</strong> para verificar disponibilidad en tu barrio.</p>
+    `
+  },
+  {
+    id: "10",
+    slug: "entrenamiento-para-bajar-de-peso-medellin",
+    title: "Entrenamiento para bajar de peso en Medellín: qué funciona realmente según la ciencia del deporte",
+    excerpt: "¿Quieres perder peso en Medellín pero no sabes por dónde empezar? Descubre qué tipo de ejercicio es más efectivo para bajar de peso, cómo combinarlo con nutrición y por qué un entrenador personal marca la diferencia.",
+    category: "Entrenamiento",
+    tags: ["bajar de peso Medellín", "entrenamiento para perder peso Medellín", "adelgazar con ejercicio Medellín", "entrenador personal bajar de peso"],
+    readTime: 7,
+    publishedAt: "2026-06-24",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>¿Por qué es tan difícil bajar de peso con ejercicio sin orientación profesional?</h2>
+<p>La mayoría de personas que intentan perder peso en Medellín cometen el mismo error: van al gimnasio sin un plan, hacen cardio interminable en la caminadora y esperan resultados que no llegan. La ciencia del deporte ha demostrado que <strong>el tipo de ejercicio, la intensidad y la combinación con nutrición son los factores determinantes</strong> — no las horas que pasas sudando.</p>
+<p>En <strong>New Personal Training S.A.S</strong>, llevamos 11+ años ayudando a personas de Medellín y el Valle de Aburrá a <strong>bajar de peso de forma efectiva, sostenible y sin lesiones</strong>, con planes diseñados por profesionales certificados en deporte y nutrición.</p>
+
+<h2>¿Qué tipo de ejercicio es más efectivo para perder peso?</h2>
+<h3>1. Entrenamiento de fuerza (el más subestimado)</h3>
+<p>Contrario al mito popular, levantar pesas es uno de los métodos más efectivos para bajar de peso. El músculo es metabolicamente activo: cada kilogramo de músculo quema entre 50 y 100 calorías adicionales por día en reposo. Un programa de fuerza bien diseñado aumenta tu metabolismo basal de forma permanente.</p>
+
+<h3>2. HIIT — Entrenamiento interválico de alta intensidad</h3>
+<p>El <strong>HIIT</strong> alterna períodos de esfuerzo máximo con períodos de recuperación activa. Estudios muestran que 20-30 minutos de HIIT queman más grasa que 60 minutos de cardio continuo a intensidad moderada, gracias al "efecto afterburn" (consumo elevado de oxígeno post-ejercicio, EPOC).</p>
+
+<h3>3. Entrenamiento funcional</h3>
+<p>Movimientos multiarticulares que involucran grandes grupos musculares simultáneamente: sentadillas, peso muerto, planchas, movimientos de empuje y tirón. Alto gasto calórico, mejora de la movilidad y transferencia directa a la vida cotidiana.</p>
+
+<h3>4. Cardio de baja intensidad (complemento, no protagonista)</h3>
+<p>Caminatas rápidas, bicicleta suave o natación a ritmo moderado son excelentes complementos para los días de recuperación. No deben ser el eje principal de tu programa de pérdida de peso.</p>
+
+<h2>La combinación ganadora: ejercicio + nutrición + entrenador personal</h2>
+<p>La investigación es clara: el ejercicio solo produce pérdida de peso modesta. La combinación de <strong>entrenamiento personalizado + plan nutricional</strong> multiplica los resultados. New Personal Training ofrece ambos servicios integrados:</p>
+<ul>
+  <li><strong>Entrenador personal</strong> que diseña tu programa de fuerza + cardio adaptado a tu condición física actual</li>
+  <li><strong>Nutricionista certificado</strong> que calcula tu déficit calórico adecuado y crea un plan alimentario real y sostenible</li>
+  <li><strong>Seguimiento continuo</strong> con métricas objetivas: peso, porcentaje de grasa, perímetros corporales, fuerza y resistencia</li>
+</ul>
+
+<h2>¿Cuánto tiempo tarda en verse resultados con un entrenador personal para bajar de peso?</h2>
+<ul>
+  <li><strong>Semanas 1-2:</strong> Reducción de inflamación, mejor energía, mejora del sueño — los cambios internos empiezan antes de que se vean en el espejo.</li>
+  <li><strong>Semanas 3-6:</strong> Primeros cambios visibles: ropa que queda diferente, aumento de fuerza y resistencia, mejora postural.</li>
+  <li><strong>Mes 2-3:</strong> Pérdida de grasa visible y medible. El ritmo saludable y sostenible es 0,5-1 kg de grasa por semana.</li>
+  <li><strong>Mes 4+:</strong> Transformación consolidada. El nuevo metabolismo se mantiene gracias al músculo ganado.</li>
+</ul>
+<p>Los planes rápidos de "30 días" que prometen resultados extremos no existen en la ciencia del deporte real. Lo que sí existe: un programa bien diseñado que genera resultados que duran.</p>
+
+<h2>Errores comunes al intentar bajar de peso con ejercicio</h2>
+<ul>
+  <li><strong>Hacer solo cardio:</strong> Pérdida de músculo + metabolismo más lento = efecto rebote garantizado.</li>
+  <li><strong>Comer muy poco:</strong> El déficit calórico extremo destruye músculo y baja el metabolismo basal.</li>
+  <li><strong>No descansar suficiente:</strong> El cortisol elevado por falta de sueño inhibe la quema de grasa y aumenta el apetito.</li>
+  <li><strong>Sin progresión en el entrenamiento:</strong> El cuerpo se adapta rápidamente. Sin aumentar la carga o variar los estímulos, el progreso se detiene.</li>
+  <li><strong>Inconsistencia:</strong> Entrenar 3 semanas y descansar 2 no da resultados. La consistencia a largo plazo lo es todo.</li>
+</ul>
+
+<h2>Precios del entrenamiento personal para bajar de peso en Medellín</h2>
+<ul>
+  <li><strong>Entrenamiento personalizado 1:1:</strong> desde $53.800/sesión</li>
+  <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $645.600 COP</li>
+  <li><strong>Valoración nutricional con nutricionista:</strong> $250.000 COP (recomendada para complementar)</li>
+  <li><strong>Entrenamiento semipersonalizado (con 1-2 personas más):</strong> desde $69.200/sesión</li>
+</ul>
+<p>Todos los planes incluyen evaluación inicial gratuita, diseño del programa y seguimiento mensual. El servicio es <strong>a domicilio en Medellín y todo el Valle de Aburrá</strong> o en las instalaciones que prefieras.</p>
+
+<h2>¿Por qué elegir New Personal Training para bajar de peso en Medellín?</h2>
+<p>Con más de 11 años de experiencia y 50+ profesionales certificados en deporte y nutrición, <strong>New Personal Training S.A.S</strong> ha ayudado a cientos de personas en Medellín a alcanzar y mantener su peso ideal. No ofrecemos promesas milagrosas — ofrecemos metodología, profesionalismo y acompañamiento real.</p>
+    `
+  },
+  {
+    id: "11",
+    slug: "equipos-gym-medellin-venta-servicio-tecnico",
+    title: "Equipos de gimnasio en Medellín: venta, instalación y servicio técnico especializado para gyms y hogares",
+    excerpt: "New Personal Training S.A.S no solo forma entrenadores — también provee equipos de gimnasio en Medellín para gyms comerciales, empresas y hogares, con servicio técnico mecánico, electrónico y rediseño de máquinas.",
+    category: "Equipos",
+    tags: ["equipos de gym Medellín", "máquinas de gimnasio Medellín", "venta equipos gym Medellín", "servicio técnico máquinas gym Medellín"],
+    readTime: 5,
+    publishedAt: "2026-06-25",
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Especialistas en Equipamiento Deportivo",
+    content: `
+<h2>New Personal Training: más que entrenadores — proveedores de equipos de gym en Medellín</h2>
+<p>La mayoría de personas conoce a <strong>New Personal Training S.A.S</strong> por sus entrenadores personales certificados. Pero hay una dimensión de nuestro negocio que marca una diferencia única en el mercado: somos proveedores y técnicos especializados en <strong>equipos de gimnasio en Medellín</strong> para todas las escalas — desde el gym de tu hogar hasta el centro deportivo más grande del Valle de Aburrá.</p>
+<p>Fundados en 2014 y con más de 11 años de experiencia en el sector deportivo, hemos desarrollado un profundo conocimiento de los equipos que realmente funcionan, los que se rompen con facilidad y cómo mantenerlos en óptimas condiciones.</p>
+
+<h2>Líneas de equipos de gimnasio que manejamos</h2>
+<h3>Línea Profesional — para gyms comerciales y centros deportivos</h3>
+<p>Equipos de alta durabilidad diseñados para soportar uso intensivo con múltiples usuarios diarios. Ideales para <strong>gimnasios comerciales en Medellín</strong> que buscan equipos de larga vida útil y bajo costo de mantenimiento. Incluye:</p>
+<ul>
+  <li>Caminadoras y elípticas de uso intensivo</li>
+  <li>Sistemas de poleas y máquinas de peso guiado</li>
+  <li>Racks de sentadilla y jaulas de potencia</li>
+  <li>Bancos y mancuernas de acero macizo</li>
+  <li>Equipos cardiovasculares (bicicletas estáticas, steppers, remos)</li>
+</ul>
+
+<h3>Línea Institucional — para empresas, conjuntos y hoteles</h3>
+<p>Equipos de calidad profesional con estética premium, ideales para <strong>gimnasios corporativos en Medellín</strong>, conjuntos residenciales y hoteles que buscan ofrecer un espacio de bienestar a sus empleados o residentes. Relación óptima calidad-precio para uso moderado.</p>
+
+<h3>Línea Hogar — para tu gym en casa en Medellín</h3>
+<p>Equipos compactos, silenciosos y estéticamente adaptados para espacios residenciales. Desde una simple caminadora plegable hasta un gimnasio multifuncional completo. <strong>New Personal Training asesora, provee e instala el equipo</strong> y puede incluir el servicio de entrenamiento personalizado para sacarle el máximo partido.</p>
+
+<h2>Servicio técnico de máquinas de gym en Medellín</h2>
+<p>Este es uno de los servicios más demandados y menos ofrecidos de forma profesional en el mercado de <strong>equipos de gimnasio en Medellín</strong>. New Personal Training cuenta con técnicos especializados en:</p>
+<h3>Mantenimiento y reparación mecánica</h3>
+<p>Lubricación de bandas, ajuste de tensiones, reemplazo de piezas de desgaste (rodamientos, poleas, cables), calibración de pesos. Muchos gimnasios en Medellín operan con equipos deteriorados porque no encuentran técnicos calificados — nosotros somos la solución.</p>
+<h3>Mantenimiento electrónico</h3>
+<p>Reparación de tableros de control, sensores de velocidad y resistencia, motores eléctricos, sistemas de programación. Caminadoras y equipos cardiovasculares con fallas electrónicas tienen solución antes de que sea necesario reemplazarlos.</p>
+<h3>Rediseño y actualización de equipos</h3>
+<p>¿Tienes equipos viejos que ya no se ven bien o no funcionan como antes? Ofrecemos servicios de <strong>rediseño y renovación de máquinas de gimnasio</strong>: tapizado de asientos, pintura estructural, actualización de piezas obsoletas. Tu equipo luce y funciona como nuevo a una fracción del costo de reposición.</p>
+
+<h2>¿Por qué comprar equipos de gym con New Personal Training en lugar de importadoras genéricas?</h2>
+<ul>
+  <li><strong>Asesoría especializada:</strong> No te vendemos el equipo más caro — te recomendamos el que mejor se adapta a tus necesidades reales, espacio disponible y presupuesto.</li>
+  <li><strong>Instalación profesional:</strong> La mala instalación daña los equipos y genera riesgo de lesiones. Nuestros técnicos instalan cada máquina correctamente desde el primer día.</li>
+  <li><strong>Mantenimiento continuo:</strong> Ofrecemos planes de mantenimiento preventivo que prolongan significativamente la vida útil de tus equipos.</li>
+  <li><strong>Respaldo local en Medellín:</strong> No esperarás semanas a que lleguen técnicos de Bogotá. Tenemos cobertura en todo el Valle de Aburrá.</li>
+  <li><strong>Conocimiento desde adentro:</strong> Usamos estos equipos en nuestras propias sesiones de entrenamiento. Sabemos exactamente cuáles son resistentes y cuáles no.</li>
+</ul>
+
+<h2>¿Estás montando un gym en Medellín? New Personal Training es tu aliado</h2>
+<p>Si estás planeando abrir un gimnasio comercial, equipar un gym corporativo o crear tu espacio de entrenamiento en casa en Medellín, New Personal Training puede acompañarte en todo el proceso:</p>
+<ol>
+  <li><strong>Consultoría de equipamiento:</strong> Definición del catálogo óptimo según tu público objetivo y presupuesto.</li>
+  <li><strong>Proveeduría de equipos:</strong> Línea profesional, institucional o hogar, según la escala del proyecto.</li>
+  <li><strong>Instalación y configuración.</strong></li>
+  <li><strong>Plan de mantenimiento preventivo.</strong></li>
+  <li><strong>Provisión de personal certificado</strong> si necesitas entrenadores para tu nuevo centro deportivo.</li>
+</ol>
+<p>Contáctanos al <strong>+57 300 597 4290</strong> o escríbenos a <strong>contacto@newpersonaltraining.com</strong> para recibir una cotización personalizada.</p>
+    `
+  },
+  {
+    id: "12",
+    slug: "bienestar-empresarial-medellin-pausas-activas",
+    title: "Bienestar corporativo en Medellín: pausas activas, entrenamiento empresarial y gym para empleados",
+    excerpt: "Las empresas más productivas de Medellín invierten en el bienestar físico de sus empleados. Descubre cómo New Personal Training transforma el rendimiento de equipos de trabajo con programas de pausas activas y entrenamiento corporativo.",
+    category: "Empresas",
+    tags: ["bienestar corporativo Medellín", "pausas activas empresas Medellín", "entrenamiento empresarial Medellín", "gym corporativo Medellín"],
+    readTime: 6,
+    publishedAt: "2026-06-26",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte y Bienestar Corporativo",
+    content: `
+<h2>El bienestar corporativo en Medellín: de beneficio a ventaja competitiva</h2>
+<p>Las empresas de Medellín que invierten en el bienestar físico de sus equipos no lo hacen solo por altruismo: lo hacen porque los números lo justifican. Estudios de la OMS señalan que por cada dólar invertido en programas de bienestar corporativo, las empresas recuperan entre $2.5 y $4.8 en productividad y reducción del ausentismo.</p>
+<p><strong>New Personal Training S.A.S</strong> lleva más de 11 años trabajando con empresas, conjuntos residenciales y organizaciones del Valle de Aburrá, ofreciendo soluciones integrales de <strong>bienestar corporativo en Medellín</strong> adaptadas a la cultura y los objetivos de cada organización.</p>
+
+<h2>¿Qué incluye el programa de bienestar empresarial de New Personal Training?</h2>
+<h3>Pausas activas para empresas en Medellín</h3>
+<p>Las <strong>pausas activas</strong> son interrupciones breves (5-15 minutos) del trabajo sedentario donde los empleados realizan ejercicios de movilidad, estiramiento y activación. Un profesional certificado de New Personal Training lidera las sesiones directamente en tu oficina, sala de reuniones o área común.</p>
+<p><strong>Beneficios medidos en empresas:</strong></p>
+<ul>
+  <li>Reducción del 30-40% del dolor de espalda y cuello por postura sedentaria</li>
+  <li>Aumento de la concentración y el rendimiento cognitivo en las horas posteriores</li>
+  <li>Mejora del clima organizacional y la cohesión del equipo</li>
+  <li>Reducción del ausentismo por enfermedades relacionadas con el sedentarismo</li>
+</ul>
+
+<h3>Entrenamiento grupal para empleados</h3>
+<p>Clases de entrenamiento funcional, yoga, pilates o boxeo antes o después de la jornada laboral, en las instalaciones de la empresa o en el espacio que definas. Grupos de 5 a 30 personas con un entrenador certificado que adapta la sesión a los diferentes niveles físicos del equipo.</p>
+
+<h3>Programas de entrenamiento personalizado para ejecutivos</h3>
+<p>Los líderes empresariales de Medellín tienen agendas que dificultan el ejercicio regular. New Personal Training diseña programas 1:1 para ejecutivos que optimizan el tiempo disponible: sesiones de 45-60 minutos en la oficina, el hotel o a domicilio, a cualquier hora que la agenda lo permita.</p>
+
+<h3>Equipamiento de gym corporativo</h3>
+<p>Dotamos y mantenemos el <strong>gimnasio corporativo de tu empresa en Medellín</strong>. Desde el diseño del espacio y la selección de equipos (línea institucional) hasta la instalación, el mantenimiento preventivo y la provisión de entrenadores certificados para guiar a tus empleados. Un servicio integral que convierte un cuarto vacío en un beneficio laboral de alto impacto.</p>
+
+<h2>¿Qué empresas en Medellín deberían invertir en bienestar corporativo?</h2>
+<p>El programa de New Personal Training está diseñado para <strong>cualquier tipo de organización en Medellín</strong>:</p>
+<ul>
+  <li>Empresas de tecnología y call centers — alto sedentarismo, estrés digital</li>
+  <li>Constructoras y empresas de ingeniería — prevención de lesiones músculo-esqueléticas</li>
+  <li>Clínicas y hospitales — turnos exigentes, alto desgaste físico y mental</li>
+  <li>Bancos y entidades financieras — estrés crónico, posturas sedentarias prolongadas</li>
+  <li>Conjuntos residenciales — como beneficio diferenciador para residentes</li>
+  <li>Hoteles y centros turísticos — spa y bienestar para huéspedes y empleados</li>
+</ul>
+
+<h2>¿Cómo funciona el proceso con New Personal Training?</h2>
+<ol>
+  <li><strong>Diagnóstico inicial gratuito:</strong> Evaluamos las necesidades del equipo, el espacio disponible y los objetivos de bienestar de la organización.</li>
+  <li><strong>Diseño del programa:</strong> Creamos un plan a medida: frecuencia, duración, disciplinas y métricas de seguimiento.</li>
+  <li><strong>Implementación:</strong> Uno o varios profesionales certificados de New Personal Training asisten regularmente a tus instalaciones o se desplazan donde sea necesario.</li>
+  <li><strong>Reportes de impacto:</strong> Informes periódicos sobre asistencia, percepción del bienestar y resultados medibles del programa.</li>
+</ol>
+
+<h2>¿Cuánto cuesta un programa de bienestar corporativo con New Personal Training en Medellín?</h2>
+<p>Los precios dependen del número de empleados, la frecuencia de las sesiones y los servicios incluidos. New Personal Training ofrece propuestas a medida para empresas de todos los tamaños. Contáctanos al <strong>+57 300 597 4290</strong> o escríbenos a <strong>contacto@newpersonaltraining.com</strong> para recibir una propuesta sin costo.</p>
+<p><em>Las empresas que trabajan con nosotros reportan que el costo del programa de bienestar equivale a menos de 2 días de ausentismo promedio — y los resultados reducen el ausentismo en un 25-35%.</em></p>
+    `
+  },
+  {
+    id: "13",
+    slug: "clases-natacion-medellin-personalizada",
+    title: "Clases de natación en Medellín 2026: aprende a nadar o perfecciona tu técnica con instructor certificado",
+    excerpt: "¿Buscas clases de natación en Medellín? New Personal Training ofrece natación personalizada y semipersonalizada para todas las edades y niveles. Precios, metodología y cobertura en el Valle de Aburrá.",
+    category: "Deportes",
+    tags: ["clases de natación Medellín", "natación personalizada Medellín", "aprender a nadar Medellín", "instructor natación Medellín"],
+    readTime: 5,
+    publishedAt: "2026-06-27",
+    image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>¿Por qué tomar clases de natación en Medellín con un instructor personal?</h2>
+<p>La natación es uno de los deportes más completos del mundo: trabaja todos los grupos musculares, es de bajo impacto articular, mejora la capacidad cardiovascular y tiene uno de los mayores potenciales de quema calórica por hora (400-700 calorías). Sin embargo, sin una técnica correcta, la natación se convierte en un esfuerzo ineficiente que puede generar lesiones de hombro y cuello.</p>
+<p><strong>New Personal Training S.A.S</strong> ofrece <strong>clases de natación personalizadas en Medellín</strong> con instructores certificados, tanto para quienes aprenden desde cero como para nadadores que buscan optimizar su técnica y rendimiento.</p>
+
+<h2>¿Para quién son las clases de natación personalizada de New Personal Training?</h2>
+<ul>
+  <li><strong>Principiantes absolutos:</strong> Personas que nunca han nadado o tienen miedo al agua. Aprendizaje gradual y seguro, adaptado a tu ritmo.</li>
+  <li><strong>Nadadores recreativos:</strong> Ya sabes nadar pero quieres mejorar tu técnica, velocidad o resistencia para disfrutar más del deporte.</li>
+  <li><strong>Deportistas de triatlón y open water:</strong> Optimización de la técnica en las cuatro modalidades (crol, espalda, braza, mariposa) con foco en eficiencia y velocidad.</li>
+  <li><strong>Personas con lesiones osteoarticulares:</strong> La natación es el ejercicio más recomendado para personas con artritis, problemas de rodilla o cadera. El agua elimina el impacto mientras mantiene la resistencia.</li>
+  <li><strong>Adultos mayores:</strong> Mejora de la movilidad, fuerza y resistencia cardiovascular sin riesgo de impacto.</li>
+  <li><strong>Embarazadas:</strong> La natación durante el embarazo es segura, recomendada y muy beneficiosa — con la guía adecuada de un profesional.</li>
+</ul>
+
+<h2>Metodología de enseñanza de natación con New Personal Training</h2>
+<h3>Evaluación inicial</h3>
+<p>Antes de la primera sesión, tu instructor evalúa tu nivel actual, identifica errores técnicos, analiza tu flotabilidad natural y define los objetivos del programa. Esta evaluación es gratuita.</p>
+<h3>Fases del programa para principiantes</h3>
+<ol>
+  <li><strong>Adaptación al medio acuático:</strong> Control de la respiración, flotación y propulsión básica. La base para todo lo que viene después.</li>
+  <li><strong>Técnica de crol y espalda:</strong> Los estilos más eficientes para el fitness general. Coordinación de brazos, piernas y respiración.</li>
+  <li><strong>Resistencia y distancia:</strong> Progresión gradual en metros y tiempo de nado continuo.</li>
+  <li><strong>Estilos avanzados y entrenamiento específico:</strong> Braza, mariposa, virajes, salidas — para quienes quieren un dominio completo del deporte.</li>
+</ol>
+
+<h2>Beneficios de la natación para la salud en Medellín</h2>
+<ul>
+  <li><strong>Ejercicio cardiovascular completo</strong> sin impacto sobre las articulaciones</li>
+  <li><strong>Tonificación de todo el cuerpo:</strong> brazos, hombros, espalda, core, glúteos y piernas trabajan en cada brazada</li>
+  <li><strong>Mejora de la postura:</strong> el nado corrige desequilibrios musculares causados por el sedentarismo</li>
+  <li><strong>Reducción del estrés:</strong> el efecto relajante del agua y la respiración rítmica tienen un poderoso efecto ansiolítico</li>
+  <li><strong>Ideal para personas con sobrepeso:</strong> el agua soporta el 90% del peso corporal, permitiendo moverse con facilidad desde el primer día</li>
+  <li><strong>Complemento perfecto para el entrenamiento en seco:</strong> los nadadores tienen menor tasa de lesiones en otros deportes</li>
+</ul>
+
+<h2>Precios de clases de natación en Medellín con New Personal Training</h2>
+<ul>
+  <li><strong>Natación Personalizada (1:1) — sesión:</strong> desde $87.200 COP</li>
+  <li><strong>Plan mensual 2x/semana (8 sesiones):</strong> $697.600 COP</li>
+  <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $1.046.400 COP</li>
+  <li><strong>Natación Semipersonalizada (grupo reducido) — sesión:</strong> desde $107.700 COP</li>
+  <li><strong>Plan mensual semipersonalizado 2x/semana:</strong> $861.600 COP</li>
+</ul>
+<p>Las sesiones son <strong>presenciales en la piscina de tu conjunto residencial, club o instalación en el Valle de Aburrá</strong>. Tu instructor lleva todo el material didáctico necesario (tablas, pullbuoys, aletas).</p>
+
+<h2>¿Cómo empezar con las clases de natación de New Personal Training en Medellín?</h2>
+<p>Es sencillo: contáctanos al <strong>+57 300 597 4290</strong> por WhatsApp o escríbenos a <strong>contacto@newpersonaltraining.com</strong>. Coordinaremos una evaluación inicial gratuita, conoceremos tu piscina disponible y comenzaremos tu programa la semana siguiente.</p>
+<p>New Personal Training también puede complementar las clases de natación con <strong>entrenamiento en seco personalizado, fisioterapia deportiva y plan nutricional</strong>, formando un programa integral de bienestar que maximiza tus resultados.</p>
+    `
+  }
 ];
 
 export const BLOG_CATEGORIES = [...new Set(BLOG_POSTS.map(p => p.category))];
