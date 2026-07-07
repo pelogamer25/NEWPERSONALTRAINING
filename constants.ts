@@ -114,7 +114,7 @@ export const SERVICES: Service[] = [
   {
     id: "5",
     title: "Entrenamiento Semipersonalizado",
-    description: "Entrena en pareja o grupo pequeño. Modalidad: Presencial (Valle de Aburrá).",
+    description: "Entrena en pareja o grupo pequeño de 2 o 3 personas. Modalidad: Presencial (Valle de Aburrá).",
     icon: Users,
     image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800",
     slug: "entrenamiento-semi-personalizado",
