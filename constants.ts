@@ -129,7 +129,7 @@ export const SERVICES: Service[] = [
     title: "Clase Grupal Rítmica",
     description: "Clases grupales llenas de energía y ritmo. Modalidad: Presencial (Valle de Aburrá).",
     icon: Activity,
-    image: "https://images.unsplash.com/photo-1519925610903-381054cc2a1c?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800",
     slug: "clase-grupal-ritmica",
     price: "$106.300 – $2.126.000",
     imageInfo: "Valor Sesión: $106.300 | Planes Mensuales: $425.200 – $2.126.000 (1 a 5 veces/sem).",
