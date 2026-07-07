@@ -192,8 +192,8 @@ export const Home: React.FC = () => {
                 transition={{ duration: 0.9, ease: "easeOut", delay: 0.1 }}
               >
                 <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-black italic text-white mb-6 leading-[0.9] tracking-tighter relative">
-                  SHAPE YOUR <br />
-                  <span className="text-gradient-red">BODY TODAY</span>
+                  BE <br />
+                  <span className="text-gradient-red">YOURSELF</span>
                 </h1>
               </motion.div>
 
