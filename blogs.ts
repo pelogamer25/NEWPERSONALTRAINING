@@ -174,7 +174,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
 <h2>¿Cómo funciona el proceso de inicio?</h2>
 <ol>
-  <li><strong>Contacto inicial:</strong> Escríbenos por WhatsApp al +57 300 597 4290 o usa el formulario de contacto.</li>
+  <li><strong>Contacto inicial:</strong> Escríbenos por WhatsApp al +57 314 400 8592 o usa el formulario de contacto.</li>
   <li><strong>Evaluación gratuita (30 min):</strong> Un profesional visita tu hogar o se conecta virtualmente para conocer tus objetivos, historial médico y disponibilidad.</li>
   <li><strong>Diseño de tu plan:</strong> Basado en la evaluación, tu entrenador diseña un programa personalizado de semanas.</li>
   <li><strong>Inicio del entrenamiento:</strong> Arrancamos. Tu entrenador llega puntualmente y trae todo lo necesario.</li>
@@ -408,7 +408,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Se recomienda una valoración inicial seguida de seguimientos cada 4-6 semanas para ajustar el plan según tus resultados. En New Personal Training, tu nutricionista trabaja en coordinación con tu entrenador personal para maximizar la sinergia entre alimentación y ejercicio.</p>
 
 <h2>¿Cómo agenda tu cita con nutricionista en Medellín?</h2>
-<p>Contáctanos al <strong>+57 300 597 4290</strong> (WhatsApp) o escríbenos a contacto@newpersonaltraining.com. La valoración es presencial en el Valle de Aburrá.</p>
+<p>Contáctanos al <strong>+57 314 400 8592</strong> (WhatsApp) o escríbenos a info@newpersonaltraining.com. La valoración es presencial en el Valle de Aburrá.</p>
     `
   },
   {
@@ -532,7 +532,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Depende de la condición. Una lesión deportiva aguda puede requerir 6-10 sesiones. Una lumbalgia crónica puede necesitar 12-20 sesiones para lograr resultados sostenibles. Tu fisioterapeuta de New Personal Training te entregará un plan claro desde la primera consulta.</p>
 
 <h2>Zonas de cobertura para fisioterapia a domicilio</h2>
-<p>Nuestros fisioterapeutas llegan a <strong>El Poblado, Laureles, Belén, Envigado, Sabaneta, Itagüí, Bello</strong> y todas las zonas del Valle de Aburrá. Contáctanos al <strong>+57 300 597 4290</strong> para verificar disponibilidad en tu barrio.</p>
+<p>Nuestros fisioterapeutas llegan a <strong>El Poblado, Laureles, Belén, Envigado, Sabaneta, Itagüí, Bello</strong> y todas las zonas del Valle de Aburrá. Contáctanos al <strong>+57 314 400 8592</strong> para verificar disponibilidad en tu barrio.</p>
     `
   },
   {
@@ -665,7 +665,7 @@ export const BLOG_POSTS: BlogPost[] = [
   <li><strong>Plan de mantenimiento preventivo.</strong></li>
   <li><strong>Provisión de personal certificado</strong> si necesitas entrenadores para tu nuevo centro deportivo.</li>
 </ol>
-<p>Contáctanos al <strong>+57 300 597 4290</strong> o escríbenos a <strong>contacto@newpersonaltraining.com</strong> para recibir una cotización personalizada.</p>
+<p>Contáctanos al <strong>+57 314 400 8592</strong> o escríbenos a <strong>info@newpersonaltraining.com</strong> para recibir una cotización personalizada.</p>
     `
   },
   {
@@ -725,7 +725,7 @@ export const BLOG_POSTS: BlogPost[] = [
 </ol>
 
 <h2>¿Cuánto cuesta un programa de bienestar corporativo con New Personal Training en Medellín?</h2>
-<p>Los precios dependen del número de empleados, la frecuencia de las sesiones y los servicios incluidos. New Personal Training ofrece propuestas a medida para empresas de todos los tamaños. Contáctanos al <strong>+57 300 597 4290</strong> o escríbenos a <strong>contacto@newpersonaltraining.com</strong> para recibir una propuesta sin costo.</p>
+<p>Los precios dependen del número de empleados, la frecuencia de las sesiones y los servicios incluidos. New Personal Training ofrece propuestas a medida para empresas de todos los tamaños. Contáctanos al <strong>+57 314 400 8592</strong> o escríbenos a <strong>info@newpersonaltraining.com</strong> para recibir una propuesta sin costo.</p>
 <p><em>Las empresas que trabajan con nosotros reportan que el costo del programa de bienestar equivale a menos de 2 días de ausentismo promedio — y los resultados reducen el ausentismo en un 25-35%.</em></p>
     `
   },
@@ -788,7 +788,7 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Las sesiones son <strong>presenciales en la piscina de tu conjunto residencial, club o instalación en el Valle de Aburrá</strong>. Tu instructor lleva todo el material didáctico necesario (tablas, pullbuoys, aletas).</p>
 
 <h2>¿Cómo empezar con las clases de natación de New Personal Training en Medellín?</h2>
-<p>Es sencillo: contáctanos al <strong>+57 300 597 4290</strong> por WhatsApp o escríbenos a <strong>contacto@newpersonaltraining.com</strong>. Coordinaremos una evaluación inicial gratuita, conoceremos tu piscina disponible y comenzaremos tu programa la semana siguiente.</p>
+<p>Es sencillo: contáctanos al <strong>+57 314 400 8592</strong> por WhatsApp o escríbenos a <strong>info@newpersonaltraining.com</strong>. Coordinaremos una evaluación inicial gratuita, conoceremos tu piscina disponible y comenzaremos tu programa la semana siguiente.</p>
 <p>New Personal Training también puede complementar las clases de natación con <strong>entrenamiento en seco personalizado, fisioterapia deportiva y plan nutricional</strong>, formando un programa integral de bienestar que maximiza tus resultados.</p>
     `
   }

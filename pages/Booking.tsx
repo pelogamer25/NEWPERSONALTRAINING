@@ -12,7 +12,7 @@ const BOOKING_SCHEMA = {
     "@type": "FitnessCenter",
     "@id": "https://newpersonaltraining.com/#business",
     "name": "New Personal Training",
-    "telephone": "+573005974290"
+    "telephone": "+573144008592"
   }
 };
 
@@ -21,7 +21,7 @@ export const Booking: React.FC = () => {
     <>
       <SEOHead
         title="Agenda tu Sesión | New Personal Training — Medellín"
-        description="Reserva tu evaluación inicial gratuita de 30 minutos, sesión de entrenamiento personal o consulta corporativa con New Personal Training en Medellín. ¡También por WhatsApp: +57 300 597 4290!"
+        description="Reserva tu evaluación inicial gratuita de 30 minutos, sesión de entrenamiento personal o consulta corporativa con New Personal Training en Medellín. ¡También por WhatsApp: +57 314 400 8592!"
         canonical="/reservar"
         jsonLd={BOOKING_SCHEMA}
         breadcrumbs={[
@@ -88,10 +88,10 @@ export const Booking: React.FC = () => {
         <div className="mt-12 p-8 glass-panel rounded-xl text-center">
           <h2 className="font-bold text-xl italic text-white mb-2">¿Necesitas ayuda para elegir?</h2>
           <p className="text-gray-400 mb-6">
-            Escríbenos directamente por WhatsApp al <strong className="text-white">+57 300 597 4290</strong> y uno de nuestros entrenadores en Medellín te asesorará.
+            Escríbenos directamente por WhatsApp al <strong className="text-white">+57 314 400 8592</strong> y uno de nuestros entrenadores en Medellín te asesorará.
           </p>
           <a
-            href="https://wa.me/573005974290"
+            href="https://wa.me/573144008592"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded text-white bg-green-600 hover:bg-green-500 transition-all shadow-[0_0_20px_rgba(22,163,74,0.3)] hover:shadow-[0_0_30px_rgba(22,163,74,0.5)] uppercase tracking-wide"

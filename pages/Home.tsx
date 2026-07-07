@@ -16,8 +16,8 @@ const LOCAL_BUSINESS_SCHEMA = {
   "name": "New Personal Training",
   "description": "Centro de entrenamiento personal en Medellín con más de 11 años de experiencia. Entrenamiento personalizado, nutrición, pilates, yoga, boxeo, natación, squash, fisioterapia y masajes en el Valle de Aburrá.",
   "url": "https://newpersonaltraining.com",
-  "telephone": "+573005974290",
-  "email": "contacto@newpersonaltraining.com",
+  "telephone": "+573144008592",
+  "email": "info@newpersonaltraining.com",
   "foundingDate": "2014",
   "address": {
     "@type": "PostalAddress",
@@ -79,7 +79,7 @@ const FAQ_SCHEMA = {
       "name": "¿Dónde está ubicado New Personal Training?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "New Personal Training opera en toda el área metropolitana del Valle de Aburrá, Medellín, Antioquia, Colombia. Puedes contactarnos al +57 300 597 4290 o escribirnos a contacto@newpersonaltraining.com para coordinar la ubicación de tus sesiones."
+        "text": "New Personal Training opera en toda el área metropolitana del Valle de Aburrá, Medellín, Antioquia, Colombia. Puedes contactarnos al +57 314 400 8592 o escribirnos a info@newpersonaltraining.com para coordinar la ubicación de tus sesiones."
       }
     },
     {
@@ -609,7 +609,7 @@ export const Home: React.FC = () => {
                 <Button href="/reservar" size="lg" className="text-base px-12 py-5">
                   COMIENZA TU CAMBIO <ArrowRight className="ml-2 w-5 h-5" aria-hidden="true" />
                 </Button>
-                <Button href="https://wa.me/573005974290" variant="outline" size="lg" className="text-base px-10 py-5">
+                <Button href="https://wa.me/573144008592" variant="outline" size="lg" className="text-base px-10 py-5">
                   WhatsApp Directo
                 </Button>
               </div>

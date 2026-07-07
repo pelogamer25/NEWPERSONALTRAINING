@@ -14,8 +14,8 @@ const CONTACT_SCHEMA = {
     "@type": "FitnessCenter",
     "@id": "https://newpersonaltraining.com/#business",
     "name": "New Personal Training",
-    "telephone": "+573005974290",
-    "email": "contacto@newpersonaltraining.com",
+    "telephone": "+573144008592",
+    "email": "info@newpersonaltraining.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Medellín",
@@ -26,14 +26,14 @@ const CONTACT_SCHEMA = {
       {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "telephone": "+573005974290",
+        "telephone": "+573144008592",
         "availableLanguage": "Spanish",
         "contactOption": "TollFree"
       },
       {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "email": "contacto@newpersonaltraining.com",
+        "email": "info@newpersonaltraining.com",
         "availableLanguage": "Spanish"
       }
     ]
@@ -57,8 +57,8 @@ export const Contact: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Contacto | New Personal Training — Medellín +57 300 597 4290"
-        description="Contáctanos en New Personal Training Medellín. Teléfono/WhatsApp: +57 300 597 4290. Email: contacto@newpersonaltraining.com. Presencial en el Valle de Aburrá, Antioquia, Colombia."
+        title="Contacto | New Personal Training — Medellín +57 314 400 8592"
+        description="Contáctanos en New Personal Training Medellín. Teléfono/WhatsApp: +57 314 400 8592. Email: info@newpersonaltraining.com. Presencial en el Valle de Aburrá, Antioquia, Colombia."
         canonical="/contacto"
         jsonLd={CONTACT_SCHEMA}
         breadcrumbs={[

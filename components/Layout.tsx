@@ -40,7 +40,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
 
       {/* Floating WhatsApp Button */}
       <a
-        href={`https://wa.me/573005974290?text=${encodeURIComponent('Hola! Quiero información sobre los servicios de New Personal Training.')}`}
+        href={`https://wa.me/573144008592?text=${encodeURIComponent('Hola! Quiero información sobre los servicios de New Personal Training.')}`}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactar por WhatsApp"

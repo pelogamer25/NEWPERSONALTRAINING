@@ -214,7 +214,7 @@ export const Services: React.FC = () => {
                 <p className="text-xs text-gray-500 mb-3">{line.subtitle}</p>
                 <p className="text-sm text-gray-400 leading-relaxed flex-1 mb-5">{line.desc}</p>
                 <a
-                  href={`https://wa.me/573005974290?text=${encodeURIComponent(line.waMsg)}`}
+                  href={`https://wa.me/573144008592?text=${encodeURIComponent(line.waMsg)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-between w-full bg-green-500/10 border border-green-500/20 hover:bg-green-500 hover:border-green-500 text-green-400 hover:text-white px-4 py-2.5 rounded-xl transition-all duration-300 group/btn"
@@ -243,7 +243,7 @@ export const Services: React.FC = () => {
               </p>
             </div>
             <a
-              href={`https://wa.me/573005974290?text=${encodeURIComponent('Hola! Estoy montando un gimnasio en Medellín y quiero información sobre equipos, instalación y personal certificado.')}`}
+              href={`https://wa.me/573144008592?text=${encodeURIComponent('Hola! Estoy montando un gimnasio en Medellín y quiero información sobre equipos, instalación y personal certificado.')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-shrink-0 flex items-center gap-2 bg-npt-red hover:bg-npt-red-dark text-white font-bold px-6 py-3 rounded-xl uppercase tracking-wider text-sm transition-colors duration-300 whitespace-nowrap"

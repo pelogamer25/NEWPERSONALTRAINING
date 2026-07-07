@@ -11,9 +11,9 @@ import { Service, Trainer, Testimonial, NavigationItem } from './types';
 export const COMPANY_INFO = {
   name: "New Personal Training",
   legalName: "New Personal Training S.A.S",
-  phone: "+57 300 597 4290",
-  whatsapp: "https://wa.me/573005974290",
-  email: "contacto@newpersonaltraining.com",
+  phone: "+57 314 400 8592",
+  whatsapp: "https://wa.me/573144008592",
+  email: "info@newpersonaltraining.com",
   address: "Medellín, Antioquia, Colombia",
   serviceArea: "Valle de Aburrá (Medellín, Envigado, Itagüí, Sabaneta, Bello, La Estrella)",
   foundingYear: 2014,
@@ -38,7 +38,58 @@ export const NAVIGATION: NavigationItem[] = [
   { label: "Blog", href: "/blog" },
 ];
 
+const PERSONALIZADO_INCLUDES = [
+  "Implementos deportivos llevados hasta tu lugar de entrenamiento sin costo adicional.",
+  "Valoración y seguimiento continuo con báscula Smart de alta precisión.",
+  "Plan alimenticio personalizado.",
+  "Horario flexible: tú eliges cuándo y puede cambiarse.",
+  "Entrenamiento ininterrumpido: si el profesional titular no puede asistir, se envía un profesional provisional.",
+  "Espacio de entrenamiento seleccionable y cambiable.",
+  "Congelación del plan hasta 15 días por una sola vez cada vez que renueves, sin acumulación.",
+  "Regalo de cumpleaños: sesión de entrenamiento extra.",
+];
+
 export const SERVICES: Service[] = [
+  {
+    id: "4",
+    title: "Entrenamiento Personalizado",
+    description: "Sesiones 1:1 diseñadas para tus objetivos. Modalidad: Presencial (Valle de Aburrá).",
+    icon: Dumbbell,
+    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
+    slug: "entrenamiento-personalizado",
+    price: "$53.800 – $1.076.000",
+    imageInfo: "Valor Sesión: $53.800 | Planes Mensuales: $215.200 – $1.076.000 (1 a 5 veces/sem).",
+    includes: PERSONALIZADO_INCLUDES,
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$53.800" },
+      { label: "1x semana (4 ses)", price: "$215.200" },
+      { label: "2x semana (8 ses)", price: "$430.400" },
+      { label: "3x semana (12 ses)", price: "$645.600" },
+      { label: "4x semana (16 ses)", price: "$860.800" },
+      { label: "5x semana (20 ses)", price: "$1.076.000" }
+    ]
+  },
+  {
+    id: "5",
+    title: "Entrenamiento Semipersonalizado",
+    description: "Entrena en pareja o grupo pequeño de 2 o 3 personas. Modalidad: Presencial (Valle de Aburrá).",
+    icon: Users,
+    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800",
+    slug: "entrenamiento-semi-personalizado",
+    price: "$69.200 – $1.384.000",
+    imageInfo: "Valor Sesión: $69.200 | Planes Mensuales: $276.800 – $1.384.000 (1 a 5 veces/sem).",
+    includes: PERSONALIZADO_INCLUDES,
+    actionText: "Seleccionar opciones",
+    pricingOptions: [
+      { label: "Valor Sesión", price: "$69.200" },
+      { label: "1x semana (4 ses)", price: "$276.800" },
+      { label: "2x semana (8 ses)", price: "$553.600" },
+      { label: "3x semana (12 ses)", price: "$830.400" },
+      { label: "4x semana (16 ses)", price: "$1.107.200" },
+      { label: "5x semana (20 ses)", price: "$1.384.000" }
+    ]
+  },
   {
     id: "1",
     title: "Cita, Plan y Valoración con Nutricionista",
@@ -90,44 +141,6 @@ export const SERVICES: Service[] = [
       { label: "3x semana (12 ses)", price: "$1.275.600" },
       { label: "4x semana (16 ses)", price: "$1.700.800" },
       { label: "5x semana (20 ses)", price: "$2.126.000" }
-    ]
-  },
-  {
-    id: "4",
-    title: "Entrenamiento Personalizado",
-    description: "Sesiones 1:1 diseñadas para tus objetivos. Modalidad: Presencial (Valle de Aburrá).",
-    icon: Dumbbell,
-    image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800",
-    slug: "entrenamiento-personalizado",
-    price: "$53.800 – $1.076.000",
-    imageInfo: "Valor Sesión: $53.800 | Planes Mensuales: $215.200 – $1.076.000 (1 a 5 veces/sem).",
-    actionText: "Seleccionar opciones",
-    pricingOptions: [
-      { label: "Valor Sesión", price: "$53.800" },
-      { label: "1x semana (4 ses)", price: "$215.200" },
-      { label: "2x semana (8 ses)", price: "$430.400" },
-      { label: "3x semana (12 ses)", price: "$645.600" },
-      { label: "4x semana (16 ses)", price: "$860.800" },
-      { label: "5x semana (20 ses)", price: "$1.076.000" }
-    ]
-  },
-  {
-    id: "5",
-    title: "Entrenamiento Semipersonalizado",
-    description: "Entrena en pareja o grupo pequeño de 2 o 3 personas. Modalidad: Presencial (Valle de Aburrá).",
-    icon: Users,
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=800",
-    slug: "entrenamiento-semi-personalizado",
-    price: "$69.200 – $1.384.000",
-    imageInfo: "Valor Sesión: $69.200 | Planes Mensuales: $276.800 – $1.384.000 (1 a 5 veces/sem).",
-    actionText: "Seleccionar opciones",
-    pricingOptions: [
-      { label: "Valor Sesión", price: "$69.200" },
-      { label: "1x semana (4 ses)", price: "$276.800" },
-      { label: "2x semana (8 ses)", price: "$553.600" },
-      { label: "3x semana (12 ses)", price: "$830.400" },
-      { label: "4x semana (16 ses)", price: "$1.107.200" },
-      { label: "5x semana (20 ses)", price: "$1.384.000" }
     ]
   },
   {

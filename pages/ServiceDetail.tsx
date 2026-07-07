@@ -26,7 +26,7 @@ export const ServiceDetail: React.FC = () => {
         "@id": "https://newpersonaltraining.com/#business",
         "name": "New Personal Training",
         "url": "https://newpersonaltraining.com",
-        "telephone": "+573005974290"
+        "telephone": "+573144008592"
       },
       "areaServed": {
         "@type": "AdministrativeArea",
@@ -52,7 +52,7 @@ export const ServiceDetail: React.FC = () => {
     );
   }
 
-  const waBase = 'https://wa.me/573005974290?text=';
+  const waBase = 'https://wa.me/573144008592?text=';
 
   const waLink = (plan: string, price: string) =>
     waBase + encodeURIComponent(
@@ -127,8 +127,26 @@ export const ServiceDetail: React.FC = () => {
               {service.imageInfo && (
                 <div className="bg-white/5 border border-white/10 p-4 rounded-xl mb-6">
                   <p className="text-gray-400 text-sm">
-                    <span className="text-white font-medium">Incluye:</span> {service.imageInfo}
+                    <span className="text-white font-medium">Precios:</span> {service.imageInfo}
                   </p>
+                </div>
+              )}
+
+              {service.includes && service.includes.length > 0 && (
+                <div className="mb-6">
+                  <h3 className="text-sm font-black text-white uppercase tracking-widest mb-4 flex items-center gap-2">
+                    <span className="h-px flex-1 bg-gradient-to-r from-npt-red/60 to-transparent" aria-hidden="true" />
+                    Este plan incluye
+                    <span className="h-px flex-1 bg-gradient-to-l from-npt-red/60 to-transparent" aria-hidden="true" />
+                  </h3>
+                  <ul className="space-y-2.5">
+                    {service.includes.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-3 text-sm text-gray-300 leading-relaxed">
+                        <span className="text-npt-red font-black text-base leading-none mt-0.5 flex-shrink-0" aria-hidden="true">▶</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
 

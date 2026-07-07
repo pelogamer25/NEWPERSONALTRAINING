@@ -14,6 +14,7 @@ export interface Service {
   slug: string;
   price?: string;
   imageInfo?: string;
+  includes?: string[];
   actionText?: string;
   badges?: string[];
   pricingOptions?: ServicePricing[];
