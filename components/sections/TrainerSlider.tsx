@@ -38,9 +38,13 @@ export const TrainerSlider: React.FC = () => {
             >
               <div className="absolute inset-0 z-0">
                 <img 
-                  src={image} 
-                  alt={`Director ${idx + 1}`} 
+                  src={image}
+                  alt={`Director ${idx + 1}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0 pointer-events-none"
+                  width={600}
+                  height={800}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </div>

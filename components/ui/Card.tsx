@@ -29,6 +29,10 @@ export const ServiceCard: React.FC<{ service: Service; index?: number }> = ({ se
           src={service.image}
           alt={service.title}
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 grayscale group-hover:grayscale-0"
+          width={800}
+          height={600}
+          loading="lazy"
+          decoding="async"
         />
 
         {/* Icon pill */}

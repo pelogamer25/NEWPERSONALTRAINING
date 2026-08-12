@@ -111,7 +111,7 @@ export const Trainers: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-7xl font-heading font-black italic text-white mb-6"
           >
-            NUESTROS <span className="text-npt-red">ENTRENADORES</span>
+            ENTRENADORES PERSONALES <span className="text-npt-red">EN MEDELLÍN</span>
           </motion.h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
             El equipo de élite preparado para llevarte al límite.
@@ -143,9 +143,13 @@ export const Trainers: React.FC = () => {
                   >
                     <div className="absolute inset-0 z-0">
                       <img 
-                        src={img} 
-                        alt={`${section.title} ${imgIdx + 1}`} 
+                        src={img}
+                        alt={`${section.title} ${imgIdx + 1}`}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                        width={600}
+                        height={800}
+                        loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     </div>

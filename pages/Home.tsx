@@ -25,33 +25,20 @@ const LOCAL_BUSINESS_SCHEMA = {
     "addressRegion": "Antioquia",
     "addressCountry": "CO"
   },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "reviewCount": "500",
-    "bestRating": "5",
-    "worstRating": "1"
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Valle de Aburrá, Antioquia, Colombia"
   },
-  "review": [
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Andrea Torres" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "reviewBody": "Llevo 6 meses entrenando y los resultados son increíbles. La atención personalizada hace toda la diferencia."
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Felipe Gómez" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "reviewBody": "La flexibilidad de horarios y el profesionalismo del equipo me han permitido mantener mi salud sin descuidar mi empresa."
-    },
-    {
-      "@type": "Review",
-      "author": { "@type": "Person", "name": "Camila Restrepo" },
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "reviewBody": "Las clases grupales tienen una energía única. He hecho grandes amigos y he mejorado mi resistencia física notablemente."
-    }
+  "priceRange": "$$",
+  "currenciesAccepted": "COP",
+  "sameAs": [
+    "https://www.instagram.com/newpersonaltraining",
+    "https://www.facebook.com/newpersonaltraining"
   ]
+  // NOTA: aggregateRating y review se retiraron deliberadamente.
+  // La política de datos estructurados de Google exige que las valoraciones
+  // procedan de reseñas reales y visibles en la propia página. Volver a
+  // añadirlas solo cuando existan reseñas verificables publicadas en el sitio.
 };
 
 const FAQ_SCHEMA = {
@@ -169,7 +156,10 @@ export const Home: React.FC = () => {
               src="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&q=80&w=1920"
               alt="Sesión de entrenamiento personal en Medellín — New Personal Training"
               className="w-full h-full object-cover"
-              fetchpriority="high"
+              width={1920}
+              height={1080}
+              fetchPriority="high"
+              decoding="async"
             />
           </motion.div>
 
@@ -191,9 +181,16 @@ export const Home: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, ease: "easeOut", delay: 0.1 }}
               >
-                <h1 className="text-5xl md:text-7xl lg:text-9xl font-heading font-black italic text-white mb-6 leading-[0.9] tracking-tighter relative">
-                  BE <br />
-                  <span className="text-gradient-red">YOURSELF</span>
+                {/* El eslogan sigue siendo el foco visual, pero el H1 incluye
+                    la consulta objetivo — antes el H1 era solo "BE YOURSELF". */}
+                <h1 className="font-heading font-black italic text-white mb-6 leading-[0.9] tracking-tighter relative">
+                  <span className="block text-5xl md:text-7xl lg:text-9xl">
+                    BE <br />
+                    <span className="text-gradient-red">YOURSELF</span>
+                  </span>
+                  <span className="block mt-6 text-xl md:text-2xl lg:text-3xl not-italic font-bold tracking-tight text-gray-200">
+                    Entrenador Personal en Medellín
+                  </span>
                 </h1>
               </motion.div>
 
@@ -367,6 +364,10 @@ export const Home: React.FC = () => {
               src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=1920"
               alt="Instalaciones de entrenamiento personal en Medellín"
               className="w-full h-full object-cover opacity-20 grayscale"
+              width={1920}
+              height={1080}
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-npt-black via-npt-black/80 to-npt-black" aria-hidden="true" />
           </div>
@@ -447,6 +448,10 @@ export const Home: React.FC = () => {
                         src={t.image}
                         alt={`${t.name} — cliente de New Personal Training`}
                         className="w-10 h-10 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ring-2 ring-white/10 group-hover:ring-npt-red/40"
+                        width={40}
+                        height={40}
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div>
@@ -551,7 +556,10 @@ export const Home: React.FC = () => {
                           src={post.image}
                           alt={post.title}
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          width={1200}
+                          height={675}
                           loading="lazy"
+                          decoding="async"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                         <span className="absolute top-3 left-3 px-2 py-0.5 bg-black/50 backdrop-blur-sm border border-white/10 text-xs text-gray-300 rounded-full">

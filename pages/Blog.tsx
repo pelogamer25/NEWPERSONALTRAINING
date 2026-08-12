@@ -108,6 +108,10 @@ export const Blog: React.FC = () => {
                       src={featured.image}
                       alt={featured.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
+                      width={1200}
+                      height={675}
+                      fetchPriority="high"
+                      decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
                     <div className="absolute top-4 left-4 flex items-center gap-2">
@@ -187,7 +191,10 @@ export const Blog: React.FC = () => {
                         src={post.image}
                         alt={post.title}
                         className="w-full h-full object-cover transition-transform duration-600 group-hover:scale-110"
+                        width={1200}
+                        height={675}
                         loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                       <span className="absolute top-3 left-3 px-2.5 py-1 bg-npt-red/80 backdrop-blur-sm text-white text-[10px] font-black rounded-full uppercase tracking-wider">

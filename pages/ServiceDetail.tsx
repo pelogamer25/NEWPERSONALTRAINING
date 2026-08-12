@@ -100,6 +100,10 @@ export const ServiceDetail: React.FC = () => {
                 src={service.image}
                 alt={`${service.title} en Medellín — New Personal Training`}
                 className="w-full h-full object-cover"
+                width={800}
+                height={600}
+                fetchPriority="high"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-npt-black via-npt-black/20 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">

@@ -68,6 +68,9 @@ export const BlogPost: React.FC = () => {
         description={post.excerpt}
         canonical={`/blog/${post.slug}`}
         ogImage={post.image}
+        ogType="article"
+        publishedTime={post.publishedAt}
+        articleAuthor={post.author}
         jsonLd={articleSchema}
         breadcrumbs={[
           { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
@@ -84,7 +87,10 @@ export const BlogPost: React.FC = () => {
             src={post.image}
             alt={post.title}
             className="w-full h-full object-cover"
+            width={1200}
+            height={675}
             fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-npt-black via-black/50 to-transparent" />
         </div>
@@ -191,7 +197,10 @@ export const BlogPost: React.FC = () => {
                           src={related.image}
                           alt={related.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          width={1200}
+                          height={675}
                           loading="lazy"
+                          decoding="async"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                       </div>

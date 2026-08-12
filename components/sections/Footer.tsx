@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-6">
             <Link to="/" className="inline-block group">
               <div className="h-16 w-16 bg-white rounded-full flex items-center justify-center p-1 shadow-[0_0_15px_rgba(208,0,0,0.5)] transition-transform duration-300 group-hover:scale-105">
-                <img src="/logo.png" alt="New Personal Training" className="w-full h-full object-contain" />
+                <img src="/logo.png" alt="New Personal Training" className="w-full h-full object-contain" width={576} height={557} loading="lazy" decoding="async" />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">

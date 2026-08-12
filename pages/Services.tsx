@@ -102,7 +102,7 @@ export const Services: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-7xl font-heading font-black italic text-white mb-6"
           >
-            NUESTROS <span className="text-npt-red">SERVICIOS</span>
+            SERVICIOS DE ENTRENAMIENTO <span className="text-npt-red">EN MEDELLÍN</span>
           </motion.h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light mb-4">
             Descubre soluciones integrales de entrenamiento personal, bienestar y salud en Medellín.

@@ -10,6 +10,7 @@ export const NotFound: React.FC = () => {
         title="Página no encontrada | New Personal Training"
         description="La página que buscas no existe. Vuelve al inicio de New Personal Training en Medellín."
         canonical="/404"
+        noindex
       />
       <div className="pt-32 min-h-screen pb-20 flex items-center justify-center">
         <div className="text-center px-4">

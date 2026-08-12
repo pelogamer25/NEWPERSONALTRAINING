@@ -75,6 +75,9 @@ export const About: React.FC = () => {
               className="text-4xl md:text-7xl font-heading font-black italic text-white mb-6"
             >
               SOBRE <span className="text-npt-red">NOSOTROS</span>
+              <span className="block mt-4 text-lg md:text-2xl not-italic font-bold tracking-tight text-gray-300">
+                Entrenadores personales en Medellín desde 2014
+              </span>
             </motion.h1>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed">
               En <span className="text-white font-bold">New Personal Training S.A.S</span>, no solo transformamos cuerpos; mejoramos la calidad de vida de personas y empresas en <strong className="text-white">Medellín y todo el Valle de Aburrá</strong>, con sentido humano y profesionales certificados.
@@ -116,6 +119,10 @@ export const About: React.FC = () => {
                   src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=80&w=800"
                   alt="Entrenadores personales de New Personal Training S.A.S en Medellín"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  width={800}
+                  height={600}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-npt-red/20 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>

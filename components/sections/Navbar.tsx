@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-2 group">
               <div className="h-12 w-12 md:h-14 md:w-14 bg-white rounded-full flex items-center justify-center p-1 shadow-[0_0_15px_rgba(208,0,0,0.5)] transition-transform duration-300 group-hover:scale-105">
-                <img src="/logo.png" alt="New Personal Training" className="w-full h-full object-contain" />
+                <img src="/logo.png" alt="New Personal Training" className="w-full h-full object-contain" width={576} height={557} fetchPriority="high" />
               </div>
             </Link>
 
