@@ -47,7 +47,7 @@ export const About: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Sobre Nosotros | New Personal Training S.A.S — Entrenadores Personales en Medellín desde 2014"
+        title="Sobre Nosotros — Más que un Gym en Medellín | New Personal Training"
         description="Conoce New Personal Training S.A.S, fundada en 2014 por profesionales del Politécnico Colombiano. 11+ años, 50+ entrenadores personales certificados en Medellín y el Valle de Aburrá. Misión, visión e historia."
         canonical="/nosotros"
         jsonLd={ABOUT_SCHEMA}

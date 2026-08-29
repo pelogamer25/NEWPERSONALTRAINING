@@ -63,8 +63,8 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4">
               {SERVICES.slice(0, 5).map((service) => (
                 <li key={service.id}>
-                  <Link to="/servicios" className="text-gray-400 hover:text-npt-red transition-colors text-sm font-medium">
-                    {service.title}
+                  <Link to={`/servicios/${service.slug}`} className="text-gray-400 hover:text-npt-red transition-colors text-sm font-medium">
+                    {service.title} en Medellín
                   </Link>
                 </li>
               ))}
@@ -96,8 +96,8 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} New Personal Training.
           </p>
           <div className="flex gap-6 text-xs text-gray-600">
-            <Link to="/privacy" className="hover:text-white transition-colors">Política de Privacidad</Link>
-            <Link to="/terms" className="hover:text-white transition-colors">Términos</Link>
+            <Link to="/nosotros" className="hover:text-white transition-colors">Sobre Nosotros</Link>
+            <Link to="/contacto" className="hover:text-white transition-colors">Contacto</Link>
           </div>
         </div>
       </div>

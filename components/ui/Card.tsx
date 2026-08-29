@@ -81,6 +81,7 @@ export const ServiceCard: React.FC<{ service: Service; index?: number }> = ({ se
           className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.15em] text-white/70 group-hover:text-npt-red transition-colors duration-300 mt-auto"
         >
           {service.actionText || "Explorar"}
+          <span className="sr-only"> — {service.title} en Medellín</span>
           <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300" aria-hidden="true" />
         </Link>
       </div>

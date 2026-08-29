@@ -94,7 +94,7 @@ export const Trainers: React.FC = () => {
     <>
       <SEOHead
         title="Entrenadores Personales en Medellín | New Personal Training"
-        description="Conoce nuestro equipo de 20+ entrenadores personales certificados en Medellín: profesionales del ejercicio, fisioterapeutas, nutricionistas, valoradores y masoterapetutas en el Valle de Aburrá."
+        description="Conoce a los entrenadores personales en Medellín de New Personal Training: profesionales certificados en ejercicio físico, fisioterapeutas, nutricionistas, valoradores y masoterapeutas del Valle de Aburrá."
         canonical="/entrenadores"
         breadcrumbs={[
           { name: 'Inicio', url: 'https://newpersonaltraining.com/' },

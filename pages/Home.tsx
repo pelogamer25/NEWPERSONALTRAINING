@@ -90,7 +90,7 @@ const FAQ_SCHEMA = {
       "name": "¿Cuántos entrenadores tiene New Personal Training?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Contamos con más de 20 profesionales certificados que incluyen: 34 entrenadores de ejercicio físico, 2 valoradores, 3 fisioterapeutas, 2 nutricionistas, 2 masoterapetutas y 3 directores. El equipo tiene trayectoria internacional y experiencia promedio de 6+ años."
+        "text": "Nuestro equipo de entrenadores personales en Medellín lo forman 34 entrenadores de ejercicio físico, 2 valoradores, 3 fisioterapeutas, 2 nutricionistas, 2 masoterapeutas y 3 directores, todos certificados. El equipo tiene trayectoria internacional y experiencia promedio de 6+ años."
       }
     }
   ]
@@ -138,7 +138,7 @@ export const Home: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="New Personal Training | Entrenadores Personales en Medellín — Desde 2014"
+        title="Entrenador Personal en Medellín a Domicilio | New Personal Training"
         description="Los mejores entrenadores personales de Medellín y el Valle de Aburrá. Entrenamiento personalizado a domicilio, boxeo, pilates, yoga, natación, nutrición y fisioterapia. 11+ años · 50+ profesionales. ¡Evaluación gratis!"
         canonical="/"
         jsonLd={[LOCAL_BUSINESS_SCHEMA, FAQ_SCHEMA]}
@@ -311,7 +311,7 @@ export const Home: React.FC = () => {
               >
                 <p className="text-npt-red font-bold tracking-widest uppercase mb-2">Entrenamiento</p>
                 <h2 className="text-4xl md:text-6xl font-heading font-black italic text-white">
-                  PROGRAMAS <br /> <span className="text-outline-red">ESPECIALIZADOS</span>
+                  PROGRAMAS DE ENTRENAMIENTO <br /> <span className="text-outline-red">EN MEDELLÍN</span>
                 </h2>
               </motion.div>
               <Button href="/servicios" variant="outline">Ver Todos</Button>
@@ -335,7 +335,7 @@ export const Home: React.FC = () => {
             >
               <p className="text-npt-red font-bold tracking-widest uppercase mb-2">Nuestro Equipo</p>
               <h2 className="text-4xl md:text-5xl font-heading font-black italic text-white">
-                ENTRENADORES
+                ENTRENADORES PERSONALES EN MEDELLÍN
               </h2>
             </motion.div>
 
