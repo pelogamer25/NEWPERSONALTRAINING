@@ -54,6 +54,8 @@ export interface BlogPost {
   tags: string[];
   readTime: number;
   publishedAt: string;
+  /** Slugs de los servicios de los que trata el articulo. */
+  relatedServices?: string[];
   image: string;
   author: string;
   authorRole: string;

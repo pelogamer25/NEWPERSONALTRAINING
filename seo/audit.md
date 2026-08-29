@@ -147,14 +147,29 @@ legibilidad. Preferible dejarlo así.
 
 ---
 
-## Fuera del alcance acordado
+## Blog — enlazado al servicio correspondiente
 
-Los 13 artículos del blog no se tocaron (alcance: core + servicio). Ahí queda el
-mayor enlace interno sin aprovechar: **cada artículo enlaza a `/servicios` en
-genérico** en lugar de a la página del servicio del que habla. El artículo de
-boxeo debería enlazar a `/servicios/boxeo`, el de pilates al suyo, etc. Es
-contenido informativo empujando a la página transaccional correspondiente, que
-es exactamente el patrón que el Step 2.5 busca.
+Ampliación posterior al alcance inicial. Los 13 artículos enlazaban a
+`/servicios` en genérico con el anchor «Ver Servicios». Ahora cada uno declara
+en `blogs.ts` de qué servicios trata y enlaza a sus páginas, con el nombre del
+servicio + «en Medellín» como anchor.
+
+Verificado en el HTML generado:
+
+```
+clases-boxeo-medellin              -> /servicios/boxeo                 2 enlaces
+pilates-medellin-beneficios-clases -> /servicios/pilates               2 enlaces
+yoga-medellin-guia-completa        -> /servicios/yoga                  2 enlaces
+nutricionista-medellin-...         -> /servicios/nutricionista         3 enlaces
+fisioterapia-medellin-...          -> /servicios/fisioterapia          2 enlaces
+clases-natacion-medellin-...       -> /servicios/natacion-personalizada 2 enlaces
+entrenamiento-funcional-medellin   -> /servicios/clase-grupal-funcional 3 enlaces
+```
+
+12 de 13 mapeados. El de equipos de gimnasio queda sin mapear porque **esa línea
+de negocio no tiene página de servicio**, pese a tener sección en `/servicios`,
+artículo propio y cinco keywords con volumen en el export. Crear esa página es
+la recomendación pendiente más clara.
 
 ---
 

@@ -98,9 +98,33 @@ a entrenadores y a tres servicios hermanos.
 |---|---|
 | *(tarjeta)* título del artículo | `/blog/{slug}` |
 | Reservar Sesión Gratis | `/reservar` |
-| Ver Servicios | `/servicios` |
+| **{Servicio} en Medellín** | `/servicios/{slug-del-servicio}` |
 | *(relacionado ×3)* título del artículo | `/blog/{otro-slug}` |
 | Volver al Blog | `/blog` |
+
+Cada artículo declara en `blogs.ts` de qué servicios trata (`relatedServices`),
+y la plantilla enlaza a sus páginas. Antes los 13 apuntaban a `/servicios` en
+genérico con el anchor «Ver Servicios».
+
+| Artículo | Servicio destino |
+|---|---|
+| guia-entrenador-personal-medellin-2026 | entrenamiento-personalizado, entrenamiento-semi-personalizado |
+| clases-boxeo-medellin | boxeo |
+| entrenamiento-domicilio-medellin | entrenamiento-personalizado, entrenamiento-semi-personalizado |
+| pilates-medellin-beneficios-clases | pilates |
+| mejores-gimnasios-medellin-2026 | entrenamiento-personalizado, clase-grupal-funcional |
+| entrenamiento-funcional-medellin | clase-grupal-funcional, clase-grupal-ritmica |
+| nutricionista-medellin-valoracion-plan | nutricionista |
+| yoga-medellin-guia-completa | yoga |
+| fisioterapia-medellin-recuperacion-domicilio | fisioterapia, masaje |
+| entrenamiento-para-bajar-de-peso-medellin | entrenamiento-personalizado, nutricionista |
+| bienestar-empresarial-medellin-pausas-activas | clase-grupal-funcional, clase-grupal-ritmica |
+| clases-natacion-medellin-personalizada | natacion-personalizada, natacion-semi-personalizada |
+| equipos-gym-medellin-venta-servicio-tecnico | **sin mapear** — no existe página de servicio |
+
+El artículo de equipos se deja deliberadamente sin mapear: esa línea de negocio
+no tiene página propia, así que la plantilla cae al enlace general con el anchor
+«Ver los 14 servicios en Medellín». Es el hueco que sigue abierto.
 
 ---
 
@@ -132,10 +156,6 @@ enlaces a `/`, `/servicios`, `/nosotros`, `/entrenadores`, `/contacto`,
 - **`/reservar` y `/contacto` reciben enlaces pero emiten pocos.** Son el final
   del embudo, así que es defendible, pero un enlace de vuelta a `/servicios`
   ayudaría a quien llega ahí desde una búsqueda y quiere comparar.
-- **El blog no enlaza a páginas de servicio concretas.** Los 13 artículos
-  enlazan a `/servicios` en genérico. El artículo de boxeo debería enlazar a
-  `/servicios/boxeo` con ese anchor, el de pilates al suyo, etc. Es el mayor
-  enlace interno que queda sin aprovechar: contenido con intención informativa
-  que empuja a la página transaccional correspondiente.
 - **Sin página para «equipos de gym»**, pese a tener sección en `/servicios`,
-  un artículo en el blog y cinco keywords con volumen.
+  un artículo en el blog y cinco keywords con volumen. Es el único artículo que
+  no puede enlazar a una página de servicio porque no existe.

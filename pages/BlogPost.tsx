@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Clock, Tag, ArrowLeft, ChevronRight, Share2 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { BLOG_POSTS } from '../blogs';
+import { SERVICES } from '../constants';
 import { Button } from '../components/ui/Button';
 
 function formatDate(dateStr: string) {
@@ -23,6 +24,14 @@ export const BlogPost: React.FC = () => {
   }, [post, navigate]);
 
   if (!post) return null;
+
+  // Servicios de los que trata el articulo. Antes cada post enlazaba a
+  // /servicios en generico: contenido informativo que no empujaba a la pagina
+  // transaccional correspondiente.
+  const postServices = (post.relatedServices ?? [])
+    .map(slug => SERVICES.find(s => s.slug === slug))
+    .filter((s): s is NonNullable<typeof s> => Boolean(s));
+  const primaryService = postServices[0];
 
   const related = BLOG_POSTS.filter(p => p.id !== post.id && p.category === post.category).slice(0, 3);
   const moreRelated = related.length < 3
@@ -178,9 +187,46 @@ export const BlogPost: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Button href="/reservar" size="lg">Reservar Sesión Gratis</Button>
-              <Button href="/servicios" variant="secondary" size="lg">Ver Servicios</Button>
+              {primaryService ? (
+                <Button href={`/servicios/${primaryService.slug}`} variant="secondary" size="lg">
+                  {primaryService.title} en Medellín
+                </Button>
+              ) : (
+                <Button href="/servicios" variant="secondary" size="lg">
+                  Ver los 14 servicios en Medellín
+                </Button>
+              )}
             </div>
           </div>
+
+          {/* Servicios que trata este artículo — enlace interno contextual */}
+          {postServices.length > 0 && (
+            <section className="pb-12" aria-label="Servicios relacionados con este artículo">
+              <h2 className="text-xl font-heading font-bold italic text-white mb-2">
+                EL SERVICIO DEL QUE HABLA ESTE ARTÍCULO
+              </h2>
+              <p className="text-sm text-gray-400 mb-6">
+                Presencial en Medellín y todo el Valle de Aburrá, con evaluación inicial gratuita.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {postServices.map(svc => (
+                  <Link
+                    key={svc.slug}
+                    to={`/servicios/${svc.slug}`}
+                    className="glass-panel rounded-xl p-5 border border-white/10 hover:border-npt-red/40 transition-colors group"
+                  >
+                    <h3 className="text-base font-bold text-white group-hover:text-npt-red transition-colors mb-1">
+                      {svc.title} en Medellín
+                    </h3>
+                    <p className="text-xs text-gray-500 mb-2">{svc.description}</p>
+                    {svc.price && (
+                      <p className="text-sm font-bold text-npt-red/80">Desde {svc.price.split(' ')[0]}</p>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Artículos relacionados */}
           {moreRelated.length > 0 && (
