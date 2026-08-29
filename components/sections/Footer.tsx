@@ -77,11 +77,15 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <Phone className="h-5 w-5 text-npt-red shrink-0" />
-                <span>{COMPANY_INFO.phone}</span>
+                <a href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`} className="hover:text-npt-red transition-colors">
+                  {COMPANY_INFO.phone}
+                </a>
               </li>
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <Mail className="h-5 w-5 text-npt-red shrink-0" />
-                <span>{COMPANY_INFO.email}</span>
+                <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-npt-red transition-colors">
+                  {COMPANY_INFO.email}
+                </a>
               </li>
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin className="h-5 w-5 text-npt-red shrink-0" />

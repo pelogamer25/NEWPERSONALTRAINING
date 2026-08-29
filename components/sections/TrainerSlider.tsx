@@ -39,7 +39,11 @@ export const TrainerSlider: React.FC = () => {
               <div className="absolute inset-0 z-0">
                 <img 
                   src={image}
-                  alt={`Director ${idx + 1}`}
+                  alt={`Director de New Personal Training — ${[
+                    "entrenadores personales en Medellín",
+                    "entrenamiento personalizado en el Valle de Aburrá",
+                    "equipo profesional de entrenamiento en Medellín",
+                  ][idx % 3]}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0 pointer-events-none"
                   width={600}
                   height={800}

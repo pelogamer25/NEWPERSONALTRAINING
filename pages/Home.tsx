@@ -446,7 +446,7 @@ export const Home: React.FC = () => {
                     <div className="relative">
                       <img
                         src={t.image}
-                        alt={`${t.name} — cliente de New Personal Training`}
+                        alt={`${t.name}, cliente de entrenamiento personal en Medellín — New Personal Training`}
                         className="w-10 h-10 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ring-2 ring-white/10 group-hover:ring-npt-red/40"
                         width={40}
                         height={40}

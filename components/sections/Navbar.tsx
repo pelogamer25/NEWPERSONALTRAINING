@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { NAVIGATION } from '../../constants';
+import { NAVIGATION, COMPANY_INFO } from '../../constants';
 import { Button } from '../ui/Button';
 
 export const Navbar: React.FC = () => {
@@ -68,6 +68,14 @@ export const Navbar: React.FC = () => {
                   </Link>
                 );
               })}
+              <a
+                href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`}
+                className="flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-npt-red transition-colors"
+              >
+                <Phone className="h-4 w-4 text-npt-red" aria-hidden="true" />
+                <span className="hidden xl:inline">{COMPANY_INFO.phone}</span>
+                <span className="xl:hidden">Llamar</span>
+              </a>
               <Button href="/reservar" size="sm" variant="primary">
                 Reservar Sesión
               </Button>
@@ -105,14 +113,21 @@ export const Navbar: React.FC = () => {
                   {item.label}
                 </Link>
               ))}
-              <div className="mt-8 w-full max-w-xs">
+              <div className="mt-8 w-full max-w-xs flex flex-col gap-3">
                 <Button href="/reservar" className="w-full justify-center">
                   Reservar Sesión
                 </Button>
+                <a
+                  href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`}
+                  className="flex items-center justify-center gap-2 w-full border border-white/15 hover:border-npt-red/50 text-white py-3 rounded-xl transition-colors"
+                >
+                  <Phone className="h-4 w-4 text-npt-red" aria-hidden="true" />
+                  {COMPANY_INFO.phone}
+                </a>
               </div>
               
               <div className="mt-auto absolute bottom-10 text-gray-500 text-sm">
-                <p>Medellín, Colombia</p>
+                <p>Entrenador personal en Medellín · Valle de Aburrá</p>
               </div>
             </div>
           </motion.div>

@@ -30,13 +30,18 @@ async function optimizeDirectory() {
   for (const file of sources) {
     const inputPath = path.join(imagesDir, file);
     const { size: beforeSize } = await fs.stat(inputPath);
-    const outputPath = path.join(imagesDir, `${path.parse(file).name}.webp`);
+    // El nombre lleva la ciudad: es una senal de SEO local que se lee en la URL.
+    const base = path.parse(file).name.replace(/-medellin$/, '');
+    const outputPath = path.join(imagesDir, `${base}-medellin.webp`);
 
     const image = sharp(inputPath);
     const { width } = await image.metadata();
 
     await image
       .resize({ width: Math.min(width ?? MAX_WIDTH, MAX_WIDTH), withoutEnlargement: true })
+      // withMetadata conserva el EXIF. Sin esto, sharp descarta los geotags
+      // que se anaden con GeoImgr y se pierde la senal local en cada build.
+      .withMetadata()
       .webp({ quality: WEBP_QUALITY })
       .toFile(outputPath);
 

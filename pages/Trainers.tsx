@@ -144,7 +144,11 @@ export const Trainers: React.FC = () => {
                     <div className="absolute inset-0 z-0">
                       <img 
                         src={img}
-                        alt={`${section.title} ${imgIdx + 1}`}
+                        alt={`${section.title} de New Personal Training — ${[
+                          "entrenamiento personal en Medellín",
+                          "entrenador personal a domicilio en el Valle de Aburrá",
+                          "profesional certificado en Medellín",
+                        ][imgIdx % 3]}`}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
                         width={600}
                         height={800}

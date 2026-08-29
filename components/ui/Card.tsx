@@ -27,7 +27,7 @@ export const ServiceCard: React.FC<{ service: Service; index?: number }> = ({ se
         <div className="absolute inset-0 bg-npt-black/30 group-hover:bg-npt-black/0 transition-colors duration-500 z-10" />
         <img
           src={service.image}
-          alt={service.title}
+          alt={`${service.title} en Medellín — New Personal Training`}
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 grayscale group-hover:grayscale-0"
           width={800}
           height={600}
