@@ -72,6 +72,12 @@ export const ServiceCard: React.FC<{ service: Service; index?: number }> = ({ se
           </div>
         )}
 
+        {service.atHome && (
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-wider text-green-400/80">
+            A domicilio en Medellín
+          </p>
+        )}
+
         <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow border-l-2 border-white/8 pl-4 group-hover:border-npt-red/50 transition-colors duration-300">
           {service.description}
         </p>

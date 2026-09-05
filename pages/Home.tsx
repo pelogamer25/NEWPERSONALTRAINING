@@ -14,7 +14,7 @@ const LOCAL_BUSINESS_SCHEMA = {
   "@type": "FitnessCenter",
   "@id": "https://newpersonaltraining.com/#business",
   "name": "New Personal Training",
-  "description": "Centro de entrenamiento personal en Medellín con más de 11 años de experiencia. Entrenamiento personalizado, nutrición, pilates, yoga, boxeo, natación, squash, fisioterapia y masajes en el Valle de Aburrá.",
+  "description": "Entrenamiento personal a domicilio en Medellín con más de 11 años de experiencia. Los profesionales se desplazan a tu casa, conjunto u oficina: entrenamiento personalizado, semipersonalizado, nutrición, pilates, yoga, boxeo, fisioterapia y masajes en todo el Valle de Aburrá. Natación y squash en instalaciones.",
   "url": "https://newpersonaltraining.com",
   "telephone": "+573144008592",
   "email": "info@newpersonaltraining.com",
@@ -189,7 +189,7 @@ export const Home: React.FC = () => {
                     <span className="text-gradient-red">YOURSELF</span>
                   </span>
                   <span className="block mt-6 text-xl md:text-2xl lg:text-3xl not-italic font-bold tracking-tight text-gray-200">
-                    Entrenador Personal en Medellín
+                    Entrenador Personal a Domicilio en Medellín
                   </span>
                 </h1>
               </motion.div>
@@ -311,7 +311,7 @@ export const Home: React.FC = () => {
               >
                 <p className="text-npt-red font-bold tracking-widest uppercase mb-2">Entrenamiento</p>
                 <h2 className="text-4xl md:text-6xl font-heading font-black italic text-white">
-                  PROGRAMAS DE ENTRENAMIENTO <br /> <span className="text-outline-red">EN MEDELLÍN</span>
+                  ENTRENAMIENTO A DOMICILIO <br /> <span className="text-outline-red">EN MEDELLÍN</span>
                 </h2>
               </motion.div>
               <Button href="/servicios" variant="outline">Ver Todos</Button>

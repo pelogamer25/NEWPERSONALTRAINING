@@ -68,3 +68,8 @@ export function getSitemapEntries(): SitemapEntry[] {
     })),
   ];
 }
+
+/** Titulo y slug de cada articulo, para regenerar la lista de llms.txt. */
+export function getBlogIndex(): { slug: string; title: string }[] {
+  return BLOG_POSTS.map((p) => ({ slug: p.slug, title: p.title }));
+}

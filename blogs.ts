@@ -803,6 +803,152 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Es sencillo: contáctanos al <strong>+57 314 400 8592</strong> por WhatsApp o escríbenos a <strong>info@newpersonaltraining.com</strong>. Coordinaremos una evaluación inicial gratuita, conoceremos tu piscina disponible y comenzaremos tu programa la semana siguiente.</p>
 <p>New Personal Training también puede complementar las clases de natación con <strong>entrenamiento en seco personalizado, fisioterapia deportiva y plan nutricional</strong>, formando un programa integral de bienestar que maximiza tus resultados.</p>
     `
+  },
+  {
+    id: "14",
+    slug: "cuanto-cuesta-entrenador-personal-medellin-precios",
+    title: "¿Cuánto cuesta un entrenador personal en Medellín? Precios y tarifas 2026",
+    excerpt: "El precio de un entrenador personal en Medellín va de $53.800 por sesión suelta a $1.076.000 por un plan de 20 sesiones al mes. Te explicamos qué incluye cada tarifa, qué hace subir o bajar el costo y cómo se compara con un gimnasio.",
+    category: "Guías",
+    relatedServices: ["entrenamiento-personalizado", "entrenamiento-semi-personalizado"],
+    tags: ["entrenador personal precio", "cuánto cobra un entrenador personal", "tarifas entrenador personal Medellín", "precio entrenador personal a domicilio"],
+    readTime: 8,
+    publishedAt: "2026-08-29",
+    image: "https://images.unsplash.com/photo-1579126038374-6064e9370f0f?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>¿Cuánto cobra un entrenador personal en Medellín en 2026?</h2>
+<p>El <strong>precio de un entrenador personal en Medellín</strong> arranca en $53.800 por sesión individual y llega hasta $1.076.000 por un plan mensual de 20 sesiones. Es el rango que manejamos en New Personal Training, y a continuación lo desglosamos completo para que no tengas que pedir cotización solo para saber si te alcanza.</p>
+<p>La mayoría de sitios de este sector esconden las tarifas detrás de un formulario. Nosotros las publicamos.</p>
+
+<h2>Tarifas de entrenamiento personalizado 1:1</h2>
+<p>Las tarifas de un <strong>entrenador personal a domicilio</strong> en Medellín se organizan por frecuencia semanal:</p>
+<ul>
+  <li><strong>Sesión suelta:</strong> $53.800</li>
+  <li><strong>1 vez/semana</strong> (4 sesiones/mes): $215.200</li>
+  <li><strong>2 veces/semana</strong> (8 sesiones/mes): $430.400</li>
+  <li><strong>3 veces/semana</strong> (12 sesiones/mes): $645.600</li>
+  <li><strong>4 veces/semana</strong> (16 sesiones/mes): $860.800</li>
+  <li><strong>5 veces/semana</strong> (20 sesiones/mes): $1.076.000</li>
+</ul>
+<p>El costo por sesión se mantiene en $53.800 en todos los planes: no hay descuento por volumen, pero tampoco recargo por comprometerte a más días.</p>
+
+<h2>Precio del entrenamiento semipersonalizado</h2>
+<p>Si entrenas en pareja o en grupo de tres, el <strong>precio por persona baja de forma notable</strong>. La sesión semipersonalizada cuesta $69.200 en total, repartida entre los participantes:</p>
+<ul>
+  <li><strong>Sesión suelta:</strong> $69.200</li>
+  <li><strong>1 vez/semana:</strong> $276.800/mes</li>
+  <li><strong>3 veces/semana:</strong> $830.400/mes</li>
+  <li><strong>5 veces/semana:</strong> $1.384.000/mes</li>
+</ul>
+<p>Entre dos personas, la sesión sale a $34.600 por cabeza — menos que la individual, con atención casi idéntica.</p>
+
+<h2>¿Qué incluye el precio? Lo que no siempre se dice</h2>
+<p>Cuando compares tarifas de entrenadores personales en Medellín, revisa qué entra en el precio. En nuestro caso:</p>
+<ul>
+  <li>Implementos deportivos llevados a tu lugar de entrenamiento, sin costo adicional</li>
+  <li>Valoración y seguimiento con báscula de alta precisión</li>
+  <li>Plan alimenticio personalizado</li>
+  <li>Horario flexible y modificable</li>
+  <li>Reemplazo si tu profesional titular no puede asistir</li>
+  <li>Congelación del plan hasta 15 días al renovar</li>
+  <li>Evaluación inicial gratuita de 30 minutos, antes de pagar nada</li>
+</ul>
+<p>El desplazamiento del profesional a tu casa, conjunto u oficina <strong>ya está incluido</strong> dentro del Valle de Aburrá. No cobramos transporte aparte.</p>
+
+<h2>Precios del resto de servicios</h2>
+<p>Estas son las tarifas por sesión de las demás disciplinas en Medellín:</p>
+<ul>
+  <li><strong>Natación personalizada:</strong> desde $87.200</li>
+  <li><strong>Yoga:</strong> desde $91.400</li>
+  <li><strong>Clase grupal funcional:</strong> desde $95.700</li>
+  <li><strong>Boxeo:</strong> desde $106.300</li>
+  <li><strong>Clase grupal rítmica:</strong> desde $106.300</li>
+  <li><strong>Natación semipersonalizada:</strong> desde $107.700</li>
+  <li><strong>Squash personalizado:</strong> desde $115.000</li>
+  <li><strong>Pilates Mat:</strong> desde $127.600</li>
+  <li><strong>Fisioterapia y masaje:</strong> desde $150.000</li>
+  <li><strong>Valoración con nutricionista:</strong> $250.000 (sesión única, sin plan mensual)</li>
+</ul>
+
+<h2>¿Qué hace que el precio suba o baje?</h2>
+<h3>Frecuencia semanal</h3>
+<p>Es el factor de mayor peso en el costo mensual. Pasar de 2 a 4 sesiones semanales duplica la factura.</p>
+<h3>Número de participantes</h3>
+<p>Entrenar acompañado es la forma más directa de bajar el costo por persona sin renunciar a supervisión profesional.</p>
+<h3>Disciplina</h3>
+<p>Fisioterapia y nutrición cuestan más porque las imparten profesionales de la salud con titulación específica, no entrenadores.</p>
+<h3>Ubicación</h3>
+<p>Dentro del Valle de Aburrá —Medellín, Envigado, Itagüí, Sabaneta, Bello y La Estrella— no hay recargo. Fuera del área metropolitana habría que cotizar aparte.</p>
+
+<h2>Entrenador personal vs. gimnasio: la comparación honesta</h2>
+<p>Una mensualidad de gimnasio en Medellín cuesta bastante menos que un entrenador personal. Es un hecho y no tiene sentido disimularlo. La pregunta útil es otra: qué necesitas.</p>
+<p>El gimnasio te da acceso a equipos. El entrenador personal te da un plan diseñado para tu cuerpo, corrección de técnica en tiempo real y alguien que nota si dejaste de ir. Si llevas años yendo al gimnasio sin resultados, el problema rara vez es el equipo.</p>
+<p>También existe la vía intermedia: 1 sesión semanal con entrenador ($215.200/mes) para aprender técnica y recibir la rutina, y el resto de días por tu cuenta.</p>
+
+<h2>Preguntas frecuentes sobre precios</h2>
+<p><strong>¿Cuánto cuesta la primera sesión?</strong><br/>La evaluación inicial es gratuita y dura 30 minutos: composición corporal, historial de lesiones y objetivos. No se paga hasta la primera sesión de entrenamiento real.</p>
+<p><strong>¿Hay que firmar permanencia?</strong><br/>No. Los planes son mensuales y puedes tomar sesiones sueltas a $53.800 si prefieres probar sin compromiso.</p>
+<p><strong>¿El precio incluye plan de alimentación?</strong><br/>El plan alimenticio básico va incluido en el entrenamiento personalizado. La valoración completa con nutricionista titulado es aparte: $250.000.</p>
+<p><strong>¿Cobran el desplazamiento a domicilio?</strong><br/>No dentro del Valle de Aburrá. El precio publicado es el precio final.</p>
+    `
+  },
+  {
+    id: "15",
+    slug: "entrenamiento-personal-mujeres-medellin",
+    title: "Entrenamiento personal para mujeres en Medellín: embarazo, posparto y objetivos reales",
+    excerpt: "Guía del entrenamiento personal para mujeres en Medellín: cómo se adapta el plan en el embarazo y el posparto, qué esperar según tu objetivo y por qué entrenar en casa resuelve la barrera más común.",
+    category: "Entrenamiento",
+    relatedServices: ["entrenamiento-personalizado", "pilates", "fisioterapia"],
+    tags: ["entrenamiento personal mujer", "personal trainer para mujeres", "entrenador personal para embarazadas", "entrenadora personal en casa Medellín"],
+    readTime: 7,
+    publishedAt: "2026-08-29",
+    image: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>Entrenamiento personal para mujeres en Medellín: por qué el plan cambia</h2>
+<p>El <strong>entrenamiento personal para mujeres en Medellín</strong> no consiste en repetir la rutina de siempre con menos peso. Cambian las prioridades —salud ósea, suelo pélvico, etapas hormonales— y cambia el contexto: horarios partidos, cuidado de otras personas y, muy a menudo, poca disposición a entrenar en una sala llena de gente.</p>
+<p>Esta guía explica cómo adaptamos el plan y qué puedes esperar según tu momento.</p>
+
+<h2>La barrera real: el desplazamiento, no la motivación</h2>
+<p>Entre las mujeres que llegan a New Personal Training, la razón más repetida para haber abandonado el gimnasio no es la falta de ganas: es el tiempo de traslado y sentirse observada. Por eso el <strong>entrenamiento a domicilio en Medellín</strong> resuelve más de lo que parece — la sesión empieza cuando abres la puerta.</p>
+<p>Puedes pedir expresamente una entrenadora. Nuestro equipo incluye profesionales de ambos géneros y esa preferencia se respeta sin necesidad de justificarla.</p>
+
+<h2>Entrenamiento durante el embarazo</h2>
+<p>El <strong>entrenamiento personal para embarazadas</strong> requiere autorización médica previa, y ese es el punto de partida innegociable: sin visto bueno de tu ginécologo u obstetra, no iniciamos el proceso. Nuestros profesionales son titulados en deporte y actividad física, no médicos, y esa frontera la respetamos.</p>
+<p>Con la autorización en mano, el trabajo suele orientarse a:</p>
+<ul>
+  <li>Mantener fuerza funcional para las tareas del día a día</li>
+  <li>Trabajo de suelo pélvico y respiración, coordinado con fisioterapia cuando hace falta</li>
+  <li>Movilidad de cadera y columna, que es donde más molestias aparecen</li>
+  <li>Control de intensidad por percepción de esfuerzo, no por cargas máximas</li>
+</ul>
+<p>Las sesiones a domicilio tienen una ventaja concreta aquí: si un día no te sientes bien, se ajusta o se cancela sin haberte desplazado.</p>
+
+<h2>Posparto: volver sin prisa y en el orden correcto</h2>
+<p>La recuperación posparto empieza por la valoración, no por el ejercicio. Antes de cualquier plan conviene revisar diástasis abdominal y estado del suelo pélvico — por eso combinamos entrenamiento con <strong>fisioterapia</strong> en esta etapa.</p>
+<p>El error más común es retomar abdominales clásicos e impacto demasiado pronto. El orden que funciona es: respiración y core profundo, luego fuerza global, y solo después impacto y carga alta.</p>
+
+<h2>Objetivos frecuentes y qué esperar de verdad</h2>
+<h3>Bajar de peso</h3>
+<p>Combinación de fuerza, trabajo cardiovascular y plan de alimentación. La fuerza no es opcional: preserva masa muscular mientras pierdes grasa.</p>
+<h3>Tonificar sin ganar volumen</h3>
+<p>Es la preocupación más repetida y también el mito más extendido. Las diferencias hormonales hacen que la hipertrofia marcada requiera un trabajo muy específico y deliberado. Entrenar fuerza 3 veces por semana no produce ese efecto por accidente.</p>
+<h3>Salud ósea a partir de los 40</h3>
+<p>El entrenamiento de fuerza con carga progresiva es una de las herramientas con más respaldo científico para la densidad ósea. Es prevención, y cuanto antes empiece, mejor.</p>
+
+<h2>Cómo empieza el proceso</h2>
+<p>Con una evaluación inicial gratuita de 30 minutos en tu casa: composición corporal, historial de lesiones o cirugías, etapa en la que estás y objetivos. De ahí sale el plan. Si estás embarazada o en posparto, revisamos también tu autorización médica.</p>
+<p>Cubrimos El Poblado, Laureles, Belén, Robledo, Envigado, Itagüí, Sabaneta, Bello y La Estrella.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Puedo pedir una entrenadora mujer?</strong><br/>Sí, sin necesidad de explicar el motivo.</p>
+<p><strong>¿Necesito equipo en casa?</strong><br/>No. El profesional lleva los implementos incluidos en el precio.</p>
+<p><strong>¿Se puede entrenar en el gimnasio del conjunto?</strong><br/>Sí, es una de las modalidades más solicitadas. También en parques o en tu propio espacio.</p>
+<p><strong>¿Desde cuándo se puede entrenar tras el parto?</strong><br/>Depende del tipo de parto y de tu recuperación: lo define tu médico, no nosotros. Cuando te den el alta, adaptamos el plan a ese punto de partida.</p>
+    `
   }
 ];
 

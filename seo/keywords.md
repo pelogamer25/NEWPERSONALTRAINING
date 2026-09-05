@@ -127,6 +127,94 @@ páginas o secciones futuras, **no** a páginas delgadas duplicadas.
 
 ---
 
+## Clúster «a domicilio» — el diferenciador del negocio
+
+Ningún término del export combina «a domicilio» con «Medellín» y tenga volumen
+propio: el planificador los devuelve por separado. Pero el conjunto sí suma, la
+competencia es baja y **es lo que distingue a NPT de un gimnasio**, así que se
+trata como clúster propio.
+
+| Keyword | Vol/mes | Comp. | Dónde se coloca |
+|---|---:|---|---|
+| entrenador personal a domicilio | 50 | **Baja (30)** | H1 home, título home |
+| entrenamiento personalizado a domicilio | 50 | **Baja (30)** | descripción del servicio |
+| entrenamiento funcional a domicilio | 50 | Media (43) | `/servicios/clase-grupal-funcional` |
+| entrenadores a domicilio | 50 | Media (63) | cuerpo de texto |
+| entrenador personal en casa | 50 | Media (65) | FAQ y artículo de mujeres |
+| entrenamiento personalizado en casa | 50 | Media (65) | cuerpo de texto |
+| entrenamiento a domicilio | 50 | Alta (86) | H2 de la home |
+| entrenadora personal en casa | 50 | Alta (95) | artículo de mujeres |
+| personal trainer a domicilio | 50 | — | variante en el cuerpo |
+| entrenador de ejercicios en casa | 50 | **Baja (0)** | variante en el cuerpo |
+| precio / tarifas entrenador personal a domicilio | 50 | — | artículo de precios |
+
+### Dónde se colocó
+
+- **H1 de la home:** «Entrenador Personal a Domicilio en Medellín» (antes solo
+  «Entrenador Personal en Medellín»)
+- **H2 de servicios de la home:** «ENTRENAMIENTO A DOMICILIO EN MEDELLÍN»
+- **Las 14 descripciones de servicio**, reescritas. Antes todas decían
+  «Modalidad: Presencial (Valle de Aburrá)» y **ninguna mencionaba domicilio**:
+  el diferenciador no aparecía en ninguna página transaccional.
+- **Distintivo visible** en las tarjetas y en la página de cada servicio a
+  domicilio, con las zonas de cobertura.
+- **Schema `FitnessCenter`**: la descripción declara ahora el desplazamiento al
+  domicilio del cliente.
+
+### Precisión importante: no todos los servicios son a domicilio
+
+Se añadió el campo `atHome` en `constants.ts`. **Natación y squash no lo son**:
+necesitan piscina y cancha. Marcarlos como «a domicilio» habría sido falso y
+habría generado consultas que no se pueden atender.
+
+| A domicilio (10) | En instalaciones (4) |
+|---|---|
+| personalizado, semipersonalizado, nutricionista, funcional, rítmica, boxeo, pilates, yoga, fisioterapia, masaje | natación ×2, squash ×2 |
+
+---
+
+## Artículos nuevos (29 agosto 2026)
+
+Dos huecos del export sin contenido que los cubriera:
+
+### 1. Precios — `/blog/cuanto-cuesta-entrenador-personal-medellin-precios`
+
+Es el clúster con **menor competencia de toda la lista** y máxima intención:
+
+| Keyword | Vol/mes | Comp. |
+|---|---:|---|
+| entrenador personal cuanto cobra | 50 | **Baja (3)** |
+| entrenador personal precio | 50 | **Baja (13)** |
+| precio de un entrenador personal | 50 | **Baja (20)** |
+| entrenador personal precio hora | 50 | **Baja (0)** |
+| tarifas entrenador personal | 50 | **Baja (0)** |
+| precio sesión entrenador personal | 50 | Media (57) |
+| precio / tarifas entrenador personal a domicilio | 50 | — |
+
+Publica las tarifas completas en lugar de esconderlas tras un formulario, que es
+lo que hace la competencia. No canibaliza al artículo de domicilio: aquel cubre
+la modalidad, este el precio de todos los servicios.
+
+### 2. Mujeres — `/blog/entrenamiento-personal-mujeres-medellin`
+
+Segmento con demanda y sin ninguna página que lo atendiera:
+
+| Keyword | Vol/mes | Comp. |
+|---|---:|---|
+| entrenador personal para embarazadas | 50 | **Baja (14)** |
+| entrenamiento personal mujer | 50 | **Baja (21)** |
+| entrenador personal embarazo | 50 | Media (43) |
+| personal trainer para mujeres | 50 | Media (57) |
+| entrenadora personal en casa | 50 | Alta (95) |
+
+> **Nota de responsabilidad:** el artículo trata embarazo y posparto, que es
+> contenido de salud. Está escrito exigiendo autorización médica previa y
+> dejando explícito que los profesionales son titulados en deporte, no médicos.
+> No da protocolos clínicos. Conviene que lo revise el equipo de fisioterapia
+> antes de publicar.
+
+---
+
 ## Modificadores locales
 
 Municipios: Medellín · Envigado · Itagüí · Sabaneta · Bello · La Estrella

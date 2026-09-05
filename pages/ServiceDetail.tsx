@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CheckCircle2, MessageCircle, Phone, Clock, Star } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, MessageCircle, Phone, Clock, Star, MapPin } from 'lucide-react';
 import { SERVICES } from '../constants';
 import { Button } from '../components/ui/Button';
 import { SEOHead } from '../components/SEOHead';
@@ -131,6 +131,17 @@ export const ServiceDetail: React.FC = () => {
 
             <div className="glass-panel p-8 rounded-2xl">
               <h2 className="text-xl font-bold text-white mb-4 uppercase tracking-wider">Detalles del Plan</h2>
+              {service.atHome && (
+                <p className="flex items-start gap-2 text-sm text-green-400/90 mb-4 bg-green-500/5 border border-green-500/15 rounded-xl px-4 py-3">
+                  <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <span>
+                    <strong className="text-green-300">Servicio a domicilio en Medellín.</strong>{' '}
+                    El profesional se desplaza a tu casa, conjunto residencial u oficina en
+                    Medellín, Envigado, Itagüí, Sabaneta, Bello o La Estrella, con los
+                    implementos incluidos.
+                  </span>
+                </p>
+              )}
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
                 {service.description}
               </p>
@@ -272,7 +283,7 @@ export const ServiceDetail: React.FC = () => {
             <div className="border-t border-white/10 pt-5 space-y-2.5">
               {[
                 "Evaluación inicial gratuita incluida",
-                "Cobertura en todo el Valle de Aburrá",
+                "Entrenamiento a domicilio en todo el Valle de Aburrá",
                 "Profesionales certificados del Politécnico Colombiano",
                 "Más de 11 años de experiencia en Medellín",
               ].map((g) => (

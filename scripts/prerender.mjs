@@ -18,7 +18,7 @@ const distDir = path.join(root, 'dist');
 
 const SITE_URL = 'https://newpersonaltraining.com';
 
-const { render, getRoutes, getSitemapEntries } = await import(
+const { render, getRoutes, getSitemapEntries, getBlogIndex } = await import(
   pathToFileURL(path.join(root, 'dist-ssr', 'entry-server.js')).href
 );
 
@@ -92,6 +92,44 @@ function stripTemplateHead(template) {
     .replace(/<meta\s+name="twitter:[^"]*"[^>]*>\s*/gi, '');
 }
 
+/**
+ * Reescribe la lista de articulos de llms.txt desde blogs.ts.
+ *
+ * El archivo se mantenia a mano y se habia quedado en 8 de 15 articulos. El
+ * resto del texto (mision, servicios, FAQ) sigue siendo manual: solo se
+ * regenera la seccion del blog, que es la que se desincroniza.
+ */
+async function writeLlmsTxt() {
+  const file = path.join(distDir, 'llms.txt');
+  let txt;
+  try {
+    txt = await fs.readFile(file, 'utf-8');
+  } catch {
+    console.warn('llms.txt no encontrado en dist/, se omite');
+    return;
+  }
+
+  const marker = 'Contenido educativo escrito por profesionales certificados en deporte:';
+  const start = txt.indexOf(marker);
+  if (start === -1) {
+    console.warn('llms.txt: marcador de blog no encontrado, se deja intacto');
+    return;
+  }
+  const after = txt.indexOf('\n## ', start);
+  if (after === -1) {
+    console.warn('llms.txt: no se encontro el final de la seccion de blog');
+    return;
+  }
+
+  const list = getBlogIndex()
+    .map((b) => `- [${b.title}](${SITE_URL}/blog/${b.slug})`)
+    .join('\n');
+
+  txt = txt.slice(0, start) + marker + '\n\n' + list + '\n' + txt.slice(after);
+  await fs.writeFile(file, txt, 'utf-8');
+  console.log(`llms.txt: ${getBlogIndex().length} articulos listados`);
+}
+
 /** Regenera sitemap.xml desde las mismas fuentes que la app. */
 async function writeSitemap() {
   const entries = getSitemapEntries();
@@ -153,6 +191,7 @@ async function main() {
   await fs.writeFile(path.join(distDir, '404.html'), notFound, 'utf-8');
 
   await writeSitemap();
+  await writeLlmsTxt();
 
   console.log(`Prerender: ${written} rutas + 404.html`);
 }
