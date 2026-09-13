@@ -213,6 +213,38 @@ Segmento con demanda y sin ninguna página que lo atendiera:
 > No da protocolos clínicos. Conviene que lo revise el equipo de fisioterapia
 > antes de publicar.
 
+### 3. Cerca de mí / zonas — `/blog/entrenador-personal-cerca-de-mi-medellin-zonas`
+
+El clúster sin cubrir con más volumen que quedaba: **14 términos, ~700
+búsquedas/mes, 10 de ellos con dificultad ≤30**.
+
+| Keyword | Vol/mes | Comp. |
+|---|---:|---|
+| personal trainer cerca de mi | 50 | **Baja (11)** |
+| entrenadores personales near me | 50 | **Baja (17)** |
+| entrenador personal cerca de mí | 50 | **Baja (21)** |
+| entrenadores de gym cerca de mi | 50 | **Baja (21)** |
+| gym cerca de mi con entrenador personal | 50 | **Baja (24)** |
+| gimnasio centro de medellin | 50 | **Baja (29)** |
+| gimnasios medellin cerca de mi | 50 | **Baja (29)** |
+| gimnasio en el centro de medellin | 50 | **Baja (30)** |
+| gimnasio cerca de medellín antioquia | 50 | Media (33) |
+| gym medellin poblado | 50 | Media (43) |
+| gym poblado medellin | 50 | Media (50) |
+
+**Por qué encaja con el modelo de negocio.** «Cerca de mí» es la consulta con
+más intención local que existe. Un gimnasio solo puede responder «sí» si tiene
+sede en esa zona; NPT se desplaza, así que la respuesta es sí en todo el Valle
+de Aburrá. Es una ventaja que un competidor con local fijo no puede replicar.
+
+**Un artículo, no seis páginas de zona.** Cubre El Poblado, Laureles, Belén,
+Robledo, Centro, Envigado, Itagüí, Sabaneta, Bello y La Estrella en una sola
+pieza. Seis páginas por ubicación con el mismo contenido cambiando el nombre
+del barrio serían contenido delgado — el aviso está al final de este documento.
+
+**Se declaran solo las zonas que el sitio ya afirmaba cubrir.** No se inventó
+cobertura nueva.
+
 ---
 
 ## Modificadores locales

@@ -949,6 +949,82 @@ export const BLOG_POSTS: BlogPost[] = [
 <p><strong>¿Se puede entrenar en el gimnasio del conjunto?</strong><br/>Sí, es una de las modalidades más solicitadas. También en parques o en tu propio espacio.</p>
 <p><strong>¿Desde cuándo se puede entrenar tras el parto?</strong><br/>Depende del tipo de parto y de tu recuperación: lo define tu médico, no nosotros. Cuando te den el alta, adaptamos el plan a ese punto de partida.</p>
     `
+  },
+  {
+    id: "16",
+    slug: "entrenador-personal-cerca-de-mi-medellin-zonas",
+    title: "¿Hay entrenador personal cerca de mí en Medellín? Zonas de cobertura en el Valle de Aburrá",
+    excerpt: "Si buscas un entrenador personal cerca de ti en Medellín, la respuesta no depende de dónde esté nuestra sede: depende de dónde estés tú. Repasamos zona por zona dónde llegamos, cómo funciona el desplazamiento y en qué se diferencia de buscar un gimnasio cercano.",
+    category: "Guías",
+    relatedServices: ["entrenamiento-personalizado", "entrenamiento-semi-personalizado", "clase-grupal-funcional"],
+    tags: ["entrenador personal cerca de mí", "personal trainer cerca de mi Medellín", "gym cerca de mi con entrenador personal", "gimnasios Medellín cerca de mi"],
+    readTime: 7,
+    publishedAt: "2026-09-13",
+    image: "https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>¿Hay un entrenador personal cerca de mí en Medellín?</h2>
+<p>Si buscas un <strong>entrenador personal cerca de ti en Medellín</strong>, la pregunta que realmente importa no es dónde queda nuestra sede. Es si llegamos hasta donde tú estás — y en todo el Valle de Aburrá, la respuesta es sí.</p>
+<p>Esa diferencia no es un detalle de marketing. Cambia por completo cómo deberías buscar.</p>
+
+<h2>Por qué «cerca de mí» funciona distinto con entrenamiento a domicilio</h2>
+<p>Cuando buscas un <strong>gimnasio cerca de mí</strong>, Google te muestra locales ordenados por distancia. Si vives en una zona con pocos gimnasios, tus opciones se reducen a lo que haya. Y aunque encuentres uno a quince minutos, esos quince minutos de ida y quince de vuelta son cuarenta y cinco minutos al día que se suman a cada sesión.</p>
+<p>Con un entrenador personal a domicilio el cálculo desaparece: el desplazamiento lo hace el profesional, no tú. La sesión empieza cuando abres la puerta.</p>
+<p>Por eso, entre quienes nos contratan, el motivo más repetido para haber dejado el gimnasio no es la falta de disciplina. Es el tiempo de traslado.</p>
+
+<h2>Zonas de cobertura en Medellín</h2>
+<p>Nuestros entrenadores personales se desplazan a cualquier zona de Medellín. Estas son las que más solicitudes concentran:</p>
+<ul>
+  <li><strong>El Poblado</strong> — la zona con más demanda de entrenamiento personal de la ciudad. Muchas sesiones se hacen en el gimnasio del propio conjunto residencial.</li>
+  <li><strong>Laureles</strong> — mezcla de apartamentos y casas; aquí es frecuente entrenar en espacios al aire libre cercanos.</li>
+  <li><strong>Belén</strong> — cobertura completa, tanto a domicilio como en zonas comunes.</li>
+  <li><strong>Robledo</strong> — cobertura completa.</li>
+  <li><strong>Centro de Medellín</strong> — si trabajas en el centro, la modalidad más solicitada es entrenar en la oficina antes o después de la jornada.</li>
+</ul>
+<p>No hay recargo por desplazamiento dentro del área metropolitana, y los implementos deportivos van incluidos en el precio.</p>
+
+<h2>Municipios del Valle de Aburrá</h2>
+<p>La cobertura no se detiene en el límite de Medellín. Llegamos también a:</p>
+<ul>
+  <li><strong>Envigado</strong></li>
+  <li><strong>Itagüí</strong></li>
+  <li><strong>Sabaneta</strong></li>
+  <li><strong>Bello</strong></li>
+  <li><strong>La Estrella</strong></li>
+</ul>
+<p>Para quien vive en estos municipios, la ventaja es aún mayor: la oferta de gimnasios con entrenador personal es más escasa que en El Poblado o Laureles, así que la alternativa real suele ser desplazarse hasta Medellín. El entrenamiento a domicilio elimina ese viaje.</p>
+
+<h2>«Gym cerca de mí» vs. entrenador a domicilio: cuál te conviene</h2>
+<p>No siempre gana lo mismo. Vale la pena ser honesto sobre cuándo cada opción tiene sentido.</p>
+<h3>El gimnasio cercano gana si…</h3>
+<p>Buscas acceso a máquinas específicas, entrenas ya con buena técnica y autonomía, y el precio mensual es tu criterio principal. Un gimnasio cuesta bastante menos que un entrenador personal, y no tiene sentido disimularlo.</p>
+<h3>El entrenador a domicilio gana si…</h3>
+<p>Tu limitación es el tiempo, vives o trabajas lejos de un gimnasio que te convenza, arrastras una lesión que requiere supervisión, o llevas años yendo al gimnasio sin resultados. En ese último caso el problema casi nunca es el equipo disponible.</p>
+<h3>La opción intermedia</h3>
+<p>Una sesión semanal con entrenador para aprender técnica y recibir la rutina, y el resto de días por tu cuenta en el gimnasio de tu conjunto o del barrio. Sale por $215.200 al mes y es lo que hacen muchos de nuestros clientes.</p>
+
+<h2>¿Dónde se hacen las sesiones exactamente?</h2>
+<p>Depende de lo que tengas a mano y de lo que prefieras. Las modalidades más habituales:</p>
+<ul>
+  <li><strong>En tu apartamento o casa</strong> — no hace falta equipo: el profesional lleva los implementos.</li>
+  <li><strong>En el gimnasio del conjunto residencial</strong> — la opción más solicitada en El Poblado y Envigado.</li>
+  <li><strong>En tu oficina</strong> — frecuente en el centro y en zonas empresariales, sobre todo en horario de mediodía.</li>
+  <li><strong>En parques y espacios al aire libre</strong> — habitual para entrenamiento funcional en grupo.</li>
+</ul>
+<p>El espacio se elige al principio y se puede cambiar durante el plan sin costo.</p>
+
+<h2>Cómo confirmar si llegamos a tu zona</h2>
+<p>Lo más rápido es escribir por WhatsApp al <strong>+57 314 400 8592</strong> diciendo tu barrio o municipio. La respuesta llega el mismo día.</p>
+<p>Si prefieres empezar por lo formal, la evaluación inicial es gratuita, dura 30 minutos y se hace en tu casa: composición corporal, historial de lesiones y objetivos. De ahí sale el plan, y no se paga nada hasta la primera sesión real de entrenamiento.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Cobran más si vivo en Bello o La Estrella?</strong><br/>No. Dentro del Valle de Aburrá el precio publicado es el precio final, sin recargo por desplazamiento.</p>
+<p><strong>¿Llegan fuera del área metropolitana?</strong><br/>Fuera del Valle de Aburrá hay que cotizarlo aparte. Escríbenos y te decimos.</p>
+<p><strong>¿Necesito tener equipo en casa?</strong><br/>No. El profesional lleva los implementos deportivos incluidos en el plan.</p>
+<p><strong>¿Puedo entrenar en el gimnasio de mi conjunto?</strong><br/>Sí, y es una de las modalidades más frecuentes. Solo hay que verificar que la administración permita el ingreso de un entrenador externo.</p>
+<p><strong>¿Qué pasa si me mudo de barrio?</strong><br/>Nada: mientras sigas dentro del Valle de Aburrá, el plan continúa igual con la nueva dirección.</p>
+    `
   }
 ];
 
