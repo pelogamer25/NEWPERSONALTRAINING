@@ -1,6 +1,6 @@
 import { BlogPost } from './types';
 
-export const BLOG_POSTS: BlogPost[] = [
+const POSTS_RAW: BlogPost[] = [
   {
     id: "1",
     slug: "guia-entrenador-personal-medellin-2026",
@@ -1027,5 +1027,17 @@ export const BLOG_POSTS: BlogPost[] = [
     `
   }
 ];
+
+/**
+ * Articulos ordenados del mas reciente al mas antiguo.
+ *
+ * Antes se exportaba el array en el orden en que estaba escrito, asi que el
+ * destacado de /blog y la seccion "ULTIMAS DEL BLOG" de la home mostraban los
+ * articulos mas ANTIGUOS. Cada articulo nuevo quedaba enterrado al final.
+ * Las fechas son ISO (YYYY-MM-DD), asi que localeCompare las ordena bien.
+ */
+export const BLOG_POSTS: BlogPost[] = [...POSTS_RAW].sort(
+  (a, b) => b.publishedAt.localeCompare(a.publishedAt)
+);
 
 export const BLOG_CATEGORIES = [...new Set(BLOG_POSTS.map(p => p.category))];
