@@ -1025,6 +1025,72 @@ const POSTS_RAW: BlogPost[] = [
 <p><strong>¿Puedo entrenar en el gimnasio de mi conjunto?</strong><br/>Sí, y es una de las modalidades más frecuentes. Solo hay que verificar que la administración permita el ingreso de un entrenador externo.</p>
 <p><strong>¿Qué pasa si me mudo de barrio?</strong><br/>Nada: mientras sigas dentro del Valle de Aburrá, el plan continúa igual con la nueva dirección.</p>
     `
+  },
+  {
+    id: "16",
+    slug: "entrenamiento-ganar-masa-muscular-medellin",
+    title: "Entrenamiento para ganar masa muscular en Medellín: cómo diseñar un plan que sí funciona",
+    excerpt: "Ganar masa muscular no es solo levantar pesas más pesadas. Te explicamos qué dice la ciencia del deporte sobre volumen, progresión y nutrición, y cómo un entrenador personal en Medellín acelera el proceso sin lesiones.",
+    category: "Entrenamiento",
+    relatedServices: ["entrenamiento-personalizado", "nutricionista"],
+    tags: ["ganar masa muscular Medellín", "entrenador personal para aumentar masa muscular", "entrenamiento para masa muscular Medellín", "hipertrofia Medellín"],
+    readTime: 7,
+    publishedAt: "2026-10-06",
+    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>¿Por qué cuesta tanto ganar masa muscular entrenando por tu cuenta?</h2>
+<p>La mayoría de personas que buscan <strong>ganar masa muscular en Medellín</strong> cometen el mismo error que quienes buscan bajar de peso: entrenan sin un plan de progresión real. Repiten los mismos pesos semana tras semana, cambian de rutina antes de que esta rinda resultados, o entrenan con una técnica que limita el estímulo muscular real. El cuerpo solo crece cuando se le da una razón clara para hacerlo — y esa razón es una ciencia, no una intuición.</p>
+<p>En <strong>New Personal Training S.A.S</strong>, llevamos más de 11 años diseñando <strong>programas de hipertrofia personalizados en Medellín</strong> para personas que quieren ganar músculo de forma medible, con la técnica correcta y sin perder tiempo en rutinas genéricas.</p>
+
+<h2>Los tres principios que determinan si ganas masa muscular</h2>
+<h3>1. Sobrecarga progresiva</h3>
+<p>El músculo crece en respuesta a una demanda creciente: más peso, más repeticiones o más volumen total a lo largo de las semanas. Sin progresión documentada, el cuerpo se adapta al estímulo actual y deja de crecer. Es el motivo número uno por el que alguien puede entrenar años sin cambios visibles.</p>
+<h3>2. Volumen e intensidad bien distribuidos</h3>
+<p>Cada grupo muscular necesita un rango de series semanales suficiente para crecer, mínimo 10-20 según el músculo y el nivel de entrenamiento, pero más no siempre es mejor: sin la recuperación adecuada, el exceso de volumen frena el progreso en lugar de acelerarlo.</p>
+<h3>3. Técnica y rango de movimiento completo</h3>
+<p>Un movimiento ejecutado con rango completo y control recluta más fibras musculares que el mismo ejercicio hecho a medias con más peso. Es la diferencia entre entrenar para el ego y entrenar para el músculo.</p>
+
+<h2>¿Cuánta proteína y comida necesitas para ganar músculo?</h2>
+<p>El entrenamiento solo crea el estímulo; el tejido muscular se construye con los nutrientes que le das después. Como referencia general:</p>
+<ul>
+  <li><strong>Proteína:</strong> entre 1,6 y 2,2 gramos por kilogramo de peso corporal al día, distribuida en 3-4 comidas.</li>
+  <li><strong>Superávit calórico moderado:</strong> comer ligeramente por encima de tu gasto energético, lo suficiente para crecer sin acumular grasa en exceso.</li>
+  <li><strong>Carbohidratos suficientes:</strong> son el combustible principal para entrenar con la intensidad que exige la hipertrofia.</li>
+</ul>
+<p>Estas cifras son generales: tu requerimiento real depende de tu peso, actividad diaria y objetivos específicos. Por eso en New Personal Training el plan de entrenamiento se complementa con <strong>valoración nutricional de un profesional certificado</strong>, en lugar de calcular macros con una fórmula genérica de internet.</p>
+
+<h2>¿Cuánto tiempo toma ver resultados?</h2>
+<ul>
+  <li><strong>Semanas 1-4:</strong> mejoras neuromusculares — levantas más peso aunque el músculo casi no ha cambiado de tamaño todavía.</li>
+  <li><strong>Mes 2-3:</strong> primeros cambios visibles de volumen muscular, sobre todo en quienes entrenan por primera vez con un programa estructurado.</li>
+  <li><strong>Mes 4-6:</strong> ganancias consolidadas y visibles en fuerza y composición corporal.</li>
+  <li><strong>Más de 6 meses:</strong> la velocidad de ganancia se reduce de forma natural — es cuando más importa ajustar el programa en lugar de repetir lo mismo.</li>
+</ul>
+<p>Un ritmo saludable y sostenible de ganancia muscular es de 0,25 a 0,5 kg al mes para la mayoría de personas entrenadas; cualquier promesa de "ganar 5 kilos de músculo en un mes" no tiene respaldo fisiológico real.</p>
+
+<h2>Errores más comunes al entrenar para masa muscular</h2>
+<ul>
+  <li><strong>Cambiar de rutina cada dos semanas:</strong> el músculo necesita el mismo estímulo durante varias semanas para progresar en él antes de cambiarlo.</li>
+  <li><strong>Entrenar al fallo en todas las series:</strong> genera fatiga acumulada que compromete la recuperación y el rendimiento en las siguientes sesiones.</li>
+  <li><strong>Comer muy poco por miedo a subir de grasa:</strong> sin superávit calórico, el crecimiento muscular se frena sin importar cuánto entrenes.</li>
+  <li><strong>Dormir menos de 7 horas:</strong> la mayor parte de la síntesis de proteína muscular ocurre durante el sueño profundo.</li>
+  <li><strong>No llevar registro de cargas:</strong> sin un número de referencia por sesión, es imposible saber si realmente estás progresando.</li>
+</ul>
+
+<h2>Precios del entrenamiento para ganar masa muscular en Medellín</h2>
+<ul>
+  <li><strong>Entrenamiento personalizado 1:1:</strong> desde $53.800 COP por sesión</li>
+  <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $645.600 COP — frecuencia mínima recomendada para hipertrofia</li>
+  <li><strong>Plan mensual 5x/semana (20 sesiones):</strong> $1.076.000 COP — para quienes buscan acelerar el proceso</li>
+  <li><strong>Valoración nutricional con nutricionista:</strong> $250.000 COP (recomendada para calcular tu superávit calórico real)</li>
+</ul>
+<p>Todos los planes incluyen evaluación inicial gratuita y seguimiento de cargas sesión a sesión. El servicio es <strong>a domicilio en Medellín y todo el Valle de Aburrá</strong>, o en las instalaciones que prefieras.</p>
+
+<h2>¿Por qué entrenar con un profesional en lugar de seguir una rutina de internet?</h2>
+<p>Una rutina genérica no sabe cuánto puedes levantar hoy, ni corrige tu técnica en el momento, ni ajusta el plan cuando el progreso se estanca. Un <strong>entrenador personal en Medellín</strong> de New Personal Training diseña la progresión semana a semana según tus registros reales, revisa tu ejecución en cada serie y modifica el programa antes de que el estancamiento se vuelva un problema de meses.</p>
+    `
   }
 ];
 
