@@ -67,8 +67,8 @@ export const Contact: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Contacto | New Personal Training — Medellín +57 314 400 8592"
-        description="Contáctanos en New Personal Training Medellín. WhatsApp: +57 314 400 8592. Presencial en el Valle de Aburrá, Antioquia, Colombia."
+        title="Contacto — Entrenador Personal cerca de ti en Medellín | New Personal Training"
+        description="¿Buscas un entrenador personal cerca de ti en Medellín? Escríbenos por WhatsApp al +57 314 400 8592. Cubrimos Medellín, Envigado, Itagüí, Sabaneta, Bello y La Estrella."
         canonical="/contacto"
         jsonLd={CONTACT_SCHEMA}
         breadcrumbs={[

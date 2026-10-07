@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CheckCircle2, MessageCircle, Phone, Clock, Star } from 'lucide-react';
+import { ArrowLeft, CheckCircle2, MessageCircle, Phone, Clock, Star, MapPin } from 'lucide-react';
 import { SERVICES } from '../constants';
 import { Button } from '../components/ui/Button';
 import { SEOHead } from '../components/SEOHead';
@@ -9,6 +9,13 @@ import { SEOHead } from '../components/SEOHead';
 export const ServiceDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const service = SERVICES.find((s) => s.slug === slug);
+
+  // Los servicios hermanos no estaban enlazados entre sí: cada página de
+  // servicio era un callejón sin salida hacia /servicios o WhatsApp.
+  const relatedServices = useMemo(
+    () => SERVICES.filter((s) => s.slug !== slug).slice(0, 3),
+    [slug]
+  );
   
   const [selectedOption, setSelectedOption] = useState<number>(0);
 
@@ -100,6 +107,10 @@ export const ServiceDetail: React.FC = () => {
                 src={service.image}
                 alt={`${service.title} en Medellín — New Personal Training`}
                 className="w-full h-full object-cover"
+                width={800}
+                height={600}
+                fetchPriority="high"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-npt-black via-npt-black/20 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
@@ -120,6 +131,17 @@ export const ServiceDetail: React.FC = () => {
 
             <div className="glass-panel p-8 rounded-2xl">
               <h2 className="text-xl font-bold text-white mb-4 uppercase tracking-wider">Detalles del Plan</h2>
+              {service.atHome && (
+                <p className="flex items-start gap-2 text-sm text-green-400/90 mb-4 bg-green-500/5 border border-green-500/15 rounded-xl px-4 py-3">
+                  <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <span>
+                    <strong className="text-green-300">Servicio a domicilio en Medellín.</strong>{' '}
+                    El profesional se desplaza a tu casa, conjunto residencial u oficina en
+                    Medellín, Envigado, Itagüí, Sabaneta, Bello o La Estrella, con los
+                    implementos incluidos.
+                  </span>
+                </p>
+              )}
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
                 {service.description}
               </p>
@@ -261,7 +283,7 @@ export const ServiceDetail: React.FC = () => {
             <div className="border-t border-white/10 pt-5 space-y-2.5">
               {[
                 "Evaluación inicial gratuita incluida",
-                "Cobertura en todo el Valle de Aburrá",
+                "Entrenamiento a domicilio en todo el Valle de Aburrá",
                 "Profesionales certificados del Politécnico Colombiano",
                 "Más de 11 años de experiencia en Medellín",
               ].map((g) => (
@@ -274,6 +296,46 @@ export const ServiceDetail: React.FC = () => {
           </motion.div>
         </div>
       </div>
+        {/* Servicios relacionados — enlaces internos con anchor de keyword */}
+        {relatedServices.length > 0 && (
+          <section className="container mx-auto px-4 pb-20" aria-label="Otros servicios de entrenamiento en Medellín">
+            <h2 className="text-2xl md:text-3xl font-heading font-black italic text-white mb-3">
+              OTROS SERVICIOS DE ENTRENAMIENTO <span className="text-npt-red">EN MEDELLÍN</span>
+            </h2>
+            <p className="text-gray-400 text-sm mb-8 max-w-2xl">
+              Todos nuestros servicios de entrenamiento personal en Medellín son presenciales y
+              cubren el Valle de Aburrá. Puedes combinarlos en un mismo plan.
+            </p>
+            <div className="grid md:grid-cols-3 gap-4">
+              {relatedServices.map((rel) => (
+                <Link
+                  key={rel.slug}
+                  to={`/servicios/${rel.slug}`}
+                  className="glass-panel rounded-xl p-5 border border-white/10 hover:border-npt-red/40 transition-colors group"
+                >
+                  <h3 className="text-base font-bold text-white group-hover:text-npt-red transition-colors mb-1">
+                    {rel.title} en Medellín
+                  </h3>
+                  <p className="text-xs text-gray-500 mb-2">{rel.description}</p>
+                  {rel.price && <p className="text-sm font-bold text-npt-red/80">Desde {rel.price.split(' ')[0]}</p>}
+                </Link>
+              ))}
+            </div>
+            <div className="mt-8 flex flex-wrap gap-3 text-sm">
+              <Link to="/servicios" className="text-gray-400 hover:text-npt-red transition-colors underline underline-offset-4">
+                Ver los 14 servicios de entrenamiento en Medellín
+              </Link>
+              <span className="text-gray-700" aria-hidden="true">·</span>
+              <Link to="/" className="text-gray-400 hover:text-npt-red transition-colors underline underline-offset-4">
+                Entrenador personal en Medellín a domicilio
+              </Link>
+              <span className="text-gray-700" aria-hidden="true">·</span>
+              <Link to="/entrenadores" className="text-gray-400 hover:text-npt-red transition-colors underline underline-offset-4">
+                Conoce a los entrenadores personales en Medellín
+              </Link>
+            </div>
+          </section>
+        )}
     </div>
     </>
   );

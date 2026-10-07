@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-6">
             <Link to="/" className="inline-block group">
               <div className="h-16 w-16 bg-white rounded-full flex items-center justify-center p-1 shadow-[0_0_15px_rgba(208,0,0,0.5)] transition-transform duration-300 group-hover:scale-105">
-                <img src="/logo.png" alt="New Personal Training" className="w-full h-full object-contain" />
+                <img src="/logo.png" alt="New Personal Training" className="w-full h-full object-contain" width={576} height={557} loading="lazy" decoding="async" />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -63,8 +63,8 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4">
               {SERVICES.slice(0, 5).map((service) => (
                 <li key={service.id}>
-                  <Link to="/servicios" className="text-gray-400 hover:text-npt-red transition-colors text-sm font-medium">
-                    {service.title}
+                  <Link to={`/servicios/${service.slug}`} className="text-gray-400 hover:text-npt-red transition-colors text-sm font-medium">
+                    {service.title} en Medellín
                   </Link>
                 </li>
               ))}
@@ -77,11 +77,15 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <Phone className="h-5 w-5 text-npt-red shrink-0" />
-                <span>{COMPANY_INFO.phone}</span>
+                <a href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`} className="hover:text-npt-red transition-colors">
+                  {COMPANY_INFO.phone}
+                </a>
               </li>
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <Mail className="h-5 w-5 text-npt-red shrink-0" />
-                <span>{COMPANY_INFO.email}</span>
+                <a href={`mailto:${COMPANY_INFO.email}`} className="hover:text-npt-red transition-colors">
+                  {COMPANY_INFO.email}
+                </a>
               </li>
               <li className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin className="h-5 w-5 text-npt-red shrink-0" />
@@ -96,8 +100,8 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} New Personal Training.
           </p>
           <div className="flex gap-6 text-xs text-gray-600">
-            <Link to="/privacy" className="hover:text-white transition-colors">Política de Privacidad</Link>
-            <Link to="/terms" className="hover:text-white transition-colors">Términos</Link>
+            <Link to="/nosotros" className="hover:text-white transition-colors">Sobre Nosotros</Link>
+            <Link to="/contacto" className="hover:text-white transition-colors">Contacto</Link>
           </div>
         </div>
       </div>

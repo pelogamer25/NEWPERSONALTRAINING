@@ -94,7 +94,7 @@ export const Trainers: React.FC = () => {
     <>
       <SEOHead
         title="Entrenadores Personales en Medellín | New Personal Training"
-        description="Conoce nuestro equipo de 20+ entrenadores personales certificados en Medellín: profesionales del ejercicio, fisioterapeutas, nutricionistas, valoradores y masoterapetutas en el Valle de Aburrá."
+        description="Conoce a los entrenadores personales en Medellín de New Personal Training: profesionales certificados en ejercicio físico, fisioterapeutas, nutricionistas, valoradores y masoterapeutas del Valle de Aburrá."
         canonical="/entrenadores"
         breadcrumbs={[
           { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
@@ -111,7 +111,7 @@ export const Trainers: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-7xl font-heading font-black italic text-white mb-6"
           >
-            NUESTROS <span className="text-npt-red">ENTRENADORES</span>
+            ENTRENADORES PERSONALES <span className="text-npt-red">EN MEDELLÍN</span>
           </motion.h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
             El equipo de élite preparado para llevarte al límite.
@@ -143,9 +143,17 @@ export const Trainers: React.FC = () => {
                   >
                     <div className="absolute inset-0 z-0">
                       <img 
-                        src={img} 
-                        alt={`${section.title} ${imgIdx + 1}`} 
+                        src={img}
+                        alt={`${section.title} de New Personal Training — ${[
+                          "entrenamiento personal en Medellín",
+                          "entrenador personal a domicilio en el Valle de Aburrá",
+                          "profesional certificado en Medellín",
+                        ][imgIdx % 3]}`}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                        width={600}
+                        height={800}
+                        loading="lazy"
+                        decoding="async"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     </div>

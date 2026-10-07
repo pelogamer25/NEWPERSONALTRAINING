@@ -18,6 +18,8 @@ export interface Service {
   actionText?: string;
   badges?: string[];
   pricingOptions?: ServicePricing[];
+  /** El servicio se presta en casa del cliente. Natacion y squash no: requieren piscina y cancha. */
+  atHome?: boolean;
 }
 
 export interface Trainer {
@@ -54,6 +56,8 @@ export interface BlogPost {
   tags: string[];
   readTime: number;
   publishedAt: string;
+  /** Slugs de los servicios de los que trata el articulo. */
+  relatedServices?: string[];
   image: string;
   author: string;
   authorRole: string;

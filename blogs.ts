@@ -1,12 +1,13 @@
 import { BlogPost } from './types';
 
-export const BLOG_POSTS: BlogPost[] = [
+const POSTS_RAW: BlogPost[] = [
   {
     id: "1",
     slug: "guia-entrenador-personal-medellin-2026",
     title: "Guía completa: Entrenador personal en Medellín 2026 — beneficios, precios y cómo elegir el mejor",
     excerpt: "¿Buscas un entrenador personal en Medellín? Descubre todo lo que debes saber: qué hace un personal trainer, cuánto cuesta y cómo encontrar el mejor para tus objetivos en el Valle de Aburrá.",
     category: "Entrenamiento",
+    relatedServices: ["entrenamiento-personalizado", "entrenamiento-semi-personalizado"],
     tags: ["entrenador personal Medellín", "personal trainer Medellín", "mejor entrenador personal Medellín"],
     readTime: 7,
     publishedAt: "2026-06-01",
@@ -65,6 +66,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Clases de boxeo en Medellín 2026: beneficios, precios y por qué es el entrenamiento más completo",
     excerpt: "Las clases de boxeo en Medellín son mucho más que aprender a golpear. Descubre por qué miles de medellinenses lo eligen para ponerse en forma, los precios y qué esperar en tus primeras sesiones.",
     category: "Deportes",
+    relatedServices: ["boxeo"],
     tags: ["clases de boxeo Medellín", "boxeo Medellín", "entrenamiento de boxeo Medellín"],
     readTime: 6,
     publishedAt: "2026-06-05",
@@ -129,6 +131,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Entrenamiento personalizado a domicilio en Medellín: la revolución del fitness que llega a tu puerta",
     excerpt: "El entrenamiento a domicilio en Medellín es la solución perfecta para quienes no tienen tiempo de desplazarse a un gym. Conoce los beneficios, precios y cómo funciona el servicio de New Personal Training en el Valle de Aburrá.",
     category: "Entrenamiento",
+    relatedServices: ["entrenamiento-personalizado", "entrenamiento-semi-personalizado"],
     tags: ["entrenamiento a domicilio Medellín", "personal trainer a domicilio Medellín", "gym en casa Medellín"],
     readTime: 6,
     publishedAt: "2026-06-08",
@@ -191,6 +194,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Pilates en Medellín 2026: beneficios, tipos y dónde tomar las mejores clases",
     excerpt: "El pilates en Medellín está en su mejor momento. Descubre qué es el Pilates Mat, sus beneficios para la postura y el core, y cómo tomarlo con profesionales certificados en el Valle de Aburrá.",
     category: "Bienestar",
+    relatedServices: ["pilates"],
     tags: ["pilates Medellín", "clases de pilates Medellín", "pilates mat Medellín"],
     readTime: 5,
     publishedAt: "2026-06-10",
@@ -250,6 +254,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "¿Cuál es el mejor gym de Medellín en 2026? Guía completa para elegir el ideal para ti",
     excerpt: "Medellín tiene cientos de gimnasios, desde grandes cadenas hasta estudios boutique. Te ayudamos a entender las diferencias y por qué el entrenamiento personalizado supera a los gimnasios convencionales para la mayoría de personas.",
     category: "Guías",
+    relatedServices: ["entrenamiento-personalizado", "clase-grupal-funcional"],
     tags: ["mejores gimnasios Medellín", "gimnasios Medellín", "gym Medellín", "mejor gym Medellín"],
     readTime: 8,
     publishedAt: "2026-06-12",
@@ -304,6 +309,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Entrenamiento funcional en Medellín: qué es, beneficios y cómo empezar en 2026",
     excerpt: "El entrenamiento funcional en Medellín es ideal para mejorar el rendimiento en la vida real. Descubre cómo las clases grupales funcionales de New Personal Training pueden transformar tu condición física.",
     category: "Entrenamiento",
+    relatedServices: ["clase-grupal-funcional", "clase-grupal-ritmica"],
     tags: ["entrenamiento funcional Medellín", "clases funcionales Medellín", "clases grupales Medellín"],
     readTime: 5,
     publishedAt: "2026-06-15",
@@ -363,6 +369,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Nutricionista en Medellín 2026: por qué necesitas una valoración profesional para alcanzar tus metas",
     excerpt: "Un nutricionista en Medellín no es un lujo — es la pieza que falta en tu plan de entrenamiento. Descubre qué incluye una valoración nutricional, cuánto cuesta y cómo complementa tu rutina de ejercicios.",
     category: "Nutrición",
+    relatedServices: ["nutricionista"],
     tags: ["nutricionista Medellín", "plan nutricional Medellín", "valoración nutricional Medellín"],
     readTime: 6,
     publishedAt: "2026-06-18",
@@ -417,6 +424,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Yoga en Medellín 2026: tipos, beneficios y cómo empezar con clases personalizadas",
     excerpt: "El yoga en Medellín ha crecido exponencialmente. Descubre los tipos de yoga más populares, sus beneficios comprobados y cómo tomar clases con instructores certificados en el Valle de Aburrá.",
     category: "Bienestar",
+    relatedServices: ["yoga"],
     tags: ["yoga Medellín", "clases de yoga Medellín", "yoga personalizado Medellín", "instructor yoga Medellín"],
     readTime: 6,
     publishedAt: "2026-06-20",
@@ -480,6 +488,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Fisioterapia en Medellín 2026: recuperación, prevención y rehabilitación a domicilio",
     excerpt: "¿Buscas fisioterapia en Medellín? Conoce cuándo necesitas un fisioterapeuta, qué condiciones trata, precios y cómo el servicio a domicilio de New Personal Training llega a cualquier zona del Valle de Aburrá.",
     category: "Salud",
+    relatedServices: ["fisioterapia", "masaje"],
     tags: ["fisioterapia Medellín", "fisioterapeuta Medellín", "fisioterapia a domicilio Medellín", "rehabilitación física Medellín"],
     readTime: 6,
     publishedAt: "2026-06-22",
@@ -541,6 +550,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Entrenamiento para bajar de peso en Medellín: qué funciona realmente según la ciencia del deporte",
     excerpt: "¿Quieres perder peso en Medellín pero no sabes por dónde empezar? Descubre qué tipo de ejercicio es más efectivo para bajar de peso, cómo combinarlo con nutrición y por qué un entrenador personal marca la diferencia.",
     category: "Entrenamiento",
+    relatedServices: ["entrenamiento-personalizado", "nutricionista"],
     tags: ["bajar de peso Medellín", "entrenamiento para perder peso Medellín", "adelgazar con ejercicio Medellín", "entrenador personal bajar de peso"],
     readTime: 7,
     publishedAt: "2026-06-24",
@@ -674,6 +684,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Bienestar corporativo en Medellín: pausas activas, entrenamiento empresarial y gym para empleados",
     excerpt: "Las empresas más productivas de Medellín invierten en el bienestar físico de sus empleados. Descubre cómo New Personal Training transforma el rendimiento de equipos de trabajo con programas de pausas activas y entrenamiento corporativo.",
     category: "Empresas",
+    relatedServices: ["clase-grupal-funcional", "clase-grupal-ritmica"],
     tags: ["bienestar corporativo Medellín", "pausas activas empresas Medellín", "entrenamiento empresarial Medellín", "gym corporativo Medellín"],
     readTime: 6,
     publishedAt: "2026-06-26",
@@ -735,6 +746,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "Clases de natación en Medellín 2026: aprende a nadar o perfecciona tu técnica con instructor certificado",
     excerpt: "¿Buscas clases de natación en Medellín? New Personal Training ofrece natación personalizada y semipersonalizada para todas las edades y niveles. Precios, metodología y cobertura en el Valle de Aburrá.",
     category: "Deportes",
+    relatedServices: ["natacion-personalizada", "natacion-semi-personalizada"],
     tags: ["clases de natación Medellín", "natación personalizada Medellín", "aprender a nadar Medellín", "instructor natación Medellín"],
     readTime: 5,
     publishedAt: "2026-06-27",
@@ -791,7 +803,307 @@ export const BLOG_POSTS: BlogPost[] = [
 <p>Es sencillo: contáctanos al <strong>+57 314 400 8592</strong> por WhatsApp o escríbenos a <strong>info@newpersonaltraining.com</strong>. Coordinaremos una evaluación inicial gratuita, conoceremos tu piscina disponible y comenzaremos tu programa la semana siguiente.</p>
 <p>New Personal Training también puede complementar las clases de natación con <strong>entrenamiento en seco personalizado, fisioterapia deportiva y plan nutricional</strong>, formando un programa integral de bienestar que maximiza tus resultados.</p>
     `
+  },
+  {
+    id: "14",
+    slug: "cuanto-cuesta-entrenador-personal-medellin-precios",
+    title: "¿Cuánto cuesta un entrenador personal en Medellín? Precios y tarifas 2026",
+    excerpt: "El precio de un entrenador personal en Medellín va de $53.800 por sesión suelta a $1.076.000 por un plan de 20 sesiones al mes. Te explicamos qué incluye cada tarifa, qué hace subir o bajar el costo y cómo se compara con un gimnasio.",
+    category: "Guías",
+    relatedServices: ["entrenamiento-personalizado", "entrenamiento-semi-personalizado"],
+    tags: ["entrenador personal precio", "cuánto cobra un entrenador personal", "tarifas entrenador personal Medellín", "precio entrenador personal a domicilio"],
+    readTime: 8,
+    publishedAt: "2026-08-29",
+    image: "https://images.unsplash.com/photo-1579126038374-6064e9370f0f?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>¿Cuánto cobra un entrenador personal en Medellín en 2026?</h2>
+<p>El <strong>precio de un entrenador personal en Medellín</strong> arranca en $53.800 por sesión individual y llega hasta $1.076.000 por un plan mensual de 20 sesiones. Es el rango que manejamos en New Personal Training, y a continuación lo desglosamos completo para que no tengas que pedir cotización solo para saber si te alcanza.</p>
+<p>La mayoría de sitios de este sector esconden las tarifas detrás de un formulario. Nosotros las publicamos.</p>
+
+<h2>Tarifas de entrenamiento personalizado 1:1</h2>
+<p>Las tarifas de un <strong>entrenador personal a domicilio</strong> en Medellín se organizan por frecuencia semanal:</p>
+<ul>
+  <li><strong>Sesión suelta:</strong> $53.800</li>
+  <li><strong>1 vez/semana</strong> (4 sesiones/mes): $215.200</li>
+  <li><strong>2 veces/semana</strong> (8 sesiones/mes): $430.400</li>
+  <li><strong>3 veces/semana</strong> (12 sesiones/mes): $645.600</li>
+  <li><strong>4 veces/semana</strong> (16 sesiones/mes): $860.800</li>
+  <li><strong>5 veces/semana</strong> (20 sesiones/mes): $1.076.000</li>
+</ul>
+<p>El costo por sesión se mantiene en $53.800 en todos los planes: no hay descuento por volumen, pero tampoco recargo por comprometerte a más días.</p>
+
+<h2>Precio del entrenamiento semipersonalizado</h2>
+<p>Si entrenas en pareja o en grupo de tres, el <strong>precio por persona baja de forma notable</strong>. La sesión semipersonalizada cuesta $69.200 en total, repartida entre los participantes:</p>
+<ul>
+  <li><strong>Sesión suelta:</strong> $69.200</li>
+  <li><strong>1 vez/semana:</strong> $276.800/mes</li>
+  <li><strong>3 veces/semana:</strong> $830.400/mes</li>
+  <li><strong>5 veces/semana:</strong> $1.384.000/mes</li>
+</ul>
+<p>Entre dos personas, la sesión sale a $34.600 por cabeza — menos que la individual, con atención casi idéntica.</p>
+
+<h2>¿Qué incluye el precio? Lo que no siempre se dice</h2>
+<p>Cuando compares tarifas de entrenadores personales en Medellín, revisa qué entra en el precio. En nuestro caso:</p>
+<ul>
+  <li>Implementos deportivos llevados a tu lugar de entrenamiento, sin costo adicional</li>
+  <li>Valoración y seguimiento con báscula de alta precisión</li>
+  <li>Plan alimenticio personalizado</li>
+  <li>Horario flexible y modificable</li>
+  <li>Reemplazo si tu profesional titular no puede asistir</li>
+  <li>Congelación del plan hasta 15 días al renovar</li>
+  <li>Evaluación inicial gratuita de 30 minutos, antes de pagar nada</li>
+</ul>
+<p>El desplazamiento del profesional a tu casa, conjunto u oficina <strong>ya está incluido</strong> dentro del Valle de Aburrá. No cobramos transporte aparte.</p>
+
+<h2>Precios del resto de servicios</h2>
+<p>Estas son las tarifas por sesión de las demás disciplinas en Medellín:</p>
+<ul>
+  <li><strong>Natación personalizada:</strong> desde $87.200</li>
+  <li><strong>Yoga:</strong> desde $91.400</li>
+  <li><strong>Clase grupal funcional:</strong> desde $95.700</li>
+  <li><strong>Boxeo:</strong> desde $106.300</li>
+  <li><strong>Clase grupal rítmica:</strong> desde $106.300</li>
+  <li><strong>Natación semipersonalizada:</strong> desde $107.700</li>
+  <li><strong>Squash personalizado:</strong> desde $115.000</li>
+  <li><strong>Pilates Mat:</strong> desde $127.600</li>
+  <li><strong>Fisioterapia y masaje:</strong> desde $150.000</li>
+  <li><strong>Valoración con nutricionista:</strong> $250.000 (sesión única, sin plan mensual)</li>
+</ul>
+
+<h2>¿Qué hace que el precio suba o baje?</h2>
+<h3>Frecuencia semanal</h3>
+<p>Es el factor de mayor peso en el costo mensual. Pasar de 2 a 4 sesiones semanales duplica la factura.</p>
+<h3>Número de participantes</h3>
+<p>Entrenar acompañado es la forma más directa de bajar el costo por persona sin renunciar a supervisión profesional.</p>
+<h3>Disciplina</h3>
+<p>Fisioterapia y nutrición cuestan más porque las imparten profesionales de la salud con titulación específica, no entrenadores.</p>
+<h3>Ubicación</h3>
+<p>Dentro del Valle de Aburrá —Medellín, Envigado, Itagüí, Sabaneta, Bello y La Estrella— no hay recargo. Fuera del área metropolitana habría que cotizar aparte.</p>
+
+<h2>Entrenador personal vs. gimnasio: la comparación honesta</h2>
+<p>Una mensualidad de gimnasio en Medellín cuesta bastante menos que un entrenador personal. Es un hecho y no tiene sentido disimularlo. La pregunta útil es otra: qué necesitas.</p>
+<p>El gimnasio te da acceso a equipos. El entrenador personal te da un plan diseñado para tu cuerpo, corrección de técnica en tiempo real y alguien que nota si dejaste de ir. Si llevas años yendo al gimnasio sin resultados, el problema rara vez es el equipo.</p>
+<p>También existe la vía intermedia: 1 sesión semanal con entrenador ($215.200/mes) para aprender técnica y recibir la rutina, y el resto de días por tu cuenta.</p>
+
+<h2>Preguntas frecuentes sobre precios</h2>
+<p><strong>¿Cuánto cuesta la primera sesión?</strong><br/>La evaluación inicial es gratuita y dura 30 minutos: composición corporal, historial de lesiones y objetivos. No se paga hasta la primera sesión de entrenamiento real.</p>
+<p><strong>¿Hay que firmar permanencia?</strong><br/>No. Los planes son mensuales y puedes tomar sesiones sueltas a $53.800 si prefieres probar sin compromiso.</p>
+<p><strong>¿El precio incluye plan de alimentación?</strong><br/>El plan alimenticio básico va incluido en el entrenamiento personalizado. La valoración completa con nutricionista titulado es aparte: $250.000.</p>
+<p><strong>¿Cobran el desplazamiento a domicilio?</strong><br/>No dentro del Valle de Aburrá. El precio publicado es el precio final.</p>
+    `
+  },
+  {
+    id: "15",
+    slug: "entrenamiento-personal-mujeres-medellin",
+    title: "Entrenamiento personal para mujeres en Medellín: embarazo, posparto y objetivos reales",
+    excerpt: "Guía del entrenamiento personal para mujeres en Medellín: cómo se adapta el plan en el embarazo y el posparto, qué esperar según tu objetivo y por qué entrenar en casa resuelve la barrera más común.",
+    category: "Entrenamiento",
+    relatedServices: ["entrenamiento-personalizado", "pilates", "fisioterapia"],
+    tags: ["entrenamiento personal mujer", "personal trainer para mujeres", "entrenador personal para embarazadas", "entrenadora personal en casa Medellín"],
+    readTime: 7,
+    publishedAt: "2026-08-29",
+    image: "https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>Entrenamiento personal para mujeres en Medellín: por qué el plan cambia</h2>
+<p>El <strong>entrenamiento personal para mujeres en Medellín</strong> no consiste en repetir la rutina de siempre con menos peso. Cambian las prioridades —salud ósea, suelo pélvico, etapas hormonales— y cambia el contexto: horarios partidos, cuidado de otras personas y, muy a menudo, poca disposición a entrenar en una sala llena de gente.</p>
+<p>Esta guía explica cómo adaptamos el plan y qué puedes esperar según tu momento.</p>
+
+<h2>La barrera real: el desplazamiento, no la motivación</h2>
+<p>Entre las mujeres que llegan a New Personal Training, la razón más repetida para haber abandonado el gimnasio no es la falta de ganas: es el tiempo de traslado y sentirse observada. Por eso el <strong>entrenamiento a domicilio en Medellín</strong> resuelve más de lo que parece — la sesión empieza cuando abres la puerta.</p>
+<p>Puedes pedir expresamente una entrenadora. Nuestro equipo incluye profesionales de ambos géneros y esa preferencia se respeta sin necesidad de justificarla.</p>
+
+<h2>Entrenamiento durante el embarazo</h2>
+<p>El <strong>entrenamiento personal para embarazadas</strong> requiere autorización médica previa, y ese es el punto de partida innegociable: sin visto bueno de tu ginécologo u obstetra, no iniciamos el proceso. Nuestros profesionales son titulados en deporte y actividad física, no médicos, y esa frontera la respetamos.</p>
+<p>Con la autorización en mano, el trabajo suele orientarse a:</p>
+<ul>
+  <li>Mantener fuerza funcional para las tareas del día a día</li>
+  <li>Trabajo de suelo pélvico y respiración, coordinado con fisioterapia cuando hace falta</li>
+  <li>Movilidad de cadera y columna, que es donde más molestias aparecen</li>
+  <li>Control de intensidad por percepción de esfuerzo, no por cargas máximas</li>
+</ul>
+<p>Las sesiones a domicilio tienen una ventaja concreta aquí: si un día no te sientes bien, se ajusta o se cancela sin haberte desplazado.</p>
+
+<h2>Posparto: volver sin prisa y en el orden correcto</h2>
+<p>La recuperación posparto empieza por la valoración, no por el ejercicio. Antes de cualquier plan conviene revisar diástasis abdominal y estado del suelo pélvico — por eso combinamos entrenamiento con <strong>fisioterapia</strong> en esta etapa.</p>
+<p>El error más común es retomar abdominales clásicos e impacto demasiado pronto. El orden que funciona es: respiración y core profundo, luego fuerza global, y solo después impacto y carga alta.</p>
+
+<h2>Objetivos frecuentes y qué esperar de verdad</h2>
+<h3>Bajar de peso</h3>
+<p>Combinación de fuerza, trabajo cardiovascular y plan de alimentación. La fuerza no es opcional: preserva masa muscular mientras pierdes grasa.</p>
+<h3>Tonificar sin ganar volumen</h3>
+<p>Es la preocupación más repetida y también el mito más extendido. Las diferencias hormonales hacen que la hipertrofia marcada requiera un trabajo muy específico y deliberado. Entrenar fuerza 3 veces por semana no produce ese efecto por accidente.</p>
+<h3>Salud ósea a partir de los 40</h3>
+<p>El entrenamiento de fuerza con carga progresiva es una de las herramientas con más respaldo científico para la densidad ósea. Es prevención, y cuanto antes empiece, mejor.</p>
+
+<h2>Cómo empieza el proceso</h2>
+<p>Con una evaluación inicial gratuita de 30 minutos en tu casa: composición corporal, historial de lesiones o cirugías, etapa en la que estás y objetivos. De ahí sale el plan. Si estás embarazada o en posparto, revisamos también tu autorización médica.</p>
+<p>Cubrimos El Poblado, Laureles, Belén, Robledo, Envigado, Itagüí, Sabaneta, Bello y La Estrella.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Puedo pedir una entrenadora mujer?</strong><br/>Sí, sin necesidad de explicar el motivo.</p>
+<p><strong>¿Necesito equipo en casa?</strong><br/>No. El profesional lleva los implementos incluidos en el precio.</p>
+<p><strong>¿Se puede entrenar en el gimnasio del conjunto?</strong><br/>Sí, es una de las modalidades más solicitadas. También en parques o en tu propio espacio.</p>
+<p><strong>¿Desde cuándo se puede entrenar tras el parto?</strong><br/>Depende del tipo de parto y de tu recuperación: lo define tu médico, no nosotros. Cuando te den el alta, adaptamos el plan a ese punto de partida.</p>
+    `
+  },
+  {
+    id: "16",
+    slug: "entrenador-personal-cerca-de-mi-medellin-zonas",
+    title: "¿Hay entrenador personal cerca de mí en Medellín? Zonas de cobertura en el Valle de Aburrá",
+    excerpt: "Si buscas un entrenador personal cerca de ti en Medellín, la respuesta no depende de dónde esté nuestra sede: depende de dónde estés tú. Repasamos zona por zona dónde llegamos, cómo funciona el desplazamiento y en qué se diferencia de buscar un gimnasio cercano.",
+    category: "Guías",
+    relatedServices: ["entrenamiento-personalizado", "entrenamiento-semi-personalizado", "clase-grupal-funcional"],
+    tags: ["entrenador personal cerca de mí", "personal trainer cerca de mi Medellín", "gym cerca de mi con entrenador personal", "gimnasios Medellín cerca de mi"],
+    readTime: 7,
+    publishedAt: "2026-09-13",
+    image: "https://images.unsplash.com/photo-1483721310020-03333e577078?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>¿Hay un entrenador personal cerca de mí en Medellín?</h2>
+<p>Si buscas un <strong>entrenador personal cerca de ti en Medellín</strong>, la pregunta que realmente importa no es dónde queda nuestra sede. Es si llegamos hasta donde tú estás — y en todo el Valle de Aburrá, la respuesta es sí.</p>
+<p>Esa diferencia no es un detalle de marketing. Cambia por completo cómo deberías buscar.</p>
+
+<h2>Por qué «cerca de mí» funciona distinto con entrenamiento a domicilio</h2>
+<p>Cuando buscas un <strong>gimnasio cerca de mí</strong>, Google te muestra locales ordenados por distancia. Si vives en una zona con pocos gimnasios, tus opciones se reducen a lo que haya. Y aunque encuentres uno a quince minutos, esos quince minutos de ida y quince de vuelta son cuarenta y cinco minutos al día que se suman a cada sesión.</p>
+<p>Con un entrenador personal a domicilio el cálculo desaparece: el desplazamiento lo hace el profesional, no tú. La sesión empieza cuando abres la puerta.</p>
+<p>Por eso, entre quienes nos contratan, el motivo más repetido para haber dejado el gimnasio no es la falta de disciplina. Es el tiempo de traslado.</p>
+
+<h2>Zonas de cobertura en Medellín</h2>
+<p>Nuestros entrenadores personales se desplazan a cualquier zona de Medellín. Estas son las que más solicitudes concentran:</p>
+<ul>
+  <li><strong>El Poblado</strong> — la zona con más demanda de entrenamiento personal de la ciudad. Muchas sesiones se hacen en el gimnasio del propio conjunto residencial.</li>
+  <li><strong>Laureles</strong> — mezcla de apartamentos y casas; aquí es frecuente entrenar en espacios al aire libre cercanos.</li>
+  <li><strong>Belén</strong> — cobertura completa, tanto a domicilio como en zonas comunes.</li>
+  <li><strong>Robledo</strong> — cobertura completa.</li>
+  <li><strong>Centro de Medellín</strong> — si trabajas en el centro, la modalidad más solicitada es entrenar en la oficina antes o después de la jornada.</li>
+</ul>
+<p>No hay recargo por desplazamiento dentro del área metropolitana, y los implementos deportivos van incluidos en el precio.</p>
+
+<h2>Municipios del Valle de Aburrá</h2>
+<p>La cobertura no se detiene en el límite de Medellín. Llegamos también a:</p>
+<ul>
+  <li><strong>Envigado</strong></li>
+  <li><strong>Itagüí</strong></li>
+  <li><strong>Sabaneta</strong></li>
+  <li><strong>Bello</strong></li>
+  <li><strong>La Estrella</strong></li>
+</ul>
+<p>Para quien vive en estos municipios, la ventaja es aún mayor: la oferta de gimnasios con entrenador personal es más escasa que en El Poblado o Laureles, así que la alternativa real suele ser desplazarse hasta Medellín. El entrenamiento a domicilio elimina ese viaje.</p>
+
+<h2>«Gym cerca de mí» vs. entrenador a domicilio: cuál te conviene</h2>
+<p>No siempre gana lo mismo. Vale la pena ser honesto sobre cuándo cada opción tiene sentido.</p>
+<h3>El gimnasio cercano gana si…</h3>
+<p>Buscas acceso a máquinas específicas, entrenas ya con buena técnica y autonomía, y el precio mensual es tu criterio principal. Un gimnasio cuesta bastante menos que un entrenador personal, y no tiene sentido disimularlo.</p>
+<h3>El entrenador a domicilio gana si…</h3>
+<p>Tu limitación es el tiempo, vives o trabajas lejos de un gimnasio que te convenza, arrastras una lesión que requiere supervisión, o llevas años yendo al gimnasio sin resultados. En ese último caso el problema casi nunca es el equipo disponible.</p>
+<h3>La opción intermedia</h3>
+<p>Una sesión semanal con entrenador para aprender técnica y recibir la rutina, y el resto de días por tu cuenta en el gimnasio de tu conjunto o del barrio. Sale por $215.200 al mes y es lo que hacen muchos de nuestros clientes.</p>
+
+<h2>¿Dónde se hacen las sesiones exactamente?</h2>
+<p>Depende de lo que tengas a mano y de lo que prefieras. Las modalidades más habituales:</p>
+<ul>
+  <li><strong>En tu apartamento o casa</strong> — no hace falta equipo: el profesional lleva los implementos.</li>
+  <li><strong>En el gimnasio del conjunto residencial</strong> — la opción más solicitada en El Poblado y Envigado.</li>
+  <li><strong>En tu oficina</strong> — frecuente en el centro y en zonas empresariales, sobre todo en horario de mediodía.</li>
+  <li><strong>En parques y espacios al aire libre</strong> — habitual para entrenamiento funcional en grupo.</li>
+</ul>
+<p>El espacio se elige al principio y se puede cambiar durante el plan sin costo.</p>
+
+<h2>Cómo confirmar si llegamos a tu zona</h2>
+<p>Lo más rápido es escribir por WhatsApp al <strong>+57 314 400 8592</strong> diciendo tu barrio o municipio. La respuesta llega el mismo día.</p>
+<p>Si prefieres empezar por lo formal, la evaluación inicial es gratuita, dura 30 minutos y se hace en tu casa: composición corporal, historial de lesiones y objetivos. De ahí sale el plan, y no se paga nada hasta la primera sesión real de entrenamiento.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Cobran más si vivo en Bello o La Estrella?</strong><br/>No. Dentro del Valle de Aburrá el precio publicado es el precio final, sin recargo por desplazamiento.</p>
+<p><strong>¿Llegan fuera del área metropolitana?</strong><br/>Fuera del Valle de Aburrá hay que cotizarlo aparte. Escríbenos y te decimos.</p>
+<p><strong>¿Necesito tener equipo en casa?</strong><br/>No. El profesional lleva los implementos deportivos incluidos en el plan.</p>
+<p><strong>¿Puedo entrenar en el gimnasio de mi conjunto?</strong><br/>Sí, y es una de las modalidades más frecuentes. Solo hay que verificar que la administración permita el ingreso de un entrenador externo.</p>
+<p><strong>¿Qué pasa si me mudo de barrio?</strong><br/>Nada: mientras sigas dentro del Valle de Aburrá, el plan continúa igual con la nueva dirección.</p>
+    `
+  },
+  {
+    id: "17",
+    slug: "entrenamiento-ganar-masa-muscular-medellin",
+    title: "Entrenamiento para ganar masa muscular en Medellín: cómo diseñar un plan que sí funciona",
+    excerpt: "Ganar masa muscular no es solo levantar pesas más pesadas. Te explicamos qué dice la ciencia del deporte sobre volumen, progresión y nutrición, y cómo un entrenador personal en Medellín acelera el proceso sin lesiones.",
+    category: "Entrenamiento",
+    relatedServices: ["entrenamiento-personalizado", "nutricionista"],
+    tags: ["ganar masa muscular Medellín", "entrenador personal para aumentar masa muscular", "entrenamiento para masa muscular Medellín", "hipertrofia Medellín"],
+    readTime: 7,
+    publishedAt: "2026-10-06",
+    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>¿Por qué cuesta tanto ganar masa muscular entrenando por tu cuenta?</h2>
+<p>La mayoría de personas que buscan <strong>ganar masa muscular en Medellín</strong> cometen el mismo error que quienes buscan bajar de peso: entrenan sin un plan de progresión real. Repiten los mismos pesos semana tras semana, cambian de rutina antes de que esta rinda resultados, o entrenan con una técnica que limita el estímulo muscular real. El cuerpo solo crece cuando se le da una razón clara para hacerlo — y esa razón es una ciencia, no una intuición.</p>
+<p>En <strong>New Personal Training S.A.S</strong>, llevamos más de 11 años diseñando <strong>programas de hipertrofia personalizados en Medellín</strong> para personas que quieren ganar músculo de forma medible, con la técnica correcta y sin perder tiempo en rutinas genéricas.</p>
+
+<h2>Los tres principios que determinan si ganas masa muscular</h2>
+<h3>1. Sobrecarga progresiva</h3>
+<p>El músculo crece en respuesta a una demanda creciente: más peso, más repeticiones o más volumen total a lo largo de las semanas. Sin progresión documentada, el cuerpo se adapta al estímulo actual y deja de crecer. Es el motivo número uno por el que alguien puede entrenar años sin cambios visibles.</p>
+<h3>2. Volumen e intensidad bien distribuidos</h3>
+<p>Cada grupo muscular necesita un rango de series semanales suficiente para crecer, mínimo 10-20 según el músculo y el nivel de entrenamiento, pero más no siempre es mejor: sin la recuperación adecuada, el exceso de volumen frena el progreso en lugar de acelerarlo.</p>
+<h3>3. Técnica y rango de movimiento completo</h3>
+<p>Un movimiento ejecutado con rango completo y control recluta más fibras musculares que el mismo ejercicio hecho a medias con más peso. Es la diferencia entre entrenar para el ego y entrenar para el músculo.</p>
+
+<h2>¿Cuánta proteína y comida necesitas para ganar músculo?</h2>
+<p>El entrenamiento solo crea el estímulo; el tejido muscular se construye con los nutrientes que le das después. Como referencia general:</p>
+<ul>
+  <li><strong>Proteína:</strong> entre 1,6 y 2,2 gramos por kilogramo de peso corporal al día, distribuida en 3-4 comidas.</li>
+  <li><strong>Superávit calórico moderado:</strong> comer ligeramente por encima de tu gasto energético, lo suficiente para crecer sin acumular grasa en exceso.</li>
+  <li><strong>Carbohidratos suficientes:</strong> son el combustible principal para entrenar con la intensidad que exige la hipertrofia.</li>
+</ul>
+<p>Estas cifras son generales: tu requerimiento real depende de tu peso, actividad diaria y objetivos específicos. Por eso en New Personal Training el plan de entrenamiento se complementa con <strong>valoración nutricional de un profesional certificado</strong>, en lugar de calcular macros con una fórmula genérica de internet.</p>
+
+<h2>¿Cuánto tiempo toma ver resultados?</h2>
+<ul>
+  <li><strong>Semanas 1-4:</strong> mejoras neuromusculares — levantas más peso aunque el músculo casi no ha cambiado de tamaño todavía.</li>
+  <li><strong>Mes 2-3:</strong> primeros cambios visibles de volumen muscular, sobre todo en quienes entrenan por primera vez con un programa estructurado.</li>
+  <li><strong>Mes 4-6:</strong> ganancias consolidadas y visibles en fuerza y composición corporal.</li>
+  <li><strong>Más de 6 meses:</strong> la velocidad de ganancia se reduce de forma natural — es cuando más importa ajustar el programa en lugar de repetir lo mismo.</li>
+</ul>
+<p>Un ritmo saludable y sostenible de ganancia muscular es de 0,25 a 0,5 kg al mes para la mayoría de personas entrenadas; cualquier promesa de "ganar 5 kilos de músculo en un mes" no tiene respaldo fisiológico real.</p>
+
+<h2>Errores más comunes al entrenar para masa muscular</h2>
+<ul>
+  <li><strong>Cambiar de rutina cada dos semanas:</strong> el músculo necesita el mismo estímulo durante varias semanas para progresar en él antes de cambiarlo.</li>
+  <li><strong>Entrenar al fallo en todas las series:</strong> genera fatiga acumulada que compromete la recuperación y el rendimiento en las siguientes sesiones.</li>
+  <li><strong>Comer muy poco por miedo a subir de grasa:</strong> sin superávit calórico, el crecimiento muscular se frena sin importar cuánto entrenes.</li>
+  <li><strong>Dormir menos de 7 horas:</strong> la mayor parte de la síntesis de proteína muscular ocurre durante el sueño profundo.</li>
+  <li><strong>No llevar registro de cargas:</strong> sin un número de referencia por sesión, es imposible saber si realmente estás progresando.</li>
+</ul>
+
+<h2>Precios del entrenamiento para ganar masa muscular en Medellín</h2>
+<ul>
+  <li><strong>Entrenamiento personalizado 1:1:</strong> desde $53.800 COP por sesión</li>
+  <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $645.600 COP — frecuencia mínima recomendada para hipertrofia</li>
+  <li><strong>Plan mensual 5x/semana (20 sesiones):</strong> $1.076.000 COP — para quienes buscan acelerar el proceso</li>
+  <li><strong>Valoración nutricional con nutricionista:</strong> $250.000 COP (recomendada para calcular tu superávit calórico real)</li>
+</ul>
+<p>Todos los planes incluyen evaluación inicial gratuita y seguimiento de cargas sesión a sesión. El servicio es <strong>a domicilio en Medellín y todo el Valle de Aburrá</strong>, o en las instalaciones que prefieras.</p>
+
+<h2>¿Por qué entrenar con un profesional en lugar de seguir una rutina de internet?</h2>
+<p>Una rutina genérica no sabe cuánto puedes levantar hoy, ni corrige tu técnica en el momento, ni ajusta el plan cuando el progreso se estanca. Un <strong>entrenador personal en Medellín</strong> de New Personal Training diseña la progresión semana a semana según tus registros reales, revisa tu ejecución en cada serie y modifica el programa antes de que el estancamiento se vuelva un problema de meses.</p>
+    `
   }
 ];
+
+/**
+ * Articulos ordenados del mas reciente al mas antiguo.
+ *
+ * Antes se exportaba el array en el orden en que estaba escrito, asi que el
+ * destacado de /blog y la seccion "ULTIMAS DEL BLOG" de la home mostraban los
+ * articulos mas ANTIGUOS. Cada articulo nuevo quedaba enterrado al final.
+ * Las fechas son ISO (YYYY-MM-DD), asi que localeCompare las ordena bien.
+ */
+export const BLOG_POSTS: BlogPost[] = [...POSTS_RAW].sort(
+  (a, b) => b.publishedAt.localeCompare(a.publishedAt)
+);
 
 export const BLOG_CATEGORIES = [...new Set(BLOG_POSTS.map(p => p.category))];

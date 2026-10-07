@@ -82,8 +82,8 @@ export const Services: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Servicios de Entrenamiento Personal en Medellín | New Personal Training"
-        description="Descubre nuestros 14 servicios: entrenamiento personalizado, boxeo, pilates, yoga, natación, squash, nutrición, fisioterapia y más en Medellín, Colombia. Presencial en el Valle de Aburrá."
+        title="Servicios de Entrenamiento y Gym en Medellín — Precios | New Personal Training"
+        description="Precios y detalle de los 14 servicios de entrenamiento en Medellín: personalizado a domicilio, semipersonalizado, boxeo, pilates, yoga, natación, squash, nutrición y fisioterapia. También equipos de gym."
         canonical="/servicios"
         jsonLd={SERVICES_CATALOG_SCHEMA}
         breadcrumbs={[
@@ -102,7 +102,7 @@ export const Services: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-7xl font-heading font-black italic text-white mb-6"
           >
-            NUESTROS <span className="text-npt-red">SERVICIOS</span>
+            SERVICIOS DE ENTRENAMIENTO <span className="text-npt-red">EN MEDELLÍN</span>
           </motion.h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto font-light mb-4">
             Descubre soluciones integrales de entrenamiento personal, bienestar y salud en Medellín.

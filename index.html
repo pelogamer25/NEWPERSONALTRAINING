@@ -10,12 +10,9 @@
     <!-- Primary Meta Tags -->
     <title>New Personal Training | Entrenadores Personales en Medellín — Desde 2014</title>
     <meta name="description" content="Los mejores entrenadores personales de Medellín y Valle de Aburrá. Entrenamiento personalizado, clases grupales, boxeo, pilates, yoga, natación, nutrición y fisioterapia. 11+ años, 50+ profesionales. ¡Agenda gratis!" />
-    <meta name="keywords" content="entrenador personal Medellín, entrenamiento personalizado Medellín, gimnasios Medellín, clases personalizadas Medellín, gym Medellín, personal trainer Medellín, clases de boxeo Medellín, pilates Medellín, yoga Medellín, fisioterapia Medellín, nutricionista Medellín, entrenamiento funcional Medellín, entrenador personal a domicilio Medellín, mejores gimnasios Medellín, entrenamiento personal Valle de Aburrá" />
     <meta name="author" content="New Personal Training" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="language" content="es" />
     <meta name="theme-color" content="#D00000" />
-    <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="New Personal Training" />
@@ -29,7 +26,7 @@
     <meta property="og:url" content="https://newpersonaltraining.com/" />
     <meta property="og:title" content="New Personal Training | Entrenadores Personales en Medellín — Desde 2014" />
     <meta property="og:description" content="Los mejores entrenadores personales de Medellín y Valle de Aburrá. Entrenamiento personalizado, boxeo, pilates, yoga, natación, nutrición y fisioterapia. 11+ años, 50+ profesionales." />
-    <meta property="og:image" content="https://newpersonaltraining.com/logo.png" />
+    <meta property="og:image" content="https://newpersonaltraining.com/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="New Personal Training — Entrenadores Personales en Medellín desde 2014" />
@@ -41,7 +38,7 @@
     <meta name="twitter:site" content="@newpersonaltraining" />
     <meta name="twitter:title" content="New Personal Training | Entrenadores Personales en Medellín — Desde 2014" />
     <meta name="twitter:description" content="Los mejores entrenadores personales de Medellín y Valle de Aburrá. Entrenamiento personalizado, boxeo, pilates, yoga, natación, nutrición y fisioterapia. 11+ años, 50+ profesionales." />
-    <meta name="twitter:image" content="https://newpersonaltraining.com/logo.png" />
+    <meta name="twitter:image" content="https://newpersonaltraining.com/og-image.jpg" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://newpersonaltraining.com/" />
@@ -57,229 +54,6 @@
     <!-- Google Fonts: Montserrat & Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:ital,wght@0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            colors: {
-              'npt-red': '#D00000',
-              'npt-red-dark': '#8B0000',
-              'npt-black': '#050505',
-              'npt-dark': '#0F0F0F',
-              'npt-gray': '#1F1F1F',
-              'npt-text': '#A3A3A3',
-            },
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              heading: ['Montserrat', 'sans-serif'],
-            },
-            backgroundImage: {
-              'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #050505;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #333;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #D00000;
-      }
-
-      html {
-        scroll-behavior: smooth;
-        background-color: #050505;
-      }
-
-      body {
-        background-color: transparent;
-        color: #fff;
-      }
-
-      .text-outline {
-        -webkit-text-stroke: 1px rgba(255,255,255,0.3);
-        color: transparent;
-      }
-
-      .text-outline-red {
-        -webkit-text-stroke: 1px rgba(208, 0, 0, 0.5);
-        color: transparent;
-      }
-
-      .glass-panel {
-        background: rgba(255, 255, 255, 0.03);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-      }
-
-      /* ── Design System Additions ── */
-
-      /* Red glow utility */
-      .npt-glow {
-        box-shadow: 0 0 30px rgba(208,0,0,0.35), 0 0 60px rgba(208,0,0,0.15);
-      }
-      .npt-glow-sm {
-        box-shadow: 0 0 15px rgba(208,0,0,0.4);
-      }
-
-      /* Shimmer sweep for buttons & cards */
-      @keyframes shimmer {
-        0%   { transform: translateX(-150%) skewX(-15deg); }
-        100% { transform: translateX(250%) skewX(-15deg); }
-      }
-      .shimmer-hover::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.12) 50%, transparent 100%);
-        transform: translateX(-150%) skewX(-15deg);
-        pointer-events: none;
-      }
-      .shimmer-hover:hover::after {
-        animation: shimmer 0.65s ease forwards;
-      }
-
-      /* Pulse dot for badges */
-      @keyframes badge-pulse {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50%       { opacity: 0.5; transform: scale(1.4); }
-      }
-      .badge-dot {
-        animation: badge-pulse 1.8s ease-in-out infinite;
-      }
-
-      /* Gradient border on hover */
-      @keyframes border-glow {
-        0%   { box-shadow: 0 0 0px rgba(208,0,0,0); }
-        100% { box-shadow: 0 0 20px rgba(208,0,0,0.5), inset 0 0 20px rgba(208,0,0,0.05); }
-      }
-      .hover-glow-border:hover {
-        animation: border-glow 0.3s ease forwards;
-        border-color: rgba(208,0,0,0.5) !important;
-      }
-
-      /* Red top line reveal */
-      .card-top-line::before {
-        content: '';
-        position: absolute;
-        top: 0; left: 0; right: 0;
-        height: 2px;
-        background: linear-gradient(90deg, transparent, #D00000, transparent);
-        transform: scaleX(0);
-        transition: transform 0.4s ease;
-      }
-      .card-top-line:hover::before { transform: scaleX(1); }
-
-      /* Diagonal accent cut */
-      .diagonal-hero::after {
-        content: '';
-        position: absolute;
-        bottom: -1px; left: 0; right: 0;
-        height: 80px;
-        background: #050505;
-        clip-path: polygon(0 60%, 100% 0, 100% 100%, 0 100%);
-      }
-
-      /* Floating lift on cards */
-      .hover-lift {
-        transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
-      }
-      .hover-lift:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(208,0,0,0.15);
-      }
-
-      /* Gradient text utility */
-      .text-gradient-red {
-        background: linear-gradient(135deg, #fff 0%, #D00000 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      /* Number overlay for cards */
-      .card-number {
-        position: absolute;
-        top: -0.5rem;
-        right: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 5rem;
-        font-weight: 900;
-        font-style: italic;
-        line-height: 1;
-        color: rgba(255,255,255,0.04);
-        user-select: none;
-        pointer-events: none;
-        transition: color 0.4s ease;
-      }
-      .group:hover .card-number { color: rgba(208,0,0,0.08); }
-
-      /* Glowing divider */
-      .divider-glow {
-        height: 1px;
-        background: linear-gradient(90deg, transparent, rgba(208,0,0,0.6), transparent);
-      }
-
-      /* Quote decoration */
-      .quote-mark {
-        font-family: Georgia, serif;
-        font-size: 8rem;
-        line-height: 0.7;
-        color: rgba(208,0,0,0.15);
-        user-select: none;
-      }
-
-      /* Blog article prose styles */
-      .prose-blog h2 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;
-        font-weight: 800;
-        font-style: italic;
-        color: #fff;
-        margin: 2rem 0 1rem;
-        line-height: 1.2;
-      }
-      .prose-blog h3 {
-        font-size: 1.125rem;
-        font-weight: 700;
-        color: #e5e5e5;
-        margin: 1.5rem 0 0.75rem;
-      }
-      .prose-blog p {
-        color: #a3a3a3;
-        line-height: 1.8;
-        margin-bottom: 1rem;
-      }
-      .prose-blog strong {
-        color: #fff;
-        font-weight: 600;
-      }
-      .prose-blog ul, .prose-blog ol {
-        color: #a3a3a3;
-        padding-left: 1.5rem;
-        margin-bottom: 1.25rem;
-        line-height: 1.8;
-      }
-      .prose-blog ul { list-style-type: disc; }
-      .prose-blog ol { list-style-type: decimal; }
-      .prose-blog li { margin-bottom: 0.5rem; }
-      .prose-blog li strong { color: #fff; }
-    </style>
-
     <!-- Base JSON-LD: LocalBusiness (always present) -->
     <script type="application/ld+json">
     {
@@ -291,7 +65,7 @@
       "description": "Los mejores entrenadores personales de Medellín y Valle de Aburrá. Fundados en 2014. Entrenamiento personalizado a domicilio, semipersonalizado y grupal: boxeo, pilates, yoga, natación, squash, fisioterapia, masajes y nutrición. 11+ años, 50+ profesionales certificados.",
       "url": "https://newpersonaltraining.com",
       "logo": "https://newpersonaltraining.com/logo.png",
-      "image": "https://newpersonaltraining.com/logo.png",
+      "image": "https://newpersonaltraining.com/og-image.jpg",
       "telephone": "+573144008592",
       "email": "info@newpersonaltraining.com",
       "foundingDate": "2014",
@@ -325,15 +99,7 @@
         "@type": "ContactPoint",
         "telephone": "+573144008592",
         "contactType": "customer service",
-        "availableLanguage": "Spanish",
-        "contactOption": "TollFree"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "500",
-        "bestRating": "5",
-        "worstRating": "1"
+        "availableLanguage": "Spanish"
       }
     }
     </script>
@@ -352,20 +118,6 @@
       }
     }
     </script>
-
-  <script type="importmap">
-{
-  "imports": {
-    "framer-motion": "https://esm.sh/framer-motion@^12.33.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>

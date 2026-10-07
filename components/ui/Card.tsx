@@ -27,8 +27,12 @@ export const ServiceCard: React.FC<{ service: Service; index?: number }> = ({ se
         <div className="absolute inset-0 bg-npt-black/30 group-hover:bg-npt-black/0 transition-colors duration-500 z-10" />
         <img
           src={service.image}
-          alt={service.title}
+          alt={`${service.title} en Medellín — New Personal Training`}
           className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110 grayscale group-hover:grayscale-0"
+          width={800}
+          height={600}
+          loading="lazy"
+          decoding="async"
         />
 
         {/* Icon pill */}
@@ -68,6 +72,12 @@ export const ServiceCard: React.FC<{ service: Service; index?: number }> = ({ se
           </div>
         )}
 
+        {service.atHome && (
+          <p className="mb-3 text-[11px] font-bold uppercase tracking-wider text-green-400/80">
+            A domicilio en Medellín
+          </p>
+        )}
+
         <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-grow border-l-2 border-white/8 pl-4 group-hover:border-npt-red/50 transition-colors duration-300">
           {service.description}
         </p>
@@ -77,6 +87,7 @@ export const ServiceCard: React.FC<{ service: Service; index?: number }> = ({ se
           className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.15em] text-white/70 group-hover:text-npt-red transition-colors duration-300 mt-auto"
         >
           {service.actionText || "Explorar"}
+          <span className="sr-only"> — {service.title} en Medellín</span>
           <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1.5 transition-transform duration-300" aria-hidden="true" />
         </Link>
       </div>

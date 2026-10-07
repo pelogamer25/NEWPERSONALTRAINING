@@ -1,1 +1,4 @@
-/*    /index.html   200
+# Netlify. Cada ruta tiene su propio HTML prerenderizado, así que ya no hace
+# falta el comodín a index.html con estado 200 — era lo que convertía cualquier
+# URL inexistente en un soft 404.
+/*    /404.html   404

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Clock, Tag, ArrowLeft, ChevronRight, Share2 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { BLOG_POSTS } from '../blogs';
+import { SERVICES } from '../constants';
 import { Button } from '../components/ui/Button';
 
 function formatDate(dateStr: string) {
@@ -24,9 +25,18 @@ export const BlogPost: React.FC = () => {
 
   if (!post) return null;
 
-  const related = BLOG_POSTS.filter(p => p.id !== post.id && p.category === post.category).slice(0, 3);
+  // Servicios de los que trata el articulo. Antes cada post enlazaba a
+  // /servicios en generico: contenido informativo que no empujaba a la pagina
+  // transaccional correspondiente.
+  const postServices = (post.relatedServices ?? [])
+    .map(slug => SERVICES.find(s => s.slug === slug))
+    .filter((s): s is NonNullable<typeof s> => Boolean(s));
+  const primaryService = postServices[0];
+
+  // Comparacion por slug por el mismo motivo que en Blog.tsx: el id es manual.
+  const related = BLOG_POSTS.filter(p => p.slug !== post.slug && p.category === post.category).slice(0, 3);
   const moreRelated = related.length < 3
-    ? [...related, ...BLOG_POSTS.filter(p => p.id !== post.id && !related.find(r => r.id === p.id))].slice(0, 3)
+    ? [...related, ...BLOG_POSTS.filter(p => p.slug !== post.slug && !related.find(r => r.slug === p.slug))].slice(0, 3)
     : related;
 
   const articleSchema = {
@@ -68,6 +78,9 @@ export const BlogPost: React.FC = () => {
         description={post.excerpt}
         canonical={`/blog/${post.slug}`}
         ogImage={post.image}
+        ogType="article"
+        publishedTime={post.publishedAt}
+        articleAuthor={post.author}
         jsonLd={articleSchema}
         breadcrumbs={[
           { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
@@ -84,7 +97,10 @@ export const BlogPost: React.FC = () => {
             src={post.image}
             alt={post.title}
             className="w-full h-full object-cover"
+            width={1200}
+            height={675}
             fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-npt-black via-black/50 to-transparent" />
         </div>
@@ -172,9 +188,46 @@ export const BlogPost: React.FC = () => {
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Button href="/reservar" size="lg">Reservar Sesión Gratis</Button>
-              <Button href="/servicios" variant="secondary" size="lg">Ver Servicios</Button>
+              {primaryService ? (
+                <Button href={`/servicios/${primaryService.slug}`} variant="secondary" size="lg">
+                  {primaryService.title} en Medellín
+                </Button>
+              ) : (
+                <Button href="/servicios" variant="secondary" size="lg">
+                  Ver los 14 servicios en Medellín
+                </Button>
+              )}
             </div>
           </div>
+
+          {/* Servicios que trata este artículo — enlace interno contextual */}
+          {postServices.length > 0 && (
+            <section className="pb-12" aria-label="Servicios relacionados con este artículo">
+              <h2 className="text-xl font-heading font-bold italic text-white mb-2">
+                EL SERVICIO DEL QUE HABLA ESTE ARTÍCULO
+              </h2>
+              <p className="text-sm text-gray-400 mb-6">
+                Presencial en Medellín y todo el Valle de Aburrá, con evaluación inicial gratuita.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {postServices.map(svc => (
+                  <Link
+                    key={svc.slug}
+                    to={`/servicios/${svc.slug}`}
+                    className="glass-panel rounded-xl p-5 border border-white/10 hover:border-npt-red/40 transition-colors group"
+                  >
+                    <h3 className="text-base font-bold text-white group-hover:text-npt-red transition-colors mb-1">
+                      {svc.title} en Medellín
+                    </h3>
+                    <p className="text-xs text-gray-500 mb-2">{svc.description}</p>
+                    {svc.price && (
+                      <p className="text-sm font-bold text-npt-red/80">Desde {svc.price.split(' ')[0]}</p>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* Artículos relacionados */}
           {moreRelated.length > 0 && (
@@ -184,14 +237,17 @@ export const BlogPost: React.FC = () => {
               </h2>
               <div className="grid md:grid-cols-3 gap-4">
                 {moreRelated.map(related => (
-                  <Link key={related.id} to={`/blog/${related.slug}`} className="group">
+                  <Link key={related.slug} to={`/blog/${related.slug}`} className="group">
                     <div className="glass-panel rounded-xl overflow-hidden border border-white/10 hover:border-npt-red/30 transition-all">
                       <div className="relative h-36 overflow-hidden">
                         <img
                           src={related.image}
                           alt={related.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          width={1200}
+                          height={675}
                           loading="lazy"
+                          decoding="async"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                       </div>

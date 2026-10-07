@@ -20,8 +20,8 @@ export const Booking: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Agenda tu Sesión | New Personal Training — Medellín"
-        description="Reserva tu evaluación inicial gratuita de 30 minutos, sesión de entrenamiento personal o consulta corporativa con New Personal Training en Medellín. ¡También por WhatsApp: +57 314 400 8592!"
+        title="Agenda tu Sesión — Precio del Entrenador Personal en Medellín | New Personal Training"
+        description="Consulta el precio del entrenador personal en Medellín y reserva tu evaluación inicial gratuita de 30 minutos. Sesiones desde $53.800. También por WhatsApp: +57 314 400 8592."
         canonical="/reservar"
         jsonLd={BOOKING_SCHEMA}
         breadcrumbs={[
