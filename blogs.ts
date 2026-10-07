@@ -1027,7 +1027,7 @@ const POSTS_RAW: BlogPost[] = [
     `
   },
   {
-    id: "16",
+    id: "17",
     slug: "entrenamiento-ganar-masa-muscular-medellin",
     title: "Entrenamiento para ganar masa muscular en Medellín: cómo diseñar un plan que sí funciona",
     excerpt: "Ganar masa muscular no es solo levantar pesas más pesadas. Te explicamos qué dice la ciencia del deporte sobre volumen, progresión y nutrición, y cómo un entrenador personal en Medellín acelera el proceso sin lesiones.",

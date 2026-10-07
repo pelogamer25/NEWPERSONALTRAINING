@@ -33,9 +33,10 @@ export const BlogPost: React.FC = () => {
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
   const primaryService = postServices[0];
 
-  const related = BLOG_POSTS.filter(p => p.id !== post.id && p.category === post.category).slice(0, 3);
+  // Comparacion por slug por el mismo motivo que en Blog.tsx: el id es manual.
+  const related = BLOG_POSTS.filter(p => p.slug !== post.slug && p.category === post.category).slice(0, 3);
   const moreRelated = related.length < 3
-    ? [...related, ...BLOG_POSTS.filter(p => p.id !== post.id && !related.find(r => r.id === p.id))].slice(0, 3)
+    ? [...related, ...BLOG_POSTS.filter(p => p.slug !== post.slug && !related.find(r => r.slug === p.slug))].slice(0, 3)
     : related;
 
   const articleSchema = {
@@ -236,7 +237,7 @@ export const BlogPost: React.FC = () => {
               </h2>
               <div className="grid md:grid-cols-3 gap-4">
                 {moreRelated.map(related => (
-                  <Link key={related.id} to={`/blog/${related.slug}`} className="group">
+                  <Link key={related.slug} to={`/blog/${related.slug}`} className="group">
                     <div className="glass-panel rounded-xl overflow-hidden border border-white/10 hover:border-npt-red/30 transition-all">
                       <div className="relative h-36 overflow-hidden">
                         <img

@@ -54,7 +54,10 @@ export const Blog: React.FC = () => {
     : BLOG_POSTS.filter(p => p.category === activeCategory);
 
   const featured = BLOG_POSTS[0];
-  const rest = filtered.filter(p => p.id !== featured.id);
+  // Se compara por slug, no por id: el slug es la URL y es unico por
+  // construccion, mientras que el id se escribe a mano en blogs.ts. Un id
+  // repetido hacia desaparecer del listado al articulo que lo compartia.
+  const rest = filtered.filter(p => p.slug !== featured.slug);
 
   return (
     <>
@@ -178,7 +181,7 @@ export const Blog: React.FC = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {(activeCategory === 'Todos' ? rest : filtered).map((post, idx) => (
               <motion.article
-                key={post.id}
+                key={post.slug}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
