@@ -1091,7 +1091,156 @@ const POSTS_RAW: BlogPost[] = [
 <h2>¿Por qué entrenar con un profesional en lugar de seguir una rutina de internet?</h2>
 <p>Una rutina genérica no sabe cuánto puedes levantar hoy, ni corrige tu técnica en el momento, ni ajusta el plan cuando el progreso se estanca. Un <strong>entrenador personal en Medellín</strong> de New Personal Training diseña la progresión semana a semana según tus registros reales, revisa tu ejecución en cada serie y modifica el programa antes de que el estancamiento se vuelva un problema de meses.</p>
     `
-  }
+  },
+  {
+    id: "18",
+    slug: "entrenador-personal-adultos-mayores-medellin",
+    title: "Entrenador personal para adultos mayores en Medellín: fuerza, equilibrio y autonomía",
+    excerpt: "Después de los 60, entrenar deja de ser una cuestión estética y pasa a ser una cuestión de autonomía. Qué se entrena realmente a esta edad, por qué el entrenamiento a domicilio cambia la adherencia y cómo empezar con el visto bueno de tu médico.",
+    category: "Salud",
+    relatedServices: ["entrenamiento-personalizado", "fisioterapia"],
+    tags: ["entrenador personal personas mayores", "entrenamiento para adultos mayores Medellín", "ejercicio para adultos mayores a domicilio", "prevención de caídas Medellín"],
+    readTime: 8,
+    publishedAt: "2026-10-20",
+    image: "https://images.pexels.com/photos/7322452/pexels-photo-7322452.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>Después de los 60, la fuerza deja de ser estética</h2>
+<p>A partir de la tercera década de vida el cuerpo empieza a perder masa y fuerza muscular de forma progresiva, y el ritmo se acelera con los años. Ese proceso tiene nombre —sarcopenia— y su consecuencia real no es el aspecto físico: es la dificultad para levantarse de una silla sin apoyarse, subir las escaleras del edificio cuando el ascensor está en mantenimiento, cargar el mercado o recuperarse bien de una semana en cama.</p>
+<p>La buena noticia es que el músculo responde al entrenamiento de fuerza <strong>a cualquier edad</strong>. No se trata de volver a tener el cuerpo de los 30, sino de conservar la capacidad de hacer sin ayuda lo que hoy se hace sin pensar. Ese es el objetivo real de un <strong>entrenador personal para personas mayores</strong>.</p>
+
+<h2>Prevención de caídas: el objetivo que más cambia la vida</h2>
+<p>Una caída a los 35 años es un susto. A los 75 puede ser el punto donde se pierde la independencia. Por eso, en el trabajo con adultos mayores, la prevención de caídas no es un extra: suele ser el eje del programa.</p>
+<p>No se entrena "el equilibrio" como una cosa suelta. Se entrenan las piezas que lo sostienen:</p>
+<ul>
+  <li><strong>Fuerza de piernas y cadera:</strong> lo que permite frenar un tropiezo en lugar de caer.</li>
+  <li><strong>Equilibrio estático y dinámico:</strong> mantenerse firme quieto, y también al girar o al caminar sobre superficies distintas.</li>
+  <li><strong>Movilidad de tobillo y cadera:</strong> un tobillo rígido reduce la capacidad de corregir un desbalance.</li>
+  <li><strong>Velocidad de reacción:</strong> la respuesta para recuperar la postura ocurre en fracciones de segundo y se entrena.</li>
+  <li><strong>Confianza al moverse:</strong> el miedo a caer hace que la persona se mueva menos, lo que debilita más y aumenta el riesgo. Romper ese círculo es parte del trabajo.</li>
+</ul>
+
+<h2>Lo que el entrenamiento a domicilio resuelve a esta edad</h2>
+<p>Con adultos mayores, la barrera casi nunca es la voluntad: es la logística. Y es justo donde el <a href="/blog/entrenamiento-domicilio-medellin">entrenamiento a domicilio en Medellín</a> cambia la ecuación:</p>
+<ul>
+  <li><strong>Se elimina el desplazamiento.</strong> No hay que depender de que alguien lo lleve, ni enfrentar el tráfico, ni caminar hasta el bus bajo la lluvia. El desplazamiento es la razón número uno por la que un plan se abandona en el primer mes.</li>
+  <li><strong>Se elimina la intimidación.</strong> Muchos gimnasios están diseñados para otro público: música alta, máquinas ocupadas y nadie que corrija la técnica. Entrenar en casa quita esa fricción por completo.</li>
+  <li><strong>El entorno ya es conocido.</strong> Se entrena en el mismo piso, con las mismas escaleras y la misma silla que se usan todos los días. Eso hace que lo aprendido se traslade directamente a la vida real.</li>
+  <li><strong>El profesional lleva los implementos.</strong> No hace falta comprar equipo ni adaptar un cuarto.</li>
+</ul>
+<p>Si no estás seguro de si llegamos a tu zona, lo resolvemos en el artículo de <a href="/blog/entrenador-personal-cerca-de-mi-medellin-zonas">cobertura por zonas del Valle de Aburrá</a>.</p>
+
+<h2>Cómo es una sesión con un adulto mayor</h2>
+<p>La estructura es menos exigente en carga y mucho más cuidadosa en ejecución que una sesión convencional:</p>
+<ul>
+  <li><strong>Valoración inicial:</strong> historia de salud, medicamentos, cirugías previas, nivel de actividad actual y qué le cuesta hoy en el día a día.</li>
+  <li><strong>Movilidad y activación:</strong> preparar articulaciones antes de pedirles trabajo.</li>
+  <li><strong>Fuerza:</strong> patrones básicos —sentarse y levantarse, empujar, halar, cargar— con progresión conservadora y rango controlado.</li>
+  <li><strong>Equilibrio:</strong> siempre con un punto de apoyo disponible al inicio.</li>
+  <li><strong>Vuelta a la calma:</strong> respiración y estiramiento suave.</li>
+</ul>
+<p>Igual de importante es lo que <em>no</em> se hace: cargas máximas, ejercicios de impacto sin una base previa, o progresiones aceleradas para "ver resultados rápido". A esta edad, la lesión cuesta mucho más tiempo de recuperación que lo que se gana apurando.</p>
+
+<h2>Autorización médica: el punto no negociable</h2>
+<p>Antes de empezar, hace falta el visto bueno del médico tratante. Esto no es una formalidad: es la parte que define qué se puede hacer y qué no, sobre todo si hay hipertensión, alguna condición cardíaca, diabetes, osteoporosis, prótesis articulares o una cirugía reciente.</p>
+<p>Un entrenador personal diseña y supervisa el entrenamiento; <strong>no reemplaza el criterio médico</strong>. En New Personal Training trabajamos con esa indicación en mano y ajustamos el programa a lo que el médico autorice. Si el médico pone límites, el plan se adapta a esos límites.</p>
+
+<h2>Cuando hay una condición de base o una cirugía reciente</h2>
+<p>Si vienes de un reemplazo de cadera o rodilla, de una fractura, o manejas un dolor crónico, el punto de partida no es el entrenamiento: es la <a href="/servicios/fisioterapia">fisioterapia</a>. Primero se recupera rango de movimiento y control, y solo después se construye fuerza encima.</p>
+<p>Nuestro equipo incluye fisioterapeutas que también atienden a domicilio, así que la transición entre una etapa y la otra no obliga a cambiar de proveedor ni a repetir la valoración desde cero. Lo explicamos en detalle en el artículo de <a href="/blog/fisioterapia-medellin-recuperacion-domicilio">fisioterapia a domicilio en Medellín</a>.</p>
+
+<h2>Precios del entrenamiento para adultos mayores en Medellín</h2>
+<p>No hay una tarifa distinta por edad: aplican los precios del entrenamiento personalizado.</p>
+<ul>
+  <li><strong>Sesión individual:</strong> $53.800 COP</li>
+  <li><strong>Plan mensual 2x/semana (8 sesiones):</strong> $430.400 COP — la frecuencia con la que más empezamos a esta edad</li>
+  <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $645.600 COP</li>
+  <li><strong>Sesión de fisioterapia a domicilio:</strong> $150.000 COP</li>
+</ul>
+<p>Dos o tres sesiones semanales suelen ser suficientes para generar cambios sostenidos en fuerza y equilibrio, siempre que haya continuidad. Puedes ver el desglose completo en <a href="/blog/cuanto-cuesta-entrenador-personal-medellin-precios">cuánto cuesta un entrenador personal en Medellín</a>.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Hay una edad máxima para empezar?</strong><br/>No. Lo que define el programa no es la edad sino el estado de salud, la movilidad actual y lo que autorice el médico. Hemos empezado con personas que llevaban años sin hacer actividad física.</p>
+<p><strong>¿Y si nunca he entrenado en mi vida?</strong><br/>Es el caso más frecuente, y en cierto modo el más agradecido: quien parte de cero suele notar mejoras en tareas cotidianas en las primeras semanas, porque el cuerpo responde rápido al primer estímulo bien dosificado.</p>
+<p><strong>¿Se necesita espacio o equipo en casa?</strong><br/>Basta con un espacio libre equivalente a una alfombra de sala y una silla estable. El profesional lleva lo demás.</p>
+<p><strong>¿Puede acompañar un familiar la sesión?</strong><br/>Sí, y en las primeras sesiones suele ayudar. También es útil que el familiar conozca los ejercicios para apoyar entre sesiones.</p>
+<p><strong>¿Pueden entrenar dos personas a la vez, por ejemplo una pareja?</strong><br/>Sí, con la modalidad <a href="/servicios/entrenamiento-semi-personalizado">semipersonalizada</a>, que reparte el costo entre dos manteniendo la supervisión cercana.</p>
+<p><strong>¿Atienden fuera de Medellín?</strong><br/>Sí: Envigado, Itagüí, Sabaneta, Bello y La Estrella entran en la cobertura habitual.</p>
+    `
+  },
+  {
+    id: "19",
+    slug: "gym-y-entrenador-personal-en-el-poblado-medellin",
+    title: "Gym en El Poblado: las 4 formas de entrenar y cuál conviene según tu caso",
+    excerpt: "El Poblado concentra la mayor oferta de gimnasios de Medellín, y aun así muchos abandonan en el primer mes. Comparamos las cuatro opciones reales de la zona —incluido el gimnasio de tu propio edificio— y el costo que casi nadie calcula.",
+    category: "Guías",
+    relatedServices: ["entrenamiento-personalizado", "entrenamiento-semi-personalizado"],
+    tags: ["gym Medellín Poblado", "gym Poblado Medellín", "gimnasio en El Poblado", "entrenador personal El Poblado"],
+    readTime: 8,
+    publishedAt: "2026-10-20",
+    image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>Las cuatro formas de entrenar en El Poblado</h2>
+<p>Buscar <strong>gym en El Poblado</strong> devuelve decenas de resultados, y esa abundancia es justamente lo que complica la decisión. En la práctica, las opciones se reducen a cuatro, y cada una resuelve un problema distinto:</p>
+<ul>
+  <li><strong>Gimnasio de cadena:</strong> la mayor dotación de máquinas y horarios amplios. Es la opción con mejor relación equipo/precio, pero entrenas solo salvo que contrates aparte.</li>
+  <li><strong>Estudio boutique:</strong> grupos reducidos, disciplina específica y acompañamiento más cercano. Cuesta más por sesión y te amarra a los horarios del estudio.</li>
+  <li><strong>El gimnasio de tu edificio:</strong> ya lo estás pagando en la administración. Casi siempre está subutilizado.</li>
+  <li><strong>Entrenador personal a domicilio:</strong> el profesional va a tu apartamento, al gimnasio de tu torre o a tu oficina. Cero desplazamiento y supervisión en cada repetición.</li>
+</ul>
+<p>Si lo que buscas es una comparación general de gimnasios de la ciudad, la tenemos en <a href="/blog/mejores-gimnasios-medellin-2026">mejores gimnasios de Medellín</a>. Este artículo se concentra en lo particular de El Poblado.</p>
+
+<h2>El gimnasio de tu edificio: lo más desaprovechado de la zona</h2>
+<p>El Poblado es, con diferencia, la zona de Medellín donde más torres residenciales cuentan con gimnasio propio. Y es también donde más se desaprovecha ese espacio. La escena es conocida: un salón con algunas mancuernas, una o dos máquinas, trotadora, colchonetas y un espejo, usado a media capacidad.</p>
+<p>Lo que falta en esos gimnasios casi nunca es equipo. Es <strong>criterio</strong>: saber qué hacer, en qué orden, con cuánta carga y durante cuántas semanas antes de cambiar. Para la gran mayoría de objetivos —bajar de peso, ganar fuerza, recuperar movilidad, mejorar postura— lo que hay en el gimnasio de una torre residencial de El Poblado <strong>es más que suficiente</strong>, siempre que alguien dirija el programa.</p>
+<p>Esa es la combinación que más nos solicitan en la zona: el espacio que ya pagas en la administración, más un entrenador que suba a dirigirlo. No pagas gimnasio aparte y no te desplazas.</p>
+
+<h2>Qué preguntar a la administración antes de llevar un entrenador externo</h2>
+<p>Casi todos los conjuntos lo permiten, pero las condiciones varían. Conviene confirmar estos cinco puntos antes de agendar la primera sesión:</p>
+<ul>
+  <li><strong>Qué dice el reglamento de propiedad horizontal</strong> sobre el ingreso de personal externo a las zonas comunes.</li>
+  <li><strong>Si exigen documentación del profesional:</strong> algunas administraciones piden certificación, documento de identidad o constancia de seguridad social.</li>
+  <li><strong>Cómo es el registro en portería</strong> y si hace falta autorización previa del propietario para cada visita.</li>
+  <li><strong>Los horarios de uso del gimnasio</strong> y si existe algún bloque reservado o límite de aforo.</li>
+  <li><strong>Si hay restricción de días</strong>, algo frecuente en torres con gimnasios pequeños.</li>
+</ul>
+<p>Es una llamada de cinco minutos que evita un problema en la portería el primer día. Nosotros entregamos la documentación que la administración pida.</p>
+
+<h2>El costo que casi nadie calcula: el desplazamiento</h2>
+<p>Al comparar precios de gimnasios, la cuenta se hace sobre la mensualidad. Pero en El Poblado el costo real incluye algo que no aparece en ninguna tarifa: <strong>el tiempo de ir y volver</strong>.</p>
+<p>Entre el tráfico de la Avenida El Poblado y Las Vegas en hora pico, la búsqueda de parqueadero y la caminata desde donde se pudo estacionar, el trayecto en las franjas de mayor demanda —justo las de antes y después de la jornada laboral— puede terminar costando tanto tiempo como la sesión misma. Multiplicado por tres o cuatro veces por semana, es la variable que más veces convierte un plan anual en una membresía que se deja de usar en marzo.</p>
+<p>Cuando el entrenamiento ocurre donde ya estás, ese costo desaparece por completo. Es la razón más repetida por la que nuestros clientes de El Poblado eligen domicilio sobre gimnasio, por encima incluso de la supervisión.</p>
+
+<h2>Entonces, ¿gimnasio o entrenador a domicilio?</h2>
+<p>No hay una respuesta única, y depende menos del presupuesto que del hábito:</p>
+<ul>
+  <li><strong>El gimnasio de cadena conviene si</strong> ya tienes constancia, sabes qué hacer sin que te lo indiquen, buscas máquinas específicas y te queda de paso en tu recorrido diario.</li>
+  <li><strong>El entrenador a domicilio conviene si</strong> estás empezando, vienes de una lesión, tu agenda cambia cada semana, el desplazamiento te ha hecho abandonar antes, o quieres aprovechar el gimnasio de tu torre sin improvisar.</li>
+</ul>
+<p>Desarrollamos esta comparación con más detalle en <a href="/blog/entrenador-personal-cerca-de-mi-medellin-zonas">gym cerca de mí vs. entrenador a domicilio</a>.</p>
+
+<h2>Cuánto cuesta entrenar con acompañamiento en El Poblado</h2>
+<p>Las mensualidades de gimnasio varían bastante según la cadena y el plan que se contrate, así que conviene cotizarlas directamente. Estos son nuestros precios, que son los mismos en toda la cobertura del Valle de Aburrá —no hay recargo por zona:</p>
+<ul>
+  <li><strong>Sesión personalizada 1:1:</strong> $53.800 COP</li>
+  <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $645.600 COP</li>
+  <li><strong>Sesión semipersonalizada (dos personas):</strong> $69.200 COP — repartida entre dos, baja el costo por persona</li>
+  <li><strong>Plan semipersonalizado 3x/semana:</strong> $830.400 COP</li>
+</ul>
+<p>La modalidad <a href="/servicios/entrenamiento-semi-personalizado">semipersonalizada</a> es especialmente popular en El Poblado entre parejas y entre vecinos de la misma torre, porque permite usar el gimnasio del edificio y dividir el valor de la sesión.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Entrenan en el gimnasio de mi edificio o solo en el apartamento?</strong><br/>En los dos. En El Poblado la mayoría de sesiones se hacen en el gimnasio de la torre, precisamente porque ya está disponible y tiene lo necesario.</p>
+<p><strong>¿Y si mi edificio no tiene gimnasio?</strong><br/>Se entrena en el apartamento. El profesional lleva los implementos y un espacio libre del tamaño de una alfombra de sala es suficiente.</p>
+<p><strong>¿Cobran más por entrenar en El Poblado?</strong><br/>No. La tarifa es la misma en Medellín, Envigado, Itagüí, Sabaneta, Bello y La Estrella.</p>
+<p><strong>¿Puedo entrenar en mi oficina?</strong><br/>Sí. Es frecuente en la Milla de Oro y en las zonas empresariales de la Avenida El Poblado, normalmente en horario de almuerzo o al final de la jornada.</p>
+<p><strong>¿Qué pasa si viajo o cambio de horario seguido?</strong><br/>Los horarios se acuerdan semana a semana. Es la razón por la que varios clientes con agenda variable prefieren domicilio sobre una membresía fija.</p>
+<p><strong>¿Necesito comprar implementos?</strong><br/>No. Van incluidos en la sesión.</p>
+    `
+  },
 ];
 
 /**

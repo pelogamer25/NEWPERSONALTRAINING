@@ -247,6 +247,90 @@ cobertura nueva.
 
 ---
 
+## Artículos nuevos (20 octubre 2026)
+
+Los dos huecos restantes de la tabla «Segmentos con demanda y sin página propia»
+con mejor relación demanda/dificultad. Embarazo y posparto ya quedaron cubiertos
+dentro del artículo de mujeres, y bajar de peso y masa muscular tienen artículo
+propio, así que quedaban estos dos.
+
+### 1. Adultos mayores — `/blog/entrenador-personal-adultos-mayores-medellin`
+
+El segmento de **menor competencia** que seguía sin ninguna página:
+
+| Keyword | Vol/mes | Comp. |
+|---|---:|---|
+| entrenador personal personas mayores | 29 | **Baja** |
+| entrenamiento para adultos mayores Medellín | — | Baja |
+| ejercicio para adultos mayores a domicilio | — | Baja |
+| prevención de caídas Medellín | — | Baja |
+
+Hasta ahora «adultos mayores» solo aparecía de pasada en dos artículos, como una
+línea dentro de una lista. Volumen individual bajo, pero competencia floja,
+intención clara y encaje directo con dos servicios reales
+(`entrenamiento-personalizado` y `fisioterapia`).
+
+**Contenido sensible de salud.** El artículo exige autorización médica de forma
+explícita, dice que el entrenador no reemplaza el criterio médico y deriva a
+fisioterapia cuando hay cirugía reciente o condición de base. Mismo tratamiento
+que el artículo de mujeres. **Conviene que el equipo de fisioterapia lo revise.**
+
+No se inventaron cifras de sarcopenia ni de incidencia de caídas: el texto
+describe el proceso en términos generales en lugar de citar porcentajes.
+
+### 2. El Poblado — `/blog/gym-y-entrenador-personal-en-el-poblado-medellin`
+
+Ataca el clúster `gym medellín` por el único barrio con dato propio en el export:
+
+| Keyword | Vol/mes | Comp. |
+|---|---:|---|
+| gym medellin poblado | 50 | Baja |
+| gym poblado medellin | 50 | Baja |
+| gym medellín (clúster de apoyo) | 500 | **Baja (25)** |
+| gimnasio en el poblado | — | Baja |
+
+`gym medellín` es la oportunidad señalada al principio de este documento: 500/mes,
+competencia Baja (25) y +900% de tendencia. El término general apunta a
+`/servicios`; este artículo lo refuerza por la vía del barrio de mayor demanda.
+
+**Cómo evita canibalizar.** Hay tres piezas cerca y cada una tiene un trabajo
+distinto:
+
+| Artículo | Cubre |
+|---|---|
+| `mejores-gimnasios-medellin-2026` | tipos de gimnasio y cuál elegir, a nivel ciudad |
+| `entrenador-personal-cerca-de-mi-medellin-zonas` | mapa de cobertura de todo el Valle de Aburrá |
+| **este** | El Poblado en profundidad: gimnasio del edificio, permisos de administración, costo del desplazamiento |
+
+El ángulo propio es **el gimnasio de la torre residencial** —qué preguntar a la
+administración, por qué basta para casi cualquier objetivo— que no aparece en
+ninguna otra pieza y es específico de la zona.
+
+> **Este es el único artículo por barrio.** El Poblado es el único con keywords
+> propias en el export. No replicar el formato para Laureles, Belén o Robledo sin
+> contenido genuinamente distinto: ahí empieza el contenido delgado.
+
+**No se inventaron datos de la competencia.** No hay precios de cadenas de
+gimnasio ni tiempos de desplazamiento concretos, porque no se verificaron. Los
+precios que aparecen son los de NPT, tomados de `constants.ts`.
+
+### Enlazado interno
+
+Son los **primeros artículos del blog con enlaces en el cuerpo del texto**. Hasta
+ahora los 17 anteriores solo enlazaban a servicios mediante el bloque automático
+del pie, sin anclas de palabra clave dentro del contenido.
+
+- Adultos mayores → 6 enlaces (domicilio, zonas, fisioterapia ×2, precios, semipersonalizado)
+- El Poblado → 3 enlaces (mejores gimnasios, zonas, semipersonalizado)
+
+Requirió añadir la regla `.prose-blog a` en `index.css`: el preflight de Tailwind
+dejaba los enlaces del mismo color gris que el texto y sin subrayado, así que
+habrían sido invisibles.
+
+**Pendiente:** retrofitear enlaces de cuerpo en los 17 artículos anteriores.
+
+---
+
 ## Modificadores locales
 
 Municipios: Medellín · Envigado · Itagüí · Sabaneta · Bello · La Estrella

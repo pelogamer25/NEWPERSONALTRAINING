@@ -252,4 +252,18 @@
   .prose-blog li strong {
     color: #fff;
   }
+
+  /* Enlaces dentro del cuerpo del articulo. Sin esta regla, el preflight de
+     Tailwind los deja con el color heredado y sin subrayado, asi que un enlace
+     interno era indistinguible del texto gris y nadie lo pulsaba. */
+  .prose-blog a {
+    color: #ef4444;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: color 0.2s ease;
+  }
+  .prose-blog a:hover {
+    color: #fff;
+  }
 }
