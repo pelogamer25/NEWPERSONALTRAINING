@@ -1241,6 +1241,146 @@ const POSTS_RAW: BlogPost[] = [
 <p><strong>¿Necesito comprar implementos?</strong><br/>No. Van incluidos en la sesión.</p>
     `
   },
+  {
+    id: "20",
+    slug: "entrenamiento-en-pareja-semipersonalizado-medellin",
+    title: "Entrenar en pareja en Medellín: cómo funciona el entrenamiento semipersonalizado",
+    excerpt: "Dos o tres personas, un mismo entrenador y el costo repartido. Te explicamos cuánto baja realmente el precio por persona, qué se gana en constancia, qué se pierde frente al 1:1 y en qué casos no conviene.",
+    category: "Entrenamiento",
+    relatedServices: ["entrenamiento-semi-personalizado", "entrenamiento-personalizado"],
+    tags: ["entrenamiento semi personalizado", "entrenar en pareja Medellín", "entrenador personal para dos personas", "entrenamiento en grupo pequeño Medellín"],
+    readTime: 7,
+    publishedAt: "2026-10-26",
+    image: "https://images.pexels.com/photos/4854305/pexels-photo-4854305.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>Qué es exactamente el entrenamiento semipersonalizado</h2>
+<p>Es una sesión de <strong>dos o tres personas con un mismo entrenador</strong>, a domicilio en Medellín y el Valle de Aburrá. No es una clase grupal: el programa sigue siendo individual para cada uno, y el profesional corrige a ambos durante la sesión.</p>
+<p>La diferencia con el <a href="/servicios/entrenamiento-personalizado">entrenamiento personalizado 1:1</a> no está en el plan, sino en cuánta atención exclusiva recibe cada persona y en cuánto cuesta la sesión a cada uno.</p>
+
+<h2>La cuenta: cuánto baja el costo por persona</h2>
+<p>Esta es la razón por la que la mayoría pregunta por esta modalidad, así que la ponemos de primero y con números reales:</p>
+<ul>
+  <li><strong>Sesión individual (1:1):</strong> $53.800 COP por persona.</li>
+  <li><strong>Sesión semipersonalizada:</strong> $69.200 COP la sesión completa. Entre dos personas son <strong>$34.600 por cabeza</strong>; entre tres, alrededor de <strong>$23.100</strong>.</li>
+</ul>
+<p>Es decir: entrenando de a dos, cada persona paga cerca de un 36% menos que en 1:1, con el mismo profesional y la misma duración. En planes mensuales el efecto es el mismo:</p>
+<ul>
+  <li><strong>2x semana (8 sesiones):</strong> $553.600 COP el plan — unos $276.800 por persona si son dos.</li>
+  <li><strong>3x semana (12 sesiones):</strong> $830.400 COP — unos $415.200 por persona.</li>
+  <li><strong>5x semana (20 sesiones):</strong> $1.384.000 COP — unos $692.000 por persona.</li>
+</ul>
+<p>Puedes comparar con el resto de modalidades en <a href="/blog/cuanto-cuesta-entrenador-personal-medellin-precios">cuánto cuesta un entrenador personal en Medellín</a>.</p>
+
+<h2>Lo que se gana además del precio</h2>
+<p>El ahorro es lo que atrae, pero no es lo que hace que la gente siga entrenando a los seis meses. Eso lo hace otra cosa:</p>
+<ul>
+  <li><strong>La otra persona te espera.</strong> Cancelar una sesión cuando hay alguien más contando contigo es bastante más difícil que cancelarla cuando solo te afecta a ti. Es el factor que más veces separa a quien sigue de quien abandona.</li>
+  <li><strong>El horario deja de ser negociable.</strong> Al coordinarse entre dos, la sesión se vuelve un compromiso agendado y no algo que se mueve según cómo amanezca el día.</li>
+  <li><strong>Hay un punto de comparación.</strong> Ver a alguien a tu lado haciendo la misma serie sostiene el esfuerzo en las repeticiones finales, que son justamente las que generan el estímulo.</li>
+  <li><strong>Se comparte el proceso.</strong> Los cambios de hábito —cómo se come, a qué hora se duerme— se sostienen mejor cuando no se hacen en solitario.</li>
+</ul>
+
+<h2>Lo que se pierde frente al 1:1, dicho sin rodeos</h2>
+<p>No es la mejor opción para todo el mundo, y conviene saberlo antes de contratar:</p>
+<ul>
+  <li><strong>La atención se reparte.</strong> En 1:1 el entrenador observa cada repetición. Con dos personas alterna. Si vienes de una lesión o estás aprendiendo un movimiento técnico desde cero, esa diferencia importa.</li>
+  <li><strong>El ritmo se negocia.</strong> Los descansos y las transiciones se ajustan al conjunto, no a una sola persona.</li>
+  <li><strong>Dependes de la agenda del otro.</strong> Si tu compañero no puede un día, hay que reprogramar o asumir la sesión completa.</li>
+  <li><strong>No sirve para objetivos opuestos.</strong> Si uno busca rehabilitación y el otro rendimiento deportivo, los planes no se tocan en ningún punto y la sesión compartida pierde sentido.</li>
+</ul>
+
+<h2>¿Y si tenemos niveles muy distintos?</h2>
+<p>Es la pregunta más frecuente, y la respuesta es que sí funciona en la mayoría de casos. Dos personas pueden hacer el mismo ejercicio con cargas, repeticiones o variantes distintas: una sentadilla puede ser a cajón para uno y con mancuerna para el otro, en la misma serie y al mismo tiempo.</p>
+<p>Donde deja de funcionar es cuando la diferencia no es de <em>nivel</em> sino de <em>objetivo</em>: alguien en proceso de <a href="/servicios/fisioterapia">recuperación física</a> junto a alguien preparando una competencia no comparten casi ningún ejercicio, y la sesión termina siendo dos entrenamientos sueltos en el mismo espacio.</p>
+
+<h2>Las combinaciones que más vemos en Medellín</h2>
+<ul>
+  <li><strong>Parejas:</strong> la más común, sobre todo cuando ya comparten horario en casa.</li>
+  <li><strong>Amigos o amigas:</strong> funciona especialmente bien cuando viven cerca.</li>
+  <li><strong>Madre e hijo o hija:</strong> frecuente cuando una de las dos partes quiere empezar pero no se anima sola.</li>
+  <li><strong>Vecinos de la misma torre:</strong> entrenan en el gimnasio del conjunto y dividen el valor. Lo desarrollamos en el artículo sobre <a href="/blog/gym-y-entrenador-personal-en-el-poblado-medellin">gimnasios y entrenamiento en El Poblado</a>.</li>
+  <li><strong>Compañeros de oficina:</strong> en horario de almuerzo o al terminar la jornada, en la misma empresa.</li>
+</ul>
+
+<h2>Cómo empieza</h2>
+<p>Igual que el personalizado: valoración inicial de cada persona por separado —porque los puntos de partida son distintos—, y a partir de ahí se arma una sesión que permita trabajar en paralelo. Todo es <a href="/blog/entrenamiento-domicilio-medellin">a domicilio</a>: el profesional va a la casa, al gimnasio del conjunto o a la oficina, con los implementos incluidos.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿El precio es por persona o por sesión?</strong><br/>Por sesión. Los $69.200 son el valor total, que las dos o tres personas reparten entre sí.</p>
+<p><strong>¿Pueden ser tres personas?</strong><br/>Sí, hasta tres. Por encima de eso la supervisión deja de ser cercana y tiene más sentido una <a href="/servicios/clase-grupal-funcional">clase grupal</a>.</p>
+<p><strong>¿Qué pasa si uno de los dos no puede asistir?</strong><br/>Se reprograma o la persona que sí puede toma la sesión. Se acuerda al agendar.</p>
+<p><strong>¿Necesitamos más espacio en casa que para una sesión individual?</strong><br/>Un poco más, pero no mucho: con el espacio de una sala despejada alcanza para dos personas.</p>
+<p><strong>¿Se puede cambiar de compañero?</strong><br/>Sí. Lo que se ajusta es la valoración inicial de quien entra.</p>
+<p><strong>¿Aplica para otras disciplinas?</strong><br/>Sí. Natación y <a href="/servicios/squash-semi-personalizado">squash</a> también tienen modalidad semipersonalizada, aunque esas se hacen en piscina y en cancha, no a domicilio.</p>
+    `
+  },
+  {
+    id: "21",
+    slug: "clases-de-squash-en-medellin",
+    title: "Squash en Medellín: dónde jugar, qué necesitas y cuánto cuesta aprender bien",
+    excerpt: "Cuarenta minutos de squash exigen más que una hora de trotadora. Dónde hay canchas en Medellín, qué equipo necesitas de verdad, por qué la técnica no se aprende jugando y cuánto cuesta entrenar con un profesional.",
+    category: "Deportes",
+    relatedServices: ["squash-personalizado", "squash-semi-personalizado"],
+    tags: ["squash Medellín", "clases de squash Medellín", "canchas de squash Medellín", "entrenador de squash Medellín"],
+    readTime: 7,
+    publishedAt: "2026-10-26",
+    image: "https://images.pexels.com/photos/7648081/pexels-photo-7648081.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    author: "Equipo New Personal Training",
+    authorRole: "Profesionales en Deporte",
+    content: `
+<h2>Por qué el squash rinde tanto en tan poco tiempo</h2>
+<p>El squash resuelve el problema de quien no tiene una hora y media libre: la pelota casi no deja de estar en juego, los puntos se encadenan y el descanso real entre jugadas es mínimo. El resultado es una intensidad sostenida que pocas actividades mantienen durante tanto tiempo seguido.</p>
+<p>Y no es solo cardio. En cada punto hay arranques, frenadas, cambios de dirección y lectura de la trayectoria de la pelota, así que se trabajan a la vez resistencia, potencia de piernas, agilidad y coordinación óculo-manual. Es, en la práctica, <a href="/blog/entrenamiento-funcional-medellin">entrenamiento funcional</a> disfrazado de juego.</p>
+
+<h2>Dónde se juega squash en Medellín</h2>
+<p>La oferta de canchas en la ciudad es limitada, y conviene conocerla antes de comprar una raqueta:</p>
+<ul>
+  <li><strong>Canchas públicas:</strong> según la Alcaldía de Medellín, las de la <strong>Unidad Deportiva María Luisa Calle</strong>, en la Comuna 15 (Guayabal), son las únicas canchas de squash públicas del distrito. Han estado en intervención, así que conviene confirmar disponibilidad y horarios con el Inder antes de desplazarse.</li>
+  <li><strong>Clubes privados:</strong> varios clubes sociales y deportivos de la ciudad tienen cancha propia, normalmente para socios o con reserva previa.</li>
+  <li><strong>Unidades residenciales:</strong> algunas torres y conjuntos del Valle de Aburrá incluyen cancha de squash entre sus zonas comunes. Es la opción más cómoda si tu edificio la tiene, porque ya está disponible y reservarla suele ser inmediato.</li>
+</ul>
+<p>Si tu conjunto tiene cancha, revisa con la administración el procedimiento para reservarla y si permite el ingreso de un entrenador externo: las condiciones cambian de un edificio a otro.</p>
+
+<h2>Lo que de verdad necesitas para empezar</h2>
+<ul>
+  <li><strong>Raqueta de squash.</strong> No sirve una de tenis: la de squash es más liviana, con cabeza más pequeña y mango más largo. Para empezar no hace falta una gama alta.</li>
+  <li><strong>Pelota según tu nivel.</strong> Las pelotas se clasifican por un punto de color y no son intercambiables. Las de <strong>punto azul o rojo</strong> botan más y perdonan más, por eso son las de iniciación; las de <strong>doble punto amarillo</strong> son las más lentas y exigen golpear con mucha más potencia, así que son para nivel avanzado. Empezar con la pelota equivocada es la forma más rápida de creer que el squash "no es para uno".</li>
+  <li><strong>Gafas protectoras.</strong> El punto de seguridad más importante y el que más se omite. En una cancha cerrada, la pelota viaja rápido y el compañero está cerca; las lesiones oculares en squash son poco frecuentes pero graves, y las gafas las evitan casi por completo.</li>
+  <li><strong>Calzado de interior con suela que no marque.</strong> Además de cuidar el piso de la cancha —requisito en casi todos los escenarios—, da el agarre lateral que el movimiento del squash exige.</li>
+</ul>
+
+<h2>Por qué el squash no se aprende jugando</h2>
+<p>En la mayoría de deportes se puede empezar jugando y corregir sobre la marcha. En squash eso funciona mal, por tres razones concretas:</p>
+<ul>
+  <li><strong>El golpe contra pared no es intuitivo.</strong> La pelota llega con ángulos que no existen en otros deportes de raqueta, y el cuerpo tiende a resolverlos con movimientos de tenis que en squash no sirven.</li>
+  <li><strong>La posición en T lo define todo.</strong> Volver al centro de la cancha después de cada golpe es lo que separa a quien corre todo el partido de quien controla el punto. No se descubre solo: se enseña.</li>
+  <li><strong>El desplazamiento lateral mal hecho es la fuente de lesión.</strong> Las estocadas repetidas hacia las esquinas, sin técnica y sin fuerza previa en piernas, cargan rodilla y tobillo. Es la lesión más común en jugadores autodidactas.</li>
+</ul>
+<p>Los malos hábitos técnicos se fijan rápido y cuesta mucho más corregirlos después que aprender bien desde el principio. Si ya arrastras alguna molestia, conviene revisarla antes de subir la carga de juego: lo tratamos en <a href="/blog/fisioterapia-medellin-recuperacion-domicilio">fisioterapia a domicilio en Medellín</a>.</p>
+
+<h2>Una precisión importante: el squash no es a domicilio</h2>
+<p>La mayoría de nuestros servicios se prestan en tu casa, pero <strong>este no</strong>. El squash necesita una cancha reglamentaria, con sus cuatro paredes y sus medidas, así que no hay forma de llevarlo a una sala. Lo que sí hacemos es desplazarnos nosotros: el entrenador va a la cancha donde juegues, sea la de tu unidad residencial, la de tu club o un escenario público.</p>
+<p>Lo mismo aplica a natación, que requiere piscina. El resto de disciplinas sí van a tu casa, conjunto u oficina.</p>
+
+<h2>Precios de las clases de squash en Medellín</h2>
+<ul>
+  <li><strong><a href="/servicios/squash-personalizado">Squash personalizado (1:1)</a>:</strong> $115.000 COP por sesión · $460.000 el plan de 1x semana · $920.000 el de 2x semana</li>
+  <li><strong><a href="/servicios/squash-semi-personalizado">Squash semipersonalizado (dos personas)</a>:</strong> $126.700 COP por sesión —alrededor de $63.350 por persona— · $506.800 el plan de 1x semana · $1.013.600 el de 2x semana</li>
+</ul>
+<p>La modalidad en pareja es especialmente lógica en squash: es un deporte que se juega de a dos, así que entrenar con tu compañero habitual de partido tiene sentido técnico además de económico. Funciona igual que el <a href="/blog/entrenamiento-en-pareja-semipersonalizado-medellin">entrenamiento semipersonalizado</a> del resto de disciplinas.</p>
+<p>Escríbenos para coordinar cancha y horario según la zona en la que te quede mejor.</p>
+
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Necesito tener experiencia previa en deportes de raqueta?</strong><br/>No. De hecho, venir de tenis a veces añade un paso extra, porque hay que desaprender la mecánica de golpeo.</p>
+<p><strong>¿Cuánto dura una sesión?</strong><br/>Lo habitual es una hora, entre calentamiento, trabajo técnico y juego.</p>
+<p><strong>¿Tengo que conseguir la cancha por mi cuenta?</strong><br/>No necesariamente. Escríbenos y coordinamos según tu zona y tu disponibilidad.</p>
+<p><strong>¿Sirve para bajar de peso?</strong><br/>Es una actividad de gasto calórico alto, pero el resultado depende sobre todo de la alimentación y la constancia. Lo explicamos en <a href="/blog/entrenamiento-para-bajar-de-peso-medellin">entrenamiento para bajar de peso en Medellín</a>.</p>
+<p><strong>¿Hay edad mínima o máxima?</strong><br/>No hay un límite fijo. Lo que define si es apropiado es el estado articular y cardiovascular, porque es un deporte de impacto y cambios de dirección constantes.</p>
+<p><strong>¿Puedo entrenar squash y además hacer entrenamiento de fuerza?</strong><br/>Es lo más recomendable. La fuerza de piernas y el trabajo de core sostienen el desplazamiento en cancha y reducen el riesgo de lesión.</p>
+    `
+  },
 ];
 
 /**

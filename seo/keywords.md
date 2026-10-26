@@ -331,6 +331,68 @@ habrían sido invisibles.
 
 ---
 
+## Artículos nuevos (26 octubre 2026)
+
+Con los segmentos de la tabla de demanda ya cubiertos, estos dos atacan lo que
+quedaba por otro lado: una keyword comercial de baja competencia sin artículo, y
+el único servicio del catálogo que no tenía **ningún** contenido apuntándole.
+
+### 1. Semipersonalizado / en pareja — `/blog/entrenamiento-en-pareja-semipersonalizado-medellin`
+
+| Keyword | Vol/mes | Comp. |
+|---|---:|---|
+| entrenamiento semi personalizado | 50 | **Baja (21)** |
+| entrenar en pareja Medellín | — | Baja |
+| entrenador personal para dos personas | — | Baja |
+
+Era la **keyword secundaria #5** de este documento y la única de la lista con
+intención de compra que seguía sin artículo propio: tenía página de servicio,
+pero ningún contenido que la alimentara.
+
+El ángulo es la cuenta real —$69.200 la sesión entre dos son $34.600 por
+persona, frente a $53.800 del 1:1— y, sobre todo, el argumento de adherencia:
+cancelar cuando otra persona te espera es más difícil. El artículo también dice
+**qué se pierde** frente al 1:1 (atención repartida, ritmo negociado, dependencia
+de la agenda del otro) en lugar de vender la modalidad como superior.
+
+### 2. Squash — `/blog/clases-de-squash-en-medellin`
+
+Sin dato propio en el export —el planificador no devuelve volumen para squash en
+Medellín—, pero era **el único servicio del catálogo con cobertura cero**:
+
+| | Antes | Ahora |
+|---|---|---|
+| `/servicios/squash-personalizado` | 0 artículos apuntando | 1 |
+| `/servicios/squash-semi-personalizado` | 0 artículos apuntando | 2 |
+
+Dos páginas transaccionales huérfanas, sin un solo enlace interno desde el blog.
+
+**Por qué merece la pena sin dato de volumen:** la búsqueda del panorama
+competitivo solo devuelve páginas de la Alcaldía y resultados extranjeros. No hay
+contenido comercial compitiendo por «squash Medellín», así que el umbral para
+posicionar es bajo aunque el volumen también lo sea.
+
+**Dato verificable incluido:** según la Alcaldía de Medellín, las canchas de la
+Unidad Deportiva María Luisa Calle (Comuna 15, Guayabal) son las únicas públicas
+del distrito. El artículo advierte que han estado en intervención y que conviene
+confirmar con el Inder — no se afirma que estén operativas.
+
+**El artículo dice explícitamente que el squash NO es a domicilio.** Requiere
+cancha reglamentaria, igual que natación requiere piscina. Es coherente con
+`atHome: false` en `constants.ts` y evita prometer algo que no se presta.
+
+### Enlazado interno
+
+13 enlaces de cuerpo más (7 en el de pareja, 6 en el de squash), incluido el
+cruce entre ambos. Los 15 destinos únicos del blog se validaron contra el build:
+ninguno roto.
+
+**Estado del retrofit:** 4 de 21 artículos tienen enlaces en el cuerpo. Siguen
+pendientes los 17 anteriores — es la mejora de enlazado interno más rentable que
+queda por hacer.
+
+---
+
 ## Modificadores locales
 
 Municipios: Medellín · Envigado · Itagüí · Sabaneta · Bello · La Estrella
