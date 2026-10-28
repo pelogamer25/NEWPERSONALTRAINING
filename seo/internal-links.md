@@ -159,3 +159,52 @@ enlaces a `/`, `/servicios`, `/nosotros`, `/entrenadores`, `/contacto`,
 - **Sin página para «equipos de gym»**, pese a tener sección en `/servicios`,
   un artículo en el blog y cinco keywords con volumen. Es el único artículo que
   no puede enlazar a una página de servicio porque no existe.
+
+---
+
+## Retrofit de enlaces de cuerpo (28 octubre 2026)
+
+Hasta esta fecha, 17 de los 21 articulos **no tenian ni un solo enlace dentro
+del texto**. Solo enlazaban a servicios a traves del bloque automatico del pie
+de BlogPost.tsx, que es el mismo en todos y no lleva ancla de palabra clave.
+
+### Antes y despues
+
+| | Antes | Despues |
+|---|---:|---:|
+| Articulos con enlaces de cuerpo | 4 de 21 | **21 de 21** |
+| Enlaces de cuerpo totales | 22 | **78** |
+| Destinos unicos | 15 | **27** |
+| Paginas de servicio con enlace entrante de cuerpo | **0 de 14** | **14 de 14** |
+
+### Enlaces entrantes por servicio
+
+| Servicio | Enlaces |
+|---|---:|
+| fisioterapia | 8 |
+| entrenamiento-semi-personalizado | 5 |
+| clase-grupal-funcional | 5 |
+| entrenamiento-personalizado | 4 |
+| nutricionista | 4 |
+| natacion-personalizada, squash-personalizado, squash-semi-personalizado, yoga | 2 |
+| boxeo, pilates, masaje, clase-grupal-ritmica, natacion-semi-personalizada | 1 |
+
+### La pieza de mayor valor
+
+El articulo de precios tenia una lista de tarifas por disciplina sin un solo
+enlace. Ahora **cada disciplina enlaza a su pagina de servicio** (10 enlaces).
+Es la pagina con mayor intencion de compra del blog, y es la via por la que
+`clase-grupal-ritmica` y `natacion-semi-personalizada` reciben su primer enlace
+interno contextual.
+
+### Criterios aplicados
+
+- Ancla con palabra clave, nunca "haz clic aqui". Se reescribio una que habia
+  quedado como `Los precios dependen` por `tarifas de entrenador personal en Medellin`.
+- Nada de auto-enlaces, nada dentro de encabezados, nada dentro de un `<a>` existente.
+- Se descartaron anclas de contexto equivocado: la lista de disciplinas de otros
+  gimnasios en `mejores-gimnasios` (no son servicios de NPT) y `masa muscular` en
+  el articulo de pilates (la frase dice que el pilates *no* genera volumen).
+- Maximo 4-6 por articulo salvo la lista de precios, donde cada item es una linea
+  distinta y el enlace es util, no relleno.
+- Los 27 destinos validados contra el build: ninguno roto.

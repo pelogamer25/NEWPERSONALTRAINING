@@ -38,18 +38,18 @@ const POSTS_RAW: BlogPost[] = [
   <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $645.600 COP</li>
   <li><strong>Plan mensual 5x/semana (20 sesiones):</strong> $1.076.000 COP</li>
 </ul>
-<p>También existe el <strong>entrenamiento semipersonalizado</strong> (en pareja o grupo de 3), que reduce el costo por persona manteniendo una alta atención individualizada, desde $69.200/sesión.</p>
+<p>También existe el <strong><a href="/servicios/entrenamiento-semi-personalizado">entrenamiento semipersonalizado</a></strong> (en pareja o grupo de 3), que reduce el costo por persona manteniendo una alta atención individualizada, desde $69.200/sesión.</p>
 <p>Comparado con plataformas internacionales donde los personal trainers en Medellín cobran entre $38.000 y $55.000 COP por hora, <strong>New Personal Training ofrece una de las tarifas más competitivas con profesionales certificados universitarios.</strong></p>
 
 <h2>Cómo elegir el mejor entrenador personal en Medellín</h2>
 <h3>1. Verifica su formación académica</h3>
 <p>En Colombia, los mejores personal trainers tienen título universitario en Deporte, Educación Física o Ciencias del Ejercicio. Los profesionales de <strong>New Personal Training S.A.S</strong> son egresados del <strong>Politécnico Colombiano Jaime Isaza Cadavid</strong>, institución referente en formación deportiva del país.</p>
 <h3>2. Evalúa su experiencia y especialidad</h3>
-<p>¿Quieres bajar de peso? ¿Ganar masa muscular? ¿Recuperarte de una lesión? Cada objetivo requiere un perfil diferente. Busca un entrenador con experiencia comprobada en tu área de interés.</p>
+<p>¿Quieres <a href="/blog/entrenamiento-para-bajar-de-peso-medellin">bajar de peso</a>? ¿<a href="/blog/entrenamiento-ganar-masa-muscular-medellin">Ganar masa muscular</a>? ¿Recuperarte de una lesión? Cada objetivo requiere un perfil diferente. Busca un entrenador con experiencia comprobada en tu área de interés.</p>
 <h3>3. Pide una evaluación inicial</h3>
 <p>El mejor entrenador personal en Medellín siempre realiza una <strong>valoración inicial</strong> antes de tu primera sesión: composición corporal, historial de lesiones, objetivos y disponibilidad horaria. En New Personal Training, esta evaluación es <strong>gratuita de 30 minutos</strong>.</p>
 <h3>4. Confirma que opera en tu zona</h3>
-<p>Si prefieres entrenamiento a domicilio, verifica que el profesional llegue a tu barrio. New Personal Training cubre <strong>todo el Valle de Aburrá</strong>: El Poblado, Laureles, Belén, Envigado, Itagüí, Sabaneta, Bello y más.</p>
+<p>Si prefieres <a href="/blog/entrenamiento-domicilio-medellin">entrenamiento a domicilio</a>, verifica que el profesional llegue a tu barrio. New Personal Training cubre <strong>todo el Valle de Aburrá</strong>: El Poblado, Laureles, Belén, Envigado, Itagüí, Sabaneta, Bello y más.</p>
 
 <h2>Entrenador personal en Medellín a domicilio vs. en instalaciones</h2>
 <p>Ambas opciones tienen ventajas. El entrenamiento <strong>a domicilio en Medellín</strong> elimina el tiempo de desplazamiento y te permite ejercitarte en tu propio espacio. El entrenamiento en instalaciones ofrece acceso a equipos especializados. New Personal Training cubre las dos modalidades.</p>
@@ -57,7 +57,7 @@ const POSTS_RAW: BlogPost[] = [
 <h2>Preguntas frecuentes sobre entrenadores personales en Medellín</h2>
 <p><strong>¿Cuántas sesiones por semana recomienda un entrenador personal?</strong><br/>Para principiantes: 2-3 sesiones/semana. Para objetivos específicos (competencias, pérdida de peso acelerada): 4-5 sesiones/semana. Tu trainer diseñará el plan óptimo.</p>
 <p><strong>¿Necesito equipos para el entrenamiento a domicilio?</strong><br/>No necesariamente. Tu entrenador puede diseñar sesiones efectivas con el peso corporal. Si deseas equipos, New Personal Training también provee y da servicio técnico a equipos de gimnasio para el hogar.</p>
-<p><strong>¿Puedo combinar entrenamiento personal con nutrición?</strong><br/>Sí. New Personal Training ofrece valoración y plan nutricional con nutricionista certificado por $250.000, integrándolo con tu programa de entrenamiento.</p>
+<p><strong>¿Puedo combinar entrenamiento personal con nutrición?</strong><br/>Sí. New Personal Training ofrece valoración y plan nutricional con <a href="/servicios/nutricionista">nutricionista certificado</a> por $250.000, integrándolo con tu programa de entrenamiento.</p>
     `
   },
   {
@@ -122,7 +122,7 @@ const POSTS_RAW: BlogPost[] = [
 <p>Ambas opciones tienen sus ventajas. Las <strong>clases de boxeo individuales</strong> ofrecen máxima atención y progresión personalizada — ideales si tienes objetivos específicos o empiezas desde cero. Las <strong>clases grupales</strong> generan mayor energía y competitividad, y son más económicas. En New Personal Training ofrecemos las dos modalidades.</p>
 
 <h2>Boxeo vs. otros entrenamientos en Medellín</h2>
-<p>Comparado con clases de spinning, CrossFit o entrenamiento funcional tradicional, el boxeo destaca por su componente técnico-deportivo que mantiene la motivación a largo plazo. Además, no requiere instalaciones especiales — tu entrenador de New Personal Training puede impartir la sesión <strong>a domicilio en cualquier zona de Medellín</strong>.</p>
+<p>Comparado con clases de spinning, CrossFit o <a href="/servicios/clase-grupal-funcional">entrenamiento funcional</a> tradicional, el boxeo destaca por su componente técnico-deportivo que mantiene la motivación a largo plazo. Además, no requiere instalaciones especiales — tu entrenador de New Personal Training puede impartir la sesión <strong><a href="/blog/entrenamiento-domicilio-medellin">a domicilio en cualquier zona de Medellín</a></strong>.</p>
     `
   },
   {
@@ -148,8 +148,8 @@ const POSTS_RAW: BlogPost[] = [
   <li><strong>Ahorro de tiempo real:</strong> Eliminas 30-60 minutos diarios de desplazamiento. En Medellín, el tráfico puede hacer de ir al gym una hazaña. Con el servicio a domicilio, el entrenador llega a ti.</li>
   <li><strong>Flexibilidad total de horario:</strong> ¿Entrenas antes de las 6 AM porque después tienes reuniones? ¿Solo tienes una hora libre al mediodía? Tu entrenador se adapta.</li>
   <li><strong>Privacidad:</strong> Muchas personas se sienten incómodas en gimnasios llenos. En tu hogar, puedes concentrarte 100% en tu entrenamiento sin distracciones.</li>
-  <li><strong>Comodidad para personas con movilidad reducida:</strong> Adultos mayores, personas en recuperación o con condiciones físicas especiales se benefician enormemente del servicio a domicilio.</li>
-  <li><strong>Ideal para empresas y conjuntos residenciales:</strong> New Personal Training también ofrece programas de pausas activas y entrenamiento corporativo para equipos de trabajo en Medellín.</li>
+  <li><strong>Comodidad para personas con movilidad reducida:</strong> <a href="/blog/entrenador-personal-adultos-mayores-medellin">Adultos mayores</a>, personas en recuperación o con condiciones físicas especiales se benefician enormemente del servicio a domicilio.</li>
+  <li><strong>Ideal para empresas y conjuntos residenciales:</strong> New Personal Training también ofrece programas de <a href="/blog/bienestar-empresarial-medellin-pausas-activas">pausas activas</a> y entrenamiento corporativo para equipos de trabajo en Medellín.</li>
 </ul>
 
 <h2>¿Necesito equipo especial en casa para entrenar?</h2>
@@ -173,7 +173,7 @@ const POSTS_RAW: BlogPost[] = [
   <li><strong>Plan 3x/semana (12 sesiones/mes):</strong> $645.600 COP</li>
   <li><strong>Plan 5x/semana (20 sesiones/mes):</strong> $1.076.000 COP</li>
 </ul>
-<p>El <strong>entrenamiento semipersonalizado a domicilio</strong> (en pareja o grupo pequeño) es aún más económico: desde $69.200/sesión. Si eres dos o tres amigos o vecinos del mismo conjunto, pueden compartir al entrenador y reducir el costo individual significativamente.</p>
+<p>El <strong><a href="/servicios/entrenamiento-semi-personalizado">entrenamiento semipersonalizado a domicilio</a></strong> (en pareja o grupo pequeño) es aún más económico: desde $69.200/sesión. Si eres dos o tres amigos o vecinos del mismo conjunto, pueden compartir al entrenador y reducir el costo individual significativamente.</p>
 
 <h2>¿Cómo funciona el proceso de inicio?</h2>
 <ol>
@@ -218,9 +218,9 @@ const POSTS_RAW: BlogPost[] = [
   <li><strong>Fortalecimiento del core (zona central):</strong> El pilates activa músculos profundos del abdomen, suelo pélvico y espalda baja que otros ejercicios no alcanzan.</li>
   <li><strong>Corrección postural:</strong> Ideal para personas con trabajo de escritorio. Combate la cifosis (espalda redondeada) y el dolor lumbar crónico.</li>
   <li><strong>Flexibilidad sin tensión:</strong> Los movimientos controlados mejoran el rango de movimiento articular gradual y seguramente.</li>
-  <li><strong>Rehabilitación y prevención de lesiones:</strong> Fisioterapeutas recomiendan el pilates para recuperación de lesiones de rodilla, cadera y columna.</li>
+  <li><strong>Rehabilitación y prevención de lesiones:</strong> <a href="/servicios/fisioterapia">Fisioterapeutas</a> recomiendan el pilates para recuperación de lesiones de rodilla, cadera y columna.</li>
   <li><strong>Reducción del estrés:</strong> La combinación de movimiento y respiración activa el sistema parasimpático, reduciendo el cortisol.</li>
-  <li><strong>Mejora del equilibrio y la coordinación:</strong> Fundamental para adultos mayores y para la prevención de caídas.</li>
+  <li><strong>Mejora del equilibrio y la coordinación:</strong> Fundamental para <a href="/blog/entrenador-personal-adultos-mayores-medellin">adultos mayores</a> y para la prevención de caídas.</li>
   <li><strong>Tonificación sin volumen:</strong> El pilates alarga y define la musculatura sin generar masa muscular excesiva.</li>
 </ul>
 
@@ -282,10 +282,10 @@ const POSTS_RAW: BlogPost[] = [
 <p>Necesitas progresión de cargas, técnica impecable y nutrición adecuada. Un entrenador personal garantiza los tres factores. Los grandes gimnasios ofrecen el equipo pero no el acompañamiento.</p>
 
 <h3>Si eres principiante</h3>
-<p>El entrenamiento personalizado es la opción más recomendada. Comenzar en un gimnasio sin orientación aumenta el riesgo de lesiones y abandono en las primeras semanas. Las estadísticas muestran que el 80% de los nuevos miembros de gimnasios abandonan antes de 3 meses.</p>
+<p><a href="/servicios/entrenamiento-personalizado">El entrenamiento personalizado</a> es la opción más recomendada. Comenzar en un gimnasio sin orientación aumenta el riesgo de lesiones y abandono en las primeras semanas. Las estadísticas muestran que el 80% de los nuevos miembros de gimnasios abandonan antes de 3 meses.</p>
 
 <h3>Si tienes lesiones o condiciones especiales</h3>
-<p>Un entrenador personal certificado, combinado con fisioterapia cuando es necesario, es insustituible. Los gimnasios convencionales no tienen la capacidad de adaptar cada ejercicio a tu condición.</p>
+<p>Un entrenador personal certificado, combinado con <a href="/servicios/fisioterapia">fisioterapia cuando es necesario</a>, es insustituible. Los gimnasios convencionales no tienen la capacidad de adaptar cada ejercicio a tu condición.</p>
 
 <h2>¿Por qué New Personal Training supera a los gimnasios tradicionales de Medellín?</h2>
 <ul>
@@ -300,7 +300,7 @@ const POSTS_RAW: BlogPost[] = [
 <h2>Preguntas frecuentes sobre gimnasios en Medellín</h2>
 <p><strong>¿Cuánto cuesta un gimnasio en Medellín?</strong><br/>Las membresías varían: cadenas económicas (SmartFit) desde $50.000-$80.000/mes; gimnasios premium desde $150.000-$300.000/mes; estudios boutique desde $200.000-$500.000/mes.</p>
 <p><strong>¿Es mejor un gym o un entrenador personal en Medellín?</strong><br/>Depende de tus objetivos y estilo de vida. Si tienes tiempo para ir al gym regularmente y eres autodisciplinado, un gym puede funcionar. Si buscas resultados garantizados, ahorro de tiempo y personalización, el entrenador personal es superior.</p>
-<p><strong>¿Cuál es el gym más económico de Medellín?</strong><br/>SmartFit es la cadena más económica con presencia en Medellín, con múltiples sedes. Sin embargo, considera que el costo total (membresía + desplazamiento + tiempo) puede superar al entrenamiento a domicilio.</p>
+<p><strong>¿Cuál es el gym más económico de Medellín?</strong><br/>SmartFit es la cadena más económica con presencia en Medellín, con múltiples sedes. Sin embargo, considera que el costo total (membresía + desplazamiento + tiempo) puede superar al <a href="/blog/entrenamiento-domicilio-medellin">entrenamiento a domicilio</a>.</p>
     `
   },
   {
@@ -331,7 +331,7 @@ const POSTS_RAW: BlogPost[] = [
 <h2>Beneficios del entrenamiento funcional</h2>
 <ul>
   <li><strong>Fuerza real:</strong> No solo levantas más peso en el gym — cargas el mercado, subes escaleras y juegas con tus hijos sin fatiga.</li>
-  <li><strong>Quema calórica elevada:</strong> Los movimientos multiarticulares activan más masa muscular simultáneamente, aumentando el gasto energético.</li>
+  <li><strong>Quema calórica elevada:</strong> Los movimientos multiarticulares activan más <a href="/blog/entrenamiento-ganar-masa-muscular-medellin">masa muscular</a> simultáneamente, aumentando el gasto energético.</li>
   <li><strong>Prevención de lesiones:</strong> Al fortalecer las cadenas musculares completas y el core, reduces drásticamente el riesgo de lesiones de espalda, rodillas y hombros.</li>
   <li><strong>Adaptable a cualquier nivel:</strong> Principiante o atleta avanzado — el entrenamiento funcional se ajusta a ti.</li>
   <li><strong>Sin equipos costosos:</strong> Se puede practicar con el peso corporal, bandas elásticas, TRX, kettlebells o pelotas medicinales.</li>
@@ -360,7 +360,7 @@ const POSTS_RAW: BlogPost[] = [
 </ol>
 
 <h2>¿Quién debería hacer entrenamiento funcional en Medellín?</h2>
-<p>Prácticamente todos pueden beneficiarse: deportistas que quieren mejorar su rendimiento, adultos sedentarios que quieren empezar con ejercicio inteligente, personas con sobrepeso que buscan quemar grasa mientras ganan fuerza, y adultos mayores que quieren mantenerse activos y prevenir caídas. El nivel se ajusta siempre a cada persona.</p>
+<p>Prácticamente todos pueden beneficiarse: deportistas que quieren mejorar su rendimiento, adultos sedentarios que quieren empezar con ejercicio inteligente, personas con sobrepeso que buscan quemar grasa mientras ganan fuerza, y <a href="/blog/entrenador-personal-adultos-mayores-medellin">adultos mayores</a> que quieren mantenerse activos y prevenir caídas. El nivel se ajusta siempre a cada persona.</p>
     `
   },
   {
@@ -379,13 +379,13 @@ const POSTS_RAW: BlogPost[] = [
     content: `
 <h2>¿Por qué necesitas un nutricionista si ya tienes entrenador personal en Medellín?</h2>
 <p>El ejercicio representa aproximadamente el <strong>20-30% de tu composición corporal</strong>. El 70-80% restante depende de lo que comes. Esta es la razón por la que personas que entrenan durante meses sin cambiar su alimentación ven resultados mínimos — y por la que la combinación de <strong>entrenador personal + nutricionista en Medellín</strong> es tan poderosa.</p>
-<p>Un <strong>nutricionista profesional en Medellín</strong> no te da una dieta genérica de internet. Te diseña un plan alimenticio basado en tu composición corporal, objetivos específicos, preferencias alimentarias, horarios y requerimientos calóricos reales.</p>
+<p>Un <strong><a href="/servicios/nutricionista">nutricionista profesional</a> en Medellín</strong> no te da una dieta genérica de internet. Te diseña un plan alimenticio basado en tu composición corporal, objetivos específicos, preferencias alimentarias, horarios y requerimientos calóricos reales.</p>
 
 <h2>¿Qué incluye una valoración con nutricionista en New Personal Training?</h2>
 <p>La <strong>cita con nutricionista de New Personal Training</strong> incluye:</p>
 <ul>
   <li><strong>Historia clínica nutricional:</strong> Antecedentes médicos, alergias, intolerancias, medicamentos.</li>
-  <li><strong>Evaluación antropométrica:</strong> Peso, talla, IMC, porcentaje de grasa corporal, masa muscular, perímetros.</li>
+  <li><strong>Evaluación antropométrica:</strong> Peso, talla, IMC, porcentaje de grasa corporal, <a href="/blog/entrenamiento-ganar-masa-muscular-medellin">masa muscular</a>, perímetros.</li>
   <li><strong>Análisis de hábitos alimentarios:</strong> Frecuencia de comidas, alimentos habituales, hidratación.</li>
   <li><strong>Cálculo de requerimientos calóricos y de macronutrientes:</strong> Personalizado según tu nivel de actividad física y objetivos.</li>
   <li><strong>Plan nutricional detallado:</strong> Menú semanal con opciones, porciones y sustituciones.</li>
@@ -433,7 +433,7 @@ const POSTS_RAW: BlogPost[] = [
     authorRole: "Profesionales en Deporte",
     content: `
 <h2>¿Por qué el yoga en Medellín está en plena expansión?</h2>
-<p>Medellín, conocida como la ciudad de la eterna primavera, tiene un clima ideal para practicar <strong>yoga al aire libre o a domicilio</strong>. Pero más allá del clima, el yoga ha ganado popularidad porque responde a una necesidad real de la sociedad contemporánea: equilibrio entre el cuerpo, la mente y la respiración en medio del ritmo acelerado de la vida urbana.</p>
+<p>Medellín, conocida como la ciudad de la eterna primavera, tiene un clima ideal para practicar <strong><a href="/servicios/yoga">yoga al aire libre o a domicilio</a></strong>. Pero más allá del clima, el yoga ha ganado popularidad porque responde a una necesidad real de la sociedad contemporánea: equilibrio entre el cuerpo, la mente y la respiración en medio del ritmo acelerado de la vida urbana.</p>
 <p>New Personal Training ofrece <strong>clases de yoga personalizadas en Medellín</strong> con instructores certificados, en tu hogar, jardín, terraza o espacio preferido en todo el Valle de Aburrá.</p>
 
 <h2>Tipos de yoga disponibles en Medellín</h2>
@@ -462,7 +462,7 @@ const POSTS_RAW: BlogPost[] = [
 
 <h2>Yoga personalizado vs. clases grupales en Medellín: ¿cuál elegir?</h2>
 <p>Las <strong>clases de yoga grupales</strong> ofrecen un ambiente compartido y son más económicas. Sin embargo, es común que los principiantes adquieran malos hábitos posturales cuando el instructor no puede corregir individualmente a 20 personas.</p>
-<p>El <strong>yoga personalizado en Medellín</strong> con New Personal Training garantiza que cada postura sea correcta desde el primer día, acelera el progreso y permite adaptar la sesión a tus limitaciones físicas específicas (lesiones, embarazo, condiciones especiales).</p>
+<p>El <strong>yoga personalizado en Medellín</strong> con New Personal Training garantiza que cada postura sea correcta desde el primer día, acelera el progreso y permite adaptar la sesión a tus limitaciones físicas específicas (lesiones, <a href="/blog/entrenamiento-personal-mujeres-medellin">embarazo</a>, condiciones especiales).</p>
 
 <h2>Precios de clases de yoga en Medellín con New Personal Training</h2>
 <ul>
@@ -478,7 +478,7 @@ const POSTS_RAW: BlogPost[] = [
 <p><strong>No.</strong> Esta es la pregunta más frecuente — y el mayor mito sobre el yoga. La flexibilidad es una consecuencia del yoga, no un requisito previo. Tu instructora adapta cada postura a tu rango de movimiento actual, usando bloques, correas o modificaciones para que puedas practicar con seguridad desde el primer día.</p>
 
 <h2>Yoga en Medellín para empresas: pausas activas y bienestar corporativo</h2>
-<p>New Personal Training también ofrece sesiones de yoga para equipos de trabajo en oficinas de Medellín. Las pausas activas con yoga reducen el ausentismo, mejoran la concentración y aumentan el bienestar general del equipo. Contáctanos para conocer nuestros paquetes corporativos.</p>
+<p>New Personal Training también ofrece sesiones de yoga para equipos de trabajo en oficinas de Medellín. Las <a href="/blog/bienestar-empresarial-medellin-pausas-activas">pausas activas</a> con yoga reducen el ausentismo, mejoran la concentración y aumentan el bienestar general del equipo. Contáctanos para conocer nuestros paquetes corporativos.</p>
     `
   }
   ,
@@ -498,7 +498,7 @@ const POSTS_RAW: BlogPost[] = [
     content: `
 <h2>¿Qué es la fisioterapia y por qué es clave para tu bienestar en Medellín?</h2>
 <p>La <strong>fisioterapia en Medellín</strong> es una disciplina de la salud que evalúa, diagnostica y trata condiciones físicas mediante técnicas manuales, ejercicio terapéutico y modalidades físicas. Va mucho más allá de "curar dolores": es una ciencia del movimiento que previene lesiones, acelera la recuperación y mejora la calidad de vida.</p>
-<p>En <strong>New Personal Training S.A.S</strong> contamos con fisioterapeutas profesionales que prestan el servicio <strong>directamente en tu hogar, oficina o conjunto residencial</strong> en toda el área metropolitana del Valle de Aburrá.</p>
+<p>En <strong>New Personal Training S.A.S</strong> contamos con <a href="/servicios/fisioterapia">fisioterapeutas profesionales</a> que prestan el servicio <strong>directamente en tu hogar, oficina o conjunto residencial</strong> en toda el área metropolitana del Valle de Aburrá.</p>
 
 <h2>¿Cuándo necesitas un fisioterapeuta en Medellín?</h2>
 <ul>
@@ -507,12 +507,12 @@ const POSTS_RAW: BlogPost[] = [
   <li><strong>Lesiones deportivas:</strong> Esguinces, tendinitis, distensiones musculares — el retorno seguro al deporte requiere rehabilitación guiada.</li>
   <li><strong>Dolor crónico:</strong> Lumbalgia, cervicalgia, fibromialgia — el tratamiento conservador con fisioterapia es más efectivo y seguro que la medicación prolongada.</li>
   <li><strong>Prevención:</strong> Atletas y personas activas se benefician de sesiones preventivas que identifican desequilibrios musculares antes de que se conviertan en lesiones.</li>
-  <li><strong>Adultos mayores:</strong> Mejora del equilibrio, fuerza y movilidad para reducir el riesgo de caídas.</li>
+  <li><strong><a href="/blog/entrenador-personal-adultos-mayores-medellin">Adultos mayores</a>:</strong> Mejora del equilibrio, fuerza y movilidad para reducir el riesgo de caídas.</li>
 </ul>
 
 <h2>Técnicas de fisioterapia disponibles con New Personal Training</h2>
 <h3>Terapia manual</h3>
-<p>Movilizaciones articulares, masaje terapéutico profundo y técnicas miofasciales para restaurar el rango de movimiento y reducir el dolor de forma inmediata.</p>
+<p>Movilizaciones articulares, <a href="/servicios/masaje">masaje terapéutico profundo</a> y técnicas miofasciales para restaurar el rango de movimiento y reducir el dolor de forma inmediata.</p>
 <h3>Ejercicio terapéutico</h3>
 <p>Programas individualizados de fortalecimiento y estiramiento diseñados para corregir desequilibrios musculares y acelerar la recuperación funcional.</p>
 <h3>Electroterapia</h3>
@@ -541,7 +541,7 @@ const POSTS_RAW: BlogPost[] = [
 <p>Depende de la condición. Una lesión deportiva aguda puede requerir 6-10 sesiones. Una lumbalgia crónica puede necesitar 12-20 sesiones para lograr resultados sostenibles. Tu fisioterapeuta de New Personal Training te entregará un plan claro desde la primera consulta.</p>
 
 <h2>Zonas de cobertura para fisioterapia a domicilio</h2>
-<p>Nuestros fisioterapeutas llegan a <strong>El Poblado, Laureles, Belén, Envigado, Sabaneta, Itagüí, Bello</strong> y todas las zonas del Valle de Aburrá. Contáctanos al <strong>+57 314 400 8592</strong> para verificar disponibilidad en tu barrio.</p>
+<p>Nuestros fisioterapeutas llegan a <strong><a href="/blog/gym-y-entrenador-personal-en-el-poblado-medellin">El Poblado</a>, Laureles, Belén, Envigado, Sabaneta, Itagüí, Bello</strong> y todas las zonas del Valle de Aburrá. Contáctanos al <strong>+57 314 400 8592</strong> para verificar disponibilidad en tu barrio.</p>
     `
   },
   {
@@ -573,13 +573,13 @@ const POSTS_RAW: BlogPost[] = [
 <p>Movimientos multiarticulares que involucran grandes grupos musculares simultáneamente: sentadillas, peso muerto, planchas, movimientos de empuje y tirón. Alto gasto calórico, mejora de la movilidad y transferencia directa a la vida cotidiana.</p>
 
 <h3>4. Cardio de baja intensidad (complemento, no protagonista)</h3>
-<p>Caminatas rápidas, bicicleta suave o natación a ritmo moderado son excelentes complementos para los días de recuperación. No deben ser el eje principal de tu programa de pérdida de peso.</p>
+<p>Caminatas rápidas, bicicleta suave o <a href="/servicios/natacion-personalizada">natación a ritmo moderado</a> son excelentes complementos para los días de recuperación. No deben ser el eje principal de tu programa de pérdida de peso.</p>
 
 <h2>La combinación ganadora: ejercicio + nutrición + entrenador personal</h2>
 <p>La investigación es clara: el ejercicio solo produce pérdida de peso modesta. La combinación de <strong>entrenamiento personalizado + plan nutricional</strong> multiplica los resultados. New Personal Training ofrece ambos servicios integrados:</p>
 <ul>
   <li><strong>Entrenador personal</strong> que diseña tu programa de fuerza + cardio adaptado a tu condición física actual</li>
-  <li><strong>Nutricionista certificado</strong> que calcula tu déficit calórico adecuado y crea un plan alimentario real y sostenible</li>
+  <li><strong><a href="/servicios/nutricionista">Nutricionista certificado</a></strong> que calcula tu déficit calórico adecuado y crea un plan alimentario real y sostenible</li>
   <li><strong>Seguimiento continuo</strong> con métricas objetivas: peso, porcentaje de grasa, perímetros corporales, fuerza y resistencia</li>
 </ul>
 
@@ -606,9 +606,9 @@ const POSTS_RAW: BlogPost[] = [
   <li><strong>Entrenamiento personalizado 1:1:</strong> desde $53.800/sesión</li>
   <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $645.600 COP</li>
   <li><strong>Valoración nutricional con nutricionista:</strong> $250.000 COP (recomendada para complementar)</li>
-  <li><strong>Entrenamiento semipersonalizado (con 1-2 personas más):</strong> desde $69.200/sesión</li>
+  <li><strong><a href="/servicios/entrenamiento-semi-personalizado">Entrenamiento semipersonalizado</a> (con 1-2 personas más):</strong> desde $69.200/sesión</li>
 </ul>
-<p>Todos los planes incluyen evaluación inicial gratuita, diseño del programa y seguimiento mensual. El servicio es <strong>a domicilio en Medellín y todo el Valle de Aburrá</strong> o en las instalaciones que prefieras.</p>
+<p>Todos los planes incluyen evaluación inicial gratuita, diseño del programa y seguimiento mensual. El servicio es <strong><a href="/blog/entrenamiento-domicilio-medellin">a domicilio en Medellín y todo el Valle de Aburrá</a></strong> o en las instalaciones que prefieras.</p>
 
 <h2>¿Por qué elegir New Personal Training para bajar de peso en Medellín?</h2>
 <p>Con más de 11 años de experiencia y 50+ profesionales certificados en deporte y nutrición, <strong>New Personal Training S.A.S</strong> ha ayudado a cientos de personas en Medellín a alcanzar y mantener su peso ideal. No ofrecemos promesas milagrosas — ofrecemos metodología, profesionalismo y acompañamiento real.</p>
@@ -643,10 +643,10 @@ const POSTS_RAW: BlogPost[] = [
 </ul>
 
 <h3>Línea Institucional — para empresas, conjuntos y hoteles</h3>
-<p>Equipos de calidad profesional con estética premium, ideales para <strong>gimnasios corporativos en Medellín</strong>, conjuntos residenciales y hoteles que buscan ofrecer un espacio de bienestar a sus empleados o residentes. Relación óptima calidad-precio para uso moderado.</p>
+<p>Equipos de calidad profesional con estética premium, ideales para <strong>gimnasios corporativos en Medellín</strong>, conjuntos residenciales y hoteles que buscan ofrecer un <a href="/blog/bienestar-empresarial-medellin-pausas-activas">espacio de bienestar a sus empleados</a> o residentes. Relación óptima calidad-precio para uso moderado.</p>
 
 <h3>Línea Hogar — para tu gym en casa en Medellín</h3>
-<p>Equipos compactos, silenciosos y estéticamente adaptados para espacios residenciales. Desde una simple caminadora plegable hasta un gimnasio multifuncional completo. <strong>New Personal Training asesora, provee e instala el equipo</strong> y puede incluir el servicio de entrenamiento personalizado para sacarle el máximo partido.</p>
+<p>Equipos compactos, silenciosos y estéticamente adaptados para espacios residenciales. Desde una simple caminadora plegable hasta un gimnasio multifuncional completo. <strong>New Personal Training asesora, provee e instala el equipo</strong> y puede incluir el servicio de <a href="/servicios/entrenamiento-personalizado">entrenamiento personalizado</a> para sacarle el máximo partido.</p>
 
 <h2>Servicio técnico de máquinas de gym en Medellín</h2>
 <p>Este es uno de los servicios más demandados y menos ofrecidos de forma profesional en el mercado de <strong>equipos de gimnasio en Medellín</strong>. New Personal Training cuenta con técnicos especializados en:</p>
@@ -708,7 +708,7 @@ const POSTS_RAW: BlogPost[] = [
 </ul>
 
 <h3>Entrenamiento grupal para empleados</h3>
-<p>Clases de entrenamiento funcional, yoga, pilates o boxeo antes o después de la jornada laboral, en las instalaciones de la empresa o en el espacio que definas. Grupos de 5 a 30 personas con un entrenador certificado que adapta la sesión a los diferentes niveles físicos del equipo.</p>
+<p><a href="/servicios/clase-grupal-funcional">Clases de entrenamiento funcional</a>, yoga, pilates o boxeo antes o después de la jornada laboral, en las instalaciones de la empresa o en el espacio que definas. Grupos de 5 a 30 personas con un entrenador certificado que adapta la sesión a los diferentes niveles físicos del equipo.</p>
 
 <h3>Programas de entrenamiento personalizado para ejecutivos</h3>
 <p>Los líderes empresariales de Medellín tienen agendas que dificultan el ejercicio regular. New Personal Training diseña programas 1:1 para ejecutivos que optimizan el tiempo disponible: sesiones de 45-60 minutos en la oficina, el hotel o a domicilio, a cualquier hora que la agenda lo permita.</p>
@@ -736,7 +736,7 @@ const POSTS_RAW: BlogPost[] = [
 </ol>
 
 <h2>¿Cuánto cuesta un programa de bienestar corporativo con New Personal Training en Medellín?</h2>
-<p>Los precios dependen del número de empleados, la frecuencia de las sesiones y los servicios incluidos. New Personal Training ofrece propuestas a medida para empresas de todos los tamaños. Contáctanos al <strong>+57 314 400 8592</strong> o escríbenos a <strong>info@newpersonaltraining.com</strong> para recibir una propuesta sin costo.</p>
+<p>Los precios dependen del número de empleados, la frecuencia de las sesiones y los servicios incluidos; puedes tomar como referencia nuestras <a href="/blog/cuanto-cuesta-entrenador-personal-medellin-precios">tarifas de entrenador personal en Medellín</a>. New Personal Training ofrece propuestas a medida para empresas de todos los tamaños. Contáctanos al <strong>+57 314 400 8592</strong> o escríbenos a <strong>info@newpersonaltraining.com</strong> para recibir una propuesta sin costo.</p>
 <p><em>Las empresas que trabajan con nosotros reportan que el costo del programa de bienestar equivale a menos de 2 días de ausentismo promedio — y los resultados reducen el ausentismo en un 25-35%.</em></p>
     `
   },
@@ -764,8 +764,8 @@ const POSTS_RAW: BlogPost[] = [
   <li><strong>Nadadores recreativos:</strong> Ya sabes nadar pero quieres mejorar tu técnica, velocidad o resistencia para disfrutar más del deporte.</li>
   <li><strong>Deportistas de triatlón y open water:</strong> Optimización de la técnica en las cuatro modalidades (crol, espalda, braza, mariposa) con foco en eficiencia y velocidad.</li>
   <li><strong>Personas con lesiones osteoarticulares:</strong> La natación es el ejercicio más recomendado para personas con artritis, problemas de rodilla o cadera. El agua elimina el impacto mientras mantiene la resistencia.</li>
-  <li><strong>Adultos mayores:</strong> Mejora de la movilidad, fuerza y resistencia cardiovascular sin riesgo de impacto.</li>
-  <li><strong>Embarazadas:</strong> La natación durante el embarazo es segura, recomendada y muy beneficiosa — con la guía adecuada de un profesional.</li>
+  <li><strong><a href="/blog/entrenador-personal-adultos-mayores-medellin">Adultos mayores</a>:</strong> Mejora de la movilidad, fuerza y resistencia cardiovascular sin riesgo de impacto.</li>
+  <li><strong>Embarazadas:</strong> La natación durante <a href="/blog/entrenamiento-personal-mujeres-medellin">el embarazo</a> es segura, recomendada y muy beneficiosa — con la guía adecuada de un profesional.</li>
 </ul>
 
 <h2>Metodología de enseñanza de natación con New Personal Training</h2>
@@ -801,7 +801,7 @@ const POSTS_RAW: BlogPost[] = [
 
 <h2>¿Cómo empezar con las clases de natación de New Personal Training en Medellín?</h2>
 <p>Es sencillo: contáctanos al <strong>+57 314 400 8592</strong> por WhatsApp o escríbenos a <strong>info@newpersonaltraining.com</strong>. Coordinaremos una evaluación inicial gratuita, conoceremos tu piscina disponible y comenzaremos tu programa la semana siguiente.</p>
-<p>New Personal Training también puede complementar las clases de natación con <strong>entrenamiento en seco personalizado, fisioterapia deportiva y plan nutricional</strong>, formando un programa integral de bienestar que maximiza tus resultados.</p>
+<p>New Personal Training también puede complementar las clases de natación con <strong>entrenamiento en seco personalizado, <a href="/servicios/fisioterapia">fisioterapia deportiva</a> y plan nutricional</strong>, formando un programa integral de bienestar que maximiza tus resultados.</p>
     `
   },
   {
@@ -823,7 +823,7 @@ const POSTS_RAW: BlogPost[] = [
 <p>La mayoría de sitios de este sector esconden las tarifas detrás de un formulario. Nosotros las publicamos.</p>
 
 <h2>Tarifas de entrenamiento personalizado 1:1</h2>
-<p>Las tarifas de un <strong>entrenador personal a domicilio</strong> en Medellín se organizan por frecuencia semanal:</p>
+<p>Las tarifas de un <strong><a href="/blog/entrenamiento-domicilio-medellin">entrenador personal a domicilio</a></strong> en Medellín se organizan por frecuencia semanal:</p>
 <ul>
   <li><strong>Sesión suelta:</strong> $53.800</li>
   <li><strong>1 vez/semana</strong> (4 sesiones/mes): $215.200</li>
@@ -860,16 +860,16 @@ const POSTS_RAW: BlogPost[] = [
 <h2>Precios del resto de servicios</h2>
 <p>Estas son las tarifas por sesión de las demás disciplinas en Medellín:</p>
 <ul>
-  <li><strong>Natación personalizada:</strong> desde $87.200</li>
-  <li><strong>Yoga:</strong> desde $91.400</li>
-  <li><strong>Clase grupal funcional:</strong> desde $95.700</li>
-  <li><strong>Boxeo:</strong> desde $106.300</li>
-  <li><strong>Clase grupal rítmica:</strong> desde $106.300</li>
-  <li><strong>Natación semipersonalizada:</strong> desde $107.700</li>
-  <li><strong>Squash personalizado:</strong> desde $115.000</li>
-  <li><strong>Pilates Mat:</strong> desde $127.600</li>
-  <li><strong>Fisioterapia y masaje:</strong> desde $150.000</li>
-  <li><strong>Valoración con nutricionista:</strong> $250.000 (sesión única, sin plan mensual)</li>
+  <li><strong><a href="/servicios/natacion-personalizada">Natación personalizada</a>:</strong> desde $87.200</li>
+  <li><strong><a href="/servicios/yoga">Yoga</a>:</strong> desde $91.400</li>
+  <li><strong><a href="/servicios/clase-grupal-funcional">Clase grupal funcional</a>:</strong> desde $95.700</li>
+  <li><strong><a href="/servicios/boxeo">Boxeo</a>:</strong> desde $106.300</li>
+  <li><strong><a href="/servicios/clase-grupal-ritmica">Clase grupal rítmica</a>:</strong> desde $106.300</li>
+  <li><strong><a href="/servicios/natacion-semi-personalizada">Natación semipersonalizada</a>:</strong> desde $107.700</li>
+  <li><strong><a href="/servicios/squash-personalizado">Squash personalizado</a>:</strong> desde $115.000</li>
+  <li><strong><a href="/servicios/pilates">Pilates Mat</a>:</strong> desde $127.600</li>
+  <li><strong><a href="/servicios/fisioterapia">Fisioterapia y masaje</a>:</strong> desde $150.000</li>
+  <li><strong><a href="/servicios/nutricionista">Valoración con nutricionista</a>:</strong> $250.000 (sesión única, sin plan mensual)</li>
 </ul>
 
 <h2>¿Qué hace que el precio suba o baje?</h2>
@@ -913,7 +913,7 @@ const POSTS_RAW: BlogPost[] = [
 <p>Esta guía explica cómo adaptamos el plan y qué puedes esperar según tu momento.</p>
 
 <h2>La barrera real: el desplazamiento, no la motivación</h2>
-<p>Entre las mujeres que llegan a New Personal Training, la razón más repetida para haber abandonado el gimnasio no es la falta de ganas: es el tiempo de traslado y sentirse observada. Por eso el <strong>entrenamiento a domicilio en Medellín</strong> resuelve más de lo que parece — la sesión empieza cuando abres la puerta.</p>
+<p>Entre las mujeres que llegan a New Personal Training, la razón más repetida para haber abandonado el gimnasio no es la falta de ganas: es el tiempo de traslado y sentirse observada. Por eso el <strong><a href="/blog/entrenamiento-domicilio-medellin">entrenamiento a domicilio en Medellín</a></strong> resuelve más de lo que parece — la sesión empieza cuando abres la puerta.</p>
 <p>Puedes pedir expresamente una entrenadora. Nuestro equipo incluye profesionales de ambos géneros y esa preferencia se respeta sin necesidad de justificarla.</p>
 
 <h2>Entrenamiento durante el embarazo</h2>
@@ -921,7 +921,7 @@ const POSTS_RAW: BlogPost[] = [
 <p>Con la autorización en mano, el trabajo suele orientarse a:</p>
 <ul>
   <li>Mantener fuerza funcional para las tareas del día a día</li>
-  <li>Trabajo de suelo pélvico y respiración, coordinado con fisioterapia cuando hace falta</li>
+  <li>Trabajo de suelo pélvico y respiración, coordinado con <a href="/servicios/fisioterapia">fisioterapia cuando hace falta</a></li>
   <li>Movilidad de cadera y columna, que es donde más molestias aparecen</li>
   <li>Control de intensidad por percepción de esfuerzo, no por cargas máximas</li>
 </ul>
@@ -933,7 +933,7 @@ const POSTS_RAW: BlogPost[] = [
 
 <h2>Objetivos frecuentes y qué esperar de verdad</h2>
 <h3>Bajar de peso</h3>
-<p>Combinación de fuerza, trabajo cardiovascular y plan de alimentación. La fuerza no es opcional: preserva masa muscular mientras pierdes grasa.</p>
+<p>Combinación de fuerza, trabajo cardiovascular y plan de alimentación. La fuerza no es opcional: preserva <a href="/blog/entrenamiento-ganar-masa-muscular-medellin">masa muscular</a> mientras pierdes grasa.</p>
 <h3>Tonificar sin ganar volumen</h3>
 <p>Es la preocupación más repetida y también el mito más extendido. Las diferencias hormonales hacen que la hipertrofia marcada requiera un trabajo muy específico y deliberado. Entrenar fuerza 3 veces por semana no produce ese efecto por accidente.</p>
 <h3>Salud ósea a partir de los 40</h3>
@@ -941,7 +941,7 @@ const POSTS_RAW: BlogPost[] = [
 
 <h2>Cómo empieza el proceso</h2>
 <p>Con una evaluación inicial gratuita de 30 minutos en tu casa: composición corporal, historial de lesiones o cirugías, etapa en la que estás y objetivos. De ahí sale el plan. Si estás embarazada o en posparto, revisamos también tu autorización médica.</p>
-<p>Cubrimos El Poblado, Laureles, Belén, Robledo, Envigado, Itagüí, Sabaneta, Bello y La Estrella.</p>
+<p>Cubrimos <a href="/blog/gym-y-entrenador-personal-en-el-poblado-medellin">El Poblado</a>, Laureles, Belén, Robledo, Envigado, Itagüí, Sabaneta, Bello y La Estrella.</p>
 
 <h2>Preguntas frecuentes</h2>
 <p><strong>¿Puedo pedir una entrenadora mujer?</strong><br/>Sí, sin necesidad de explicar el motivo.</p>
@@ -970,7 +970,7 @@ const POSTS_RAW: BlogPost[] = [
 
 <h2>Por qué «cerca de mí» funciona distinto con entrenamiento a domicilio</h2>
 <p>Cuando buscas un <strong>gimnasio cerca de mí</strong>, Google te muestra locales ordenados por distancia. Si vives en una zona con pocos gimnasios, tus opciones se reducen a lo que haya. Y aunque encuentres uno a quince minutos, esos quince minutos de ida y quince de vuelta son cuarenta y cinco minutos al día que se suman a cada sesión.</p>
-<p>Con un entrenador personal a domicilio el cálculo desaparece: el desplazamiento lo hace el profesional, no tú. La sesión empieza cuando abres la puerta.</p>
+<p>Con un <a href="/blog/entrenamiento-domicilio-medellin">entrenador personal a domicilio</a> el cálculo desaparece: el desplazamiento lo hace el profesional, no tú. La sesión empieza cuando abres la puerta.</p>
 <p>Por eso, entre quienes nos contratan, el motivo más repetido para haber dejado el gimnasio no es la falta de disciplina. Es el tiempo de traslado.</p>
 
 <h2>Zonas de cobertura en Medellín</h2>
@@ -1010,7 +1010,7 @@ const POSTS_RAW: BlogPost[] = [
   <li><strong>En tu apartamento o casa</strong> — no hace falta equipo: el profesional lleva los implementos.</li>
   <li><strong>En el gimnasio del conjunto residencial</strong> — la opción más solicitada en El Poblado y Envigado.</li>
   <li><strong>En tu oficina</strong> — frecuente en el centro y en zonas empresariales, sobre todo en horario de mediodía.</li>
-  <li><strong>En parques y espacios al aire libre</strong> — habitual para entrenamiento funcional en grupo.</li>
+  <li><strong>En parques y espacios al aire libre</strong> — habitual para <a href="/servicios/clase-grupal-funcional">entrenamiento funcional en grupo</a>.</li>
 </ul>
 <p>El espacio se elige al principio y se puede cambiar durante el plan sin costo.</p>
 
@@ -1041,7 +1041,7 @@ const POSTS_RAW: BlogPost[] = [
     authorRole: "Profesionales en Deporte",
     content: `
 <h2>¿Por qué cuesta tanto ganar masa muscular entrenando por tu cuenta?</h2>
-<p>La mayoría de personas que buscan <strong>ganar masa muscular en Medellín</strong> cometen el mismo error que quienes buscan bajar de peso: entrenan sin un plan de progresión real. Repiten los mismos pesos semana tras semana, cambian de rutina antes de que esta rinda resultados, o entrenan con una técnica que limita el estímulo muscular real. El cuerpo solo crece cuando se le da una razón clara para hacerlo — y esa razón es una ciencia, no una intuición.</p>
+<p>La mayoría de personas que buscan <strong>ganar masa muscular en Medellín</strong> cometen el mismo error que quienes buscan <a href="/blog/entrenamiento-para-bajar-de-peso-medellin">bajar de peso</a>: entrenan sin un plan de progresión real. Repiten los mismos pesos semana tras semana, cambian de rutina antes de que esta rinda resultados, o entrenan con una técnica que limita el estímulo muscular real. El cuerpo solo crece cuando se le da una razón clara para hacerlo — y esa razón es una ciencia, no una intuición.</p>
 <p>En <strong>New Personal Training S.A.S</strong>, llevamos más de 11 años diseñando <strong>programas de hipertrofia personalizados en Medellín</strong> para personas que quieren ganar músculo de forma medible, con la técnica correcta y sin perder tiempo en rutinas genéricas.</p>
 
 <h2>Los tres principios que determinan si ganas masa muscular</h2>
@@ -1081,7 +1081,7 @@ const POSTS_RAW: BlogPost[] = [
 
 <h2>Precios del entrenamiento para ganar masa muscular en Medellín</h2>
 <ul>
-  <li><strong>Entrenamiento personalizado 1:1:</strong> desde $53.800 COP por sesión</li>
+  <li><strong><a href="/servicios/entrenamiento-personalizado">Entrenamiento personalizado 1:1</a>:</strong> desde $53.800 COP por sesión</li>
   <li><strong>Plan mensual 3x/semana (12 sesiones):</strong> $645.600 COP — frecuencia mínima recomendada para hipertrofia</li>
   <li><strong>Plan mensual 5x/semana (20 sesiones):</strong> $1.076.000 COP — para quienes buscan acelerar el proceso</li>
   <li><strong>Valoración nutricional con nutricionista:</strong> $250.000 COP (recomendada para calcular tu superávit calórico real)</li>
