@@ -3,91 +3,44 @@ import { motion } from 'framer-motion';
 import { Award } from 'lucide-react';
 import { Button } from '../components/ui/Button';
 import { SEOHead } from '../components/SEOHead';
+import { TEAM, TEAM_UNIQUE } from '../team';
 
-const TRAINER_SECTIONS = [
-  {
-    title: "Profesionales del ejercicio",
-    images: [
-      "/images/equipo/entrenador-personal-medellin-01.webp",
-      "/images/equipo/entrenador-personal-medellin-02.webp",
-      "/images/equipo/entrenador-personal-medellin-03.webp",
-      "/images/equipo/entrenador-personal-medellin-04.webp",
-      "/images/equipo/entrenador-personal-medellin-05.webp",
-      "/images/equipo/entrenador-personal-medellin-06.webp",
-      "/images/equipo/entrenador-personal-medellin-07.webp",
-      "/images/equipo/entrenador-personal-medellin-08.webp",
-      "/images/equipo/entrenador-personal-medellin-09.webp",
-      "/images/equipo/entrenador-personal-medellin-10.webp",
-      "/images/equipo/entrenador-personal-medellin-11.webp",
-      "/images/equipo/entrenador-personal-medellin-12.webp",
-      "/images/equipo/entrenador-personal-medellin-13.webp",
-      "/images/equipo/entrenador-personal-medellin-14.webp",
-      "/images/equipo/entrenador-personal-medellin-15.webp",
-      "/images/equipo/entrenador-personal-medellin-16.webp",
-      "/images/equipo/entrenador-personal-medellin-17.webp",
-      "/images/equipo/entrenador-personal-medellin-18.webp",
-      "/images/equipo/entrenador-personal-medellin-19.webp",
-      "/images/equipo/entrenador-personal-medellin-20.webp",
-      "/images/equipo/entrenador-personal-medellin-21.webp",
-      "/images/equipo/entrenador-personal-medellin-22.webp",
-      "/images/equipo/entrenador-personal-medellin-23.webp",
-      "/images/equipo/entrenador-personal-medellin-24.webp",
-      "/images/equipo/entrenador-personal-medellin-25.webp",
-      "/images/equipo/entrenador-personal-medellin-26.webp",
-      "/images/equipo/entrenador-personal-medellin-27.webp",
-      "/images/equipo/entrenador-personal-medellin-28.webp",
-      "/images/equipo/entrenador-personal-medellin-29.webp",
-      "/images/equipo/entrenador-personal-medellin-30.webp",
-      "/images/equipo/entrenador-personal-medellin-31.webp",
-      "/images/equipo/entrenador-personal-medellin-32.webp",
-      "/images/equipo/entrenador-personal-medellin-33.webp",
-      "/images/equipo/entrenador-personal-medellin-34.webp"
-    ]
-  },
-  {
-    title: "Valoradores",
-    images: [
-      "/images/equipo/valorador-fisico-medellin-01.webp",
-      "/images/equipo/valorador-fisico-medellin-02.webp"
-    ]
-  },
-  {
-    title: "Fisioterapeutas",
-    images: [
-      "/images/equipo/fisioterapeuta-medellin-01.webp",
-      "/images/equipo/fisioterapeuta-medellin-02.webp",
-      "/images/equipo/fisioterapeuta-medellin-03.webp"
-    ]
-  },
-  {
-    title: "Nutricionistas",
-    images: [
-      "/images/equipo/nutricionista-medellin-01.webp",
-      "/images/equipo/nutricionista-medellin-02.webp"
-    ]
-  },
-  {
-    title: "Pausas activas y masoterapeutas",
-    images: [
-      "/images/equipo/masoterapeuta-medellin-01.webp",
-      "/images/equipo/masoterapeuta-medellin-02.webp"
-    ]
-  },
-  {
-    title: "Audiovisual",
-    images: [
-      "/images/equipo/equipo-audiovisual-medellin-01.webp"
-    ]
-  },
-  {
-    title: "Directores",
-    images: [
-      "/images/equipo/director-new-personal-training-medellin-01.webp",
-      "/images/equipo/director-new-personal-training-medellin-02.webp",
-      "/images/equipo/director-new-personal-training-medellin-03.webp"
-    ]
-  }
-];
+
+
+/**
+ * Hasta ahora la pagina solo emitia BreadcrumbList: los profesionales eran
+ * invisibles como entidades. Cada uno sale ahora como Person con su cargo y
+ * sus especialidades, que es la senal de experiencia que Google evalua en
+ * contenido de salud y deporte.
+ */
+const teamSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Equipo de New Personal Training en Medellín",
+  "numberOfItems": TEAM_UNIQUE.length,
+  "itemListElement": TEAM_UNIQUE.map((m, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "item": {
+      "@type": "Person",
+      "name": m.name,
+      "jobTitle": m.roles.join(' / '),
+      "image": `https://newpersonaltraining.com${m.image}`,
+      ...(m.credential ? { "hasCredential": m.credential } : {}),
+      ...(m.specialties.length ? { "knowsAbout": m.specialties } : {}),
+      "worksFor": { "@id": "https://newpersonaltraining.com/#business" },
+      "workLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Medellín",
+          "addressRegion": "Antioquia",
+          "addressCountry": "CO"
+        }
+      }
+    }
+  }))
+};
 
 export const Trainers: React.FC = () => {
   return (
@@ -96,6 +49,7 @@ export const Trainers: React.FC = () => {
         title="Entrenadores Personales en Medellín | New Personal Training"
         description="Conoce a los entrenadores personales en Medellín de New Personal Training: profesionales certificados en ejercicio físico, fisioterapeutas, nutricionistas, valoradores y masoterapeutas del Valle de Aburrá."
         canonical="/entrenadores"
+        jsonLd={[teamSchema]}
         breadcrumbs={[
           { name: 'Inicio', url: 'https://newpersonaltraining.com/' },
           { name: 'Entrenadores', url: 'https://newpersonaltraining.com/entrenadores' }
@@ -114,53 +68,67 @@ export const Trainers: React.FC = () => {
             ENTRENADORES PERSONALES <span className="text-npt-red">EN MEDELLÍN</span>
           </motion.h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-            El equipo de élite preparado para llevarte al límite.
+            Conoce uno a uno a los profesionales que te acompañan: su cargo y sus
+            especialidades. Todos atienden a domicilio en Medellín y el Valle de Aburrá.
           </p>
         </div>
       </div>
 
       <div className="container mx-auto px-4 pb-20">
         <div className="flex flex-col gap-20">
-          {TRAINER_SECTIONS.map((section, sectionIdx) => (
-            <div key={sectionIdx}>
-              <motion.h2 
+          {TEAM.map((section) => (
+            <section key={section.title} aria-labelledby={`seccion-${section.title.replace(/\s+/g, '-').toLowerCase()}`}>
+              <motion.h2
+                id={`seccion-${section.title.replace(/\s+/g, '-').toLowerCase()}`}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 className="text-3xl font-heading font-bold italic text-white mb-8 border-l-4 border-npt-red pl-4"
               >
-                {section.title}
+                {section.title} <span className="text-npt-red">en Medellín</span>
               </motion.h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-                {section.images.map((img, imgIdx) => (
-                  <motion.div
-                    key={imgIdx}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                {section.members.map((m, idx) => (
+                  <motion.article
+                    key={`${section.title}-${m.name}`}
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: imgIdx * 0.05 }}
+                    transition={{ delay: Math.min(idx, 8) * 0.05 }}
                     viewport={{ once: true }}
-                    className="group relative aspect-[3/4] rounded-3xl overflow-hidden border border-white/10 shadow-2xl cursor-pointer"
+                    className="flex flex-col rounded-3xl overflow-hidden border border-white/10 bg-white/[0.03] shadow-2xl"
                   >
-                    <div className="absolute inset-0 z-0">
-                      <img 
-                        src={img}
-                        alt={`${section.title} de New Personal Training — ${[
-                          "entrenamiento personal en Medellín",
-                          "entrenador personal a domicilio en el Valle de Aburrá",
-                          "profesional certificado en Medellín",
-                        ][imgIdx % 3]}`}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
-                        width={600}
-                        height={800}
+                    {/* Las fichas se recortaron al retrato: su texto vivia dentro de
+                        la imagen y ahora esta abajo como HTML, asi que mostrarlo
+                        entero lo duplicaba en pantalla. */}
+                    <div className="relative aspect-[72/50] overflow-hidden group">
+                      <img
+                        src={m.image}
+                        alt={`${m.name}, ${m.role.toLowerCase()} de New Personal Training en Medellín`}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        width={720}
+                        height={505}
                         loading="lazy"
                         decoding="async"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     </div>
-                  </motion.div>
+                    <div className="p-4 flex flex-col gap-2">
+                      <h3 className="font-heading font-bold text-white leading-tight">{m.name}</h3>
+                      <p className="text-xs uppercase tracking-wider text-npt-red font-semibold">{m.role}</p>
+                      {m.credential && (
+                        <p className="text-xs text-gray-400 italic">{m.credential}</p>
+                      )}
+                      {m.specialties.length > 0 && (
+                        <ul className="text-xs text-gray-400 leading-relaxed list-disc pl-4 space-y-0.5">
+                          {m.specialties.map((esp) => (
+                            <li key={esp}>{esp}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  </motion.article>
                 ))}
               </div>
-            </div>
+            </section>
           ))}
         </div>
       </div>

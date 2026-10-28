@@ -62,3 +62,18 @@ export interface BlogPost {
   author: string;
   authorRole: string;
 }
+
+export interface TeamMember {
+  name: string;
+  /** Cargo tal y como lo declara la ficha tecnica. */
+  role: string;
+  /** Titulacion, solo cuando la ficha la indica explicitamente. */
+  credential?: string;
+  specialties: string[];
+  image: string;
+}
+
+export interface TeamSection {
+  title: string;
+  members: TeamMember[];
+}
