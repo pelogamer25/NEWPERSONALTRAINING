@@ -8,83 +8,83 @@ const TRAINER_SECTIONS = [
   {
     title: "Profesionales del ejercicio",
     images: [
-      "https://i.imgur.com/dEK4tTi.jpg",
-      "https://i.imgur.com/QMBuRDI.jpg",
-      "https://i.imgur.com/lNqsz5z.jpg",
-      "https://i.imgur.com/TQJICmf.jpg",
-      "https://i.imgur.com/YsHObqd.jpg",
-      "https://i.imgur.com/cZ1l15e.jpg",
-      "https://i.imgur.com/u7OvQP3.jpg",
-      "https://i.imgur.com/edGqHHe.jpg",
-      "https://i.imgur.com/JuFkHrR.jpg",
-      "https://i.imgur.com/azQjuDR.jpg",
-      "https://i.imgur.com/mAih3QU.jpg",
-      "https://i.imgur.com/NtDhTkx.jpg",
-      "https://i.imgur.com/MhSq7Gw.jpg",
-      "https://i.imgur.com/jib4Zy0.jpg",
-      "https://i.imgur.com/sK2XaEg.jpg",
-      "https://i.imgur.com/04TOJES.jpg",
-      "https://i.imgur.com/YfsaaN8.jpg",
-      "https://i.imgur.com/a6ZrjJv.jpg",
-      "https://i.imgur.com/NQmBJFj.jpg",
-      "https://i.imgur.com/mHNUO7b.jpg",
-      "https://i.imgur.com/MaSAeoS.jpg",
-      "https://i.imgur.com/BSSVJj7.jpg",
-      "https://i.imgur.com/4kG37cd.jpg",
-      "https://i.imgur.com/GRcvpDR.jpg",
-      "https://i.imgur.com/voABxh5.jpg",
-      "https://i.imgur.com/LhxZ0ro.jpg",
-      "https://i.imgur.com/GDFZUrn.jpg",
-      "https://i.imgur.com/NY5CbaH.jpg",
-      "https://i.imgur.com/NH4ONIo.jpg",
-      "https://i.imgur.com/kvCPjv9.jpg",
-      "https://i.imgur.com/aMPgzLz.jpg",
-      "https://i.imgur.com/OxVvJvk.jpg",
-      "https://i.imgur.com/aRLGC60.jpg",
-      "https://i.imgur.com/9dbbbyR.jpg"
+      "/images/equipo/entrenador-personal-medellin-01.webp",
+      "/images/equipo/entrenador-personal-medellin-02.webp",
+      "/images/equipo/entrenador-personal-medellin-03.webp",
+      "/images/equipo/entrenador-personal-medellin-04.webp",
+      "/images/equipo/entrenador-personal-medellin-05.webp",
+      "/images/equipo/entrenador-personal-medellin-06.webp",
+      "/images/equipo/entrenador-personal-medellin-07.webp",
+      "/images/equipo/entrenador-personal-medellin-08.webp",
+      "/images/equipo/entrenador-personal-medellin-09.webp",
+      "/images/equipo/entrenador-personal-medellin-10.webp",
+      "/images/equipo/entrenador-personal-medellin-11.webp",
+      "/images/equipo/entrenador-personal-medellin-12.webp",
+      "/images/equipo/entrenador-personal-medellin-13.webp",
+      "/images/equipo/entrenador-personal-medellin-14.webp",
+      "/images/equipo/entrenador-personal-medellin-15.webp",
+      "/images/equipo/entrenador-personal-medellin-16.webp",
+      "/images/equipo/entrenador-personal-medellin-17.webp",
+      "/images/equipo/entrenador-personal-medellin-18.webp",
+      "/images/equipo/entrenador-personal-medellin-19.webp",
+      "/images/equipo/entrenador-personal-medellin-20.webp",
+      "/images/equipo/entrenador-personal-medellin-21.webp",
+      "/images/equipo/entrenador-personal-medellin-22.webp",
+      "/images/equipo/entrenador-personal-medellin-23.webp",
+      "/images/equipo/entrenador-personal-medellin-24.webp",
+      "/images/equipo/entrenador-personal-medellin-25.webp",
+      "/images/equipo/entrenador-personal-medellin-26.webp",
+      "/images/equipo/entrenador-personal-medellin-27.webp",
+      "/images/equipo/entrenador-personal-medellin-28.webp",
+      "/images/equipo/entrenador-personal-medellin-29.webp",
+      "/images/equipo/entrenador-personal-medellin-30.webp",
+      "/images/equipo/entrenador-personal-medellin-31.webp",
+      "/images/equipo/entrenador-personal-medellin-32.webp",
+      "/images/equipo/entrenador-personal-medellin-33.webp",
+      "/images/equipo/entrenador-personal-medellin-34.webp"
     ]
   },
   {
     title: "Valoradores",
     images: [
-      "https://i.imgur.com/Wc9f4ra.jpg",
-      "https://i.imgur.com/DYXJrFS.jpg"
+      "/images/equipo/valorador-fisico-medellin-01.webp",
+      "/images/equipo/valorador-fisico-medellin-02.webp"
     ]
   },
   {
     title: "Fisioterapeutas",
     images: [
-      "https://i.imgur.com/vZf7ZvS.jpg",
-      "https://i.imgur.com/OWCVqEm.jpg",
-      "https://i.imgur.com/S7JShUj.jpg"
+      "/images/equipo/fisioterapeuta-medellin-01.webp",
+      "/images/equipo/fisioterapeuta-medellin-02.webp",
+      "/images/equipo/fisioterapeuta-medellin-03.webp"
     ]
   },
   {
     title: "Nutricionistas",
     images: [
-      "https://i.imgur.com/REe6KoZ.jpg",
-      "https://i.imgur.com/kiL06lF.jpg"
+      "/images/equipo/nutricionista-medellin-01.webp",
+      "/images/equipo/nutricionista-medellin-02.webp"
     ]
   },
   {
     title: "Pausas activas y masoterapeutas",
     images: [
-      "https://i.imgur.com/2LAzZXz.jpg",
-      "https://i.imgur.com/4WLVH6R.jpg"
+      "/images/equipo/masoterapeuta-medellin-01.webp",
+      "/images/equipo/masoterapeuta-medellin-02.webp"
     ]
   },
   {
     title: "Audiovisual",
     images: [
-      "https://i.imgur.com/oFGQOVb.jpg"
+      "/images/equipo/equipo-audiovisual-medellin-01.webp"
     ]
   },
   {
     title: "Directores",
     images: [
-      "https://i.imgur.com/5qXnj9z.jpg",
-      "https://i.imgur.com/K6F6Bu8.jpg",
-      "https://i.imgur.com/BRkbPn6.jpg"
+      "/images/equipo/director-new-personal-training-medellin-01.webp",
+      "/images/equipo/director-new-personal-training-medellin-02.webp",
+      "/images/equipo/director-new-personal-training-medellin-03.webp"
     ]
   }
 ];

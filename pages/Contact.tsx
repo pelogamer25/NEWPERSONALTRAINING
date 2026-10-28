@@ -92,7 +92,7 @@ export const Contact: React.FC = () => {
               animate={{ opacity: 1, x: 0 }}
               className="bg-npt-red p-10 rounded-3xl text-white flex flex-col justify-between relative overflow-hidden"
             >
-              <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
+              <div className="absolute inset-0 opacity-10 bg-[url('/images/carbon-fibre.png')]" />
 
               <div className="relative z-10">
                 <h2 className="text-2xl font-heading font-bold mb-6 uppercase tracking-wider">Información</h2>

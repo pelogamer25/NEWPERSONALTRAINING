@@ -152,9 +152,14 @@ export const Home: React.FC = () => {
             className="absolute inset-0 z-0"
           >
             <div className="absolute inset-0 bg-gradient-to-b from-npt-black/30 via-npt-black/60 to-npt-black z-10" />
+            {/* Imagen LCP autoalojada. Antes venia de images.unsplash.com, asi que
+                el elemento mas grande de la pagina esperaba a un DNS y un TLS de
+                terceros antes de empezar a descargarse. */}
             <img
-              src="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&q=80&w=1920"
-              alt="Sesión de entrenamiento personal en Medellín — New Personal Training"
+              src="/images/hero-entrenador-personal-medellin-1920.webp"
+              srcSet="/images/hero-entrenador-personal-medellin-960.webp 960w, /images/hero-entrenador-personal-medellin-1920.webp 1920w"
+              sizes="100vw"
+              alt="Sesión de entrenamiento personal a domicilio en Medellín — New Personal Training"
               className="w-full h-full object-cover"
               width={1920}
               height={1080}

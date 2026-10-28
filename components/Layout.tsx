@@ -22,7 +22,7 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         <div 
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `url("https://www.transparenttextures.com/patterns/carbon-fibre.png")`,
+            backgroundImage: `url("/images/carbon-fibre.png")`,
             backgroundRepeat: 'repeat'
           }}
         />

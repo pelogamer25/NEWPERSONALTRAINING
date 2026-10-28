@@ -4,7 +4,8 @@ import {
   Briefcase, 
   Apple, 
   Monitor, 
-  Activity 
+  Activity,
+  Wrench 
 } from 'lucide-react';
 import { Service, Trainer, Testimonial, NavigationItem } from './types';
 
@@ -325,47 +326,45 @@ export const SERVICES: Service[] = [
       { label: "4x semana (16 ses)", price: "$2.400.000" },
       { label: "5x semana (20 ses)", price: "$3.000.000" }
     ]
+  },
+  {
+    id: "15",
+    title: "Equipos de Gimnasio: Venta y Servicio Técnico",
+    description: "Venta, instalación y mantenimiento de equipos de gimnasio en Medellín: línea profesional, institucional y hogar, con servicio técnico mecánico y electrónico.",
+    icon: Wrench,
+    image: "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&q=80&w=800",
+    slug: "equipos-gym",
+    imageInfo: "Dotación y mantenimiento de equipos para gyms comerciales, empresas, conjuntos residenciales y hogares en Medellín y el Valle de Aburrá.",
+    badges: ["Venta", "Instalación", "Servicio técnico"],
+    actionText: "Solicitar Cotización",
+    includes: [
+      "Línea Profesional — equipos de uso intensivo para gyms comerciales y centros deportivos",
+      "Línea Institucional — calidad profesional y estética premium para empresas, conjuntos y hoteles",
+      "Línea Hogar — equipos compactos y silenciosos para gimnasios residenciales",
+      "Asesoría según tu espacio, uso real y presupuesto, no según el equipo más caro",
+      "Instalación profesional por técnicos propios",
+      "Mantenimiento mecánico: lubricación de bandas, tensiones, rodamientos, poleas, cables y calibración de pesos",
+      "Mantenimiento electrónico: tableros de control, sensores, motores y sistemas de programación",
+      "Rediseño y actualización: tapizado, pintura estructural y reemplazo de piezas obsoletas",
+      "Planes de mantenimiento preventivo"
+    ]
   }
 ];
 
-export const TRAINERS: Trainer[] = [
-  {
-    id: "1",
-    name: "Juan Pérez",
-    role: "Head Coach",
-    specialty: "Hipertrofia y Fuerza",
-    experience: "8 años",
-    image: "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&q=80&w=600",
-    bio: "Especialista en transformación física y rendimiento deportivo de alto nivel. Su enfoque científico garantiza resultados medibles."
-  },
-  {
-    id: "2",
-    name: "María López",
-    role: "Entrenadora Senior",
-    specialty: "Entrenamiento Funcional",
-    experience: "6 años",
-    image: "https://images.unsplash.com/photo-1611672585731-fa1060a7a3c2?auto=format&fit=crop&q=80&w=600",
-    bio: "Apasionada por el movimiento y la salud integral. Certificada en CrossFit y movilidad articular."
-  },
-  {
-    id: "3",
-    name: "Carlos Ruiz",
-    role: "Coach Nutricional",
-    specialty: "Nutrición y Pérdida de Peso",
-    experience: "5 años",
-    image: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&q=80&w=600",
-    bio: "Combina la ciencia de la nutrición con el entrenamiento práctico para crear hábitos sostenibles."
-  },
-  {
-    id: "4",
-    name: "Laura Zapata",
-    role: "Instructora de Yoga",
-    specialty: "Flexibilidad y Mindfulness",
-    experience: "4 años",
-    image: "https://images.unsplash.com/photo-1609899536968-0c7d42571ae8?auto=format&fit=crop&q=80&w=600",
-    bio: "Ayuda a conectar mente y cuerpo a través de prácticas de respiración y movimiento consciente."
-  }
-];
+/**
+ * Perfiles del equipo.
+ *
+ * Estaba relleno con datos de plantilla: "Juan Perez", "Maria Lopez",
+ * "Carlos Ruiz" y "Laura Zapata", personas inventadas con fotos de stock.
+ * No se renderizaba en ninguna parte, pero quedaba a un import de
+ * distancia de publicarse como si fuera el equipo real.
+ *
+ * Se vacia a proposito: cuando haya nombres y titulaciones reales, se
+ * llenan aqui. Son la base para firmar los articulos del blog con autores
+ * Person en lugar de Organization, que es la mayor mejora de E-E-A-T
+ * pendiente.
+ */
+export const TRAINERS: Trainer[] = [];
 
 export const TESTIMONIALS: Testimonial[] = [
   {

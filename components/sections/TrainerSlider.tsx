@@ -4,9 +4,9 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const DIRECTORS = [
-  "https://i.imgur.com/5qXnj9z.jpg",
-  "https://i.imgur.com/K6F6Bu8.jpg",
-  "https://i.imgur.com/BRkbPn6.jpg"
+  "/images/equipo/director-new-personal-training-medellin-01.webp",
+  "/images/equipo/director-new-personal-training-medellin-02.webp",
+  "/images/equipo/director-new-personal-training-medellin-03.webp"
 ];
 
 export const TrainerSlider: React.FC = () => {
